@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='src/Madlibs.css'>
+  <script type='text/javascript' src='src/Madlibs.js'></script>
+  <title>Mad Libs</title>
+</head>
+<body>
+  <div id = 'page1'>
+  <br>
+  <div id = 'title'><b>MAD LIBS<b></div><br>
+  <div id = 'desc'>Welcome to Mad Libs! Simply enter the specified words down below and this page will produce a text using those words.</div>
+  <br><br>
+  <div id='formcontainer'>
+    <form>
+      <label for="noun1" class='label'>Noun</label>
+      <input type="text" id='noun1' class='input'><br>
+      <br>
+      <label for='adj1' class='label'>Adjective</label>
+      <input type="text" id='adj1' class='input'><br>
+      <br>
+      <label for='length' class='label'>Unit of length</label>
+      <input type="text" id='length' class='input'><br>
+      <br>
+      <label for='time' class='label'>Unit of time</label>
+      <input type="text" id='time' class='input'><br>
+      <br>
+      <label for='noun2' class='label'>Noun</label>
+      <input type="text" id='noun2' class='input'><br>
+      <br>
+      <label for='ingverb' class='label'>-ing verb</label>
+      <input type="text" id='ingverb' class='input'><br>
+      <br>
+      <label for='sound' class='label'>Sound</label>
+      <input type="text" id='sound' class='input'><br>
+      <br>
+      <label for='adj2' class='label'>Adjective</label>
+      <input type="text" id='adj2' class='input'><br>
+      <br>
+      <label for='noun3' class='label'>Noun</label>
+      <input type="text" id='noun3' class='input'><br>
+      <br>
+      <label for='word' class='label'>Any word</label>
+      <input type="text" id='word' class='input'>
+    <br><br>
+    </form>
+  </div>
+  <div id = 'submitdiv'><button id = 'submit' onclick='next()'>Submit</button></div>
+</div>
+<div id = 'page2'>
+  <br>
+  <div id = 'title2'>Here is your Mad Libs!</div>
+  <br>
+  <div id = 'text'></div>
+  <br><br>
+  <div id = 'backdiv'><button id = 'back' onclick='back()'>Reset</button></div>
+</div>
+</body>
+</html>
