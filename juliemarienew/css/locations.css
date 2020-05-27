@@ -1,3 +1,6 @@
+#locationsnav{
+  background: url(../images/navhover.gif);
+}
 #mapcontainer{
   text-align: center;
 }

@@ -42,12 +42,3 @@ window.onload = function(){
 
   }
 };
-function language(){
-  var lang = document.getElementById("languagenav").innerHTML;
-  if(lang=="English version"){
-    en();
-  }
-  else{
-    fr();
-  }
-}

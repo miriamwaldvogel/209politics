@@ -1,15 +1,19 @@
 body{
   background-color:#6B3332;
 }
-#navcontainer{
+#imgheadercontainer{
   text-align: center;
-  background-image: url(images/navbackground.gif);
+}
+#navcontainer{
+  background: url(../images/navbackground.png);
+  width: 743px;
+  margin: auto;
 }
 .nav{
   display: inline-block;
   width:120px;
   height: 20px;
-  background-image: url(images/nav.gif);
+  background: url(../images/nav.gif);
   font-family: Tahoma,Verdana,Arial,sans-serif;
   font-size: 11px;
   font-weight: bold;
@@ -19,13 +23,12 @@ body{
   color: #E4DFCF;
 }
 .nav:hover{
-  background-image: url(images/navhover.gif);
+  background: url(../images/navhover.gif);
 }
 #footer{
-  background-image: url(images/footer.gif);
-  position: absolute:
+  background: url(../images/footer.gif) no-repeat;
   width: 100%;
-  bottom: 0px;
+  background-size: cover;
 }
 #footertext{
   text-align: center;
