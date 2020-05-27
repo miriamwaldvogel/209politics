@@ -1,0 +1,21 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #BFB9B9;
+}
+.title{
+  font-size: 20px;
+}
+.text{
+  font-size: 14px;
+}
+.email{
+  font-size: 15px;
+  color: #8da9d6;
+}
+#main{
+  position: relative;
+  left: 40%;
+}
+p{
+  margin: 0;
+}
