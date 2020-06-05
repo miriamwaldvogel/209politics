@@ -12,7 +12,9 @@
   font-size: 15px;
 }
 #mapcontainer{
-  height: 480px;
+  margin: 0px;
+  padding: 0px;
+  height: 600px;
   width: 100%;
   display: inline-block;
   overflow: hidden;
@@ -21,4 +23,6 @@
   position: relative;
   top: -55px;
   border: none;
+  width: 800px;
+  height: 600px;
 }
