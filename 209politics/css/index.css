@@ -5,6 +5,10 @@
 a{
   text-decoration: none;
 }
+.headline{
+  font-family: "Rubik";
+  font-weight: bold;
+}
 #header{
   width: 100%;
   height: 120px;
@@ -15,7 +19,10 @@ a{
 #datecontainer{
   position: relative;
   left: 10px;
-  top: 100px;
+  top: 95px;
+}
+#date{
+  font-family: "Libre Baskerville"
 }
 #logocontainer{
   width: 100px;
@@ -50,7 +57,7 @@ a{
   border-bottom: double;
 }
 #navcontainer{
-  width: 600px;
+  width: 750px;
   margin: auto;
 }
 .sectioncontainers{
@@ -58,19 +65,63 @@ a{
 }
 .section{
   font-size: 20px;
+  font-family: "Libre Baskerville";
   color: #000000;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
 }
 #mainstorycontainer{
   width: 55%;
   padding-right: 10px;
+  margin: 0px 0px 0px 0px;
   border-right: 2px double #BDBFC9;
+  display: inline-block;
 }
 #mainstorycover{
   width: 100%;
 }
 #mainstoryheadline{
   color: #000000;
-  font-size: 25px;
+  font-size: 27px;
   text-align: center;
+}
+#covidcontainer{
+  width: 42%;
+  height: 1000px;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+}
+#covidtitle{
+  font-size: 20px;
+  width: 400px;
+  margin: auto;
+}
+#coviddatacontainer{
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  height: 877px;
+  width: 100%;
+}
+#coviddata{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 780px;
+  height: 777px;
+  position: relative;
+  left: -270px;
+  top: -70px;
+}
+#datacredit{
+  position: relative;
+  top: 750px;
+  font-family: "Libre Baskerville";
+  font-size: 15px;
+  color: #5E5F6B;
+  margin-left: 10px;
+}
+#datacredita{
+  color: #5E5F6B;
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
@@ -31,19 +33,19 @@
       </div>
       <div id="sections">
         <div id="navcontainer">
-          <div id="latestcontainer" class="sectioncontainers">
+          <div id="latestnavcontainer" class="sectioncontainers">
             <a href="latest.html" id="latest" class="section">LATEST</a>
           </div>
-          <div id="electionscontainer" class="sectioncontainers">
+          <div id="electionsnavcontainer" class="sectioncontainers">
             <a href="elections.html" id="elections" class="section">ELECTIONS</a>
           </div>
-          <div id="policycontainer" class="sectioncontainers">
+          <div id="policynavcontainer" class="sectioncontainers">
             <a href="policy.html" class="section">POLICY</a>
           </div>
-          <div id="covidcontainer" class="sectioncontainers">
+          <div id="covidnavcontainer" class="sectioncontainers">
             <a href="covid-19.html" class="section">COVID-19</a>
           </div>
-          <div id="contactcontainer" class="sectioncontainers">
+          <div id="contactnavcontainer" class="sectioncontainers">
             <a href="contact.html" class="section">CONTACT US</a>
           </div>
         </div>
@@ -51,9 +53,17 @@
       <div id="mainstorycontainer" class="mainstory">
         <a href="2020/07/29/stockton-fire-department-aid.html" id="mainstorylink" class="mainstory">
           <img src="2020/07/29/stockton-fire-department.png" alt="Stockton Fire Department's West March Lane Station" id="mainstorycover" class="mainstory">
-          <p id="mainstoryheadline" class="mainstory">Stockton Fire Department Awarded $100K in Federal Grants for Coronavirus Relief</p>
+          <p id="mainstoryheadline" class="mainstory headline">Stockton Fire Department Awarded $100K in Federal Grants for Coronavirus Relief</p>
         </a>
       </div>
+      <div id="covidcontainer">
+        <p id="covidtitle" class="headline">LATEST COVID-19 NUMBERS</p>
+        <div id='coviddatacontainer'>
+          <iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" id="coviddata" src="https://public.tableau.com/shared/65PBZ6Z43?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:display_spinner=no&amp;:loadOrderID=0"></iframe>
+        </div>
+        <p id="datacredit">Data and visuals courtesy of <a href="covid19.ca.gov/data-and-tools/" id="datacredita">covid19.ca.gov/data-and-tools/</a></p>
+      </div>
     </div>
+
   </body>
 </html>
