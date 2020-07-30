@@ -1,0 +1,76 @@
+#content{
+  max-width: 1200px;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+#header{
+  width: 100%;
+  height: 120px;
+  border-bottom-style: groove;
+  border-bottom-width: 4px;
+  border-bottom-color: #8091A6;
+}
+#datecontainer{
+  position: relative;
+  left: 10px;
+  top: 100px;
+}
+#logocontainer{
+  width: 100px;
+  margin: auto;
+}
+#logo{
+  width: 100px;
+}
+#socialmediacontainer{
+  width: 180px;
+  margin: 0;
+  float: right;
+  position: relative;
+  top: -50px;
+}
+#twitter{
+  width: 50px;
+}
+#instagram{
+  width: 50px;
+}
+#facebook{
+  width: 40px;
+  position: relative;
+  top: -5px;
+  padding-left: 5px;
+}
+#sections{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: double;
+}
+#navcontainer{
+  width: 600px;
+  margin: auto;
+}
+.sectioncontainers{
+  display: inline-block;
+}
+.section{
+  font-size: 20px;
+  color: #000000;
+  padding: 0px 10px 0px 10px;
+}
+#mainstorycontainer{
+  width: 55%;
+  padding-right: 10px;
+  border-right: 2px double #BDBFC9;
+}
+#mainstorycover{
+  width: 100%;
+}
+#mainstoryheadline{
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+}

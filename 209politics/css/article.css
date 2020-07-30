@@ -1,0 +1,17 @@
+#title{
+  font-size: 35px;
+  text-align: center;
+}
+#paragraphcontainer{
+  min-width: 400px;
+  width: 80%;
+  margin: auto;
+}
+.paragraph{
+  line-height: 2.1;
+}
+.credit{
+  padding-top: 0;
+  color: #9B9AAB;
+  font-size: 10px;
+}
