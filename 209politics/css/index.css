@@ -55,9 +55,10 @@ a{
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: double;
+  text-align: center;
 }
 #navcontainer{
-  width: 750px;
+  width: fit-content;
   margin: auto;
 }
 .sectioncontainers{
@@ -85,23 +86,20 @@ a{
   text-align: center;
 }
 #covidcontainer{
-  width: 42%;
-  height: 1000px;
-  display: inline-block;
-  position: absolute;
-  top: 30%;
+  width: 43%;
+  height: 790px;
+  float: right;
 }
 #covidtitle{
   font-size: 20px;
-  width: 400px;
+  width: fit-content;
   margin: auto;
+  padding-top: 10px;
 }
 #coviddatacontainer{
+  height: 100%;
   overflow: hidden;
-  position: absolute;
-  top: 30px;
-  height: 877px;
-  width: 100%;
+  height: 700px;
 }
 #coviddata{
   display: block;
@@ -115,8 +113,6 @@ a{
   top: -70px;
 }
 #datacredit{
-  position: relative;
-  top: 750px;
   font-family: "Libre Baskerville";
   font-size: 15px;
   color: #5E5F6B;
