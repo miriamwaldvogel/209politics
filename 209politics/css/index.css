@@ -8,13 +8,19 @@ a{
 .headline{
   font-family: "Rubik";
   font-weight: bold;
+  margin-bottom: 5px;
+}
+.articledate{
+  text-align: center;
+  width: 100%;
+  color: #000000;
+  font-family: "Libre Baskerville";
+  margin-top: 0px;
 }
 #header{
   width: 100%;
   height: 120px;
-  border-bottom-style: groove;
-  border-bottom-width: 4px;
-  border-bottom-color: #8091A6;
+  border-bottom: 4px groove #8091A6;
 }
 #datecontainer{
   position: relative;
@@ -74,7 +80,6 @@ a{
   width: 55%;
   padding-right: 10px;
   margin: 0px 0px 0px 0px;
-  border-right: 2px double #BDBFC9;
   display: inline-block;
 }
 #mainstorycover{
@@ -89,6 +94,7 @@ a{
   width: 43%;
   height: 790px;
   float: right;
+  border-left: 2px double #BDBFC9;
 }
 #covidtitle{
   font-size: 20px;
@@ -109,7 +115,7 @@ a{
   width: 780px;
   height: 777px;
   position: relative;
-  left: -270px;
+  left: -280px;
   top: -70px;
 }
 #datacredit{
@@ -120,4 +126,33 @@ a{
 }
 #datacredita{
   color: #5E5F6B;
+}
+#story1container{
+  width: 55%;
+}
+#story1container:before{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 2px solid #BDBFC9;
+}
+#story1imgcontainer{
+  width: 20%;
+  height: fit-content;
+  margin: 0;
+  float: left;
+}
+#story1img{
+  width: 100%;
+}
+#story1textcontainer{
+  width: 80%;
+  float: right;
+  text-align: center;
+}
+#story1headline{
+  font-size: 20px;
+  color: #000000;
 }
