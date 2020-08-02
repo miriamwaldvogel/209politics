@@ -83,7 +83,9 @@ a{
   display: inline-block;
 }
 #mainstorycover{
-  width: 100%;
+  width: 50%;
+  position: relative;
+  left: 25%;
 }
 #mainstoryheadline{
   color: #000000;
@@ -127,10 +129,10 @@ a{
 #datacredita{
   color: #5E5F6B;
 }
-#story1container{
+.storycontainer{
   width: 55%;
 }
-#story1container:before{
+.storycontainer:before{
   content: "";
   display: block;
   margin: 0 auto;
@@ -138,21 +140,34 @@ a{
   padding-top: 10px;
   border-top: 2px solid #BDBFC9;
 }
-#story1imgcontainer{
-  width: 20%;
+.storyimgcontainer{
   height: fit-content;
   margin: 0;
   float: left;
 }
-#story1img{
+.storyimg{
   width: 100%;
 }
-#story1textcontainer{
-  width: 80%;
+.storytextcontainer{
   float: right;
   text-align: center;
 }
-#story1headline{
+.storyheadline{
   font-size: 20px;
   color: #000000;
+}
+#story1container{
+  height: 170px;
+}
+#story1imgcontainer{
+  width: 20%;
+}
+#story1textcontainer{
+  width: 80%;
+}
+#story2imgcontainer{
+  width: 35%
+}
+#story2textcontainer{
+  width: 65%;
 }
