@@ -81,11 +81,11 @@ a{
   padding-right: 10px;
   margin: 0px 0px 0px 0px;
   display: inline-block;
+  border-right: 2px double #BDBFC9;
 }
 #mainstorycover{
-  width: 50%;
+  width: 100%;
   position: relative;
-  left: 25%;
 }
 #mainstoryheadline{
   color: #000000;
@@ -96,7 +96,6 @@ a{
   width: 43%;
   height: 790px;
   float: right;
-  border-left: 2px double #BDBFC9;
 }
 #covidtitle{
   font-size: 20px;
@@ -131,6 +130,8 @@ a{
 }
 .storycontainer{
   width: 55%;
+  padding-right: 10px;
+  border-right: 2px double #BDBFC9;
 }
 .storycontainer:before{
   content: "";
@@ -156,18 +157,39 @@ a{
   font-size: 20px;
   color: #000000;
 }
-#story1container{
-  height: 170px;
-}
 #story1imgcontainer{
-  width: 20%;
+  width: 40%;
 }
 #story1textcontainer{
-  width: 80%;
+  width: 60%;
+}
+#story1container{
+  height: 210px;
 }
 #story2imgcontainer{
-  width: 35%
+  width: 30%;
 }
 #story2textcontainer{
+  width: 70%;
+}
+#story2container{
+  height: 210px;
+}
+#story3container{
+  height: 200px;
+}
+#story3imgcontainer{
+  width: 20%;
+}
+#story3textcontainer{
+  width: 80%;
+}
+#story4imgcontainer{
+  width: 35%
+}
+#story4textcontainer{
   width: 65%;
+}
+#story4container{
+  height: 150px;
 }
