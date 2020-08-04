@@ -1,6 +1,7 @@
 #content{
   max-width: 1200px;
   margin: auto;
+  height: fit-content;
 }
 a{
   text-decoration: none;
@@ -20,7 +21,7 @@ a{
 #header{
   width: 100%;
   height: 120px;
-  border-bottom: 4px groove #8091A6;
+  border-bottom: 10px groove #8091A6;
 }
 #datecontainer{
   position: relative;
@@ -60,7 +61,7 @@ a{
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: double;
+  border-bottom: solid;
   text-align: center;
 }
 #navcontainer{
@@ -76,12 +77,23 @@ a{
   color: #000000;
   padding: 0px 15px 0px 15px;
 }
-#mainstorycontainer{
+#leftpanel{
   width: 55%;
+  height: fit-content;
+  float: left;
   padding-right: 10px;
+  border-right: 3px double #BDBFC9;
+  margin-bottom: 10px;
+}
+#rightpanel{
+  width: 43%;
+  height: fit-content;
+  float: right;
+}
+#mainstorycontainer{
+  width: 100%;
   margin: 0px 0px 0px 0px;
   display: inline-block;
-  border-right: 2px double #BDBFC9;
 }
 #mainstorycover{
   width: 100%;
@@ -93,9 +105,8 @@ a{
   text-align: center;
 }
 #covidcontainer{
-  width: 43%;
-  height: 790px;
-  float: right;
+  width: 100%;
+  height: 730px;
 }
 #covidtitle{
   font-size: 20px;
@@ -106,7 +117,7 @@ a{
 #coviddatacontainer{
   height: 100%;
   overflow: hidden;
-  height: 700px;
+  height: 640px;
 }
 #coviddata{
   display: block;
@@ -129,9 +140,7 @@ a{
   color: #5E5F6B;
 }
 .storycontainer{
-  width: 55%;
-  padding-right: 10px;
-  border-right: 2px double #BDBFC9;
+  width: 100%;
 }
 .storycontainer:before{
   content: "";
@@ -139,7 +148,7 @@ a{
   margin: 0 auto;
   width: 99%;
   padding-top: 10px;
-  border-top: 2px solid #BDBFC9;
+  border-top: 3px double #BDBFC9;
 }
 .storyimgcontainer{
   height: fit-content;
@@ -164,32 +173,41 @@ a{
   width: 60%;
 }
 #story1container{
-  height: 210px;
+  height: 180px;
 }
 #story2imgcontainer{
-  width: 30%;
+  width: 40%;
 }
 #story2textcontainer{
-  width: 70%;
+  width: 60%;
 }
 #story2container{
   height: 210px;
 }
-#story3container{
-  height: 200px;
-}
 #story3imgcontainer{
-  width: 20%;
+  width: 30%;
 }
 #story3textcontainer{
-  width: 80%;
+  width: 70%;
 }
-#story4imgcontainer{
-  width: 35%
-}
-#story4textcontainer{
-  width: 65%;
+#story3container{
+  height: 210px;
 }
 #story4container{
+  height: 200px;
+}
+#story4imgcontainer{
+  width: 20%;
+}
+#story4textcontainer{
+  width: 80%;
+}
+#story5imgcontainer{
+  width: 35%
+}
+#story5textcontainer{
+  width: 65%;
+}
+#story5container{
   height: 150px;
 }
