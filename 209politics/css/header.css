@@ -1,0 +1,42 @@
+#headercontainer{
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 4px double #20124D;
+}
+#logocontainer{
+  width: 230px;
+  margin: auto;
+}
+#logo{
+  width: 100%;
+}
+#sidebar{
+  float: left;
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+#sectionscontainer{
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: fit-content;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 0px 10px 10px 0px;
+  margin-top: 5px;
+  border-right: 1.5px solid #BDBFC9;
+  border-bottom: 1.5px solid #BDBFC9;
+}
+.headernavcontainer{
+  margin-top: 5px;
+}
+.section{
+  text-decoration: none;
+  color: #000000;
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}

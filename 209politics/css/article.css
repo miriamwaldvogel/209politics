@@ -23,12 +23,15 @@ p{
   color: #9B9AAB;
   font-size: 10px;
 }
+.externallink{
+  text-decoration: none;
+}
 #infocontainer{
   text-align: center;
 }
 #time{
   font-size: 15px;
 }
-#author{
-  font-size: 18px;
+#img1{
+  width: 100%;
 }
