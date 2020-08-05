@@ -1,0 +1,94 @@
+.headline{
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 30px;
+}
+.storycontainer{
+  width: 100%;
+}
+.storycontainer:before{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 3px double #BDBFC9;
+}
+.storyimgcontainer{
+  height: fit-content;
+  margin: 0;
+  float: left;
+}
+.storyimg{
+  width: 100%;
+}
+.storytextcontainer{
+  float: right;
+  text-align: center;
+}
+.articledate{
+  font-size: 20px;
+}
+#federalreservoirfundingimgcontainer{
+  width: 30%;
+}
+#federalreservoirfundingtextcontainer{
+  width: 70%;
+}
+#federalreservoirfundingcontainer{
+  height: 180px;
+}
+#tracyvalleylinkimgcontainer{
+  width: 30%;
+}
+#tracyvalleylinktextcontainer{
+  width: 70%;
+}
+#tracyvalleylinkcontainer{
+  height: 180px;
+}
+#riverislandsbantaimgcontainer{
+  width: 30%;
+}
+#riverislandsbantatextcontainer{
+  width: 70%;
+}
+#riverislandsbantacontainer{
+  height: 180px;
+}
+#tracycannabisimgcontainer{
+  width: 30%;
+}
+#tracycannabistextcontainer{
+  width: 70%;
+}
+#tracycannabiscontainer{
+  height: 210px;
+}
+#mantecasalestaximgcontainer{
+  width: 20%;
+}
+#mantecasalestaxtextcontainer{
+  width: 80%;
+}
+#mantecasalestaxcontainer{
+  height: 210px;
+}
+#stocktondacontainer{
+  height: 200px;
+}
+#stocktondaimgcontainer{
+  width: 15%;
+}
+#stocktondatextcontainer{
+  width: 85%;
+}
+#stocktonfireimgcontainer{
+  width: 30%
+}
+#stocktonfiretextcontainer{
+  width: 70%;
+}
+#stocktonfirecontainer{
+  height: 150px;
+}
