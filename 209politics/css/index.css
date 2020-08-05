@@ -106,7 +106,7 @@ a{
 }
 #covidcontainer{
   width: 100%;
-  height: 730px;
+  height: 800px;
 }
 #covidtitle{
   font-size: 20px;
@@ -117,7 +117,7 @@ a{
 #coviddatacontainer{
   height: 100%;
   overflow: hidden;
-  height: 640px;
+  height: 700px;
 }
 #coviddata{
   display: block;
@@ -166,48 +166,57 @@ a{
   font-size: 20px;
   color: #000000;
 }
-#story1imgcontainer{
+#tracyvalleylinkimgcontainer{
   width: 40%;
 }
-#story1textcontainer{
+#tracyvalleylinktextcontainer{
   width: 60%;
 }
-#story1container{
+#tracyvalleylinkcontainer{
   height: 180px;
 }
-#story2imgcontainer{
+#riverislandsbantaimgcontainer{
   width: 40%;
 }
-#story2textcontainer{
+#riverislandsbantatextcontainer{
   width: 60%;
 }
-#story2container{
+#riverislandsbantacontainer{
+  height: 180px;
+}
+#tracycannabisimgcontainer{
+  width: 40%;
+}
+#tracycannabistextcontainer{
+  width: 60%;
+}
+#tracycannabiscontainer{
   height: 210px;
 }
-#story3imgcontainer{
+#mantecasalestaximgcontainer{
   width: 30%;
 }
-#story3textcontainer{
+#mantecasalestaxtextcontainer{
   width: 70%;
 }
-#story3container{
+#mantecasalestaxcontainer{
   height: 210px;
 }
-#story4container{
+#stocktondacontainer{
   height: 200px;
 }
-#story4imgcontainer{
+#stocktondaimgcontainer{
   width: 20%;
 }
-#story4textcontainer{
+#stocktondatextcontainer{
   width: 80%;
 }
-#story5imgcontainer{
+#stocktonfireimgcontainer{
   width: 35%
 }
-#story5textcontainer{
+#stocktonfiretextcontainer{
   width: 65%;
 }
-#story5container{
+#stocktonfirecontainer{
   height: 150px;
 }

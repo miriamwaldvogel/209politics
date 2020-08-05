@@ -7,7 +7,8 @@
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
     <script type="text/javascript" src="js/index.js"></script>
-    <title>209politics.com</title>
+    <script type="text/javascript" src="js/articleformat.js"></script>
+    <title>209 Politics</title>
   </head>
   <body onresize="resize();">
     <div id="content">
@@ -53,43 +54,54 @@
       </div>
       <div id="leftpanel">
         <div id="mainstorycontainer" class="mainstory">
-          <a href="2020/08/02/tracy-valleylink-development.html" id="mainstorylink" class="mainstory">
-            <img src="2020/08/02/tracy-valleylink-development.png" alt="Map of the proposed development area and ValleyLink station" id="mainstorycover" class="mainstory">
-            <p id="mainstoryheadline" class="mainstory headline">Tracy Voters to Decide on Downtown Transit Development Plan</p>
-            <p id="mainstorydate" class="mainstory articledate">August 2, 2020</p>
+          <a href="2020/08/04/federal-reservoir-funding.html" id="mainstorylink" class="mainstory">
+            <img src="2020/08/04/los-vaqueros-reservoir.png" alt="Los Vaqueros Reservoir, one of the three Central Valley projects to receive federal funding this year" id="mainstorycover" class="mainstory">
+            <p id="mainstoryheadline" class="mainstory headline">House Energy and Water Development Bill Includes More Than $13 Million for Central Valley Water Projects</p>
+            <p id="mainstorydate" class="mainstory articledate">August 4, 2020</p>
           </a>
         </div>
         <br>
-        <div id="story1container" class="story1 storycontainer">
-          <a href="2020/08/03/banta-river-islands-district.html" id="story1link" class="story1 storylink">
-            <div id="story1imgcontainer" class="story1 storyimgcontainer">
-              <img src="2020/08/03/river-islands.jpg" alt="The I-5 entrance to River Islands" id="story1img" class="story1 storyimg">
+        <div id="tracyvalleylinkcontainer" class="tracyvalleylink storycontainer">
+          <a href="2020/08/02/tracy-valleylink-development.html" id="tracyvalleylinklink" class="tracyvalleylink storylink">
+            <div id="tracyvalleylinkimgcontainer" class="tracyvalleylink storyimgcontainer">
+              <img src="2020/08/02/tracy-valleylink-development.png" alt="Map of the proposed development area and ValleyLink station" id="tracyvalleylinkimg" class="tracyvalleylink storyimg">
             </div>
-            <div id="story1textcontainer" class="story1 storytextcontainer">
-              <p id="story1headline" class="mainstory headline storyheadline">Banta Elementary School District May Become K-12 if Approved by Voters</p>
-              <p id="story1date" class="story1 articledate">August 3, 2020</p>
-            </div>
-          </a>
-        </div>
-        <div id="story2container" class="story2 storycontainer">
-          <a href="2020/08/02/tracy-cannabis-tax.html" id="story2link" class="story2 storylink">
-            <div id="story2imgcontainer" class="story2 storyimgcontainer">
-              <img src="2020/08/02/cannabis.jpg" alt="Cannabis" id="story2img" class="story2 storyimg">
-            </div>
-            <div id="story2textcontainer" class="story2 storytextcontainer">
-              <p id="story2headline" class="mainstory headline storyheadline">Cannabis Tax in Tracy to be Voted on in November</p>
-              <p id="story2date" class="story2 articledate">August 2, 2020</p>
+            <div id="tracyvalleylinktextcontainer" class="tracyvalleylink storytextcontainer">
+              <p id="tracyvalleylinkheadline" class="mainstory headline storyheadline">Tracy Voters to Decide on Downtown Transit Development Plan</p>
+              <p id="tracyvalleylinkdate" class="tracyvalleylink articledate">August 2, 2020</p>
             </div>
           </a>
         </div>
-        <div id="story3container" class="story3 storycontainer">
-          <a href="2020/08/01/manteca-sales-tax-hike.html" id="story3link" class="story3 storylink">
-            <div id="story3imgcontainer" class="story3 storyimgcontainer">
-              <img src="2020/08/01/manteca-city-hall.jpg" alt="Manteca City Hall" id="story3img" class="story3 storyimg">
+        <div id="riverislandsbantacontainer" class="riverislandsbanta storycontainer">
+          <a href="2020/08/03/banta-river-islands-district.html" id="riverislandsbantalink" class="riverislandsbanta storylink">
+            <div id="riverislandsbantaimgcontainer" class="riverislandsbanta storyimgcontainer">
+              <img src="2020/08/03/river-islands.jpg" alt="The I-5 entrance to River Islands" id="riverislandsbantaimg" class="riverislandsbanta storyimg">
             </div>
-            <div id="story3textcontainer" class="story3 storytextcontainer">
-              <p id="story3headline" class="mainstory headline storyheadline">Manteca Proposes 1% Increase Sales Tax for November Ballot</p>
-              <p id="story3date" class="story3 articledate">August 1, 2020</p>
+            <div id="riverislandsbantatextcontainer" class="riverislandsbanta storytextcontainer">
+              <p id="riverislandsbantaheadline" class="mainstory headline storyheadline">Banta Elementary School District May Become K-12 if Approved by Voters</p>
+              <p id="riverislandsbantadate" class="riverislandsbanta articledate">August 3, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="tracycannabiscontainer" class="tracycannabis storycontainer">
+          <a href="2020/08/02/tracy-cannabis-tax.html" id="tracycannabislink" class="tracycannabis storylink">
+            <div id="tracycannabisimgcontainer" class="tracycannabis storyimgcontainer">
+              <img src="2020/08/02/cannabis.jpg" alt="Cannabis" id="tracycannabisimg" class="tracycannabis storyimg">
+            </div>
+            <div id="tracycannabistextcontainer" class="tracycannabis storytextcontainer">
+              <p id="tracycannabisheadline" class="mainstory headline storyheadline">Cannabis Tax in Tracy to be Voted on in November</p>
+              <p id="tracycannabisdate" class="tracycannabis articledate">August 2, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="mantecasalestaxcontainer" class="mantecasalestax storycontainer">
+          <a href="2020/08/01/manteca-sales-tax-hike.html" id="mantecasalestaxlink" class="mantecasalestax storylink">
+            <div id="mantecasalestaximgcontainer" class="mantecasalestax storyimgcontainer">
+              <img src="2020/08/01/manteca-city-hall.jpg" alt="Manteca City Hall" id="mantecasalestaximg" class="mantecasalestax storyimg">
+            </div>
+            <div id="mantecasalestaxtextcontainer" class="mantecasalestax storytextcontainer">
+              <p id="mantecasalestaxheadline" class="mainstory headline storyheadline">Manteca Proposes 1% Increase Sales Tax for November Ballot</p>
+              <p id="mantecasalestaxdate" class="mantecasalestax articledate">August 1, 2020</p>
             </div>
           </a>
         </div>
@@ -104,25 +116,25 @@
             href="https://covid19.ca.gov/data-and-tools/"
             id="datacredita">covid19.ca.gov/data-and-tools/</a></p>
         </div>
-        <div id="story4container" class="story4 storycontainer">
-          <a href="2020/07/31/san-joaquin-da-fines.html" id="story4link" class="story4 storylink">
-            <div id="story4imgcontainer" class="story4 storyimgcontainer">
-              <img src="2020/07/31/tori-verber-salazar-cropped.jpg" alt="San Joaquin District Attorney Tori Verber Salazar" id="story4img" class="story4 storyimg">
+        <div id="stocktondacontainer" class="stocktonda storycontainer">
+          <a href="2020/07/31/san-joaquin-da-fines.html" id="stocktondalink" class="stocktonda storylink">
+            <div id="stocktondaimgcontainer" class="stocktonda storyimgcontainer">
+              <img src="2020/07/31/tori-verber-salazar-cropped.jpg" alt="San Joaquin District Attorney Tori Verber Salazar" id="stocktondaimg" class="stocktonda storyimg">
             </div>
-            <div id="story4textcontainer" class="story4 storytextcontainer">
-              <p id="story4headline" class="mainstory headline storyheadline">San Joaquin District Attorney Requests Reduction in Misdemeanor Fines</p>
-              <p id="story4date" class="story4 articledate">July 31, 2020</p>
+            <div id="stocktondatextcontainer" class="stocktonda storytextcontainer">
+              <p id="stocktondaheadline" class="mainstory headline storyheadline">San Joaquin District Attorney Requests Reduction in Misdemeanor Fines</p>
+              <p id="stocktondadate" class="stocktonda articledate">July 31, 2020</p>
             </div>
           </a>
         </div>
-        <div id="story5container" class="story5 storycontainer">
-          <a href="2020/07/29/stockton-fire-department-aid.html" id="story5link" class="story5 storylink">
-            <div id="story5imgcontainer" class="story5 storyimgcontainer">
-              <img src="2020/07/29/stockton-fire-department.png" alt="Stockton Fire Department's West March Lane Station" id="story5img" class="story5 storyimg">
+        <div id="stocktonfirecontainer" class="stocktonfire storycontainer">
+          <a href="2020/07/29/stockton-fire-department-aid.html" id="stocktonfirelink" class="stocktonfire storylink">
+            <div id="stocktonfireimgcontainer" class="stocktonfire storyimgcontainer">
+              <img src="2020/07/29/stockton-fire-department.png" alt="Stockton Fire Department's West March Lane Station" id="stocktonfireimg" class="stocktonfire storyimg">
             </div>
-            <div id="story5textcontainer" class="story5 storytextcontainer">
-              <p id="story5headline" class="mainstory headline storyheadline">Stockton Fire Department Awarded $100K in Federal Grants for Coronavirus Relief</p>
-              <p id="story5date" class="story5 articledate">July 29, 2020</p>
+            <div id="stocktonfiretextcontainer" class="stocktonfire storytextcontainer">
+              <p id="stocktonfireheadline" class="mainstory headline storyheadline">Stockton Fire Department Awarded $100K in Federal Grants for Coronavirus Relief</p>
+              <p id="stocktonfiredate" class="stocktonfire articledate">July 29, 2020</p>
             </div>
           </a>
         </div>
