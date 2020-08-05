@@ -1,0 +1,12 @@
+#titlecontainer{
+  width: 100%;
+  border-bottom: 2px solid #BDBFC9;
+}
+#title{
+  margin: 15px 0px 15px 10px;
+  font-family: "Rubik";
+  font-size: 50px;
+}
+#policydescription{
+  font-family: "Libre Baskerville";
+}

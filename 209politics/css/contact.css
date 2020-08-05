@@ -1,0 +1,28 @@
+p{
+  font-family: "Libre Baskerville";
+}
+#twitter{
+  width: 50px;
+}
+#instagram{
+  width: 50px;
+}
+#facebook{
+  width: 40px;
+  position: relative;
+  left: -5px;
+  padding-left: 10px;
+}
+.titles{
+  font-size: 20px;
+}
+.socialcontainer{
+  width: fit-content;
+}
+.info{
+  margin-left: 10px;
+  float: right;
+}
+#maillink{
+  color: blue;
+}
