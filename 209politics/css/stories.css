@@ -1,3 +1,19 @@
+#titlecontainer{
+  width: 100%;
+  border-bottom: 2px solid #BDBFC9;
+}
+#title{
+  margin: 15px 0px 15px 10px;
+  font-family: "Rubik";
+  font-size: 50px;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+p{
+  font-family: "Libre Baskerville";
+}
 .headline{
   font-family: "Rubik";
   font-weight: bold;
@@ -28,6 +44,15 @@
 }
 .articledate{
   font-size: 20px;
+}
+#sanjoaquincannabisimgcontainer{
+  width: 25%;
+}
+#sanjoaquincannabistextcontainer{
+  width: 75%;
+}
+#sanjoaquincannabiscontainer{
+  height: 180px;
 }
 #federalreservoirfundingimgcontainer{
   width: 30%;
