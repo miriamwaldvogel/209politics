@@ -95,9 +95,12 @@ a{
   margin: 0px 0px 0px 0px;
   display: inline-block;
 }
+#mainstoryimgcontainer{
+  width: 50%;
+  margin: auto;
+}
 #mainstorycover{
   width: 100%;
-  position: relative;
 }
 #mainstoryheadline{
   color: #000000;
@@ -165,6 +168,15 @@ a{
 .storyheadline{
   font-size: 20px;
   color: #000000;
+}
+#federalreservoirfundingimgcontainer{
+  width: 40%;
+}
+#federalreservoirfundingtextcontainer{
+  width: 60%;
+}
+#federalreservoirfundingcontainer{
+  height: 180px;
 }
 #tracyvalleylinkimgcontainer{
   width: 40%;
