@@ -45,47 +45,20 @@ p{
 .articledate{
   font-size: 20px;
 }
+.standardimg{
+  width: 30%;
+}
+.standardtext{
+  width: 70%;
+}
+.standardcontainer{
+  height: 180px;
+}
 #sanjoaquincannabisimgcontainer{
   width: 25%;
 }
 #sanjoaquincannabistextcontainer{
   width: 75%;
-}
-#sanjoaquincannabiscontainer{
-  height: 180px;
-}
-#federalreservoirfundingimgcontainer{
-  width: 30%;
-}
-#federalreservoirfundingtextcontainer{
-  width: 70%;
-}
-#federalreservoirfundingcontainer{
-  height: 180px;
-}
-#tracyvalleylinkimgcontainer{
-  width: 30%;
-}
-#tracyvalleylinktextcontainer{
-  width: 70%;
-}
-#tracyvalleylinkcontainer{
-  height: 180px;
-}
-#riverislandsbantaimgcontainer{
-  width: 30%;
-}
-#riverislandsbantatextcontainer{
-  width: 70%;
-}
-#riverislandsbantacontainer{
-  height: 180px;
-}
-#tracycannabisimgcontainer{
-  width: 30%;
-}
-#tracycannabistextcontainer{
-  width: 70%;
 }
 #tracycannabiscontainer{
   height: 210px;
@@ -107,12 +80,6 @@ p{
 }
 #stocktondatextcontainer{
   width: 85%;
-}
-#stocktonfireimgcontainer{
-  width: 30%
-}
-#stocktonfiretextcontainer{
-  width: 70%;
 }
 #stocktonfirecontainer{
   height: 150px;

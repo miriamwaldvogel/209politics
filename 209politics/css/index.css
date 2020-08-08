@@ -96,7 +96,7 @@ a{
   display: inline-block;
 }
 #mainstoryimgcontainer{
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 #mainstorycover{
@@ -169,41 +169,23 @@ a{
   font-size: 20px;
   color: #000000;
 }
-#federalreservoirfundingimgcontainer{
+.standardimg{
   width: 40%;
 }
-#federalreservoirfundingtextcontainer{
+.standardtext{
   width: 60%;
 }
-#federalreservoirfundingcontainer{
+.standardcontainer{
   height: 180px;
 }
-#tracyvalleylinkimgcontainer{
-  width: 40%;
+#sanjoaquincannabisimgcontainer{
+  width: 30%;
 }
-#tracyvalleylinktextcontainer{
-  width: 60%;
+#sanjoaquincannabistextcontainer{
+  width: 70%;
 }
-#tracyvalleylinkcontainer{
+#sanjoaquincannabiscontainer{
   height: 180px;
-}
-#riverislandsbantaimgcontainer{
-  width: 40%;
-}
-#riverislandsbantatextcontainer{
-  width: 60%;
-}
-#riverislandsbantacontainer{
-  height: 180px;
-}
-#tracycannabisimgcontainer{
-  width: 40%;
-}
-#tracycannabistextcontainer{
-  width: 60%;
-}
-#tracycannabiscontainer{
-  height: 210px;
 }
 #mantecasalestaximgcontainer{
   width: 30%;
