@@ -54,6 +54,12 @@ p{
 .standardcontainer{
   height: 180px;
 }
+#sjcourtreopensimgcontainer{
+  width: 25%;
+}
+#sjcourtreopenstextcontainer{
+  width: 75%;
+}
 #sanjoaquincannabisimgcontainer{
   width: 25%;
 }

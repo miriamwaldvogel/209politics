@@ -1,3 +1,107 @@
+@media only screen and (max-width: 667px){
+  #datecontainer{
+    margin-left: 0px;
+  }
+  #socialmediacontainer{
+    width: 90px;
+    position: relative;
+    top: -80px;
+  }
+  #twittercontainer{
+    margin: auto;
+    display: block;
+  }
+  #instagramcontainer{
+    float: left;
+    margin: 0;
+  }
+  #facebookcontainer{
+    float: right;
+    margin: 0;
+  }
+  .storyimgcontainer{
+    width: 100%;
+  }
+  .storytextcontainer{
+    width: 100%;
+  }
+  #leftpanel{
+    width: 100%;
+  }
+  #rightpanel{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 668px){
+  #datecontainer{
+    margin-left: 10px;
+  }
+  #socialmediacontainer{
+    width: fit-content;
+    margin-right: 10px;
+    position: relative;
+    top: -40px;
+  }
+  .standardimg{
+    width: 40%;
+  }
+  .standardtext{
+    width: 60%;
+  }
+  .standardcontainer{
+    height: 180px;
+  }
+  #leftpanel{
+    width: 55%;
+    float: left;
+  }
+  #rightpanel{
+    width: 43%;
+    float: right;
+  }
+  #sjcourtreopensimgcontainer{
+    width: 30%;
+  }
+  #sjcourtreopenstextcontainer{
+    width: 70%;
+  }
+  #sanjoaquincannabisimgcontainer{
+    width: 30%;
+  }
+  #sanjoaquincannabistextcontainer{
+    width: 70%;
+  }
+  #sanjoaquincannabiscontainer{
+    height: 180px;
+  }
+  #mantecasalestaximgcontainer{
+    width: 30%;
+  }
+  #mantecasalestaxtextcontainer{
+    width: 70%;
+  }
+  #mantecasalestaxcontainer{
+    height: 210px;
+  }
+  #stocktondacontainer{
+    height: 200px;
+  }
+  #stocktondaimgcontainer{
+    width: 20%;
+  }
+  #stocktondatextcontainer{
+    width: 80%;
+  }
+  #stocktonfireimgcontainer{
+    width: 35%
+  }
+  #stocktonfiretextcontainer{
+    width: 65%;
+  }
+  #stocktonfirecontainer{
+    height: 150px;
+  }
+}
 #content{
   max-width: 1200px;
   margin: auto;
@@ -20,12 +124,15 @@ a{
 }
 #header{
   width: 100%;
-  height: 120px;
+  height: fit-content;
+  padding-bottom: 10px;
   border-bottom: 10px groove #8091A6;
 }
 #datecontainer{
+  width: fit-content;
+  max-width: 34%;
+  text-align: center;
   position: relative;
-  left: 10px;
   top: 95px;
 }
 #date{
@@ -33,29 +140,22 @@ a{
 }
 #logocontainer{
   width: 100px;
+  max-width: 30%;
   margin: auto;
 }
 #logo{
   width: 100px;
 }
 #socialmediacontainer{
-  width: 180px;
-  margin: 0;
   float: right;
-  position: relative;
-  top: -50px;
 }
-#twitter{
-  width: 50px;
-}
-#instagram{
-  width: 50px;
-}
-#facebook{
+.socialimgcontainer{
   width: 40px;
-  position: relative;
-  top: -5px;
-  padding-left: 5px;
+  display: inline-block;
+  margin-right: 7px;
+}
+.socialmedia{
+  width: 100%;
 }
 #sections{
   margin-top: 10px;
@@ -78,17 +178,13 @@ a{
   padding: 0px 15px 0px 15px;
 }
 #leftpanel{
-  width: 55%;
   height: fit-content;
-  float: left;
   padding-right: 10px;
   border-right: 3px double #BDBFC9;
   margin-bottom: 10px;
 }
 #rightpanel{
-  width: 43%;
   height: fit-content;
-  float: right;
 }
 #mainstorycontainer{
   width: 100%;
@@ -96,7 +192,7 @@ a{
   display: inline-block;
 }
 #mainstoryimgcontainer{
-  width: 100%;
+  width: 75%;
   margin: auto;
 }
 #mainstorycover{
@@ -168,49 +264,4 @@ a{
 .storyheadline{
   font-size: 20px;
   color: #000000;
-}
-.standardimg{
-  width: 40%;
-}
-.standardtext{
-  width: 60%;
-}
-.standardcontainer{
-  height: 180px;
-}
-#sanjoaquincannabisimgcontainer{
-  width: 30%;
-}
-#sanjoaquincannabistextcontainer{
-  width: 70%;
-}
-#sanjoaquincannabiscontainer{
-  height: 180px;
-}
-#mantecasalestaximgcontainer{
-  width: 30%;
-}
-#mantecasalestaxtextcontainer{
-  width: 70%;
-}
-#mantecasalestaxcontainer{
-  height: 210px;
-}
-#stocktondacontainer{
-  height: 200px;
-}
-#stocktondaimgcontainer{
-  width: 20%;
-}
-#stocktondatextcontainer{
-  width: 80%;
-}
-#stocktonfireimgcontainer{
-  width: 35%
-}
-#stocktonfiretextcontainer{
-  width: 65%;
-}
-#stocktonfirecontainer{
-  height: 150px;
 }

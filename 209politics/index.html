@@ -2,8 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="We're a student-run politics source for the greater San Joaquin County area.">
+    <meta name="description" content="A student-run politics source for the greater San Joaquin County area: elections, local policy, and more.">
     <meta name="keywords" content="209Politics, 209 Politics, San Joaquin County politics, Stockton politics, Lodi politics, Manteca politics, Lathrop politics, Linden politics, Tracy politics">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
@@ -24,13 +25,19 @@
         </div>
         <div id="socialmediacontainer">
           <a href="https://twitter.com/209Politics" class="sociallink">
-            <img src="images/twitter.png" alt="209 Politics Twitter" id="twitter" class="socialmedia">
+            <div class="socialimgcontainer" id="twittercontainer">
+              <img src="images/twitter.png" alt="209 Politics Twitter" id="twitter" class="socialmedia">
+            </div>
           </a>
           <a href="https://www.instagram.com/209.politics/" class="sociallink">
-            <img src="images/instagram.jpeg" alt="209 Politics Instagram" id="instagram" class="socialmedia">
+            <div class="socialimgcontainer" id="instagramcontainer">
+              <img src="images/instagram.jpeg" alt="209 Politics Instagram" id="instagram" class="socialmedia">
+            </div>
           </a>
           <a href="https://www.facebook.com/209-Politics-115850523551245/" class="sociallink">
-            <img src="images/facebook.png" alt="209 Politics Facebook" id="facebook" class="socialmedia">
+            <div class="socialimgcontainer" id="facebookcontainer">
+              <img src="images/facebook.png" alt="209 Politics Facebook" id="facebook" class="socialmedia">
+            </div>
           </a>
         </div>
       </div>
@@ -55,15 +62,37 @@
       </div>
       <div id="leftpanel">
         <div id="mainstorycontainer" class="mainstory">
-          <a href="2020/08/07/stockton-unified-board-filing.html" id="mainstorylink" class="mainstory">
+          <a href="2020/08/09/woodbridge-fire-property-tax.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
-              <img src="2020/08/07/stockton-unified-offices.jpg" alt="Offices of Stockton Unified School District, which has three open board seats this election year." id="mainstorycover" class="mainstory">
+              <img src="2020/08/09/woodbridge-fire-truck.jpg" alt="San Joaquin County Superior Court, which resumed in-person operations on Friday." id="mainstorycover" class="mainstory">
             </div>
-            <p id="mainstoryheadline" class="mainstory headline">Crowded Candidate Field for All Three Open Stockton Unified Board Seats</p>
-            <p id="mainstorydate" class="mainstory articledate">August 7, 2020</p>
+            <h1 id="mainstoryheadline" class="mainstory headline">Woodbridge Fire District Seeks Property Tax to Maintain Services</h1>
+            <p id="mainstorydate" class="mainstory articledate">August 9, 2020</p>
           </a>
         </div>
         <br>
+        <div id="sjcourtreopenscontainer" class="sjcourtreopens storycontainer">
+          <a href="2020/08/08/san-joaquin-superior-court-reopens.html" id="sjcourtreopenslink" class="sjcourtreopens storylink">
+            <div id="sjcourtreopensimgcontainer" class="sjcourtreopens storyimgcontainer">
+              <img src="2020/08/08/san-joaquin-superior-court.jpg" alt="San Joaquin County Superior Court, which resumed in-person operations on Friday." id="sjcourtreopensimg" class="sjcourtreopens storyimg">
+            </div>
+            <div id="sjcourtreopenstextcontainer" class="sjcourtreopens storytextcontainer">
+              <p id="sjcourtreopensheadline" class="mainstory headline storyheadline">San Joaquin County Superior Court Resumes In-Person Operations</p>
+              <p id="sjcourtreopensdate" class="sjcourtreopens articledate">August 8, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="susdfilingcontainer" class="susdfiling storycontainer standardcontainer">
+          <a href="2020/08/07/stockton-unified-board-filing.html" id="susdfilinglink" class="susdfiling storylink">
+            <div id="susdfilingimgcontainer" class="susdfiling storyimgcontainer standardimg">
+              <img src="2020/08/07/stockton-unified-offices.jpg" alt="Offices of Stockton Unified School District, which has three open board seats this election year." id="susdfilingimg" class="susdfiling storyimg">
+            </div>
+            <div id="susdfilingtextcontainer" class="susdfiling storytextcontainer standardtext">
+              <p id="susdfilingheadline" class="mainstory headline storyheadline">Crowded Candidate Field for All Three Open Stockton Unified Board Seats</p>
+              <p id="susdfilingdate" class="susdfiling articledate">August 7, 2020</p>
+            </div>
+          </a>
+        </div>
         <div id="musdrepairtaxcontainer" class="musdrepairtax storycontainer standardcontainer">
           <a href="2020/08/06/manteca-unified-repairs-tax.html" id="musdrepairtaxlink" class="musdrepairtax storylink">
             <div id="musdrepairtaximgcontainer" class="musdrepairtax storyimgcontainer standardimg">
@@ -108,17 +137,6 @@
             </div>
           </a>
         </div>
-        <div id="riverislandsbantacontainer" class="riverislandsbanta storycontainer standardcontainer">
-          <a href="2020/08/03/banta-river-islands-district.html" id="riverislandsbantalink" class="riverislandsbanta storylink">
-            <div id="riverislandsbantaimgcontainer" class="riverislandsbanta storyimgcontainer standardimg">
-              <img src="2020/08/03/river-islands.jpg" alt="The I-5 entrance to River Islands" id="riverislandsbantaimg" class="riverislandsbanta storyimg">
-            </div>
-            <div id="riverislandsbantatextcontainer" class="riverislandsbanta storytextcontainer standardtext">
-              <p id="riverislandsbantaheadline" class="mainstory headline storyheadline">Banta Elementary School District May Become K-12 if Approved by Voters</p>
-              <p id="riverislandsbantadate" class="riverislandsbanta articledate">August 3, 2020</p>
-            </div>
-          </a>
-        </div>
       </div>
       <div id="rightpanel">
         <div id="covidcontainer">
@@ -129,6 +147,17 @@
           <p id="datacredit">Data and visuals courtesy of <a
             href="https://covid19.ca.gov/data-and-tools/"
             id="datacredita">covid19.ca.gov/data-and-tools/</a></p>
+        </div>
+        <div id="riverislandsbantacontainer" class="riverislandsbanta storycontainer standardcontainer">
+          <a href="2020/08/03/banta-river-islands-district.html" id="riverislandsbantalink" class="riverislandsbanta storylink">
+            <div id="riverislandsbantaimgcontainer" class="riverislandsbanta storyimgcontainer standardimg">
+              <img src="2020/08/03/river-islands.jpg" alt="The I-5 entrance to River Islands" id="riverislandsbantaimg" class="riverislandsbanta storyimg">
+            </div>
+            <div id="riverislandsbantatextcontainer" class="riverislandsbanta storytextcontainer standardtext">
+              <p id="riverislandsbantaheadline" class="mainstory headline storyheadline">Banta Elementary School District May Become K-12 if Approved by Voters</p>
+              <p id="riverislandsbantadate" class="riverislandsbanta articledate">August 3, 2020</p>
+            </div>
+          </a>
         </div>
         <div id="mantecasalestaxcontainer" class="mantecasalestax storycontainer">
           <a href="2020/08/01/manteca-sales-tax-hike.html" id="mantecasalestaxlink" class="mantecasalestax storylink">
