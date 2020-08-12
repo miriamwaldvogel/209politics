@@ -68,42 +68,6 @@
   #sjcourtreopenscontainer{
     height: 200px;
   }
-  #sanjoaquincannabisimgcontainer{
-    width: 30%;
-  }
-  #sanjoaquincannabistextcontainer{
-    width: 70%;
-  }
-  #sanjoaquincannabiscontainer{
-    height: 180px;
-  }
-  #mantecasalestaximgcontainer{
-    width: 30%;
-  }
-  #mantecasalestaxtextcontainer{
-    width: 70%;
-  }
-  #mantecasalestaxcontainer{
-    height: 210px;
-  }
-  #stocktondacontainer{
-    height: 200px;
-  }
-  #stocktondaimgcontainer{
-    width: 20%;
-  }
-  #stocktondatextcontainer{
-    width: 80%;
-  }
-  #stocktonfireimgcontainer{
-    width: 35%
-  }
-  #stocktonfiretextcontainer{
-    width: 65%;
-  }
-  #stocktonfirecontainer{
-    height: 150px;
-  }
 }
 #content{
   max-width: 1200px;
@@ -206,15 +170,15 @@ a{
   font-size: 27px;
   text-align: center;
 }
-#covidcontainer{
-  width: 100%;
-  height: 800px;
-}
-#covidtitle{
+.sectiontitle{
   font-size: 20px;
   width: fit-content;
   margin: auto;
   padding-top: 10px;
+}
+#covidcontainer{
+  width: 100%;
+  height: 800px;
 }
 #coviddatacontainer{
   height: 100%;
@@ -251,6 +215,9 @@ a{
   width: 99%;
   padding-top: 10px;
   border-top: 3px double #BDBFC9;
+}
+.smallstory{
+  height: 200px;
 }
 .storyimgcontainer{
   height: fit-content;

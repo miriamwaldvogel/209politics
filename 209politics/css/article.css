@@ -29,6 +29,9 @@ p{
 #infocontainer{
   text-align: center;
 }
+.time{
+  font-size: 15px;
+}
 #time{
   font-size: 15px;
 }
