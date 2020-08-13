@@ -54,6 +54,12 @@ p{
 .standardcontainer{
   height: 180px;
 }
+.smallimg{
+  width: 25%;
+}
+.smalltext{
+  width: 75%;
+}
 #sjcourtreopensimgcontainer{
   width: 25%;
 }
