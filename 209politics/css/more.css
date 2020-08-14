@@ -1,0 +1,31 @@
+#more{
+  width: 100%;
+  border-top: 3px double #BDBFC9;
+}
+#moretitle{
+  font-family: "Rubik";
+  font-size: 25px;
+  margin-top: 10px;
+}
+.storycontainer{
+  width: 30%;
+  height: 200px;
+  display: inline-block;
+}
+.storyimg{
+  width: 100%;
+  height: 100%;
+}
+.headline{
+  margin-top: 10px;
+  color: #000000;
+}
+.storylink{
+  text-decoration: none;
+}
+.articledate{
+  color: #000000;
+}
+.storytextcontainer{
+  text-align: center;
+}

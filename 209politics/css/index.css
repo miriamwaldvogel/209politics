@@ -59,6 +59,12 @@
     width: 43%;
     float: right;
   }
+  #luntaoconflictimgcontainer{
+    width: 30%;
+  }
+  #luntaoconflicttextcontainer{
+    width: 70%;
+  }
   #sjcourtreopensimgcontainer{
     width: 30%;
   }
@@ -162,7 +168,6 @@ a{
   display: inline-block;
 }
 #mainstoryimgcontainer{
-  width: 50%;
   margin: auto;
 }
 #mainstoryimg{
