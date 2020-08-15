@@ -9,107 +9,152 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-08-11T00:43:22+00:00</lastmod>
+  <lastmod>2020-08-14T03:35:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest.html</loc>
-  <lastmod>2020-08-11T00:23:14+00:00</lastmod>
+  <lastmod>2020-08-14T16:54:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections.html</loc>
-  <lastmod>2020-08-11T00:19:49+00:00</lastmod>
+  <lastmod>2020-08-14T17:05:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy.html</loc>
-  <lastmod>2020-08-11T15:10:49+00:00</lastmod>
+  <lastmod>2020-08-14T17:05:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/covid-19.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T17:05:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/contact.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T17:05:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/13/san-joaquin-ballot-measures.html</loc>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/11/stockton-unified-trustee-investigation.html</loc>
+  <lastmod>2020-08-14T17:32:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/13/tracy-measure-t.html</loc>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/11/lodi-unified-board-candidates.html</loc>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/10/delta-college-trustee-candidates.html</loc>
-  <lastmod>2020-08-11T15:10:49+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/09/weston-ranch-teacher-comments.html</loc>
-  <lastmod>2020-08-10T17:20:10+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/09/woodbridge-fire-property-tax.html</loc>
-  <lastmod>2020-08-09T20:34:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/08/san-joaquin-superior-court-reopens.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
-  <lastmod>2020-08-09T18:43:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/04/federal-reservoir-funding.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/06/manteca-unified-repairs-tax.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/02/tracy-valleylink-development.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/03/banta-river-islands-district.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/01/manteca-sales-tax-hike.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/08/13/san-joaquin-ballot-proposals.html</loc>
+  <lastmod>2020-08-14T17:32:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/08/san-joaquin-superior-court-reopens.html</loc>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/08/05/san-joaquin-cannabis-tax.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/04/federal-reservoir-funding.html</loc>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/02/tracy-cannabis-tax.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/07/31/san-joaquin-da-fines.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/07/29/stockton-fire-department-aid.html</loc>
-  <lastmod>2020-08-08T23:52:14+00:00</lastmod>
+  <lastmod>2020-08-14T20:27:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-08-11T00:43:22+00:00</lastmod>
+  <lastmod>2020-08-14T03:35:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/02/covid-19.html</loc>
+  <lastmod>2020-08-14T17:32:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/02/contact.html</loc>
+  <lastmod>2020-08-14T17:32:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/03/covid-19.html</loc>
+  <lastmod>2020-08-14T17:32:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/03/contact.html</loc>
+  <lastmod>2020-08-14T17:32:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
