@@ -2,9 +2,71 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/error.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
     <title>Error - 209 Politics</title>
   </head>
   <body>
+    <div id="content">
+      <div id="headercontainer">
+        <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
+        <div id="logocontainer">
+          <a href="https://209politics.com/">
+            <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
+          </a>
+        </div>
+      </div>
+      <div id="sectionscontainer" class="sections">
+        <div id="homenavcontainer" class="headernavcontainer">
+          <a href="https://209politics.com/" id="latest" class="section">HOME</a>
+        </div>
+        <div id="latestnavcontainer" class="headernavcontainer">
+          <a href="/latest.html" id="latest" class="section">LATEST</a>
+        </div>
+        <div id="electionsnavcontainer" class="headernavcontainer">
+          <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
+        </div>
+        <div id="policynavcontainer" class="headernavcontainer">
+          <a href="/policy.html" class="section">POLICY</a>
+        </div>
+        <div id="covidnavcontainer" class="headernavcontainer">
+          <a href="/covid-19.html" class="section">COVID-19</a>
+        </div>
+        <div id="contactnavcontainer" class="headernavcontainer">
+          <a href="/contact.html" class="section">CONTACT US</a>
+        </div>
+      </div>
+      <div id="filler"></div>
+      <div id="main">
+        <div id="oopscontainer">
+          <p id="oops">OOPS! WE COULDN'T FIND YOUR PAGE.</p>
+          <a href="https://209politics.com" id="oopslink"><p id="oopshome">Click here to go back home instead.</p>
+          </a>
+        </div>
+        <br>
+      </div>
 
+      <div id="footer">
+        <p id="socialmediafooter">
+          <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
+          <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
+          <a href="https://www.facebook.com/209-Politics-115850523551245/" id="facebookfooter" class="sociallinkfooter">Facebook: 209 Politics</a>
+        </p>
+        <p id="navfooter">
+          <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
+          <a href="/latest.html" id="latestnavfooter" class="navfooter">Latest</a> •
+          <a href="/elections.html" id="electionsnavfooter" class="navfooter">Elections</a> •
+          <a href="/policy.html" id="policynavfooter" class="navfooter">Policy</a> •
+          <a href="/covid-19.html" id="covidnavfooter" class="navfooter">COVID-19</a> •
+          <a href="/contact.html" id="contactnavfooter" class="navfooter">Contact us</a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
