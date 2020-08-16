@@ -59,6 +59,12 @@
     width: 43%;
     float: right;
   }
+  #musdcandidatesimgcontainer{
+    width: 25%;
+  }
+  #musdcandidatestextcontainer{
+    width: 75%;
+  }
   #luntaoconflictimgcontainer{
     width: 30%;
   }
@@ -169,6 +175,7 @@ a{
 }
 #mainstoryimgcontainer{
   margin: auto;
+  width: 75%;
 }
 #mainstoryimg{
   width: 100%;

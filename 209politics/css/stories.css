@@ -60,6 +60,12 @@ p{
 .smalltext{
   width: 75%;
 }
+#musdcandidatesimgcontainer{
+  width: 15%;
+}
+#musdcandidatestextcontainer{
+  width: 85%;
+}
 #sjcourtreopensimgcontainer{
   width: 25%;
 }

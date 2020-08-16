@@ -16,12 +16,22 @@ p{
 .titles{
   font-size: 20px;
 }
-.socialcontainer{
-  width: fit-content;
+.socialmedia{
+  display: inline-block;
 }
 .info{
   margin-left: 10px;
-  float: right;
+  display: inline-block;
+  position: relative;
+}
+#twitterinfo{
+  top: -15px;
+}
+#instagraminfo{
+  top: -20px;
+}
+#facebookinfo{
+  top: -15px;
 }
 #maillink{
   color: blue;
