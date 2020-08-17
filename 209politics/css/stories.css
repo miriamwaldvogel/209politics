@@ -60,6 +60,12 @@ p{
 .smalltext{
   width: 75%;
 }
+#lusdcandsimgcontainer{
+  width: 15%;
+}
+#lusdcandstextcontainer{
+  width: 85%;
+}
 #musdcandidatesimgcontainer{
   width: 15%;
 }
