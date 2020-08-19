@@ -41,3 +41,12 @@ p{
 .subtitle{
   font-size: 20px;
 }
+#more{
+  width: 100%;
+}
+#moretitle{
+  font-family: "Rubik";
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

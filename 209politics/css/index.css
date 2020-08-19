@@ -185,6 +185,14 @@ a{
   font-size: 27px;
   text-align: center;
 }
+.storycontainer:before{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 3px double #BDBFC9;
+}
 .sectiontitle{
   font-size: 20px;
   width: fit-content;
