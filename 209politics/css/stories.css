@@ -1,3 +1,73 @@
+@media only screen and (max-width: 667px){
+  .storyimgcontainer{
+    width: 100%;
+  }
+  .storytextcontainer{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 668px){
+  .standardimg{
+    width: 30%;
+  }
+  .standardtext{
+    width: 70%;
+  }
+  .smallimg{
+    width: 20%;
+  }
+  .smalltext{
+    width: 80%;
+  }
+  #lusdcandsimgcontainer{
+    width: 15%;
+  }
+  #lusdcandstextcontainer{
+    width: 85%;
+  }
+  #musdcandidatesimgcontainer{
+    width: 15%;
+  }
+  #musdcandidatestextcontainer{
+    width: 85%;
+  }
+  #sjcourtreopensimgcontainer{
+    width: 25%;
+  }
+  #sjcourtreopenstextcontainer{
+    width: 75%;
+  }
+  #sanjoaquincannabisimgcontainer{
+    width: 25%;
+  }
+  #sanjoaquincannabistextcontainer{
+    width: 75%;
+  }
+  #tracycannabiscontainer{
+    height: 210px;
+  }
+  #mantecasalestaximgcontainer{
+    width: 20%;
+  }
+  #mantecasalestaxtextcontainer{
+    width: 80%;
+  }
+  #mantecasalestaxcontainer{
+    height: 210px;
+  }
+  #stocktondacontainer{
+    height: 200px;
+  }
+  #stocktondaimgcontainer{
+    width: 15%;
+  }
+  #stocktondatextcontainer{
+    width: 85%;
+  }
+  #stocktonfirecontainer{
+    height: 150px;
+  }
+}
 #titlecontainer{
   width: 100%;
   border-bottom: 2px solid #BDBFC9;
@@ -45,66 +115,6 @@ p{
 .articledate{
   font-size: 20px;
 }
-.standardimg{
-  width: 30%;
-}
-.standardtext{
-  width: 70%;
-}
 .standardcontainer{
   height: 180px;
-}
-.smallimg{
-  width: 20%;
-}
-.smalltext{
-  width: 80%;
-}
-#lusdcandsimgcontainer{
-  width: 15%;
-}
-#lusdcandstextcontainer{
-  width: 85%;
-}
-#musdcandidatesimgcontainer{
-  width: 15%;
-}
-#musdcandidatestextcontainer{
-  width: 85%;
-}
-#sjcourtreopensimgcontainer{
-  width: 25%;
-}
-#sjcourtreopenstextcontainer{
-  width: 75%;
-}
-#sanjoaquincannabisimgcontainer{
-  width: 25%;
-}
-#sanjoaquincannabistextcontainer{
-  width: 75%;
-}
-#tracycannabiscontainer{
-  height: 210px;
-}
-#mantecasalestaximgcontainer{
-  width: 20%;
-}
-#mantecasalestaxtextcontainer{
-  width: 80%;
-}
-#mantecasalestaxcontainer{
-  height: 210px;
-}
-#stocktondacontainer{
-  height: 200px;
-}
-#stocktondaimgcontainer{
-  width: 15%;
-}
-#stocktondatextcontainer{
-  width: 85%;
-}
-#stocktonfirecontainer{
-  height: 150px;
 }

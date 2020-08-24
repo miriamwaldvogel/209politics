@@ -19,6 +19,13 @@
     float: right;
     margin: 0;
   }
+  #navcontainer{
+    position:relative;
+    left: 10%;
+  }
+  .sectioncontainers{
+    display:inline-flex;
+  }
   .storyimgcontainer{
     width: 100%;
   }
@@ -87,8 +94,77 @@
     height: 200px;
   }
 }
-@media only screen and (max-width: 390px){
-
+@media only screen and (max-width: 388px){
+  #sections{
+    height: 75px;
+  }
+  #latestnavcontainer{
+    position: relative;
+    right: 20%;
+  }
+  #electionsnavcontainer{
+    position: relative;
+    bottom: 24.8px;
+    left: 25%;
+  }
+  #policynavcontainer{
+    position: relative;
+    bottom: 24.8px;
+    right: 15%;
+  }
+  #covidnavcontainer{
+    position: absolute;
+    top: 24.8px;
+    right: 20%;
+  }
+  #contactnavcontainer{
+    position: relative;
+    bottom: 24.8px;
+    right: 6%;
+  }
+}
+@media only screen and (min-width: 511px) and (max-width: 667px){
+  #sections{
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 884px){
+  #latestnavcontainer{
+    position: relative;
+    left: 10%;
+  }
+  #electionsnavcontainer{
+    position: relative;
+    left: 10%;
+  }
+  #policynavcontainer{
+    position: relative;
+    left: 10%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 884px){
+  #covidnavcontainer{
+    position: relative;
+    left: 10%;
+  }
+}
+@media only screen and (min-width: 885px) and (max-width: 1063px){
+  #latestnavcontainer{
+    position: relative;
+    left: 5%;
+  }
+  #electionsnavcontainer{
+    position: relative;
+    left: 5%;
+  }
+  #policynavcontainer{
+    position: relative;
+    left: 5%;
+  }
+  #covidnavcontainer{
+    position: relative;
+    left: 5%;
+  }
 }
 #content{
   max-width: 1200px;
