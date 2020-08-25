@@ -8,9 +8,11 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="tracy-special-election.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="tracy-special-election.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,15 +20,15 @@
       gtag('js', new Date());
       gtag('config', 'UA-174685284-1');
       </script>
-    <title>- 209 Politics</title>
+    <title>Tracy Special Election - 209 Politics</title>
   </head>
-  <body>
+  <body onresize="votes();">
     <div id="content">
       <div id="headercontainer">
         <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
         <div id="logocontainer">
           <a href="https://209politics.com/">
-            <img src="images/favicon-horizontal.png" alt="209 Politics" id="logo">
+            <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
           </a>
         </div>
       </div>
@@ -52,7 +54,38 @@
       </div>
       <div id="filler"></div>
       <div id="titlecontainer">
-        <h1 id="title"></h1>
+        <h1 id="title">TRACY SPECIAL ELECTION</h1>
+        <p id="description">Today is Tracy's special election on Measure T, which proposes to add 180 acres to the city to allow utility connections for a housing development by Ponderosa Homes. Read our coverage of the measure <a href="/2020/08/13/tracy-measure-t.html" id="measuretlink">here</a>. You can also follow the results on any of our social medias.</p>
+        <div id="socialmediacontainer">
+          <a href="https://twitter.com/209Politics" class="sociallink">
+            <div class="socialimgcontainer" id="twittercontainer">
+              <img src="/images/twitter.png" alt="209 Politics Twitter" id="twitter" class="socialmedia">
+            </div>
+          </a>
+          <a href="https://www.instagram.com/209.politics/" class="sociallink">
+            <div class="socialimgcontainer" id="instagramcontainer">
+              <img src="/images/instagram.jpeg" alt="209 Politics Instagram" id="instagram" class="socialmedia">
+            </div>
+          </a>
+          <a href="https://www.facebook.com/209-Politics-115850523551245/" class="sociallink">
+            <div class="socialimgcontainer" id="facebookcontainer">
+              <img src="/images/facebook.png" alt="209 Politics Facebook" id="facebook" class="socialmedia">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="main">
+        <p id="update">Last updated: </p>
+        <div id="resultscontainer">
+          <p id="yes" class="score">1</p>
+          <div id="yescontainer" class="bar"></div>
+          <p id="no" class="score">3</p>
+          <div id="nocontainer" class="bar"></div>
+        </div>
+        <div id="otherinfo">
+          <p id="total">Total turnout: </p>
+          <p id="precincts">Precincts reporting: 0%</p>
+        </div>
       </div>
     </div>
   </body>
