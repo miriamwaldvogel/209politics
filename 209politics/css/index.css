@@ -38,6 +38,9 @@
   #rightpanel{
     width: 100%;
   }
+  #ballotproposalscontainer{
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 668px){
   #datecontainer{
@@ -55,8 +58,11 @@
   .standardtext{
     width: 60%;
   }
-  .standardcontainer{
-    height: 250px;
+  .smallimg{
+    width: 30%;
+  }
+  .smalltext{
+    width: 70%;
   }
   #leftpanel{
     width: 55%;
@@ -66,17 +72,14 @@
     width: 43%;
     float: right;
   }
-  #lusdcandsimgcontainer{
-    width: 30%;
+  #ballotproposalscontainer{
+    width: 67%;
+    float: left;
   }
-  #lusdcandstextcontainer{
-    width: 70%;
-  }
-  #musdcandidatesimgcontainer{
-    width: 25%;
-  }
-  #musdcandidatestextcontainer{
-    width: 75%;
+  #schoolboardscontainer{
+    width: 32%;
+    float: right;
+    border-left: 3px double #BDBFC9;
   }
   #luntaoconflictimgcontainer{
     width: 30%;
@@ -89,9 +92,6 @@
   }
   #sjcourtreopenstextcontainer{
     width: 70%;
-  }
-  #sjcourtreopenscontainer{
-    height: 200px;
   }
 }
 @media only screen and (max-width: 388px){
@@ -247,8 +247,24 @@ a{
   border-right: 3px double #BDBFC9;
   margin-bottom: 10px;
 }
+#leftpanel:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 10px;
+    border-bottom: 3px double #BDBFC9;
+}
 #rightpanel{
   height: fit-content;
+}
+#rightpanel:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 10px;
+    border-bottom: 3px double #BDBFC9;
 }
 #mainstorycontainer{
   width: 100%;
@@ -267,28 +283,18 @@ a{
   font-size: 27px;
   text-align: center;
 }
-.storycontainer:before{
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 99%;
-  padding-top: 10px;
-  border-top: 3px double #BDBFC9;
-}
 .sectiontitle{
-  font-size: 20px;
+  font-size: 35px;
   width: fit-content;
   margin: auto;
   padding-top: 10px;
 }
 #covidcontainer{
   width: 100%;
-  height: 800px;
+  height: fit-content;
 }
 #coviddatacontainer{
-  height: 100%;
   overflow: hidden;
-  height: 700px;
 }
 #coviddata{
   display: block;
@@ -321,8 +327,13 @@ a{
   padding-top: 10px;
   border-top: 3px double #BDBFC9;
 }
-.smallstory{
-  height: 200px;
+.littlestory{
+  width: 49%;
+  display: inline-block;
+}
+.schoolstory{
+  width: 100%;
+  display: inline-block;
 }
 .storyimgcontainer{
   height: fit-content;
@@ -339,4 +350,11 @@ a{
 .storyheadline{
   font-size: 20px;
   color: #000000;
+}
+#belowcontent{
+  display: inline-block;
+  width: 100%;
+}
+#tracycannabiscontainer{
+  margin: auto;
 }
