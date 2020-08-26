@@ -1,6 +1,10 @@
 #description{
   font-family: "Libre Baskerville";
 }
+#caveat{
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}
 #measuretlink{
   text-decoration: none;
 }
