@@ -8,7 +8,7 @@
   background-color: #FFFFFF;
 }
 #logocontainer{
-  width: 250px;
+  width: 240px;
   margin: auto;
 }
 #logo{
@@ -20,7 +20,10 @@
   background-color: #FFFFFF;
   font-size: 30px;
   height: 40px;
+  width: 40px;
   cursor: pointer;
+  display: inline-block;
+  position: absolute;
 }
 #sectionscontainer{
   display: none;

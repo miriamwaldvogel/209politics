@@ -8,7 +8,7 @@ p{
   font-weight: bold;
 }
 #paragraphcontainer{
-  min-width: 400px;
+  min-width: 290px;
   width: 80%;
   margin: auto;
   border-left: 4px groove #BDBFC9;
@@ -49,4 +49,7 @@ p{
   font-size: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#img1container{
+  min-width: 310px;
 }
