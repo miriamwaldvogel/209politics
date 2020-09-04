@@ -19,6 +19,9 @@
   .smalltext{
     width: 80%;
   }
+  .storycontainer{
+    height: 250px;
+  }
   #lusdcandsimgcontainer{
     width: 15%;
   }

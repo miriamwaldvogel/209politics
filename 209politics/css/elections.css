@@ -1,5 +1,5 @@
 #titlecontainer{
-  height: 250px;
+  height: fit-content;
 }
 #electionslisttitle{
   font-size: 18px;
@@ -21,4 +21,7 @@
   float: right;
   color: #000000;
   font-size: 18px;
+}
+#littlelink{
+  color: blue;
 }

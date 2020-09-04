@@ -8,9 +8,12 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="november-3-polling-places.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
     <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="electiondistance.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,7 +21,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-174685284-1');
       </script>
-    <title>- 209 Politics</title>
+    <title>San Joaquin County Voter Centers - 209 Politics</title>
   </head>
   <body>
     <div id="content">
@@ -51,8 +54,35 @@
         </div>
       </div>
       <div id="filler"></div>
-      <div id="titlecontainer">
-        <h1 id="title"></h1>
+      <div id="main">
+        <h1 id="title">VOTER CENTERS AND BALLOT DROP-OFF LOCATIONS FOR SAN JOAQUIN COUNTY</h1>
+        <div id="registercontainer">
+          <a href="https://registertovote.ca.gov/" id="registerlink" target="_blank">
+            <div id="registerimgcontainer">
+              <img src="/images/registertovote.jpg" alt="California state flag saying VOTE CALIFORNIA" id="registerimg">
+            </div>
+            <p id="registertovote">Click here to register to vote!</p>
+          </a>
+        </div>
+        <div id="info">The deadline to register to vote online is October 19. The November 3 election is in <p id="bolded"></p> These are technically only proposed locations.</div>
+        <div id="mapcontainer">
+          <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1J_HNqjdPfXQTv4d2ToktxykkhhWFKBzA" id="map"></iframe>
+        </div>
+      </div>
+      <div id="footer">
+        <p id="socialmediafooter">
+          <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
+          <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
+          <a href="https://www.facebook.com/209-Politics-115850523551245/" id="facebookfooter" class="sociallinkfooter">Facebook: 209 Politics</a>
+        </p>
+        <p id="navfooter">
+          <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
+          <a href="/latest.html" id="latestnavfooter" class="navfooter">Latest</a> •
+          <a href="/elections.html" id="electionsnavfooter" class="navfooter">Elections</a> •
+          <a href="/policy.html" id="policynavfooter" class="navfooter">Policy</a> •
+          <a href="/covid-19.html" id="covidnavfooter" class="navfooter">COVID-19</a> •
+          <a href="/contact.html" id="contactnavfooter" class="navfooter">Contact us</a>
+        </p>
       </div>
     </div>
   </body>
