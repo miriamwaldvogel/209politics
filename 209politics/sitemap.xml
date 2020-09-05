@@ -9,27 +9,27 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-09-02T04:09:11+00:00</lastmod>
+  <lastmod>2020-09-05T03:47:56+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest.html</loc>
-  <lastmod>2020-09-02T04:09:11+00:00</lastmod>
+  <lastmod>2020-09-05T03:47:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections.html</loc>
-  <lastmod>2020-09-02T04:09:10+00:00</lastmod>
+  <lastmod>2020-09-05T03:47:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy.html</loc>
-  <lastmod>2020-08-29T04:08:13+00:00</lastmod>
+  <lastmod>2020-09-03T00:01:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/covid-19.html</loc>
-  <lastmod>2020-08-29T04:08:13+00:00</lastmod>
+  <lastmod>2020-09-02T16:25:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -38,23 +38,23 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/09/04/manteca-city-council-candidates.html</loc>
+  <lastmod>2020-09-05T03:47:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/09/03/tracy-city-council-candidates.html</loc>
+  <lastmod>2020-09-04T04:02:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/09/02/tracy-homeless-temporary-housing.html</loc>
+  <lastmod>2020-09-03T00:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/09/01/lathrop-city-council-candidates.html</loc>
-  <lastmod>2020-09-02T04:09:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/31/vargas-eggman-endorsement.html</loc>
-  <lastmod>2020-09-01T03:34:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/30/ripon-city-council-candidates.html</loc>
-  <lastmod>2020-08-31T18:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/29/san-joaquin-supervisors-large-donations.html</loc>
-  <lastmod>2020-08-29T20:55:36+00:00</lastmod>
+  <lastmod>2020-09-02T20:17:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -133,13 +133,28 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/08/31/vargas-eggman-endorsement.html</loc>
+  <lastmod>2020-09-01T03:34:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/30/ripon-city-council-candidates.html</loc>
+  <lastmod>2020-08-31T18:50:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/29/san-joaquin-supervisors-large-donations.html</loc>
+  <lastmod>2020-08-29T20:55:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/08/28/california-new-covid-guidelines.html</loc>
   <lastmod>2020-08-29T17:18:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/08/27/lodi-city-council-candidates.html</loc>
-  <lastmod>2020-08-29T02:31:33+00:00</lastmod>
+  <lastmod>2020-09-04T18:06:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -204,12 +219,17 @@
 </url>
 <url>
   <loc>https://209politics.com/2020/07/29/stockton-fire-department-aid.html</loc>
-  <lastmod>2020-08-19T20:26:23+00:00</lastmod>
+  <lastmod>2020-09-03T17:44:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/graphics/november-3-voting-centers.html</loc>
+  <lastmod>2020-09-05T03:47:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-09-02T04:09:11+00:00</lastmod>
+  <lastmod>2020-09-05T03:47:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
