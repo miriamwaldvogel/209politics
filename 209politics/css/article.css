@@ -25,6 +25,7 @@ p{
 }
 .externallink{
   text-decoration: none;
+  color: blue;
 }
 #infocontainer{
   text-align: center;
