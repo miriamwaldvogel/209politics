@@ -273,7 +273,7 @@ a{
 }
 #mainstoryimgcontainer{
   margin: auto;
-  width: 30%;
+  width: 60%;
 }
 #mainstoryimg{
   width: 100%;
@@ -288,6 +288,7 @@ a{
   width: fit-content;
   margin: auto;
   padding-top: 10px;
+  text-align: center;
 }
 #covidcontainer{
   width: 100%;
