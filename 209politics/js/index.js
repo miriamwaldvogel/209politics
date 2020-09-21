@@ -12,8 +12,9 @@ function resize(){
       c[j].style.height = (Math.max(t[j].offsetHeight, i[j].offsetHeight)+20)+'px';
       h += c[j].offsetHeight;
     }
-    document.getElementById("covidcontainer").style.height = h+document.getElementById("mainstorycontainer").offsetHeight+'px';
-    document.getElementById("coviddatacontainer").style.height = h+document.getElementById("mainstorycontainer").offsetHeight-100+'px';
+    document.getElementById("covidcontainer").style.height = +document.getElementById("leftpanel").offsetHeight-20+'px';
+    document.getElementById("coviddatacontainer").style.height = document.getElementById("leftpanel").offsetHeight-150+'px';
+    document.getElementById("rightpanel").style.height =document.getElementById("leftpanel").offsetHeight+'px';
   }
   var l = document.getElementsByClassName("leftballot");
   var r = document.getElementsByClassName("rightballot");
