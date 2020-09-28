@@ -1,0 +1,75 @@
+#title{
+  font-family: "Rubik";
+  font-size: 50px;
+}
+#links{
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+}
+.link{
+  text-decoration: none;
+  color: #000000;
+}
+.candtitle{
+  font-family: "Rubik";
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  border-bottom: 5px groove #8091A6;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.candimgcontainer{
+  width: 50px;
+  display: inline-block;
+}
+.candimg{
+  width: 100%;
+  border-radius: 50%;
+}
+.candtextcontainer{
+  display: inline-block;
+  position: relative;
+  bottom: 7px;
+  margin-left: 5px;
+}
+.candtext{
+  color: #000000;
+  font-family: "Libre Baskerville";
+  margin-bottom: 3px;
+}
+.canddistrict{
+  color: #000000;
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  margin-top: 0px;
+}
+.candcontainer{
+  width: fit-content;
+  margin: auto;
+}
+.financeref{
+  text-decoration: none;
+}
+.sectioncontainer{
+  width: fit-content;
+  display: inline-grid;
+  position: relative;
+  top: 0;
+  margin-right: 20px;
+}
+.smalltitle{
+  margin: auto;
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 25px;
+}
+.smallcontainer{
+  display: inline-grid;
+  margin-right: 20px;
+}
+.subcontainer{
+  width: 100%;
+}
