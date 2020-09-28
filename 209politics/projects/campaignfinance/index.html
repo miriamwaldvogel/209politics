@@ -1,70 +1,563 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@209politics">
-    <meta name="twitter:title" content="Campaign Finance Tracker - 209 Politics">
-    <meta name="twitter:description" content="Browse campaign finance data for San Joaquin campaigns. See where or who their fundraising is coming from, and how they stack up against one another.">
-    <meta name="twitter:image" content="https://209politics.com/">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/global.css">
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="/js/header.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-174685284-1');
-      </script>
-    <title>Campaign Finance Tracker - 209 Politics</title>
-  </head>
-  <body>
-    <div id="content">
-      <div id="headercontainer">
-        <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
-        <div id="logocontainer">
-          <a href="https://209politics.com/">
-            <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@209politics">
+  <meta name="twitter:title" content="Campaign Finance Tracker - 209 Politics">
+  <meta name="twitter:description" content="Browse campaign finance data for San Joaquin campaigns. See where or who their fundraising is coming from, and how they stack up against one another.">
+  <meta name="twitter:image" content="https://209politics.com/">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+  <script type="text/javascript" src="/js/header.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-174685284-1');
+  </script>
+  <title>Campaign Finance Tracker - 209 Politics</title>
+</head>
+
+<body>
+  <div id="content">
+    <div id="headercontainer">
+      <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
+      <div id="logocontainer">
+        <a href="https://209politics.com/">
+          <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
+        </a>
+      </div>
+    </div>
+    <div id="sectionscontainer" class="sections">
+      <div id="homenavcontainer" class="headernavcontainer">
+        <a href="https://209politics.com/" id="latest" class="section">HOME</a>
+      </div>
+      <div id="latestnavcontainer" class="headernavcontainer">
+        <a href="/latest.html" id="latest" class="section">LATEST</a>
+      </div>
+      <div id="electionsnavcontainer" class="headernavcontainer">
+        <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
+      </div>
+      <div id="policynavcontainer" class="headernavcontainer">
+        <a href="/policy.html" class="section">POLICY</a>
+      </div>
+      <div id="covidnavcontainer" class="headernavcontainer">
+        <a href="/covid-19.html" class="section">COVID-19</a>
+      </div>
+      <div id="contactnavcontainer" class="headernavcontainer">
+        <a href="/contact.html" class="section">CONTACT US</a>
+      </div>
+    </div>
+    <div id="filler"></div>
+    <div id="titlecontainer">
+      <h1 id="title">CAMPAIGN FINANCE TRACKER</h1>
+      <p id="links">Jump to: <a href="#housetitle" class="link">Federal races</a> • <a href="#statetitle" class="link">State races</a> • <a href="#countytitle" class="link">County races</a> • <a href="#mayorstitle" class="link">Mayors</a> • </p>
+    </div>
+    <div id="candidates">
+      <div id="housecontainer" class="sectioncontainer">
+        <p id="housetitle" class="candtitle">FEDERAL</p>
+        <div class="candcontainer">
+          <a href="federal/jerry-mcnerney.html" class="financeref">
+            <div class="candimgcontainer">
+              <img src="images/federal/jerry-mcnerney.jpg" alt="Jerry McNerney" class="candimg">
+            </div>
+            <div class="candtextcontainer">
+              <p class="candtext">Jerry McNerney</p>
+              <p class="canddistrict">House District 9</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="federal/antonio-amador.html" class="financeref">
+            <div class="candimgcontainer">
+              <img src="images/federal/antonio-amador.jpg" alt="Antonio Amador" class="candimg">
+            </div>
+            <div class="candtextcontainer">
+              <p class="candtext">Antonio Amador</p>
+              <p class="canddistrict">House District 9</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="federal/josh-harder.html" class="financeref">
+            <div class="candimgcontainer">
+              <img src="images/federal/josh-harder.jpg" alt="Josh Harder" class="candimg">
+            </div>
+            <div class="candtextcontainer">
+              <p class="candtext">Josh Harder</p>
+              <p class="canddistrict">House District 10</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="federal/ted-howze.html" class="financeref">
+            <div class="candimgcontainer">
+              <img src="images/federal/ted-howze.jpeg" alt="Ted Howze" class="candimg">
+            </div>
+            <div class="candtextcontainer">
+              <p class="candtext">Ted Howze</p>
+              <p class="canddistrict">House District 10</p>
+            </div>
           </a>
         </div>
       </div>
-      <div id="sectionscontainer" class="sections">
-        <div id="homenavcontainer" class="headernavcontainer">
-          <a href="https://209politics.com/" id="latest" class="section">HOME</a>
+      <div id="statecontainer" class=sectioncontainer>
+        <p id="statetitle" class="candtitle">STATE</p>
+        <div class="candcontainer">
+          <a href="state/susan-eggman.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/susan-eggman.jpg" alt="Susan Eggman" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Susan Eggman</p>
+              <p class="canddistrict">State Senate District 5</p>
+            </div>
+          </a>
         </div>
-        <div id="latestnavcontainer" class="headernavcontainer">
-          <a href="/latest.html" id="latest" class="section">LATEST</a>
+        <div class="candcontainer">
+          <a href="state/jim-ridenour.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/jim-ridenour.jpg" alt="Jim Ridenour" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Jim Ridenour</p>
+              <p class="canddistrict">State Senate District 5</p>
+            </div>
+          </a>
         </div>
-        <div id="electionsnavcontainer" class="headernavcontainer">
-          <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
+        <div class="candcontainer">
+          <a href="state/jim-cooper.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/jim-cooper.jpg" alt="Jim Cooper" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Jim Cooper</p>
+              <p class="canddistrict">State Assembly District 9</p>
+            </div>
+          </a>
         </div>
-        <div id="policynavcontainer" class="headernavcontainer">
-          <a href="/policy.html" class="section">POLICY</a>
+        <div class="candcontainer">
+          <a href="state/eric-rigard.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/eric-rigard.jpg" alt="Eric Rigard" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Eric Rigard</p>
+              <p class="canddistrict">State Assembly District 9</p>
+            </div>
+          </a>
         </div>
-        <div id="covidnavcontainer" class="headernavcontainer">
-          <a href="/covid-19.html" class="section">COVID-19</a>
+        <div class="candcontainer">
+          <a href="state/heath-flora.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/heath-flora.jpeg" alt="Heath Flora" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Heath Flora</p>
+              <p class="canddistrict">State Assembly District 12</p>
+            </div>
+          </a>
         </div>
-        <div id="contactnavcontainer" class="headernavcontainer">
-          <a href="/contact.html" class="section">CONTACT US</a>
+        <div class="candcontainer">
+          <a href="state/paul-akinjo.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/paul-akinjo.png" alt="Paul Akinjo" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Paul Akinjo</p>
+              <p class="canddistrict">State Assembly District 12</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="state/kathy-miller.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/kathy-miller.jpg" alt="Kathy Miller" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Kathy Miller</p>
+              <p class="canddistrict">State Assembly District 13</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="state/carlos-villapudua.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/state/carlos-villapudua.png" alt="Carlos Villapudua" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Carlos Villapudua</p>
+              <p class="canddistrict">State Assembly District 13</p>
+            </div>
+          </a>
         </div>
       </div>
-      <div id="filler"></div>
-      <div id="titlecontainer">
-        <h1 id="title">CAMPAIGN FINANCE TRACKER</h1>
+      <div id="countycontainer" class="sectioncontainer">
+        <p id="countytitle" class="candtitle">COUNTY</p>
+        <div class="candcontainer">
+          <a href="county/rhodesia-ransom.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/county/rhodesia-ransom.jpg" alt="Rhodesia Ransom" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Rhodesia Ransom</p>
+              <p class="canddistrict">Board of Supervisors District 5</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="county/robert-rickman.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/county/robert-rickman.jpg" alt="Robert Rickman" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Robert Rickman</p>
+              <p class="canddistrict">Board of Supervisors District 5</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="county/jill-fritchen.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/county/jill-fritchen.jpeg" alt="Jill Fritchen" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Jill Fritchen</p>
+              <p class="canddistrict">Board of Education District 3</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="county/douglas-vigil.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/county/douglas-vigil.jpg" alt="Douglas Vigil" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Douglas Vigil</p>
+              <p class="canddistrict">Board of Education District 3</p>
+            </div>
+          </a>
+        </div>
       </div>
-      <div id="candidates">
-        <div id="housecontainer">
-
+      <div id="mayorscontainer" class="sectioncontainer">
+        <p id="mayorstitle" class="candtitle">MAYORS</p>
+        <div class="candcontainer">
+          <a href="mayors/michael-tubbs.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/michael-tubbs.jpg" alt="Michael Tubbs" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Michael Tubbs</p>
+              <p class="canddistrict">Stockton Mayor</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="mayors/kevin-lincoln.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/kevin-lincoln.jpg" alt="Kevin Lincoln" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Kevin Lincoln</p>
+              <p class="canddistrict">Stockton Mayor</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="mayors/dan-arriola.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/dan-arriola.jpg" alt="Dan Arriola" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Dan Arriola</p>
+              <p class="canddistrict">Tracy Mayor</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="mayors/nancy-young.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/nancy-young.jpeg" alt="Nancy Young" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Nancy Young</p>
+              <p class="canddistrict">Tracy Mayor</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="mayors/jass-sangha.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/jass-sangha.jpg" alt="Jass Sangha" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Jass Sangha</p>
+              <p class="canddistrict">Tracy Mayor</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="mayors/abdul-wahid.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/abdul-wahid.jpg" alt="Abdul Wahid" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Abdul Wahid</p>
+              <p class="canddistrict">Tracy Mayor</p>
+            </div>
+          </a>
+        </div>
+        <div class="candcontainer">
+          <a href="mayors/jennifer-bilbrey.html" class="financeref">
+            <div class="candimgcontainer"><img src="images/mayors/jennifer-bilbrey.jpg" alt="Jennifer Bilbrey" class="candimg"></div>
+            <div class="candtextcontainer">
+              <p class="candtext">Jennifer Bilbrey</p>
+              <p class="canddistrict">Tracy Mayor</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="citycouncilscontainer" class="subcontainer">
+        <p id="citycouncilstitle" class="candtitle">CITY COUNCILS</p>
+        <div class="smallcontainer" class="collapsible">
+          <p class="smalltitle">STOCKTON</p>
+          <div class="candcontainer">
+            <a href="citycouncils/kimberly-warmsley.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/kimberly-warmsley.png" alt="Kimberly Warmsley" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Kimberly Warmsley</p>
+                <p class="canddistrict">Stockton City Council District 6</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/gloria-allen.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/gloria-allen.jpg" alt="Gloria Allen" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Gloria Allen</p>
+                <p class="canddistrict">Stockton City Council District 6</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="smallcontainer">
+          <p class="smalltitle">LODI</p>
+          <div class="candcontainer">
+            <a href="citycouncils/nati-bowman.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/nati-bowman.png" alt="Nati Bowman" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Nati Bowman</p>
+                <p class="canddistrict">Lodi City Council District 4</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/joanne-mounce.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/joanne-mounce.jpeg" alt="Joanne Mounce" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Joanne Mounce</p>
+                <p class="canddistrict">Lodi City Council District 4</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/shak-khan.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/shak-khan.png" alt="Shak Khan" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Shak Khan</p>
+                <p class="canddistrict">Lodi City Council District 4</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/ramon-yepez.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/ramon-yepez.png" alt="Ramon Yepez" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Ramon Yepez</p>
+                <p class="canddistrict">Lodi City Council District 4</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/mikey-hothi.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/mikey-hothi.jpeg" alt="Mikey Hothi" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Mikey Hothi</p>
+                <p class="canddistrict">Lodi City Council District 5</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/hector-madrigal.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/hector-madrigal.jpg" alt="Hector Madrigal" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Hector Madrigal</p>
+                <p class="canddistrict">Lodi City Council District 5</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/michael-mcknight.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/michael-mcknight.jpeg" alt="Michael McKnight" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Michael McKnight</p>
+                <p class="canddistrict">Lodi City Council District 5</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="smallcontainer">
+          <p class="smalltitle">MANTECA</p>
+          <div class="candcontainer">
+            <a href="citycouncils/gary-singh.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/gary-singh.jpg" alt="Gary Singh" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Gary Singh</p>
+                <p class="canddistrict">Manteca City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/debby-moorhead.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/debby-moorhead.jpg" alt="Debby Moorhead" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Debby Moorhead</p>
+                <p class="canddistrict">Manteca City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/fred-cunha.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/fred-cunha.jpg" alt="Fred Cunha" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Fred Cunha</p>
+                <p class="canddistrict">Manteca City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/charlie-halford.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/charlie-halford.jpg" alt="Charlie Halford" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Charlie Halford</p>
+                <p class="canddistrict">Manteca City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/david-martin.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/david-martin.jpg" alt="David Martin" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">David Martin</p>
+                <p class="canddistrict">Manteca City Council</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="smallcontainer">
+          <p class="smalltitle">RIPON</p>
+          <div class="candcontainer">
+            <a href="citycouncils/tim-wheeler.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/tim-wheeler.png" alt="Tim Wheeler" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Tim Wheeler</p>
+                <p class="canddistrict">Ripon City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/leo-zuber.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/leo-zuber.png" alt="Leo Zuber" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Leo Zuber</p>
+                <p class="canddistrict">Ripon City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/tamra-spade.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/tamra-spade.png" alt="Tamra Spade" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Tamra Spade</p>
+                <p class="canddistrict">Ripon City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/richard-kohl.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/richard-kohl.jpg" alt="Richard Kohl" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Richard Kohl</p>
+                <p class="canddistrict">Ripon City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/daniel-degraaf.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/daniel-degraaf.jpeg" alt="Daniel deGraaf" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Daniel deGraaf</p>
+                <p class="canddistrict">Ripon City Council</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="smallcontainer">
+          <p class="smalltitle">TRACY</p>
+          <div class="candcontainer">
+            <a href="citycouncils/jaime-medina.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/jaime-medina.jpg" alt="Jaime Medina" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Jaime Medina</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/eleassia-davis.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/eleassia-davis.jpg" alt="Eleassia Davis" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Eleassia Davis</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/amrik-wander.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/amrik-wander.jpg" alt="Amrik Wander" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Amrik Wander</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/mateo-bedolla.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/mateo-bedolla.jpg" alt="Mateo Bedolla" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Mateo Bedolla</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/william-muetzenberg.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/william-muetzenberg.jpeg" alt="William Muetzenberg" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">William Muetzenberg</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/cliff-hudson.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/cliff-hudson.jpg" alt="Cliff Hudson" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Cliff Hudson</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/ameni-alexander.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/ameni-alexander.jpg" alt="Ameni Alexander" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Ameni Alexander</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
+          <div class="candcontainer">
+            <a href="citycouncils/elizabeth-ortiz.html" class="financeref">
+              <div class="candimgcontainer"><img src="images/citycouncils/elizabeth-ortiz.jpg" alt="Elizabeth Ortiz" class="candimg"></div>
+              <div class="candtextcontainer">
+                <p class="candtext">Elizabeth Ortiz</p>
+                <p class="canddistrict">Tracy City Council</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
