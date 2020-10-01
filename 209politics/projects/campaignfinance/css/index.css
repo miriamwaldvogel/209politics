@@ -65,6 +65,8 @@
   text-align: center;
   font-family: "Rubik";
   font-size: 25px;
+  cursor: pointer;
+  width: 100%;
 }
 .smallcontainer{
   display: inline-grid;
@@ -72,4 +74,33 @@
 }
 .subcontainer{
   width: 100%;
+}
+.collapsibletitle{
+  margin-bottom: 10px;
+}
+.collapsibletitle:before{
+  color: #000000;
+  content: "\02795";
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+.collapsecontainer:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 3px double #BDBFC9;
+}
+.collapsible{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.active:before{
+  content: "\2796";
 }
