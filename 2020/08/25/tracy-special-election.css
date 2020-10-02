@@ -1,0 +1,67 @@
+#description{
+  font-family: "Libre Baskerville";
+}
+#caveat{
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}
+#measuretlink{
+  text-decoration: none;
+}
+#titlecontainer{
+  width: 100%;
+  border-bottom: 2px solid #BDBFC9;
+}
+#title{
+  margin: 15px 0px 15px 10px;
+  font-family: "Rubik";
+  font-size: 50px;
+}
+.socialimgcontainer{
+  width: 40px;
+  display: inline-block;
+  margin-right: 7px;
+}
+.socialmedia{
+  width: 100%;
+}
+#socialmediacontainer{
+  margin-bottom: 10px;
+}
+#update{
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+}
+#resultscontainer{
+  width: 100%;
+}
+#yescontainer{
+  background-color: #4DAC26;
+}
+#nocontainer{
+  background-color: #D7191C;
+}
+.bar{
+  height: 20px;
+  position: relative;
+  bottom: 24px;
+  left: 200px;
+  width: 0px;
+}
+.score{
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  margin-bottom: 0px;
+  width: fit-content;
+}
+#total{
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}
+#precincts{
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}
+.sociallink{
+  text-decoration: none;
+}
