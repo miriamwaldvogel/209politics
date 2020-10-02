@@ -1,2 +1,0 @@
-Sitemap: https://209politics.com/sitemap.xml
-User-agent:*
