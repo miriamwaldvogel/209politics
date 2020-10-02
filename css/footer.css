@@ -1,0 +1,28 @@
+@media only screen and (max-width: 667px){
+  .sociallinkfooter{
+    font-size: 25px;
+  }
+  .navfooter{
+    font-size: 25px;
+  }
+}
+#footer{
+  background-color: #20124D;
+  text-align: center;
+}
+#socialmediafooter{
+  padding-top: 20px;
+  color: #FFFFFF;
+}
+.sociallinkfooter{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#navfooter{
+  padding-bottom: 20px;
+  color: #FFFFFF;
+}
+.navfooter{
+  text-decoration: none;
+  color: #FFFFFF;
+}

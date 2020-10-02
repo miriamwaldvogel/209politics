@@ -1,0 +1,65 @@
+@media only screen and (max-width: 667px){
+  #articlecontainer #title{
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 668px){
+  #articlecontainer #title{
+    font-size: 50px;
+  }
+}
+p{
+  font-family: "Libre Baskerville";
+}
+#title{
+  text-align: center;
+  font-family: "Rubik";
+  font-weight: bold;
+}
+#paragraphcontainer{
+  min-width: 290px;
+  width: 80%;
+  margin: auto;
+  border-left: 4px groove #BDBFC9;
+  padding: 0px 10px 0px 10px;
+}
+.paragraph{
+  line-height: 2.1;
+  font-size: 16px;
+}
+.credit{
+  padding-top: 0;
+  color: #9B9AAB;
+  font-size: 10px;
+}
+.externallink{
+  text-decoration: none;
+  color: blue;
+}
+#infocontainer{
+  text-align: center;
+}
+.time{
+  font-size: 15px;
+}
+#time{
+  font-size: 15px;
+}
+#img1{
+  width: 100%;
+}
+.subtitle{
+  font-size: 20px;
+}
+#more{
+  width: 100%;
+}
+#moretitle{
+  font-family: "Rubik";
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#img1container{
+  min-width: 310px;
+}

@@ -1,0 +1,18 @@
+#oopscontainer{
+  width: 50%;
+  min-width: 400px;
+  margin: auto;
+}
+#oops{
+  font-family: "Rubik";
+  font-size: 50px;
+  text-align: center;
+}
+#oopslink{
+  text-decoration: none;
+  text-align: center;
+}
+#oopshome{
+  font-family: "Libre Baskerville";
+  color: #000000;
+}
