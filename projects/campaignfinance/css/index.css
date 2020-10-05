@@ -1,3 +1,14 @@
+@media only screen and (max-width: 603px){
+  .sectioncontainer{
+    display: inline;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 604px){
+  .sectioncontainer{
+    display: inline-grid;
+  }
+}
 #title{
   font-family: "Rubik";
   font-size: 50px;
@@ -20,6 +31,7 @@
   border-bottom: 5px groove #8091A6;
   margin-bottom: 10px;
   width: 100%;
+  cursor: pointer;
 }
 .candimgcontainer{
   width: 50px;
@@ -48,17 +60,14 @@
 }
 .candcontainer{
   width: fit-content;
-  margin: auto;
+  display: inline-block;
+  margin-right: 20px;
 }
 .financeref{
   text-decoration: none;
 }
 .sectioncontainer{
-  width: fit-content;
-  display: inline-grid;
-  position: relative;
-  top: 0;
-  margin-right: 20px;
+  width: 100%;
 }
 .smalltitle{
   margin: auto;
@@ -70,7 +79,7 @@
 }
 .smallcontainer{
   display: inline-grid;
-  margin-right: 20px;
+  width: 100%;
 }
 .subcontainer{
   width: 100%;
@@ -78,7 +87,7 @@
 .collapsibletitle{
   margin-bottom: 10px;
 }
-.collapsibletitle:before{
+.smalltitle:before{
   color: #000000;
   content: "\02795";
   font-size: 13px;
@@ -88,7 +97,17 @@
   position: relative;
   top: 7px;
 }
-.collapsecontainer:after{
+.bigcollapsibletitle:before{
+  color: #000000;
+  content: "\02795";
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: 17px;
+}
+.collapsecontainer.smallcontainer:after{
   content: "";
   display: block;
   margin: 0 auto;
@@ -103,4 +122,16 @@
 }
 .active:before{
   content: "\2796";
+}
+#cands{
+  margin: auto;
+}
+#all{
+  cursor: pointer;
+  font-family: "Libre Baskerville";
+  font-size: 22px;
+  background-color: #FFFFFF;
+  color: #20124d;
+  border: 2px double #20124d;
+  border-radius: 4px;
 }
