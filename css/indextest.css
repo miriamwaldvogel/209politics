@@ -19,6 +19,9 @@
     float: right;
     margin: 0;
   }
+  #searchcontainer{
+    right: 120px;
+  }
   #navcontainer{
     position:relative;
     left: 10%;
@@ -57,6 +60,9 @@
     margin-right: 10px;
     position: relative;
     top: -40px;
+  }
+  #searchcontainer{
+    right: 200px;
   }
   .standardimg{
     width: 40%;
@@ -401,6 +407,13 @@ a{
   display: inline-block;
   width: 100%;
 }
-#tracycannabiscontainer{
-  margin: auto;
+#searchcontainer{
+  width: 20px;
+  display: inline-block;
+  float: right;
+  position: relative;
+  bottom: 25px;
+}
+#searchimg{
+  width: 100%;
 }
