@@ -9,14 +9,8 @@
     <link rel="stylesheet" href="css/indextest.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/indextest.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-174685284-1');
-      </script>
     <title>209 Politics - Political coverage of the greater San Joaquin area</title>
   </head>
   <body onresize="resize();">
@@ -30,12 +24,17 @@
             <img src="images/favicon.png" alt="209 Politics Logo" id="logo">
           </a>
         </div>
+        <div id="headerrightcontainer">
           <div id="searchcontainer">
-            <form id="searchform" action="index.html" method="post">
-              <input type="text" name="search" value="">
-              <input type="submit" name="submit" value="">
-            </form>
-            <img src="images/search.png" alt="Search symbol" id="searchimg">
+            <div id="searchimgcontainer" onclick="searchtoggle();">
+              <img src="images/search.svg" alt="Search sybmol" id="searchimg">
+            </div>
+            <div id="formcontainer">
+              <form id="searchform" action="index.html" method="post">
+                <input type="text" name="search" value="" id="searchbox">
+                <input type="submit" name="submit" value="GO" id="searchbutton">
+              </form>
+            </div>
           </div>
           <div id="socialmediacontainer">
             <a href="https://twitter.com/209Politics" class="sociallink">
@@ -54,6 +53,7 @@
               </div>
             </a>
           </div>
+        </div>
       </div>
       <div id="sections">
         <div id="navcontainer">
