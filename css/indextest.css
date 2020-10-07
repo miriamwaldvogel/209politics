@@ -109,7 +109,7 @@
     width: 70%;
   }
 }
-@media only screen and (max-width: 388px){
+/*@media only screen and (max-width: 388px){
   #sections{
     height: 75px;
   }
@@ -181,6 +181,13 @@
     left: 5%;
   }
 }
+*/
+@media only screen and (min-width: 725px){
+  #navcontainer{
+    width: 725px;
+    margin: auto;
+  }
+}
 #content{
   max-width: 1200px;
   margin: auto;
@@ -242,10 +249,6 @@ a{
   padding-bottom: 10px;
   border-bottom: solid;
   text-align: center;
-}
-#navcontainer{
-  width: fit-content;
-  margin: auto;
 }
 .sectioncontainers{
   display: inline-block;
@@ -407,13 +410,49 @@ a{
   display: inline-block;
   width: 100%;
 }
-#searchcontainer{
-  width: 20px;
+#headerrightcontainer{
   display: inline-block;
   float: right;
+}
+#searchcontainer{
+  width: fit-content;
+  display: inline-block;
+  height: 30px;
   position: relative;
-  bottom: 25px;
+  bottom: 30px;
+  left: -10px;
+}
+#searchimgcontainer{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
 }
 #searchimg{
   width: 100%;
+}
+#formcontainer{
+  width: calc(15vw + 50px);
+  display: none;
+}
+#searchbox{
+  height: 20px;
+  width: 15vw;
+  float: left;
+}
+#searchbutton{
+  width: fit-content;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  background-color: #20124d;
+  color: #FFFFFF;
+  font-family: "Rubik";
+  border-radius: 8px;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
 }
