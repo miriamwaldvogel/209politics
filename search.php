@@ -62,8 +62,10 @@ $f = array();
 foreach($txt as $i => $j){
   $t = 0;
   $b = 0;
+	$c = array();
   foreach($key as $k){
     $a = substr_count(strtoupper($j), strtoupper($k))+substr_count(strtoupper($i), strtoupper($k));
+		$c[$i] = strpos($k, $j);
     $t+= $a;
     if ($a > 0){
       $b += 1;
@@ -77,5 +79,8 @@ foreach($txt as $i => $j){
 arsort($f);
 foreach($f as $i=>$k){
   echo "<a href=\"".$ref[$i]."\"><p>".$i."</p>"."</a>"." \n";
+}
+foreach($c as $i=>$k){
+	echo($c[$i]);
 }
  ?>
