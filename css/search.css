@@ -1,0 +1,26 @@
+#title{
+  font-family: "Rubik";
+}
+.articlecontainer:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-bottom: 3px double #BDBFC9;
+  margin-bottom: 10px;
+}
+.articlelink{
+  text-decoration: none;
+}
+.articletitle{
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 550;
+  color: #000000;
+}
+.articleinfo{
+  font-family: "Libre Baskerville";
+  color: #000000;
+  font-size: 14px;
+}
