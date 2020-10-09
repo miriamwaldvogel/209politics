@@ -19,15 +19,20 @@
     float: right;
     margin: 0;
   }
-  #navcontainer{
-    position:relative;
-    left: 10%;
+  #searchcontainer{
+    right: 120px;
   }
   .sectioncontainers{
     display:inline-flex;
   }
+  .standardimg{
+    width: 80%;
+  }
+  .smallimg{
+    width: 40%;
+  }
   .storyimgcontainer{
-    width: 100%;
+    margin: auto;
   }
   .storytextcontainer{
     width: 100%;
@@ -52,6 +57,9 @@
     position: relative;
     top: -40px;
   }
+  #searchcontainer{
+    right: 200px;
+  }
   .standardimg{
     width: 40%;
   }
@@ -63,6 +71,9 @@
   }
   .smalltext{
     width: 70%;
+  }
+  #leftpanel .storyimgcontainer{
+    float: left;
   }
   #leftpanel{
     width: 55%;
@@ -94,76 +105,45 @@
     width: 70%;
   }
 }
-@media only screen and (max-width: 388px){
-  #sections{
-    height: 75px;
+@media only screen and (max-width: 511px){
+  .sectioncontainers{
+    display: block;
+    margin: auto;
+    width: fit-content;
   }
-  #latestnavcontainer{
+}
+@media only screen and (min-width: 512px){
+  .sectioncontainers{
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 512px){
+  .sectioncontainers{
     position: relative;
-    right: 20%;
+    left: 10%;
   }
-  #electionsnavcontainer{
-    position: relative;
-    bottom: 24.8px;
-    left: 25%;
-  }
-  #policynavcontainer{
-    position: relative;
-    bottom: 24.8px;
-    right: 15%;
-  }
+}
+@media only screen and (min-width: 668px) and (max-width: 720px){
   #covidnavcontainer{
-    position: absolute;
-    top: 24.8px;
-    right: 20%;
+    position: relative;
+    left: 0%;
   }
   #contactnavcontainer{
     position: relative;
-    bottom: 24.8px;
-    right: 6%;
+    left: 0%;
   }
 }
-@media only screen and (min-width: 511px) and (max-width: 667px){
-  #sections{
-    height: 50px;
+@media only screen and (min-width: 721px) and (max-width: 904px){
+  #contactnavcontainer{
+    position: relative;
+    left: 0%;
   }
 }
-@media only screen and (min-width: 668px) and (max-width: 884px){
-  #latestnavcontainer{
-    position: relative;
-    left: 10%;
-  }
-  #electionsnavcontainer{
-    position: relative;
-    left: 10%;
-  }
-  #policynavcontainer{
-    position: relative;
-    left: 10%;
-  }
-}
-@media only screen and (min-width: 721px) and (max-width: 884px){
-  #covidnavcontainer{
-    position: relative;
-    left: 10%;
-  }
-}
-@media only screen and (min-width: 885px) and (max-width: 1063px){
-  #latestnavcontainer{
-    position: relative;
-    left: 5%;
-  }
-  #electionsnavcontainer{
-    position: relative;
-    left: 5%;
-  }
-  #policynavcontainer{
-    position: relative;
-    left: 5%;
-  }
-  #covidnavcontainer{
-    position: relative;
-    left: 5%;
+@media only screen and (min-width: 870px){
+  #searchcontainer{
+    position: absolute;
+    top: 100px;
+    right: 180px;
   }
 }
 #content{
@@ -228,13 +208,6 @@ a{
   border-bottom: solid;
   text-align: center;
 }
-#navcontainer{
-  width: fit-content;
-  margin: auto;
-}
-.sectioncontainers{
-  display: inline-block;
-}
 .section{
   font-size: 20px;
   font-family: "Libre Baskerville";
@@ -244,7 +217,6 @@ a{
 #leftpanel{
   height: fit-content;
   padding-right: 10px;
-  border-right: 3px double #BDBFC9;
   margin-bottom: 10px;
 }
 #leftpanel:after{
@@ -257,13 +229,15 @@ a{
 }
 #rightpanel{
   height: fit-content;
+  border-left: 3px double #BDBFC9;
 }
 #rightpanel:after{
     content: "";
     display: block;
     margin: 0 auto;
-    width: 99%;
-    padding-top: 10px;
+    width: 95%;
+    padding-top: 20px;
+    margin-left: 20px;
     border-bottom: 3px double #BDBFC9;
 }
 #mainstorycontainer{
@@ -273,7 +247,7 @@ a{
 }
 #mainstoryimgcontainer{
   margin: auto;
-  width: 60%;
+  width: 30%;
 }
 #mainstoryimg{
   width: 100%;
@@ -338,27 +312,102 @@ a{
 }
 .storyimgcontainer{
   height: fit-content;
-  margin: 0;
-  float: left;
 }
 .storyimg{
   width: 100%;
 }
 .storytextcontainer{
-  float: right;
   text-align: center;
+  float: right;
 }
 .storyheadline{
   font-size: 20px;
   color: #000000;
 }
+#midcontent{
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+#midcontent .storycontainer{
+  display: inline-block;
+  width: calc((100vw - 51px)/3);
+  max-width: 383px;
+}
+#midcontent .storycontainer:before{
+  width: 0;
+}
+#midcontent .storycontainer:nth-child(2){
+  margin-left: 10px;
+  margin-right: 10px;
+  border-left: 3px double #BDBFC9;
+  border-right: 3px double #BDBFC9;
+}
+#midcontent .standardimg{
+  width: 60%;
+}
+#midcontent .smallimg{
+  width: 30%;
+}
+#midcontent .storyimgcontainer{
+  margin: auto;
+}
+#midcontent .storytextcontainer{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  float: none;
+}
+#midcontent .articledate{
+  text-align: center;
+}
 #belowcontent{
   display: inline-block;
   width: 100%;
 }
-#tracycannabiscontainer{
-  margin: auto;
+#headerrightcontainer{
+  display: inline-block;
+  float: right;
 }
+#searchcontainer{
+  width: fit-content;
+  display: inline-block;
+}
+#searchimgcontainer{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+#searchimg{
+  width: 100%;
+}
+#formcontainer{
+  width: calc(15vw + 50px);
+  display: none;
+}
+#searchbox{
+  height: 20px;
+  width: 15vw;
+  float: left;
+}
+#searchbutton{
+  width: fit-content;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  background-color: #20124d;
+  color: #FFFFFF;
+  font-family: "Rubik";
+  border-radius: 8px;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+}
+
 #financecontainer:after{
   content: "";
   display: block;
