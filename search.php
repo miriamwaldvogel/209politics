@@ -86,6 +86,12 @@ echo "<!DOCTYPE html>
       <div id=\"titlecontainer\">
         <h1 id=\"title\">SEARCH</h1>
       </div>
+      <div id=\"searchcontainer\">
+        <form id=\"searchform\" action=\"search.php\" method=\"get\">
+          <input type=\"text\" name=\"q\" value=\"\" id=\"searchbox\">
+          <input type=\"submit\" value=\"\" id=\"searchbutton\">
+        </form>
+      </div>
 			<div id=\"content\">
 ";
 arsort($f);

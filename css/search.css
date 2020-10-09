@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px){
+  #searchbox{
+    min-width: calc(100vw - 60px);
+  }
+}
+
 a{
   color: #000000;
   text-decoration: none;
@@ -27,4 +33,31 @@ a{
   font-family: "Libre Baskerville";
   color: #000000;
   font-size: 14px;
+}
+#searchimgcontainer{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+#searchimg{
+  width: 100%;
+}
+#searchform{
+  display: inline-block;
+}
+#searchbox{
+  width: 50vw;
+  border: 0;
+  border-bottom: 2px double #20124d;
+}
+#searchbox:focus{
+  outline-width: 0;
+}
+#searchbutton{
+  width: 20px;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  background: url("../images/search.svg") no-repeat 100%;
+  margin-left: 10px;
 }
