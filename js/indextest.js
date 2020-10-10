@@ -32,7 +32,11 @@ window.onload = function(){
 };
 
 function searchtoggle(){
-  f = document.getElementById("formcontainer");
+  if (window.innerWidth <= 870){
+    f = document.getElementById("formcontainer2");
+  } else{
+    f = document.getElementById("formcontainer1");
+  }
   if (f.style.display === "inline-block"){
     f.style.display = "none";
     document.getElementById("searchimgcontainer").style.top = 7+'px';
