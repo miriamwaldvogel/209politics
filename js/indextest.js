@@ -34,14 +34,21 @@ window.onload = function(){
 function searchtoggle(){
   if (window.innerWidth <= 870){
     f = document.getElementById("formcontainer2");
+    if (f.style.display === "block"){
+      f.style.display = "none";
+    } else{
+      f.style.display = "block";
+    }
+    document.getElementById("formcontainer1").style.display = "none";
   } else{
     f = document.getElementById("formcontainer1");
-  }
-  if (f.style.display === "inline-block"){
-    f.style.display = "none";
-    document.getElementById("searchimgcontainer").style.top = 7+'px';
-  } else{
-    f.style.display = "inline-block";
-    document.getElementById("searchimgcontainer").style.top = -5+'px';
+    if (f.style.display === "inline-block"){
+      f.style.display = "none";
+      document.getElementById("searchimgcontainer").style.top = 7+'px';
+    } else{
+      f.style.display = "inline-block";
+      document.getElementById("searchimgcontainer").style.top = -5+'px';
+      document.getElementById("formcontainer2").style.display = "none";
+    }
   }
 }
