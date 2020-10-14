@@ -9,17 +9,17 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-10-09T03:29:34+00:00</lastmod>
+  <lastmod>2020-10-13T03:40:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest.html</loc>
-  <lastmod>2020-10-09T03:29:34+00:00</lastmod>
+  <lastmod>2020-10-13T03:40:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections.html</loc>
-  <lastmod>2020-10-06T00:42:33+00:00</lastmod>
+  <lastmod>2020-10-13T03:40:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -29,12 +29,12 @@
 </url>
 <url>
   <loc>https://209politics.com/covid-19.html</loc>
-  <lastmod>2020-10-07T04:39:08+00:00</lastmod>
+  <lastmod>2020-10-12T19:47:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/contact.html</loc>
-  <lastmod>2020-08-19T20:26:24+00:00</lastmod>
+  <lastmod>2020-10-11T04:53:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -43,23 +43,28 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/10/12/cooper-fundraising-surge.html</loc>
+  <lastmod>2020-10-13T04:42:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/10/state-assembly-fundraising-gap.html</loc>
+  <lastmod>2020-10-13T03:40:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/09/delta-college-ballot-error.html</loc>
+  <lastmod>2020-10-10T03:56:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/09/measure-x-heising-simons.html</loc>
+  <lastmod>2020-10-10T04:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/10/08/manteca-city-clerk-out.html</loc>
   <lastmod>2020-10-09T03:29:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/06/san-joaquin-covid-october-6.html</loc>
-  <lastmod>2020-10-07T04:39:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/06/health-equity-metric.html</loc>
-  <lastmod>2020-10-07T04:39:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/03/stockton-unified-central-valley-fund.html</loc>
-  <lastmod>2020-10-04T04:46:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -143,8 +148,23 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/10/06/san-joaquin-covid-october-6.html</loc>
+  <lastmod>2020-10-07T04:39:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/06/health-equity-metric.html</loc>
+  <lastmod>2020-10-07T04:39:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/10/04/stockton-police-rally.html</loc>
   <lastmod>2020-10-05T04:28:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/03/stockton-unified-central-valley-fund.html</loc>
+  <lastmod>2020-10-04T04:46:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -380,6 +400,11 @@
 <url>
   <loc>https://209politics.com/2020/07/29/stockton-fire-department-aid.html</loc>
   <lastmod>2020-09-03T17:44:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/graphics/november-3-voting.html</loc>
+  <lastmod>2020-10-09T20:46:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -924,7 +949,7 @@
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-10-09T03:29:34+00:00</lastmod>
+  <lastmod>2020-10-13T03:40:43+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

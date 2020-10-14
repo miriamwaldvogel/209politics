@@ -428,6 +428,11 @@ a{
   height: 20px;
   width: 15vw;
   float: left;
+  border: 0;
+  border-bottom: 2px double #20124d;
+}
+#searchbox1:focus{
+  outline-width: 0;
 }
 #searchbutton2{
   margin-left: 20px;

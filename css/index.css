@@ -25,6 +25,11 @@
   .sectioncontainers{
     display:inline-flex;
   }
+  #searchcontainer{
+    position: absolute;
+    top: 100px;
+    right: 120px;
+  }
   .standardimg{
     width: 80%;
   }
@@ -58,7 +63,9 @@
     top: -40px;
   }
   #searchcontainer{
-    right: 200px;
+    position: absolute;
+    top: 100px;
+    right: 180px;
   }
   .standardimg{
     width: 40%;
@@ -112,15 +119,29 @@
     width: fit-content;
   }
 }
-@media only screen and (min-width: 512px){
-  .sectioncontainers{
-    display: inline-block;
+@media only screen and (max-width: 419px){
+  #searchcontainer{
+    top: 140px;
+  }
+}
+@media only screen and (max-width: 360px){
+  #searchcontainer{
+    right: 100px;
   }
 }
 @media only screen and (min-width: 512px){
   .sectioncontainers{
+    display: inline-block;
+  }
+  .sectioncontainers{
     position: relative;
     left: 10%;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 624px){
+  #searchcontainer{
+    top: 120px;
+    right: 110px;
   }
 }
 @media only screen and (min-width: 668px) and (max-width: 720px){
@@ -139,11 +160,19 @@
     left: 0%;
   }
 }
-@media only screen and (min-width: 870px){
+@media only screen and (max-width: 869px){
+  #formcontainer1{
+    display: none;
+  }
+  #formcontainer2{
+    display: block;
+  }
+}
+@media only screen and (min-width: 1216px){
   #searchcontainer{
     position: absolute;
     top: 100px;
-    right: 180px;
+    right: calc(50vw - 425px);
   }
 }
 #content{
@@ -247,7 +276,7 @@ a{
 }
 #mainstoryimgcontainer{
   margin: auto;
-  width: 30%;
+  width: 60%;
 }
 #mainstoryimg{
   width: 100%;
@@ -384,16 +413,41 @@ a{
 #searchimg{
   width: 100%;
 }
-#formcontainer{
+#formcontainer1{
   width: calc(15vw + 50px);
   display: none;
 }
-#searchbox{
+#formcontainer2{
+  display: none;
+  width: fit-content;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+}
+#searchbox1{
   height: 20px;
   width: 15vw;
   float: left;
+  border: 0;
+  border-bottom: 2px double #20124d;
 }
-#searchbutton{
+#searchbox1:focus{
+  outline-width: 0;
+}
+#searchbutton2{
+  margin-left: 20px;
+}
+#searchbox2{
+  height: 20px;
+  width: 40vw;
+  float: left;
+  border: 0;
+  border-bottom: 2px double #20124d;
+}
+#searchbox2:focus{
+  outline-width: 0;
+}
+.searchbutton{
   width: fit-content;
   height: 30px;
   border: 0;
