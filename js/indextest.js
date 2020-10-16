@@ -4,11 +4,11 @@ function resize(){
   var i = document.getElementsByClassName("storyimgcontainer");
   var h = 0;
   if (window.innerWidth <= 667){
-    for(var k = 0; k < c.length; k++){
+    for(var k = 0; k < 3; k++){
       c[k].style.height = (t[k].offsetHeight+i[k].offsetHeight+10)+'px';
     }
   }else{
-    for(var j = 0; j < c.length; j++){
+    for(var j = 0; j < 3; j++){
       c[j].style.height = (Math.max(t[j].offsetHeight, i[j].offsetHeight)+20)+'px';
       h += c[j].offsetHeight;
     }

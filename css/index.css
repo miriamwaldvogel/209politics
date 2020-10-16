@@ -89,6 +89,7 @@
   #rightpanel{
     width: 43%;
     float: right;
+    border-left: 3px double #BDBFC9;
   }
   #ballotproposalscontainer{
     width: 67%;
@@ -112,13 +113,6 @@
     width: 70%;
   }
 }
-@media only screen and (max-width: 511px){
-  .sectioncontainers{
-    display: block;
-    margin: auto;
-    width: fit-content;
-  }
-}
 @media only screen and (max-width: 419px){
   #searchcontainer{
     top: 140px;
@@ -129,6 +123,13 @@
     right: 100px;
   }
 }
+@media only screen and (max-width: 511px){
+  .sectioncontainers{
+    display: block;
+    margin: auto;
+    width: fit-content;
+  }
+}
 @media only screen and (min-width: 512px){
   .sectioncontainers{
     display: inline-block;
@@ -136,6 +137,40 @@
   .sectioncontainers{
     position: relative;
     left: 10%;
+  }
+}
+@media only screen and (max-width: 600px){
+}
+@media only screen and (min-width: 601px){
+  #midcontent .storycontainer{
+    display: inline-block;
+    width: calc((100vw - 51px)/3);
+    max-width: 383px;
+    margin-bottom: 20px;
+  }
+  #midcontent .storycontainer:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 3px double #BDBFC9;
+    border-right: 3px double #BDBFC9;
+  }
+  #midcontent .standardimg{
+    width: 60%;
+  }
+  #midcontent .smallimg{
+    width: 30%;
+  }
+  #midcontent .storycontainer:before{
+    width: 0;
+  }
+  #rightpanel:after{
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 95%;
+      padding-top: 20px;
+      margin-left: 20px;
+      border-bottom: 3px double #BDBFC9;
   }
 }
 @media only screen and (min-width: 420px) and (max-width: 624px){
@@ -258,16 +293,6 @@ a{
 }
 #rightpanel{
   height: fit-content;
-  border-left: 3px double #BDBFC9;
-}
-#rightpanel:after{
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 95%;
-    padding-top: 20px;
-    margin-left: 20px;
-    border-bottom: 3px double #BDBFC9;
 }
 #mainstorycontainer{
   width: 100%;
@@ -276,7 +301,7 @@ a{
 }
 #mainstoryimgcontainer{
   margin: auto;
-  width: 60%;
+  width: 30%;
 }
 #mainstoryimg{
   width: 100%;
@@ -357,26 +382,15 @@ a{
   display: inline-block;
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
-#midcontent .storycontainer{
-  display: inline-block;
-  width: calc((100vw - 51px)/3);
-  max-width: 383px;
-}
-#midcontent .storycontainer:before{
-  width: 0;
-}
-#midcontent .storycontainer:nth-child(2){
-  margin-left: 10px;
-  margin-right: 10px;
-  border-left: 3px double #BDBFC9;
-  border-right: 3px double #BDBFC9;
-}
-#midcontent .standardimg{
-  width: 60%;
-}
-#midcontent .smallimg{
-  width: 30%;
+#midcontent:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 3px double #BDBFC9;
 }
 #midcontent .storyimgcontainer{
   margin: auto;
@@ -461,7 +475,6 @@ a{
   right: 10px;
   bottom: 2px;
 }
-
 #financecontainer:after{
   content: "";
   display: block;
