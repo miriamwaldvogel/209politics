@@ -2,10 +2,30 @@
   #articlecontainer #title{
     font-size: 30px;
   }
+  #searchbox2{
+    width: 85vw;
+  }
 }
 @media only screen and (min-width: 668px){
   #articlecontainer #title{
     font-size: 50px;
+  }
+  #searchbox2{
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 360px){
+  #searchcontainer{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+  }
+}
+@media only screen and (min-width: 361px){
+  #searchcontainer{
+    position: absolute;
+    top: 15px;
+    right: 30px;
   }
 }
 p{
@@ -62,4 +82,73 @@ p{
 }
 #img1container{
   min-width: 310px;
+}
+#searchcontainer{
+  width: fit-content;
+  display: inline-block;
+  float: right;
+}
+.searchbutton{
+  width: fit-content;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  background-color: #20124d;
+  color: #FFFFFF;
+  font-family: "Rubik";
+  border-radius: 8px;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+}
+#searchimgcontainer{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  float: left;
+  margin-right: 10px;
+}
+#searchimg{
+  width: 100%;
+}
+#formcontainer1{
+  width: calc(15vw + 50px);
+  float: right;
+  display: none;
+}
+#formcontainer2{
+  display: none;
+  width: fit-content;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  position: fixed;
+  top: 48px;
+  right: 0px;
+}
+#searchbox1{
+  height: 20px;
+  width: 15vw;
+  float: left;
+  border: 0;
+  border-bottom: 2px double #20124d;
+}
+#searchbox1:focus{
+  outline-width: 0;
+}
+#searchbutton2{
+  margin-left: 20px;
+}
+#searchbox2{
+  height: 20px;
+  float: left;
+  border: 0;
+  border-bottom: 2px double #20124d;
+}
+#searchbox2:focus{
+  outline-width: 0;
 }

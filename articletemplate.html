@@ -39,6 +39,18 @@
             <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
           </a>
         </div>
+        <div id="searchcontainer">
+          <div id="searchimgcontainer" onclick="searchtoggle();">
+            <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
+          </div>
+          <div id="formcontainer1">
+            <form id="searchform" action="https://www.google.com/search" method="get">
+              <input type="hidden" name="q" value="site:209politics.com">
+              <input type="text" name="q" value="" id="searchbox1">
+              <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+            </form>
+        </div>
+        </div>
       </div>
       <div id="sectionscontainer" class="sections">
         <div id="homenavcontainer" class="headernavcontainer">
@@ -59,6 +71,13 @@
         <div id="contactnavcontainer" class="headernavcontainer">
           <a href="/contact.html" class="section">CONTACT US</a>
         </div>
+      </div>
+      <div id="formcontainer2">
+        <form id="searchform" action="https://www.google.com/search" method="get">
+          <input type="hidden" name="q" value="site:209politics.com">
+          <input type="text" name="q" value="" id="searchbox2">
+          <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+        </form>
       </div>
       <div id="filler"></div>
       <div id="articlecontainer">
@@ -88,7 +107,7 @@
         <p id="socialmediafooter">
           <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
           <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
-          <a href="https://www.facebook.com/209Politics" id="facebookfooter" class="sociallinkfooter">Facebook: 209 Politics</a>
+          <a href="https://www.facebook.com/209Politics" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
         </p>
         <p id="navfooter">
           <a href="/index.html" id="homenavfooter" class="navfooter">Home</a> •
