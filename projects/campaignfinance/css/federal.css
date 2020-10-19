@@ -64,3 +64,18 @@ iframe{
   display: inline-block;
   width: 100%;
 }
+#home{
+  border: 2px double #20124d;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+#homebutton{
+  font-family: "Libre Baskerville";
+  color: #000000;
+  width: fit-content;
+  margin: 5px 10px 5px 10px;
+}
+#homelink{
+  text-decoration: none;
+}
