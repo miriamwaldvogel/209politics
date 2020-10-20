@@ -1,0 +1,46 @@
+#titlecontainer{
+  border-bottom: 0px;
+}
+#leftpanel{
+  width: 55%;
+  border-right: 3px double #BDBFC9;
+  margin-top: 10px;
+  float: left;
+}
+#rightpanel{
+  margin-top: 10px;
+  width: 44%;
+  float: right;
+}
+#mainstorycontainer{
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  display: inline-block;
+}
+#mainstoryimgcontainer{
+  margin: auto;
+  width: 50%;
+}
+#mainstoryimg{
+  width: 100%;
+}
+#mainstoryheadline{
+  color: #000000;
+  font-size: 27px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.headline{
+  font-family: "Rubik";
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.articledate{
+  text-align: center;
+  width: 100%;
+  color: #000000;
+  font-family: "Libre Baskerville";
+  margin-top: 0px;
+}

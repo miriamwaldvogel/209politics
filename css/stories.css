@@ -121,3 +121,17 @@ p{
 .standardcontainer{
   height: 180px;
 }
+.leftimg{
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+}
+.rightimg{
+  width: 40%;
+  float: right;
+  margin-left: 10px;
+}
+.centerimg{
+  width: 60%;
+  margin: auto;
+}
