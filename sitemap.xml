@@ -9,17 +9,17 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-10-21T03:42:58+00:00</lastmod>
+  <lastmod>2020-10-22T04:22:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest.html</loc>
-  <lastmod>2020-10-21T03:42:58+00:00</lastmod>
+  <lastmod>2020-10-22T04:19:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections.html</loc>
-  <lastmod>2020-10-21T03:42:58+00:00</lastmod>
+  <lastmod>2020-10-22T04:15:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -43,8 +43,18 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/10/21/valentino-silva-interview.html</loc>
+  <lastmod>2020-10-22T04:19:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/21/gabriel-casillas-interview.html</loc>
+  <lastmod>2020-10-22T04:19:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/10/20/lange-luntao-interview.html</loc>
-  <lastmod>2020-10-21T14:21:39+00:00</lastmod>
+  <lastmod>2020-10-22T04:19:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -65,16 +75,6 @@
 <url>
   <loc>https://209politics.com/2020/10/16/jim-ridenour-interview.html</loc>
   <lastmod>2020-10-17T05:00:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/15/deeann-antonini-interview.html</loc>
-  <lastmod>2020-10-16T04:16:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/15/eggman-biden-endorsement.html</loc>
-  <lastmod>2020-10-16T03:16:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -151,6 +151,16 @@
   <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
   <lastmod>2020-08-19T20:26:23+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/15/eggman-biden-endorsement.html</loc>
+  <lastmod>2020-10-16T03:16:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/15/deeann-antonini-interview.html</loc>
+  <lastmod>2020-10-16T04:16:17+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/10/14/stockton-unified-measure-x.html</loc>
@@ -614,7 +624,7 @@
 </url>
 <url>
   <loc>https://209politics.com/projects/campaignfinance/citycouncils/gary-singh.html</loc>
-  <lastmod>2020-10-19T17:15:43+00:00</lastmod>
+  <lastmod>2020-10-21T20:05:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -774,7 +784,7 @@
 </url>
 <url>
   <loc>https://209politics.com/projects/campaignfinance/schools/melanie-greene.html</loc>
-  <lastmod>2020-10-19T17:15:44+00:00</lastmod>
+  <lastmod>2020-10-21T20:05:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -994,7 +1004,7 @@
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-10-21T03:42:58+00:00</lastmod>
+  <lastmod>2020-10-22T04:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
