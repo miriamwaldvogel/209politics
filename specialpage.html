@@ -29,6 +29,18 @@
             <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
           </a>
         </div>
+        <div id="searchcontainer">
+          <div id="searchimgcontainer" onclick="searchtoggle();">
+            <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
+          </div>
+          <div id="formcontainer1">
+            <form id="searchform" action="https://www.google.com/search" method="get">
+              <input type="hidden" name="q" value="site:209politics.com">
+              <input type="text" name="q" value="" id="searchbox1">
+              <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+            </form>
+        </div>
+        </div>
       </div>
       <div id="sectionscontainer" class="sections">
         <div id="homenavcontainer" class="headernavcontainer">
@@ -50,6 +62,14 @@
           <a href="/contact.html" class="section">CONTACT US</a>
         </div>
       </div>
+      <div id="formcontainer2">
+        <form id="searchform" action="https://www.google.com/search" method="get">
+          <input type="hidden" name="q" value="site:209politics.com">
+          <input type="text" name="q" value="" id="searchbox2">
+          <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+        </form>
+      </div>
+      <div id="filler"></div>
       <div id="filler"></div>
       <div id="titlecontainer">
         <h1 id="title"></h1>
