@@ -36,3 +36,14 @@ p{
 #maillink{
   color: blue;
 }
+#infotitle{
+  font-size: 35px;
+  font-family: "Rubik";
+}
+.q{
+  font-size: 22px;
+}
+.a{
+  font-size: 18px;
+  line-height: 1.5;
+}
