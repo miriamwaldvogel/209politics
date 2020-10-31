@@ -1,0 +1,50 @@
+@media only screen and (max-width: 585px){
+  .results{
+    height: 33vw;
+  }
+}
+@media only screen and (min-width: 586px){
+  .results{
+    height: 200px;
+  }
+}
+#title{
+  font-family: "Rubik";
+  font-size: 40px;
+}
+.resultscontainer{
+  max-width: 585px;
+}
+.results{
+  width: 100%;
+}
+#racetitle{
+  font-family: "Rubik";
+  font-size: 25px;
+}
+.candidates{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.candimgcontainer{
+  width: 50px;
+  display: inline-block;
+}
+.candimg{
+  width: 100%;
+  border-radius: 50%;
+}
+.candtext{
+  color: #000000;
+  font-family: "Libre Baskerville";
+  margin-bottom: 3px;
+  display: inline-block;
+  position: relative;
+  bottom: 17px;
+  margin-left: 5px;
+}
+.candcontainer{
+  width: fit-content;
+  display: inline-block;
+  margin-right: 20px;
+}
