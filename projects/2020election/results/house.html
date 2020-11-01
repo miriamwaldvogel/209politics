@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="../css/results.css">
-  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-  <script type="text/javascript" src="../js/mobile.js"></script>
-  <script type="text/javascript" src="/js/header.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-174685284-1');
-  </script>
-  <title>San Joaquin Congressional Races Results - 209 Politics</title>
-</head>
-
-<body>
-  <div id="content">
-    <div id="headercontainer">
-      <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
-      <div id="logocontainer">
-        <a href="https://209politics.com/">
-          <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
-        </a>
-      </div>
-      <div id="searchcontainer">
-        <div id="searchimgcontainer" onclick="searchtoggle();">
-          <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="../css/results.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+    <script type="text/javascript" src="/js/header.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-174685284-1');
+      </script>
+    <title>House Races Results - 209 Politics</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="headercontainer">
+        <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
+        <div id="logocontainer">
+          <a href="https://209politics.com/">
+            <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
+          </a>
         </div>
-        <div id="formcontainer1">
-          <form id="searchform" action="https://www.google.com/search" method="get">
-            <input type="hidden" name="q" value="site:209politics.com">
-            <input type="text" name="q" value="" id="searchbox1">
-            <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
-          </form>
+        <div id="searchcontainer">
+          <div id="searchimgcontainer" onclick="searchtoggle();">
+            <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
+          </div>
+          <div id="formcontainer1">
+            <form id="searchform" action="https://www.google.com/search" method="get">
+              <input type="hidden" name="q" value="site:209politics.com">
+              <input type="text" name="q" value="" id="searchbox1">
+              <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+            </form>
+        </div>
         </div>
       </div>
-    </div>
-    <div id="sectionscontainer" class="sections">
-      <div id="homenavcontainer" class="headernavcontainer">
-        <a href="https://209politics.com/" id="latest" class="section">HOME</a>
+      <div id="resultsheadercontainer">
+        <div id="resultlinkcontainer">
+          <a href="" class="resultlink">House</a>
+          <a href="" class="resultlink">State</a>
+          <a href="" class="resultlink">County</a>
+          <a href="" class="resultlink">Mayors</a>
+          <a href="" class="resultlink">City councils</a>
+          <a href="" class="resultlink">Schools</a>
+          <a href="" class="resultlink">Other</a>
+        </div>
       </div>
-      <div id="latestnavcontainer" class="headernavcontainer">
-        <a href="/latest.html" id="latest" class="section">LATEST</a>
+      <div id="sectionscontainer" class="sections">
+        <div id="homenavcontainer" class="headernavcontainer">
+          <a href="https://209politics.com/" id="latest" class="section">HOME</a>
+        </div>
+        <div id="latestnavcontainer" class="headernavcontainer">
+          <a href="/latest.html" id="latest" class="section">LATEST</a>
+        </div>
+        <div id="electionsnavcontainer" class="headernavcontainer">
+          <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
+        </div>
+        <div id="policynavcontainer" class="headernavcontainer">
+          <a href="/policy.html" class="section">POLICY</a>
+        </div>
+        <div id="covidnavcontainer" class="headernavcontainer">
+          <a href="/covid-19.html" class="section">COVID-19</a>
+        </div>
+        <div id="contactnavcontainer" class="headernavcontainer">
+          <a href="/contact.html" class="section">CONTACT US</a>
+        </div>
       </div>
-      <div id="electionsnavcontainer" class="headernavcontainer">
-        <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
+      <div id="formcontainer2">
+        <form id="searchform" action="https://www.google.com/search" method="get">
+          <input type="hidden" name="q" value="site:209politics.com">
+          <input type="text" name="q" value="" id="searchbox2">
+          <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+        </form>
       </div>
-      <div id="policynavcontainer" class="headernavcontainer">
-        <a href="/policy.html" class="section">POLICY</a>
+      <div id="filler"></div>
+      <div id="filler1"></div>
+      <div id="titlecontainer">
+        <h1 id="title">HOUSE RACES - RESULTS</h1>
       </div>
-      <div id="covidnavcontainer" class="headernavcontainer">
-        <a href="/covid-19.html" class="section">COVID-19</a>
-      </div>
-      <div id="contactnavcontainer" class="headernavcontainer">
-        <a href="/contact.html" class="section">CONTACT US</a>
-      </div>
-    </div>
-    <div id="formcontainer2">
-      <form id="searchform" action="https://www.google.com/search" method="get">
-        <input type="hidden" name="q" value="site:209politics.com">
-        <input type="text" name="q" value="" id="searchbox2">
-        <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
-      </form>
-    </div>
-    <div id="filler"></div>
-    <div id="titlecontainer">
-      <h1 id="title">SAN JOAQUIN CONGRESSIONAL RACES - RESULTS</h1>
-    </div>
-    <div id="votescontainer">
-      <div class="race">
-        <p id="racetitle">Congressional District 9</p>
-        <div class="candidates">
-          <div class="candcontainer">
-            <div class="candimgcontainer">
-              <img src="/projects/campaignfinance/images/federal/jerry-mcnerney.jpg" alt="Jerry McNerney" class="candimg">
+      <div id="votescontainer">
+        <div class="race" style="margin-right: 10px;">
+          <p id="racetitle">Congressional District 9</p>
+          <div class="candidates">
+            <div class="candcontainer">
+              <div class="candimgcontainer">
+                <img src="/projects/campaignfinance/images/federal/jerry-mcnerney.jpg" alt="Jerry McNerney" class="candimg">
+              </div>
+              <p class="candtext">Jerry McNerney</p>
             </div>
-            <p class="candtext">Jerry McNerney</p>
-          </div>
-          <div class="candcontainer">
-            <div class="candimgcontainer">
-              <img src="/projects/campaignfinance/images/federal/antonio-amador.jpg" alt="Antonio Amador" class="candimg">
+            <div class="candcontainer">
+              <div class="candimgcontainer">
+                <img src="/projects/campaignfinance/images/federal/antonio-amador.jpg" alt="Antonio Amador" class="candimg">
+              </div>
+              <p class="candtext">Antonio Amador</p>
             </div>
-            <p class="candtext">Antonio Amador</p>
+          </div>
+          <div class="resultscontainer">
+            <iframe class="result2 results" src="https://datastudio.google.com/embed/reporting/6e0b3522-5468-49e3-b85a-d0d763443d7a/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="resultscontainer">
-          <iframe class="results" src="https://datastudio.google.com/embed/reporting/6e0b3522-5468-49e3-b85a-d0d763443d7a/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="race">
-        <p id="racetitle">Congressional District 10</p>
-        <div class="candidates">
-          <div class="candcontainer">
-            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/federal/josh-harder.jpg" alt="Josh Harder" class="candimg"></div>
-            <p class="candtext">Josh Harder</p>
+        <div class="race">
+          <p id="racetitle">Congressional District 10</p>
+          <div class="candidates">
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/federal/josh-harder.jpg" alt="Josh Harder" class="candimg"></div>
+              <p class="candtext">Josh Harder</p>
+            </div>
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/federal/ted-howze.jpeg" alt="Ted Howze" class="candimg"></div>
+              <p class="candtext">Ted Howze</p>
+            </div>
           </div>
-          <div class="candcontainer">
-            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/federal/ted-howze.jpeg" alt="Ted Howze" class="candimg"></div>
-            <p class="candtext">Ted Howze</p>
+          <div class="resultscontainer">
+            <iframe class="result2 results" src="https://datastudio.google.com/embed/reporting/f27ef2a0-aaee-4d47-8c62-7a0c5267935d/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-        </div>
-        <div class="resultscontainer">
-          <iframe class="results" src="https://datastudio.google.com/embed/reporting/f27ef2a0-aaee-4d47-8c62-7a0c5267935d/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

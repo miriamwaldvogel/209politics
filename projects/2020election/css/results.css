@@ -1,16 +1,56 @@
 @media only screen and (max-width: 585px){
-  .results{
+  .result2{
     height: 33vw;
+  }
+  .result4{
+
+  }
+  .result5{
+
+  }
+  .result9{
+    
   }
 }
 @media only screen and (min-width: 586px){
-  .results{
+  .result2{
     height: 200px;
   }
+  .race{
+    width: 585px;
+  }
+}
+#resultsheadercontainer{
+  width: 100%;
+  max-width: 1200px;
+  position: fixed;
+  top: 57px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #BDBFC9;
+}
+#resultlinkcontainer{
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.resultlink{
+  margin: 3px;
+  font-family: "Libre Baskerville";
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+}
+#filler1{
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
 }
 #title{
   font-family: "Rubik";
   font-size: 40px;
+}
+.race{
+  display: inline-block;
 }
 .resultscontainer{
   max-width: 585px;
@@ -20,7 +60,7 @@
 }
 #racetitle{
   font-family: "Rubik";
-  font-size: 25px;
+  font-size: 24px;
 }
 .candidates{
   margin-bottom: 10px;
