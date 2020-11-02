@@ -2,19 +2,40 @@
   .result2{
     height: 33vw;
   }
+  .result3{
+    height: 43vw;
+  }
   .result4{
-
+    height: 50vw;
   }
   .result5{
-
+    height: 55vw;
+  }
+  .result7{
+    height: 62vw;
   }
   .result9{
-    
+    height: 70vw;
   }
 }
 @media only screen and (min-width: 586px){
   .result2{
     height: 200px;
+  }
+  .result3{
+    height: 240px;
+  }
+  .result4{
+    height: 280px;
+  }
+  .result5{
+    height: 320px;
+  }
+  .result7{
+    height: 350px;
+  }
+  .result9{
+    height: 400px;
   }
   .race{
     width: 585px;
@@ -32,6 +53,7 @@
   width: fit-content;
   margin: auto;
   text-align: center;
+  background-color: #FFFFFF;
 }
 .resultlink{
   margin: 3px;
@@ -58,7 +80,7 @@
 .results{
   width: 100%;
 }
-#racetitle{
+.racetitle{
   font-family: "Rubik";
   font-size: 24px;
 }
