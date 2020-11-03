@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="State Senate District 5 results, State Assembly results">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="stylesheet" href="/css/header.css">
@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="../css/results.css">
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-  <script type="text/javascript" src="../js/mobile.js"></script>
   <script type="text/javascript" src="/js/header.js"></script>
+  <script type="text/javascript" src="../js/schools.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,7 +24,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-174685284-1');
   </script>
-  <title>Statewide Results - 209 Politics</title>
+  <title>State Elections - Results - 209 Politics</title>
 </head>
 
 <body>
@@ -47,6 +47,26 @@
             <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
           </form>
         </div>
+      </div>
+    </div>
+    <div id="resultsheadercontainer">
+      <div id="resultlinkcontainer">
+        <a href="house.html" class="resultlink">House</a>
+        <a href="state.html" class="resultlink">State</a>
+        <a href="county.html" class="resultlink">County</a>
+        <a href="mayors.html" class="resultlink">Mayors</a>
+        <a href="citycouncils.html" class="resultlink">City councils</a>
+        <div id="schoolcontainer" onclick="schools();">
+          <a class="resultlink">Schools &#x25BC;</a>
+          <div id="schooldropdown">
+            <a class="schoollink" href="community-colleges.html">Community colleges</a>
+            <a class="schoollink" href="lodi-galt-districts.html">Lodi and Galt</a>
+            <a class="schoollink" href="manteca-ripon-districts.html">Manteca and Ripon</a>
+            <a class="schoollink" href="stockton-districts.html">Stockton</a>
+            <a class="schoollink" href="tracy-lammersville-districts.html">Tracy and Lammersville</a>
+          </div>
+        </div>
+        <a href="other.html" class="resultlink">Other</a>
       </div>
     </div>
     <div id="sectionscontainer" class="sections">
@@ -78,8 +98,9 @@
     </div>
     <div id="filler"></div>
     <div id="titlecontainer">
-      <h1 id="title">STATEWIDE RACES - RESULTS</h1>
+      <h1 id="title">STATE ELECTIONS - RESULTS</h1>
     </div>
+    <p id="refreshing"></p>
     <div id="votescontainer">
       <div class="race">
         <p class="racetitle">State Senate District 5</p>

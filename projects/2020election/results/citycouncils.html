@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Stockton City Council results, Tracy City Council results, Lodi City Council results, Ripon City Council results, Lathrop City Council results">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="stylesheet" href="/css/header.css">
@@ -13,6 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
   <script type="text/javascript" src="/js/header.js"></script>
+  <script type="text/javascript" src="../js/schools.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -23,7 +24,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-174685284-1');
   </script>
-  <title>House Races Results - 209 Politics</title>
+  <title>City Council Elections - Results - 209 Politics</title>
 </head>
 
 <body>
@@ -50,13 +51,22 @@
     </div>
     <div id="resultsheadercontainer">
       <div id="resultlinkcontainer">
-        <a href="" class="resultlink">House</a>
-        <a href="" class="resultlink">State</a>
-        <a href="" class="resultlink">County</a>
-        <a href="" class="resultlink">Mayors</a>
-        <a href="" class="resultlink">City councils</a>
-        <a href="" class="resultlink">Schools</a>
-        <a href="" class="resultlink">Other</a>
+        <a href="house.html" class="resultlink">House</a>
+        <a href="state.html" class="resultlink">State</a>
+        <a href="county.html" class="resultlink">County</a>
+        <a href="mayors.html" class="resultlink">Mayors</a>
+        <a href="citycouncils.html" class="resultlink">City councils</a>
+        <div id="schoolcontainer" onclick="schools();">
+          <a class="resultlink">Schools &#x25BC;</a>
+          <div id="schooldropdown">
+            <a class="schoollink" href="community-colleges.html">Community colleges</a>
+            <a class="schoollink" href="lodi-galt-districts.html">Lodi and Galt</a>
+            <a class="schoollink" href="manteca-ripon-districts.html">Manteca and Ripon</a>
+            <a class="schoollink" href="stockton-districts.html">Stockton</a>
+            <a class="schoollink" href="tracy-lammersville-districts.html">Tracy and Lammersville</a>
+          </div>
+        </div>
+        <a href="other.html" class="resultlink">Other</a>
       </div>
     </div>
     <div id="sectionscontainer" class="sections">
@@ -89,8 +99,9 @@
     <div id="filler"></div>
     <div id="filler1"></div>
     <div id="titlecontainer">
-      <h1 id="title">CITY COUNCIL RACES - RESULTS</h1>
+      <h1 id="title" onclick="test();">CITY COUNCIL ELECTIONS - RESULTS</h1>
     </div>
+    <p id="refreshing"></p>
     <div id="votescontainer">
       <div class="race">
         <p class="racetitle">Stockton City Council District 6</p>
@@ -104,7 +115,7 @@
             <p class="candtext">Gloria Allen</p>
           </div>
           <div class="resultscontainer">
-            <iframe class="results result2" src="https://datastudio.google.com/embed/reporting/00692ee9-6200-4733-86a8-58cb19914f76/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="results result2" id="test" src="https://datastudio.google.com/embed/reporting/00692ee9-6200-4733-86a8-58cb19914f76/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -180,96 +191,96 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="race">
-      <p class="racetitle">Tracy City Council (vote for 2)</p>
-      <div class="candidates">
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/mateo-bedolla.jpg" alt="Mateo Bedolla" class="candimg"></div>
-          <p class="candtext">Mateo Bedolla</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/ameni-alexander.jpg" alt="Ameni Alexander" class="candimg"></div>
-          <p class="candtext">Ameni Alexander</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/eleassia-davis.jpg" alt="Eleassia Davis" class="candimg"></div>
-          <p class="candtext">Eleassia Davis</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/amrik-wander.jpg" alt="Amrik Wander" class="candimg"></div>
-          <p class="candtext">Amrik Wander</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/william-muetzenberg.jpeg" alt="William Muetzenberg" class="candimg"></div>
-          <p class="candtext">William Muetzenberg</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/jaime-medina.jpg" alt="Jaime Medina" class="candimg"></div>
-          <p class="candtext">Jaime Medina</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/elizabeth-ortiz.jpg" alt="Elizabeth Ortiz" class="candimg"></div>
-          <p class="candtext">Elizabeth Ortiz</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/cliff-hudson.jpg" alt="Cliff Hudson" class="candimg"></div>
-          <p class="candtext">Cliff Hudson</p>
-        </div>
-        <div class="resultscontainer">
-          <iframe class="results result9" src="https://datastudio.google.com/embed/reporting/3347845b-1da0-4295-93f6-04eac0308f05/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="race">
-      <p class="racetitle">Ripon City Council (vote for 3)</p>
-      <div class="candidates">
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/leo-zuber.png" alt="Leo Zuber" class="candimg"></div>
-          <p class="candtext">Leo Zuber</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/daniel-degraaf.jpeg" alt="Daniel de Graaf" class="candimg"></div>
-          <p class="candtext">Daniel de Graaf</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/tim-wheeler.png" alt="Tim Wheeler" class="candimg"></div>
-          <p class="candtext">Tim Wheeler</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/tamra-spade.png" alt="Tamra Spade" class="candimg"></div>
-          <p class="candtext">Tamra Spade</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/richard-kohl.jpg" alt="Richard Kohl" class="candimg"></div>
-          <p class="candtext">Richard Kohl</p>
-        </div>
-        <div class="resultscontainer">
-          <iframe class="results result5" src="https://datastudio.google.com/embed/reporting/1405c28e-f7c3-4cc6-bb98-b9053b787a73/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="race">
+        <p class="racetitle">Tracy City Council (vote for 2)</p>
+        <div class="candidates">
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/mateo-bedolla.jpg" alt="Mateo Bedolla" class="candimg"></div>
+            <p class="candtext">Mateo Bedolla</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/ameni-alexander.jpg" alt="Ameni Alexander" class="candimg"></div>
+            <p class="candtext">Ameni Alexander</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/eleassia-davis.jpg" alt="Eleassia Davis" class="candimg"></div>
+            <p class="candtext">Eleassia Davis</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/amrik-wander.jpg" alt="Amrik Wander" class="candimg"></div>
+            <p class="candtext">Amrik Wander</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/william-muetzenberg.jpeg" alt="William Muetzenberg" class="candimg"></div>
+            <p class="candtext">William Muetzenberg</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/jaime-medina.jpg" alt="Jaime Medina" class="candimg"></div>
+            <p class="candtext">Jaime Medina</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/elizabeth-ortiz.jpg" alt="Elizabeth Ortiz" class="candimg"></div>
+            <p class="candtext">Elizabeth Ortiz</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/cliff-hudson.jpg" alt="Cliff Hudson" class="candimg"></div>
+            <p class="candtext">Cliff Hudson</p>
+          </div>
+          <div class="resultscontainer">
+            <iframe class="results result9" src="https://datastudio.google.com/embed/reporting/3347845b-1da0-4295-93f6-04eac0308f05/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="race">
-      <p class="racetitle"></p>
-      <div class="candidates">
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/jennifer-torres-o'callaghan.jpeg" alt="Jennifer Torres-O'Callaghan" class="candimg"></div>
-          <p class="candtext">Jennifer Torres-O'Callaghan</p>
+      <div class="race">
+        <p class="racetitle">Ripon City Council (vote for 3)</p>
+        <div class="candidates">
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/leo-zuber.png" alt="Leo Zuber" class="candimg"></div>
+            <p class="candtext">Leo Zuber</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/daniel-degraaf.jpeg" alt="Daniel de Graaf" class="candimg"></div>
+            <p class="candtext">Daniel de Graaf</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/tim-wheeler.png" alt="Tim Wheeler" class="candimg"></div>
+            <p class="candtext">Tim Wheeler</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/tamra-spade.png" alt="Tamra Spade" class="candimg"></div>
+            <p class="candtext">Tamra Spade</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/richard-kohl.jpg" alt="Richard Kohl" class="candimg"></div>
+            <p class="candtext">Richard Kohl</p>
+          </div>
+          <div class="resultscontainer">
+            <iframe class="results result5" src="https://datastudio.google.com/embed/reporting/1405c28e-f7c3-4cc6-bb98-b9053b787a73/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/minnie-diallo.jpg" alt="Minnie Diallo" class="candimg"></div>
-          <p class="candtext">Minnie Diallo</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/schools/blank.png" alt="Christopher Lee Sandoval" class="candimg"></div>
-          <p class="candtext">Christopher Lee Sandoval</p>
-        </div>
-        <div class="candcontainer">
-          <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/rajkanwal-nagra.jpg" alt="Rajkanwal Nagra" class="candimg"></div>
-          <p class="candtext">Rajkanwal Nagra</p>
-        </div>
-        <div class="resultscontainer">
-          <iframe class="results result4" src="https://datastudio.google.com/embed/reporting/ac378312-76ba-482e-90e6-9563b07d301e/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="race">
+          <p class="racetitle">Lathrop City Council (vote for 2)</p>
+          <div class="candidates">
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/jennifer-torres-o'callaghan.jpeg" alt="Jennifer Torres-O'Callaghan" class="candimg"></div>
+              <p class="candtext">Jennifer Torres-O'Callaghan</p>
+            </div>
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/minnie-diallo.jpg" alt="Minnie Diallo" class="candimg"></div>
+              <p class="candtext">Minnie Diallo</p>
+            </div>
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/schools/blank.png" alt="Christopher Lee Sandoval" class="candimg"></div>
+              <p class="candtext">Christopher Lee Sandoval</p>
+            </div>
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/citycouncils/rajkanwal-nagra.jpg" alt="Rajkanwal Nagra" class="candimg"></div>
+              <p class="candtext">Rajkanwal Nagra</p>
+            </div>
+            <div class="resultscontainer">
+              <iframe class="results result4" src="https://datastudio.google.com/embed/reporting/ac378312-76ba-482e-90e6-9563b07d301e/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>

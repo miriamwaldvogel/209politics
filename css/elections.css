@@ -31,3 +31,15 @@
 #mapinfo{
   font-size: 20px;
 }
+#resultlink{
+  text-decoration: none;
+  color: #000000;
+}
+#resulttitle{
+  font-family: "Rubik";
+  font-size: 35px;
+}
+#resultcontainer{
+  border-top: 3px double #BDBFC9;
+  border-bottom: 3px double #BDBFC9;
+}

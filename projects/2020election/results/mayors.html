@@ -1,105 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="../css/results.css">
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="/js/header.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-174685284-1');
-      </script>
-    <title>Mayoral Races Results - 209 Politics</title>
-  </head>
-  <body>
-    <div id="content">
-      <div id="headercontainer">
-        <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
-        <div id="logocontainer">
-          <a href="https://209politics.com/">
-            <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
-          </a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="Stockton mayor results, Tracy mayor results, Stockton election results, Tracy election results">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="../css/results.css">
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+  <script type="text/javascript" src="/js/header.js"></script>
+  <script type="text/javascript" src="../js/schools.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-174685284-1');
+  </script>
+  <title>Mayoral Elections - Results - 209 Politics</title>
+</head>
+
+<body>
+  <div id="content">
+    <div id="headercontainer">
+      <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
+      <div id="logocontainer">
+        <a href="https://209politics.com/">
+          <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo">
+        </a>
+      </div>
+      <div id="searchcontainer">
+        <div id="searchimgcontainer" onclick="searchtoggle();">
+          <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
         </div>
-        <div id="searchcontainer">
-          <div id="searchimgcontainer" onclick="searchtoggle();">
-            <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
-          </div>
-          <div id="formcontainer1">
-            <form id="searchform" action="https://www.google.com/search" method="get">
-              <input type="hidden" name="q" value="site:209politics.com">
-              <input type="text" name="q" value="" id="searchbox1">
-              <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
-            </form>
-        </div>
+        <div id="formcontainer1">
+          <form id="searchform" action="https://www.google.com/search" method="get">
+            <input type="hidden" name="q" value="site:209politics.com">
+            <input type="text" name="q" value="" id="searchbox1">
+            <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+          </form>
         </div>
       </div>
-      <div id="resultsheadercontainer">
-        <div id="resultlinkcontainer">
-          <a href="" class="resultlink">House</a>
-          <a href="" class="resultlink">State</a>
-          <a href="" class="resultlink">County</a>
-          <a href="" class="resultlink">Mayors</a>
-          <a href="" class="resultlink">City councils</a>
-          <a href="" class="resultlink">Schools</a>
-          <a href="" class="resultlink">Other</a>
-        </div>
-      </div>
-      <div id="sectionscontainer" class="sections">
-        <div id="homenavcontainer" class="headernavcontainer">
-          <a href="https://209politics.com/" id="latest" class="section">HOME</a>
-        </div>
-        <div id="latestnavcontainer" class="headernavcontainer">
-          <a href="/latest.html" id="latest" class="section">LATEST</a>
-        </div>
-        <div id="electionsnavcontainer" class="headernavcontainer">
-          <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
-        </div>
-        <div id="policynavcontainer" class="headernavcontainer">
-          <a href="/policy.html" class="section">POLICY</a>
-        </div>
-        <div id="covidnavcontainer" class="headernavcontainer">
-          <a href="/covid-19.html" class="section">COVID-19</a>
-        </div>
-        <div id="contactnavcontainer" class="headernavcontainer">
-          <a href="/contact.html" class="section">CONTACT US</a>
-        </div>
-      </div>
-      <div id="formcontainer2">
-        <form id="searchform" action="https://www.google.com/search" method="get">
-          <input type="hidden" name="q" value="site:209politics.com">
-          <input type="text" name="q" value="" id="searchbox2">
-          <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
-        </form>
-      </div>
-      <div id="filler"></div>
-      <div id="filler1"></div>
-      <div id="titlecontainer">
-        <h1 id="title">MAYORAL RACES - RESULTS</h1>
-      </div>
-      <div id="votescontainer">
-        <div class="race" style="margin-right: 10px;">
-          <p class="racetitle">Stockton Mayor</p>
-          <div class="candidates">
-            <div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/michael-tubbs.jpg" alt="Michael Tubbs" class="candimg"></div><p class="candtext">Michael Tubbs</p></div><div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/kevin-lincoln.jpg" alt="Kevin Lincoln" class="candimg"></div><p class="candtext">Kevin Lincoln</p></div><div class="resultscontainer"><iframe class="results result2" src="https://datastudio.google.com/embed/reporting/428be6cd-5180-4296-86b1-d894477fca00/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+    <div id="resultsheadercontainer">
+      <div id="resultlinkcontainer">
+        <a href="house.html" class="resultlink">House</a>
+        <a href="state.html" class="resultlink">State</a>
+        <a href="county.html" class="resultlink">County</a>
+        <a href="mayors.html" class="resultlink">Mayors</a>
+        <a href="citycouncils.html" class="resultlink">City councils</a>
+        <div id="schoolcontainer" onclick="schools();">
+          <a class="resultlink">Schools &#x25BC;</a>
+          <div id="schooldropdown">
+            <a class="schoollink" href="community-colleges.html">Community colleges</a>
+            <a class="schoollink" href="lodi-galt-districts.html">Lodi and Galt</a>
+            <a class="schoollink" href="manteca-ripon-districts.html">Manteca and Ripon</a>
+            <a class="schoollink" href="stockton-districts.html">Stockton</a>
+            <a class="schoollink" href="tracy-lammersville-districts.html">Tracy and Lammersville</a>
           </div>
         </div>
-        <div class="race">
-          <p class="racetitle">Tracy Mayor</p>
-          <div class="candidates">
-            <div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/nancy-young.jpeg" alt="Nancy Young" class="candimg"></div><p class="candtext">Nancy Young</p></div><div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/abdul-wahid.jpg" alt="Abdul Wahid" class="candimg"></div><p class="candtext">Abdul Wahid</p></div><div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/jass-sangha.jpg" alt="Jass Sangha" class="candimg"></div><p class="candtext">Jass Sangha</p></div><div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/jennifer-bilbrey.jpg" alt="Jennifer Bilbrey" class="candimg"></div><p class="candtext">Jennifer Bilbrey</p></div><div class="candcontainer"><div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/dan-arriola.jpg" alt="Dan Arriola" class="candimg"></div><p class="candtext">Dan Tavares Arriola</p></div><div class="resultscontainer"><iframe class="results result5" src="https://datastudio.google.com/embed/reporting/056d4778-7f4b-45e3-a85e-9e888c8c4d16/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <a href="other.html" class="resultlink">Other</a>
+      </div>
+    </div>
+    <div id="sectionscontainer" class="sections">
+      <div id="homenavcontainer" class="headernavcontainer">
+        <a href="https://209politics.com/" id="latest" class="section">HOME</a>
+      </div>
+      <div id="latestnavcontainer" class="headernavcontainer">
+        <a href="/latest.html" id="latest" class="section">LATEST</a>
+      </div>
+      <div id="electionsnavcontainer" class="headernavcontainer">
+        <a href="/elections.html" id="elections" class="section">ELECTIONS</a>
+      </div>
+      <div id="policynavcontainer" class="headernavcontainer">
+        <a href="/policy.html" class="section">POLICY</a>
+      </div>
+      <div id="covidnavcontainer" class="headernavcontainer">
+        <a href="/covid-19.html" class="section">COVID-19</a>
+      </div>
+      <div id="contactnavcontainer" class="headernavcontainer">
+        <a href="/contact.html" class="section">CONTACT US</a>
+      </div>
+    </div>
+    <div id="formcontainer2">
+      <form id="searchform" action="https://www.google.com/search" method="get">
+        <input type="hidden" name="q" value="site:209politics.com">
+        <input type="text" name="q" value="" id="searchbox2">
+        <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+      </form>
+    </div>
+    <div id="filler"></div>
+    <div id="filler1"></div>
+    <div id="titlecontainer">
+      <h1 id="title">MAYORAL ELECTIONS - RESULTS</h1>
+    </div>
+    <p id="refreshing"></p>
+    <div id="votescontainer">
+      <div class="race" style="margin-right: 10px;">
+        <p class="racetitle">Stockton Mayor</p>
+        <div class="candidates">
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/michael-tubbs.jpg" alt="Michael Tubbs" class="candimg"></div>
+            <p class="candtext">Michael Tubbs</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/kevin-lincoln.jpg" alt="Kevin Lincoln" class="candimg"></div>
+            <p class="candtext">Kevin Lincoln</p>
+          </div>
+          <div class="resultscontainer">
+            <iframe class="results result2" src="https://datastudio.google.com/embed/reporting/428be6cd-5180-4296-86b1-d894477fca00/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="race">
+        <p class="racetitle">Tracy Mayor</p>
+        <div class="candidates">
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/nancy-young.jpeg" alt="Nancy Young" class="candimg"></div>
+            <p class="candtext">Nancy Young</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/abdul-wahid.jpg" alt="Abdul Wahid" class="candimg"></div>
+            <p class="candtext">Abdul Wahid</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/jass-sangha.jpg" alt="Jass Sangha" class="candimg"></div>
+            <p class="candtext">Jass Sangha</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/jennifer-bilbrey.jpg" alt="Jennifer Bilbrey" class="candimg"></div>
+            <p class="candtext">Jennifer Bilbrey</p>
+          </div>
+          <div class="candcontainer">
+            <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/dan-arriola.jpg" alt="Dan Arriola" class="candimg"></div>
+            <p class="candtext">Dan Tavares Arriola</p>
+          </div>
+          <div class="resultscontainer">
+            <iframe class="results result5" src="https://datastudio.google.com/embed/reporting/056d4778-7f4b-45e3-a85e-9e888c8c4d16/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

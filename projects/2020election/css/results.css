@@ -12,7 +12,7 @@
     height: 55vw;
   }
   .result7{
-    height: 62vw;
+    height: 65vw;
   }
   .result9{
     height: 70vw;
@@ -32,13 +32,23 @@
     height: 320px;
   }
   .result7{
-    height: 350px;
+    height: 370px;
   }
   .result9{
-    height: 400px;
+    height: 420px;
   }
   .race{
     width: 585px;
+  }
+}
+@media only screen and (max-width: 320px){
+  #filler1{
+    height: 96px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 635px){
+  #filler1{
+    height: 71px;
   }
 }
 #resultsheadercontainer{
@@ -48,31 +58,65 @@
   top: 57px;
   background-color: #FFFFFF;
   border-bottom: 1px solid #BDBFC9;
+  z-index: 99;
 }
 #resultlinkcontainer{
   width: fit-content;
   margin: auto;
   text-align: center;
   background-color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .resultlink{
-  margin: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-family: "Libre Baskerville";
   text-decoration: none;
   color: #000000;
   display: inline-block;
+  font-size: 20px;
+}
+#schoolcontainer{
+  width: fit-content;
+  display: inline-block;
+  cursor: pointer;
+}
+#schoolselect{
+  border: 0;
+  background-color: #FFFFFF;
+}
+#schooldropdown{
+  display: none;
+  position: fixed;
+  z-index: 99;
+  background-color: #FFFFFF;
+  border: 1.5px solid #BDBFC9;
+  border-top: 0;
+}
+.schoollink{
+  font-family: "Libre Baskerville";
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+.schoollink:hover{
+  background-color: #CBCACF;
 }
 #filler1{
   width: 100%;
   max-width: 1200px;
-  height: 50px;
+  min-height: 50px;
 }
 #title{
   font-family: "Rubik";
   font-size: 40px;
 }
 .race{
-  display: inline-block;
+  display: inline-grid;
 }
 .resultscontainer{
   max-width: 585px;
@@ -83,6 +127,7 @@
 .racetitle{
   font-family: "Rubik";
   font-size: 24px;
+  text-align: center;
 }
 .candidates{
   margin-bottom: 10px;
@@ -109,4 +154,7 @@
   width: fit-content;
   display: inline-block;
   margin-right: 20px;
+}
+#refreshing{
+  font-family: "Libre Baskerville";
 }

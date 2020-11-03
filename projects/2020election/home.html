@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="San Joaquin election results, Stockton election results, Manteca election results, Tracy election results, Ripon election results">
     <meta name="data" id="linknum" content="0">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="/images/favicon.png">
@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/home.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="js/mobile.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="js/schools.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -21,7 +21,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-174685284-1');
       </script>
-    <title>- 209 Politics</title>
+    <title>2020 Election Results - 209 Politics</title>
   </head>
   <body>
     <div id="content">
@@ -76,8 +76,90 @@
       <div id="titlecontainer">
         <h1 id="title">ELECTION NIGHT 2020 - RESULTS</h1>
       </div>
+      <div id="resultsheadercontainer">
+        <div id="resultlinkcontainer">
+          <a href="results/house.html" class="resultlink">House</a>
+          <a href="results/state.html" class="resultlink">State</a>
+          <a href="results/county.html" class="resultlink">County</a>
+          <a href="results/mayors.html" class="resultlink">Mayors</a>
+          <a href="results/citycouncils.html" class="resultlink">City councils</a>
+          <div id="schoolcontainer" onclick="schools();">
+            <a class="resultlink">Schools &#x25BC;</a>
+            <div id="schooldropdown">
+              <a class="schoollink" href="community-colleges.html">Community colleges</a>
+              <a class="schoollink" href="lodi-galt-districts.html">Lodi and Galt</a>
+              <a class="schoollink" href="manteca-ripon-districts.html">Manteca and Ripon</a>
+              <a class="schoollink" href="stockton-districts.html">Stockton</a>
+              <a class="schoollink" href="tracy-lammersville-districts.html">Tracy and Lammersville</a>
+            </div>
+          </div>
+          <a href="results/other.html" class="resultlink">Other</a>
+        </div>
+      </div>
       <div id="resultscontainer">
-        <iframe id="results" src="https://datastudio.google.com/embed/reporting/ae939844-bb78-4899-b91f-7a8cdf005c75/page/J3jlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p id="watchtitle">Races to watch</p>
+        <div class="watchcontainer">
+          <a href="results/county.html" class="watchlink">
+            <p class="racetitle">San Joaquin County Board of Education Area 3</p>
+            <div class="candidates">
+              <div class="candcontainer">
+                <div class="candimgcontainer"><img src="/projects/campaignfinance/images/county/jill-fritchen.jpeg" alt="Jill Fritchen" class="candimg"></div>
+                <p class="candtext">Jill Fritchen</p>
+              </div>
+              <div class="candcontainer">
+                <div class="candimgcontainer"><img src="/projects/campaignfinance/images/county/douglas-vigil.jpg" alt="Douglas Vigil" class="candimg"></div>
+                <p class="candtext">Douglas Vigil</p>
+              </div>
+            </div>
+          </a>
+          <p class="explanation">Vigil and Fritchen took top two in the primary, displacing incumbent Peter Ottesen, in the tightest race in the county. Vigil garnered 3,356 votes to Fritchen's 3,355. Ottesen got 5,350.</p>
+        </div>
+        <div class="watchcontainer">
+          <a href="results/state.html" class="watchlink">
+            <p class="racetitle">State Assembly District 13</p>
+            <div class="candidates">
+              <div class="candcontainer">
+                <div class="candimgcontainer"><img src="/projects/campaignfinance/images/state/kathy-miller.jpg" alt="Kathy Miller" class="candimg"></div>
+                <p class="candtext">Kathy Miller</p>
+              </div>
+              <div class="candcontainer">
+                <div class="candimgcontainer"><img src="/projects/campaignfinance/images/state/carlos-villapudua.png" alt="Carlos Villapudua" class="candimg"></div>
+                <p class="candtext">Carlos Villapudua</p>
+              </div>
+            </div>
+            <p class="explanation">Miller made it into the general election by a margin of 30 votes in the primary. Villapudua took first place by less than 3,000 votes.</p>
+          </a>
+        </div>
+        <div class="watchcontainer">
+          <a href="results/house.html" class="watchlink">
+            <p class="racetitle">Congressional District 10</p>
+            <div class="candidates">
+              <div class="candcontainer">
+                <div class="candimgcontainer"><img src="/projects/campaignfinance/images/federal/josh-harder.jpg" alt="Josh Harder" class="candimg"></div>
+                <p class="candtext">Josh Harder</p>
+              </div>
+              <div class="candcontainer">
+                <div class="candimgcontainer"><img src="/projects/campaignfinance/images/federal/ted-howze.jpeg" alt="Ted Howze" class="candimg"></div>
+                <p class="candtext">Ted Howze</p>
+              </div>
+            </div>
+            <p class="explanation">Harder is a first-term congressman, having ousted three-term incumbent Jeff Denham in 2018. Pollsters have rated his seat as likely to safely Democratic, but the 10th Congressional Districts still remains far more competitive than the 9th.</p>
+          </a>
+        </div>
+        <div class="watchcontainer">
+          <a href="results/mayors.html" class="watchlink">
+            <p class="racetitle">Stockton Mayor</p>
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/michael-tubbs.jpg" alt="Michael Tubbs" class="candimg"></div>
+              <p class="candtext">Michael Tubbs</p>
+            </div>
+            <div class="candcontainer">
+              <div class="candimgcontainer"><img src="/projects/campaignfinance/images/mayors/kevin-lincoln.jpg" alt="Kevin Lincoln" class="candimg"></div>
+              <p class="candtext">Kevin Lincoln</p>
+            </div>
+            <p class="explanation">Tubbs received almost double the votes of Lincoln in the primary. He also has the advantage of being the incumbent, but Lincoln has matched him step for step in fundraising since August.</p>
+          </a>
+        </div>
       </div>
     </div>
   </body>

@@ -1,4 +1,101 @@
-#results{
+#title{
+  font-family: "Rubik";
+}
+#resultsheadercontainer{
   width: 100%;
-  height: 200px;
+  max-width: 1200px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #BDBFC9;
+}
+#resultlinkcontainer{
+  width: fit-content;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.resultlink{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "Libre Baskerville";
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-size: 20px;
+}
+#schoolcontainer{
+  width: fit-content;
+  display: inline-block;
+  cursor: pointer;
+}
+#schoolselect{
+  border: 0;
+  background-color: #FFFFFF;
+}
+#schooldropdown{
+  display: none;
+  background-color: #FFFFFF;
+  border: 1.5px solid #BDBFC9;
+  border-top: 0;
+  position: absolute;
+}
+.schoollink{
+  font-family: "Libre Baskerville";
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+.schoollink:hover{
+  background-color: #cbcacf;
+}
+#filler1{
+  width: 100%;
+  max-width: 1200px;
+  min-height: 50px;
+}
+#watchtitle{
+  font-family: "Rubik";
+  font-size: 27px;
+}
+.watchlink{
+  text-decoration: none;
+  color: #000000;
+}
+.racetitle{
+  font-family: "Rubik";
+  font-size: 23px;
+}
+.watchcontainer{
+  border-bottom: 3px double #BDBFC9;
+}
+.candidates{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.candimgcontainer{
+  width: 50px;
+  display: inline-block;
+}
+.candimg{
+  width: 100%;
+  border-radius: 50%;
+}
+.candtext{
+  color: #000000;
+  font-family: "Libre Baskerville";
+  margin-bottom: 3px;
+  display: inline-block;
+  position: relative;
+  bottom: 17px;
+  margin-left: 5px;
+}
+.candcontainer{
+  width: fit-content;
+  display: inline-block;
+  margin-right: 20px;
+}
+.explanation{
+  font-family: "Libre Baskerville";
 }
