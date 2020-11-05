@@ -9,32 +9,32 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-11-03T03:50:15+00:00</lastmod>
+  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://209politics.com/latest.html</loc>
-  <lastmod>2020-10-31T03:00:50+00:00</lastmod>
+  <loc>https://209politics.com/latest</loc>
+  <lastmod>2020-11-05T03:53:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/elections.html</loc>
-  <lastmod>2020-11-03T03:50:15+00:00</lastmod>
+  <loc>https://209politics.com/elections</loc>
+  <lastmod>2020-11-05T04:24:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/policy.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <loc>https://209politics.com/policy</loc>
+  <lastmod>2020-11-05T04:25:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/covid-19.html</loc>
-  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
+  <loc>https://209politics.com/covid-19</loc>
+  <lastmod>2020-11-05T04:16:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/contact.html</loc>
-  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
+  <loc>https://209politics.com/contact</loc>
+  <lastmod>2020-11-05T04:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -44,7 +44,17 @@
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/home.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <lastmod>2020-11-03T04:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/04/lincoln-slight-lead.html</loc>
+  <lastmod>2020-11-04T21:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
+  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -69,11 +79,6 @@
 </url>
 <url>
   <loc>https://209politics.com/2020/10/24/ray-zulueta-interview.html</loc>
-  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/22/mousalimas-sjcoe-retirement.html</loc>
   <lastmod>2020-10-29T21:15:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -176,6 +181,11 @@
   <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
   <lastmod>2020-10-29T21:02:09+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/22/mousalimas-sjcoe-retirement.html</loc>
+  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/10/19/yes-on-a-donations.html</loc>
@@ -1029,67 +1039,67 @@
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/house.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/state.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/county.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/mayors.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/citycouncils.html</loc>
-  <lastmod>2020-11-03T03:50:15+00:00</lastmod>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/2020election/results/community-colleges.html</loc>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/2020election/results/lodi-galt-districts.html</loc>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/2020election/results/manteca-ripon-districts.html</loc>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/2020election/results/stockton-districts.html</loc>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/2020election/results/tracy-lammersville-districts.html</loc>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/other.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <lastmod>2020-11-03T04:30:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-11-03T03:50:15+00:00</lastmod>
+  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/09/05/ripon-k6-waiver-application.html</loc>
   <lastmod>2020-10-29T21:02:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/2020election/results/community-colleges.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/2020election/results/lodi-galt-districts.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/2020election/results/manteca-ripon-districts.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/2020election/results/stockton-districts.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/2020election/results/tracy-lammersville-districts.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
