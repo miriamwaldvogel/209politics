@@ -1,0 +1,71 @@
+#title{
+  font-family: "Rubik";
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#leftpanel{
+  width: 55%;
+  border-right: 3px double #BDBFC9;
+  display: inline-grid;
+  float: left;
+}
+#rightpanel{
+  width: 44%;
+  display: inline-grid;
+  float: right;
+}
+#topcontainer{
+  height: fit-content;
+}
+#mainopcontainer{
+  margin-right: 10px;
+  display: inline-block;
+}
+#mainopimgcontainer{
+  width: 100%;
+}
+#mainopimg{
+  width: 100%;
+}
+#mainopheadline{
+  color: #000000;
+  font-size: 27px;
+}
+a{
+  text-decoration: none;
+}
+.headline{
+  font-family: "Rubik";
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000;
+}
+.opcontainer:before{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 3px double #BDBFC9;
+}
+.opauthor{
+  color: #000000;
+  font-family: "Libre Baskerville";
+  font-size: 15px;
+}
+.opimgcontainer{
+  width: 40%;
+  float: left;
+}
+.opimg{
+  width: 100%;
+}
+.optextcontainer{
+  margin-left: 10px;
+  width: 57%;
+  float: right;
+}
+#rightpanel .headline{
+  font-size: 20px;
+}
