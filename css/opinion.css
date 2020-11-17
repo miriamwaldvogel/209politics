@@ -16,7 +16,8 @@
   float: right;
 }
 #topcontainer{
-  height: fit-content;
+  height: 455px;
+  border-bottom: 3px double #BDBFC9;
 }
 #mainopcontainer{
   margin-right: 10px;
@@ -41,7 +42,7 @@ a{
   margin-bottom: 5px;
   color: #000000;
 }
-.opcontainer:before{
+#rightpanel .opcontainer:before{
   content: "";
   display: block;
   margin: 0 auto;
@@ -54,18 +55,44 @@ a{
   font-family: "Libre Baskerville";
   font-size: 15px;
 }
-.opimgcontainer{
+#rightpanel .opimgcontainer{
   width: 40%;
   float: left;
 }
 .opimg{
   width: 100%;
 }
-.optextcontainer{
+#rightpanel .optextcontainer{
   margin-left: 10px;
   width: 57%;
   float: right;
 }
 #rightpanel .headline{
   font-size: 20px;
+}
+#midcontainer{
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (min-width:1201px){
+  #midcontainer .opcontainer{
+    width: 376px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  #midcontainer .opcontainer{
+    width: calc(32vw - 13px);
+  }
+}
+#midcontainer .opcontainer{
+  display: inline-block;
+}
+#midcontainer .opcontainer:nth-child(2){
+  margin-left: 10px;
+  margin-right: 10px;
+  border-left: 3px double #BDBFC9;
+  border-right: 3px double #BDBFC9;
+  padding-left: 10px;
+  padding-right: 10px;
 }
