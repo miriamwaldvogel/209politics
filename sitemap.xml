@@ -9,77 +9,72 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
+  <lastmod>2020-11-17T02:51:12+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2020-11-05T03:53:27+00:00</lastmod>
+  <lastmod>2020-11-17T02:51:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections</loc>
-  <lastmod>2020-11-05T04:24:55+00:00</lastmod>
+  <lastmod>2020-11-15T04:35:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2020-11-05T04:25:24+00:00</lastmod>
+  <lastmod>2020-11-07T03:47:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/covid-19</loc>
-  <lastmod>2020-11-05T04:16:41+00:00</lastmod>
+  <lastmod>2020-11-17T02:51:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/contact</loc>
-  <lastmod>2020-11-05T04:08:33+00:00</lastmod>
+  <lastmod>2020-11-08T17:44:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/projects/campaignfinance/home.html</loc>
-  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <loc>https://209politics.com/2020/11/16/san-joaquin-purple-tier.html</loc>
+  <lastmod>2020-11-17T02:53:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/projects/2020election/home.html</loc>
-  <lastmod>2020-11-03T04:36:21+00:00</lastmod>
+  <loc>https://209politics.com/2020/11/14/friday-election-results-update.html</loc>
+  <lastmod>2020-11-15T04:35:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/13/thursday-election-results-update.html</loc>
+  <lastmod>2020-11-13T21:40:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/12/stockton-diocese-abuse.html</loc>
+  <lastmod>2020-11-13T04:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/10/san-joaquin-covid-numbers.html</loc>
+  <lastmod>2020-11-11T04:12:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/10/san-joaquin-close-races.html</loc>
+  <lastmod>2020-11-10T18:22:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/06/lincoln-campaign-tactics.html</loc>
+  <lastmod>2020-11-07T21:08:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/11/04/lincoln-slight-lead.html</loc>
   <lastmod>2020-11-04T21:29:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
-  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/30/miller-fundraising-week.html</loc>
-  <lastmod>2020-10-31T03:00:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/27/stockton-unified-outside-spending.html</loc>
-  <lastmod>2020-10-28T03:42:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/28/shakir-khan-arrest.html</loc>
-  <lastmod>2020-10-31T01:00:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/25/stockton-close-mayoral-fundraising.html</loc>
-  <lastmod>2020-10-26T03:25:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/24/ray-zulueta-interview.html</loc>
-  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -115,6 +110,11 @@
 <url>
   <loc>https://209politics.com/2020/08/02/tracy-cannabis-tax.html</loc>
   <lastmod>2020-10-29T21:02:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/24/ray-zulueta-interview.html</loc>
+  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -181,6 +181,26 @@
   <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
   <lastmod>2020-10-29T21:02:09+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/30/miller-fundraising-week.html</loc>
+  <lastmod>2020-10-31T03:00:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/28/shakir-khan-arrest.html</loc>
+  <lastmod>2020-10-31T01:00:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/27/stockton-unified-outside-spending.html</loc>
+  <lastmod>2020-10-28T03:42:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/25/stockton-close-mayoral-fundraising.html</loc>
+  <lastmod>2020-10-26T03:25:03+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/10/22/mousalimas-sjcoe-retirement.html</loc>
@@ -343,8 +363,23 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/projects/2020election/home.html</loc>
+  <lastmod>2020-11-03T04:36:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/home.html</loc>
+  <lastmod>2020-11-03T03:18:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/graphics/november-3-voting.html</loc>
   <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/05/san-joaquin-uncounted-ballots.html</loc>
+  <lastmod>2020-11-06T21:06:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -498,604 +533,609 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/projects/campaignfinance/federal/jerry-mcnerney.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
+  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/projects/campaignfinance/federal/antonio-amador.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/federal/josh-harder.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/federal/ted-howze.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/susan-eggman.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/jim-ridenour.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/jim-cooper.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/eric-rigard.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/heath-flora.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/paul-akinjo.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/kathy-miller.html</loc>
-  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/state/carlos-villapudua.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/county/rhodesia-ransom.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/county/robert-rickman.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/county/jill-fritchen.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/county/douglas-vigil.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/michael-tubbs.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/kevin-lincoln.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/dan-arriola.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/nancy-young.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/jass-sangha.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/abdul-wahid.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/mayors/jennifer-bilbrey.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/kimberly-warmsley.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/gloria-allen.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/nati-bowman.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/joanne-mounce.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/shak-khan.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/ramon-yepez.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/mikey-hothi.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/hector-madrigal.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/michael-mcknight.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/gary-singh.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/debby-moorhead.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/fred-cunha.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/charlie-halford.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/david-martin.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/tim-wheeler.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/leo-zuber.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/tamra-spade.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/richard-kohl.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/daniel-degraaf.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/jaime-medina.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/eleassia-davis.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/amrik-wander.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/mateo-bedolla.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/william-muetzenberg.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/cliff-hudson.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/ameni-alexander.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/citycouncils/elizabeth-ortiz.html</loc>
-  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/cecilia-mendez.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/viola-shackelford.html</loc>
-  <lastmod>2020-11-03T03:18:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/patricia-barrett.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/valentino-silva.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/lavichia-jones.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/alicia-rico.html</loc>
-  <lastmod>2020-11-03T03:18:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/frank-silva.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/dia-silva.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/lange-luntao.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/gabriel-casillas.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/ray-zulueta.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/lilia-barbosa.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/eric-duncan.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/karen-pearsall.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/melanie-greene.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/mike-morowit.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/bob-wallace.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/christina-campoylaughlin.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/marisella-guerrero.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/van-ha-to-cowell.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/elizabeth-blanchard.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/sabrina-flores-eng.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/stephan-castellanos.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/kathleen-garcia.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/bruce-giudici.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/teresa-brown.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/casey-goodall.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/gary-knackstedt.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/richard-vasquez.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/ron-freitas.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/christopher-pack.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/luke-josephprice.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/joe-nava.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/juan-troy.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/jessica-mitchell.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/kelley-marable.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/gerald-jeffs.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/nathalia-erskine.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/zachary-hoffert.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/jill-costa.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/jeremy-silcox.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/ana-blanco.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/ajmer-mann.html</loc>
-  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/ashley-jones.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/garland-frazier.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/sandra-chan.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/deeann-antonini.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/david-pombo.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/stephanie-olsen.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/anne-bonilla.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/schools/ephelius-cornelious.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/harry-dhillon.html</loc>
-  <lastmod>2020-10-30T14:40:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/andy-su.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/daniel-harrison.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/bernice-kingtingle.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/pebble.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/raghu-malapaka.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://209politics.com/projects/campaignfinance/services/victor-liew.html</loc>
-  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <loc>https://209politics.com/index.html</loc>
+  <lastmod>2020-11-17T02:51:12+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/house.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/state.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/county.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/mayors.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/citycouncils.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/community-colleges.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/lodi-galt-districts.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/manteca-ripon-districts.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/stockton-districts.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/tracy-lammersville-districts.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/other.html</loc>
   <lastmod>2020-11-03T04:30:20+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://209politics.com/projects/campaignfinance/federal/jerry-mcnerney.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/federal/antonio-amador.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/federal/josh-harder.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/federal/ted-howze.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/susan-eggman.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/jim-ridenour.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/jim-cooper.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/eric-rigard.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/heath-flora.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/paul-akinjo.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/kathy-miller.html</loc>
+  <lastmod>2020-10-29T21:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/state/carlos-villapudua.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/county/rhodesia-ransom.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/county/robert-rickman.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/county/jill-fritchen.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/county/douglas-vigil.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/michael-tubbs.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/kevin-lincoln.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/dan-arriola.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/nancy-young.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/jass-sangha.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/abdul-wahid.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/mayors/jennifer-bilbrey.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/kimberly-warmsley.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/gloria-allen.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/nati-bowman.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/joanne-mounce.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/shak-khan.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/ramon-yepez.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/mikey-hothi.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/hector-madrigal.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/michael-mcknight.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/gary-singh.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/debby-moorhead.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/fred-cunha.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/charlie-halford.html</loc>
+  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/david-martin.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/tim-wheeler.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/leo-zuber.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/tamra-spade.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/richard-kohl.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/daniel-degraaf.html</loc>
+  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/jaime-medina.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/eleassia-davis.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/amrik-wander.html</loc>
+  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/mateo-bedolla.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/william-muetzenberg.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/cliff-hudson.html</loc>
+  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/ameni-alexander.html</loc>
+  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/citycouncils/elizabeth-ortiz.html</loc>
+  <lastmod>2020-10-29T21:15:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/cecilia-mendez.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/viola-shackelford.html</loc>
+  <lastmod>2020-11-03T03:18:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/patricia-barrett.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/valentino-silva.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/lavichia-jones.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/alicia-rico.html</loc>
+  <lastmod>2020-11-03T03:18:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/frank-silva.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/dia-silva.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/lange-luntao.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/gabriel-casillas.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/ray-zulueta.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/lilia-barbosa.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/eric-duncan.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/karen-pearsall.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/melanie-greene.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/mike-morowit.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/bob-wallace.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/christina-campoylaughlin.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/marisella-guerrero.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/van-ha-to-cowell.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/elizabeth-blanchard.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/sabrina-flores-eng.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/stephan-castellanos.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/kathleen-garcia.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/bruce-giudici.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/teresa-brown.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/casey-goodall.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/gary-knackstedt.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/richard-vasquez.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/ron-freitas.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/christopher-pack.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/luke-josephprice.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/joe-nava.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/juan-troy.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/jessica-mitchell.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/kelley-marable.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/gerald-jeffs.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/nathalia-erskine.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/zachary-hoffert.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/jill-costa.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/jeremy-silcox.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/ana-blanco.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/ajmer-mann.html</loc>
+  <lastmod>2020-10-29T21:15:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/ashley-jones.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/garland-frazier.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/sandra-chan.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/deeann-antonini.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/david-pombo.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/stephanie-olsen.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/anne-bonilla.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/schools/ephelius-cornelious.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/harry-dhillon.html</loc>
+  <lastmod>2020-10-30T14:40:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/andy-su.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/daniel-harrison.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/bernice-kingtingle.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/pebble.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/raghu-malapaka.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/campaignfinance/services/victor-liew.html</loc>
+  <lastmod>2020-10-29T21:15:15+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/09/05/ripon-k6-waiver-application.html</loc>
