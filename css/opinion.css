@@ -1,23 +1,118 @@
+@media only screen and (min-width: 650px){
+  #leftpanel{
+    display: inline-grid;
+    float: left;
+  }
+  #rightpanel{
+    display: inline-grid;
+    float: right;
+  }
+  #rightpanel .opimgcontainer{
+    width: 40%;
+    float: left;
+  }
+  #rightpanel .optextcontainer{
+    margin-left: 10px;
+    width: 57%;
+    float: right;
+  }
+  #rightpanel .opauthor{
+    font-size: 1.4vw;
+  }
+  #midcontainer .opcontainer{
+    display: inline-block;
+  }
+  #midcontainer .opcontainer:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 3px double #BDBFC9;
+    border-right: 3px double #BDBFC9;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #topcontainer{
+    border-bottom: 3px double #BDBFC9;
+  }
+  #midcontainer{
+    width: fit-content;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 651px) {
+  #leftpanel{
+    width: 100%;
+  }
+  #rightpanel{
+    width: 100%;
+  }
+  #rightpanel .opauthor{
+    font-size: 15px;
+  }
+  #rightpanel .optextcontainer{
+    margin-top: 10px;
+  }
+  #midcontainer .opimgcontainer{
+    display: none;
+  }
+  #midcontainer .opcontainer{
+    width: 100%;
+  }
+  #midcontainer .opcontainer:before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 10px;
+    border-top: 3px double #BDBFC9;
+  }
+  #midcontainer .headline{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 773px){
+  #leftpanel{
+    width: 55%;
+    border-right: 3px double #BDBFC9;
+  }
+  #rightpanel{
+    width: 44%;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 772px){
+  #leftpanel{
+    width: 44%
+  }
+  #rightpanel{
+    width: 54%;
+    padding-left: 10px;
+    border-left: 3px double #BDBFC9;
+  }
+}
+@media only screen and (min-width:1201px){
+  #midcontainer .opcontainer{
+    width: 376px;
+  }
+  #rightpanel .headline{
+    font-size: 25px;
+  }
+  #rightpanel .opauthor{
+    font-size: 15px;
+  }
+  #midcontainer .headline{
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 1200px){
+  #midcontainer .opcontainer{
+    width: calc(32vw - 16px);
+  }
+}
 #title{
   font-family: "Rubik";
   font-size: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-#leftpanel{
-  width: 55%;
-  border-right: 3px double #BDBFC9;
-  display: inline-grid;
-  float: left;
-}
-#rightpanel{
-  width: 44%;
-  display: inline-grid;
-  float: right;
-}
-#topcontainer{
-  height: 455px;
-  border-bottom: 3px double #BDBFC9;
 }
 #mainopcontainer{
   margin-right: 10px;
@@ -32,6 +127,9 @@
 #mainopheadline{
   color: #000000;
   font-size: 27px;
+}
+#mainopauthor{
+  font-size: 15px;
 }
 a{
   text-decoration: none;
@@ -53,46 +151,18 @@ a{
 .opauthor{
   color: #000000;
   font-family: "Libre Baskerville";
-  font-size: 15px;
-}
-#rightpanel .opimgcontainer{
-  width: 40%;
-  float: left;
 }
 .opimg{
   width: 100%;
 }
-#rightpanel .optextcontainer{
-  margin-left: 10px;
-  width: 57%;
-  float: right;
-}
 #rightpanel .headline{
+  font-size: 2.1vw;
   font-size: 20px;
+  margin-top: 0px;
 }
 #midcontainer{
-  width: fit-content;
-  margin: auto;
   margin-top: 10px;
 }
-@media only screen and (min-width:1201px){
-  #midcontainer .opcontainer{
-    width: 376px;
-  }
-}
-@media only screen and (max-width: 1200px){
-  #midcontainer .opcontainer{
-    width: calc(32vw - 13px);
-  }
-}
-#midcontainer .opcontainer{
-  display: inline-block;
-}
-#midcontainer .opcontainer:nth-child(2){
-  margin-left: 10px;
-  margin-right: 10px;
-  border-left: 3px double #BDBFC9;
-  border-right: 3px double #BDBFC9;
-  padding-left: 10px;
-  padding-right: 10px;
+#midcontainer .headline{
+  font-size: 21.5px;
 }
