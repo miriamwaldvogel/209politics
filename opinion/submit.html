@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/submit.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+    <script type="text/javascript" src="js/submit.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
     <script>
@@ -75,6 +76,24 @@
       <div id="titlecontainer">
         <h1 id="title">SUBMIT AN OPINION PIECE</h1>
       </div>
+      <div id="infocontainer">
+        <a href="guidelines.html" id="guidelineslink">
+          <p id="guidelinesinfo">Read our guidelines for opinion pieces here.</p>
+        </a>
+      </div>
+      <div id="buttonscontainer">
+        <div id="linkuploadcontainer" class="upload" onclick="submitlink();">
+          <img src="/images/link.svg" alt="Link" class="uploadimg">
+          <p id="linktext" class="uploadtext">Upload a link</p>
+        </div>
+        <p id="or">or</p>
+        <div id="fileuploadcontainer" class="upload">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJXV4NvCypXa7i-GqTAnHdI6I8HFNb2JGDQAr5YUNshtGPIw/viewform" target="_blank" id="filehref">
+            <img src="/images/uploadfile.svg" alt="File upload" class="uploadimg">
+            <p id="filetext" class="uploadtext">Upload a file</p>
+          </a>
+        </div>
+      </div>
       <div id="formcontainer">
         <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfQcqKLj6XjqBdcCTK4fXDPSXpynMCr5xG_XKwM_Iy4QR4P_A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
@@ -82,7 +101,7 @@
         <p id="socialmediafooter">
           <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
           <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
-          <a href="https://www.facebook.com/209-Politics-115850523551245/" id="facebookfooter" class="sociallinkfooter">Facebook: 209 Politics</a>
+          <a href="https://www.facebook.com/209-Politics-115850523551245/" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
         </p>
         <p id="navfooter">
           <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •

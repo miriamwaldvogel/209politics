@@ -2,6 +2,25 @@
   #form{
     height: calc(1400px - 50vw);
   }
+  #or{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #buttonscontainer{
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 355px){
+  #or{
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 @media only screen and (min-width: 355px) and (max-width: 392px){
   #form{
@@ -21,11 +40,49 @@
 #title{
   font-size: 40px;
   font-family: "Rubik";
+  margin-bottom: 10px;
+}
+#guidelineslink{
+  text-decoration: none;
+}
+#guidelinesinfo{
+  color: #000000;
+  font-family: "Libre Baskerville";
+}
+#buttonscontainer{
+  margin-top: 10px;
+}
+.upload{
+  width: 140px;
+  height: fit-content;
+  display: inline-block;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  text-align: center;
+}
+.upload:hover{
+  cursor: pointer;
+}
+.uploadimg{
+  width: 50%;
+  margin-top: 10px;
+}
+.uploadtext{
+  font-family: "Libre Baskerville";
+  color: #000000;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#or{
+  font-family: "Libre Baskerville";
+}
+#filehref{
+  text-decoration: none;
 }
 #formcontainer{
+  display: none;
   width: 100vw;
   max-width: 1200px;
-  text-align: center;
 }
 #form{
   max-width: 640px;
