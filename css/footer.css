@@ -13,6 +13,9 @@
 #socialmediafooter{
   padding-top: 20px;
   color: #FFFFFF;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 14px;
 }
 .sociallinkfooter{
   text-decoration: none;
@@ -25,4 +28,7 @@
 .navfooter{
   text-decoration: none;
   color: #FFFFFF;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 14px;
 }
