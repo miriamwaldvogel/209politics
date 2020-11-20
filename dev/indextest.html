@@ -5,12 +5,23 @@
     <meta name="description" content="A student-run politics source for the greater San Joaquin County area: elections, local policy, and more.">
     <meta name="keywords" content="209Politics, 209 Politics, San Joaquin County politics, Stockton politics, Lodi politics, Manteca politics, Lathrop politics, Linden politics, Tracy politics">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@209politics">
+    <meta name="twitter:title" content="209 Politics">
+    <meta name="twitter:description" content="A student-run politics source for the greater San Joaquin County area: elections, local policy, and more.">
+    <meta name="twitter:image" content="https://209politics.com/images/favicon.png">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/indextest.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="js/indextest.js"></script>
+    <script type="text/javascript" src="/dev/js/indextest.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-174685284-1');
+      </script>
     <title>209 Politics - Political coverage of the greater San Joaquin area</title>
   </head>
   <body onresize="resize();">
@@ -21,38 +32,38 @@
         </div>
         <div id="logocontainer">
           <a href="https://209politics.com" id="backtohome">
-            <img src="images/favicon-index.png" alt="209 Politics Logo" id="logo">
+            <img src="/images/favicon-index.png" alt="209 Politics Logo" id="logo">
           </a>
         </div>
-          <div id="searchcontainer">
-            <div id="searchimgcontainer" onclick="searchtoggle();">
-              <img src="images/search.svg" alt="Search sybmol" id="searchimg">
-            </div>
-            <div id="formcontainer1">
-              <form id="searchform" action="https://www.google.com/search" method="get">
-                <input type="hidden" name="q" value="site:209politics.com">
-                <input type="text" name="q" value="" id="searchbox1">
-                <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
-              </form>
-            </div>
+        <div id="searchcontainer">
+          <div id="searchimgcontainer" onclick="searchtoggle();">
+            <img src="/images/search.svg" alt="Search sybmol" id="searchimg">
           </div>
-          <div id="socialmediacontainer">
-            <a href="https://twitter.com/209Politics" class="sociallink">
-              <div class="socialimgcontainer" id="twittercontainer">
-                <img src="images/twitter.png" alt="209 Politics Twitter" id="twitter" class="socialmedia">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/209.politics/" class="sociallink">
-              <div class="socialimgcontainer" id="instagramcontainer">
-                <img src="images/instagram.jpeg" alt="209 Politics Instagram" id="instagram" class="socialmedia">
-              </div>
-            </a>
-            <a href="https://www.facebook.com/209-Politics-115850523551245/" class="sociallink">
-              <div class="socialimgcontainer" id="facebookcontainer">
-                <img src="images/facebook.png" alt="209 Politics Facebook" id="facebook" class="socialmedia">
-              </div>
-            </a>
+          <div id="formcontainer1">
+            <form id="searchform" action="https://www.google.com/search" method="get">
+              <input type="hidden" name="q" value="site:209politics.com">
+              <input type="text" name="q" value="" id="searchbox1">
+              <input type="submit" value="GO" class="searchbutton" id="searchbutton1">
+            </form>
           </div>
+        </div>
+        <div id="socialmediacontainer">
+          <a href="https://twitter.com/209Politics" class="sociallink">
+            <div class="socialimgcontainer" id="twittercontainer">
+              <img src="/images/twitter.png" alt="209 Politics Twitter" id="twitter" class="socialmedia">
+            </div>
+          </a>
+          <a href="https://www.instagram.com/209.politics/" class="sociallink">
+            <div class="socialimgcontainer" id="instagramcontainer">
+              <img src="/images/instagram.jpeg" alt="209 Politics Instagram" id="instagram" class="socialmedia">
+            </div>
+          </a>
+          <a href="https://www.facebook.com/209Politics" class="sociallink">
+            <div class="socialimgcontainer" id="facebookcontainer">
+              <img src="/images/facebook.png" alt="209 Politics Facebook" id="facebook" class="socialmedia">
+            </div>
+          </a>
+        </div>
       </div>
       <div id="sections">
         <div id="navcontainer">
@@ -68,8 +79,8 @@
           <div id="covidnavcontainer" class="sectioncontainers">
             <a href="covid-19.html" class="section">COVID-19</a>
           </div>
-          <div id="contactnavcontainer" class="sectioncontainers">
-            <a href="contact.html" class="section">CONTACT US</a>
+          <div id="opinionnavcontainer" class="sectioncontainers">
+            <a href="opinion.html" class="section">OPINION</a>
           </div>
         </div>
         <div id="formcontainer2">
@@ -82,45 +93,45 @@
       </div>
       <div id="leftpanel">
         <div id="mainstorycontainer" class="mainstory">
-          <a href="2020/09/18/school-board-fundraising.html" id="mainstorylink" class="mainstory">
+          <a href="2020/11/19/stockton-hhap-homeless-funding.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
-              <img src="2020/09/18/fppc-logo.png" alt="FPPC logo" id="mainstoryimg">
+              <img src="2020/11/19/stockton-shelter-homeless.jpg" alt="Stockton Shelter for the Homeless" id="mainstoryimg">
             </div>
-            <h1 id="mainstoryheadline" class="mainstory headline">School Board Fundraising Beginning to Pick up in San Joaquin Races</h1>
-            <p id="mainstorydate" class="mainstory articledate">September 18, 2020</p>
+            <h1 id="mainstoryheadline" class="mainstory headline">Stockton Distributes $6.4 Million for Homelessness Crisis</h1>
+            <p id="mainstorydate" class="mainstory articledate">November 19, 2020</p>
           </a>
         </div>
         <br>
-        <div id="lodimantecak12container" class="lodimantecak12 storycontainer standardcontainer bigstory">
-          <a href="/2020/09/17/manteca-lodi-school-reopenings.html" id="lodimantecak12link" class="lodimantecak12 storylink">
-            <div id="lodimantecak12imgcontainer" class="lodimantecak12 storyimgcontainer standardimg">
-              <img src="/2020/09/17/manteca-lodi-usd.jpg" alt="Logos of Manteca and Lodi Unified School Districts" id="lodimantecak12img" class="lodimantecak12 storyimg">
+        <div id="vanbuskcontainer" class="vanbusk storycontainer standardcontainer bigstory">
+          <a href="/2020/11/19/van-buskirk-contract-grants.html" id="vanbusklink" class="vanbusk storylink">
+            <div id="vanbuskimgcontainer" class="vanbusk storyimgcontainer standardimg">
+              <img src="/2020/11/19/van-buskirk-golf-course.jpeg" alt="Van Buskirk Golf Course" id="vanbuskimg" class="vanbusk storyimg">
             </div>
-            <div id="lodimantecak12textcontainer" class="lodimantecak12 storytextcontainer standardtext">
-              <p id="lodimantecak12headline" class="mainstory headline storyheadline">Students in Lodi, Manteca Unified Schools Will Begin to Return in Person</p>
-              <p id="lodimantecak12date" class="lodimantecak12 articledate">September 17, 2020</p>
-            </div>
-          </a>
-        </div>
-        <div id="mantecacc915container" class="mantecacc915 storycontainer standardcontainer bigstory">
-          <a href="/2020/09/16/manteca-city-council-meeting.html" id="mantecacc915link" class="mantecacc915 storylink">
-            <div id="mantecacc915imgcontainer" class="mantecacc915 storyimgcontainer standardimg">
-              <img src="/2020/09/16/sprung-structures.png" alt="One of the Sprung Structures" id="mantecacc915img" class="mantecacc915 storyimg">
-            </div>
-            <div id="mantecacc915textcontainer" class="mantecacc915 storytextcontainer standardtext">
-              <p id="mantecacc915headline" class="mainstory headline storyheadline">Manteca City Council Meeting Highlights: New City Attorney and Homelessness Grants</p>
-              <p id="mantecacc915date" class="mantecacc915 articledate">September 16, 2020</p>
+            <div id="vanbusktextcontainer" class="vanbusk storytextcontainer standardtext">
+              <p id="vanbuskheadline" class="mainstory headline storyheadline">Contracts, Grants Moving Forward for Van Buskirk Golf Course</p>
+              <p id="vanbuskdate" class="vanbusk articledate">November 19, 2020</p>
             </div>
           </a>
         </div>
-        <div id="tracycc915container" class="tracycc915 storycontainer standardcontainer bigstory">
-          <a href="/2020/09/16/tracy-city-council-meeting.html" id="tracycc915link" class="tracycc915 storylink">
-            <div id="tracycc915imgcontainer" class="tracycc915 storyimgcontainer standardimg">
-              <img src="/2020/09/16/tracy-city-council.png" alt="Tracy City Council" id="tracycc915img" class="tracycc915 storyimg">
+        <div id="villawincontainer" class="villawin storycontainer standardcontainer bigstory">
+          <a href="/2020/11/19/villapudua-assembly-win.html" id="villawinlink" class="villawin storylink">
+            <div id="villawinimgcontainer" class="villawin storyimgcontainer standardimg">
+              <img src="/2020/10/30/miller-villapudua.jpg" alt="Kathy Miller/Carlos Villapudua" id="villawinimg" class="villawin storyimg">
             </div>
-            <div id="tracycc915textcontainer" class="tracycc915 storytextcontainer standardtext">
-              <p id="tracycc915headline" class="mainstory headline storyheadline">Three Takeaways from Tuesday's Tracy City Council Meeting</p>
-              <p id="tracycc915date" class="tracycc915 articledate">September 16, 2020</p>
+            <div id="villawintextcontainer" class="villawin storytextcontainer standardtext">
+              <p id="villawinheadline" class="mainstory headline storyheadline">Villapudua Beats Miller for Open State Assembly Seat</p>
+              <p id="villawindate" class="villawin articledate">November 19, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="lincwincontainer" class="lincwin storycontainer standardcontainer bigstory">
+          <a href="/2020/11/18/lincoln-wins-stockton-mayor.html" id="lincwinlink" class="lincwin storylink">
+            <div id="lincwinimgcontainer" class="lincwin storyimgcontainer standardimg">
+              <img src="/2020/08/26/tubbs-lincoln.png" alt="Tubbs/Lincoln" id="lincwinimg" class="lincwin storyimg">
+            </div>
+            <div id="lincwintextcontainer" class="lincwin storytextcontainer standardtext">
+              <p id="lincwinheadline" class="mainstory headline storyheadline">Lincoln Defeats Tubbs in Stockton Mayoral Race</p>
+              <p id="lincwindate" class="lincwin articledate">November 18, 2020</p>
             </div>
           </a>
         </div>
@@ -129,7 +140,7 @@
         <div id="covidcontainer">
           <p id="covidtitle" class="headline sectiontitle">LATEST COVID-19 NUMBERS</p>
           <div id="coviddatacontainer">
-            <iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" id="coviddata" src="https://public.tableau.com/shared/65PBZ6Z43?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:display_spinner=no&amp;:loadOrderID=0"></iframe>
+            <iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" id="coviddata" src="https://public.tableau.com/shared/3YNNGK7ZG?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:tabs=no&:loadOrderID=0"></iframe>
           </div>
           <p id="datacredit" target="_blank">Data and visuals courtesy of <a
             href="https://covid19.ca.gov/data-and-tools/"
@@ -137,166 +148,71 @@
         </div>
       </div>
       <div id="midcontent">
-        <div id="bos915container" class="bos915 storycontainer bigstory">
-          <a href="/2020/09/15/san-joaquin-supervisors.html" id="bos915link" class="bos915 storylink">
-            <div id="bos915imgcontainer" class="bos915 storyimgcontainer smallimg">
-              <img src="/2020/09/15/san-joaquin-seal.jpg" alt="Seal of San Joaquin County" id="bos915img" class="bos915 storyimg">
+        <div id="results1116container" class="results1116 storycontainer bigstory">
+          <a href="/2020/11/17/tight-races-fewer-ballots.html" id="results1116link" class="results1116 storylink">
+            <div id="results1116imgcontainer" class="results1116 storyimgcontainer smallimg">
+              <img src="/2020/08/25/ballot-box.png" alt="Ballot box" id="results1116img" class="results1116 storyimg">
             </div>
-            <div id="bos915textcontainer" class="bos915 storytextcontainer smalltext">
-              <p id="bos915headline" class="mainstory headline storyheadline">School Reopenings, Housing, Election Logistics Feature in San Joaquin Board of Supervisors Meeting</p>
-              <p id="bos915date" class="bos915 articledate">September 15, 2020</p>
-            </div>
-          </a>
-        </div>
-        <div id="sangalangcontainer" class="sangalang storycontainer standardcontainer bigstory">
-          <a href="/2020/09/14/sangalang-park-grant.html" id="sangalanglink" class="sangalang storylink">
-            <div id="sangalangimgcontainer" class="sangalang storyimgcontainer standardimg">
-              <img src="/2020/09/14/sangalang-park.jpg" alt="Sangalang Park" id="sangalangimg" class="sangalang storyimg">
-            </div>
-            <div id="sangalangtextcontainer" class="sangalang storytextcontainer standardtext">
-              <p id="sangalangheadline" class="mainstory headline storyheadline">Lathrop’s Sangalang Park May Be Getting Some Significant Upgrades</p>
-              <p id="sangalangdate" class="sangalang articledate">September 14, 2020</p>
+            <div id="results1116textcontainer" class="results1116 storytextcontainer smalltext">
+              <p id="results1116headline" class="mainstory headline storyheadline">Races Remain Tight as Uncounted Ballots Dwindle</p>
+              <p id="results1116date" class="results1116 articledate">November 17, 2020</p>
             </div>
           </a>
         </div>
-        <div id="lutzowmeetcontainer" class="lutzowmeet storycontainer bigstory">
-          <a href="/2020/09/13/lutzow-online-meetings.html" id="lutzowmeetlink" class="lutzowmeet storylink">
-            <div id="lutzowmeetimgcontainer" class="lutzowmeet storyimgcontainer smallimg">
-              <img src="/2020/09/13/miranda-lutzow.png" alt="Miranda Lutzow" id="lutzowmeetimg" class="lutzowmeet storyimg">
+        <div id="covid1116container" class="covid1116 storycontainer standardcontainer bigstory">
+          <a href="/2020/11/16/san-joaquin-purple-tier.html" id="covid1116link" class="covid1116 storylink">
+            <div id="covid1116imgcontainer" class="covid1116 storyimgcontainer standardimg">
+              <img src="/2020/11/16/ca-tier-assignments.jpg" alt="California COVID tier assignments" id="covid1116img" class="covid1116 storyimg">
             </div>
-            <div id="lutzowmeettextcontainer" class="lutzowmeet storytextcontainer smalltext">
-              <p id="lutzowmeetheadline" class="mainstory headline storyheadline">Manteca City Manager Will be Holding Open Online Meetings</p>
-              <p id="lutzowmeetdate" class="lutzowmeet articledate">September 13, 2020</p>
+            <div id="covid1116textcontainer" class="covid1116 storytextcontainer standardtext">
+              <p id="covid1116headline" class="mainstory headline storyheadline">San Joaquin Among 28 Counties Moving to Purple</p>
+              <p id="covid1116date" class="covid1116 articledate">November 16, 2020</p>
             </div>
           </a>
         </div>
-      </div>
-      <div id="belowcontent">
-        <div id="ballotproposalscontainer">
-          <p id="ballotproposaltitle" class="headline sectiontitle">BALLOT PROPOSALS</p>
-          <div id="woodbridgefiretaxcontainer" class="woodbridgefiretax storycontainer littlestory leftballot">
-            <a href="2020/08/09/woodbridge-fire-property-tax.html" id="woodbridgefiretaxlink" class="woodbridgefiretax storylink">
-              <div id="woodbridgefiretaxtextcontainer" class="woodbridgefiretax storytextcontainer littletext">
-                <p id="woodbridgefiretaxheadline" class="mainstory headline storyheadline">Woodbridge Fire District Seeks Property Tax to Maintain Services</p>
-                <p id="woodbridgefiretaxdate" class="woodbridgefiretax articledate">August 9, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="musdrepairtaxcontainer" class="musdrepairtax storycontainer littlestory rightballot">
-            <a href="2020/08/06/manteca-unified-repairs-tax.html" id="musdrepairtaxlink" class="musdrepairtax storylink">
-              <div id="musdrepairtaxtextcontainer" class="musdrepairtax storytextcontainer littletext">
-                <p id="musdrepairtaxheadline" class="mainstory headline storyheadline">Manteca School Repairs Tax to Reappear in November</p>
-                <p id="musdrepairtaxdate" class="musdrepairtax articledate">August 6, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="sanjoaquincannabiscontainer" class="sanjoaquincannabis storycontainer standardcontainer littlestory leftballot">
-            <a href="/2020/08/05/san-joaquin-cannabis-tax.html" id="sanjoaquincannabislink" class="sanjoaquincannabis storylink">
-              <div id="sanjoaquincannabistextcontainer" class="sanjoaquincannabis storytextcontainer littletext">
-                <p id="sanjoaquincannabisheadline" class="mainstory headline storyheadline">Cannabis Tax for San Joaquin Unincorporated Areas Will Appear on November Ballot</p>
-                <p id="sanjoaquincannabisdate" class="sanjoaquincannabis articledate">August 5, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="tracyvalleylinkcontainer" class="tracyvalleylink storycontainer littlestory rightballot">
-            <a href="2020/08/02/tracy-valleylink-development.html" id="tracyvalleylinklink" class="tracyvalleylink storylink">
-              <div id="tracyvalleylinktextcontainer" class="tracyvalleylink storytextcontainer littletext">
-                <p id="tracyvalleylinkheadline" class="mainstory headline storyheadline">Tracy Voters to Decide on Downtown Transit Development Plan</p>
-                <p id="tracyvalleylinkdate" class="tracyvalleylink articledate">August 2, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="riverislandsbantacontainer" class="riverislandsbanta storycontainer littlestory leftballot">
-            <a href="2020/08/03/banta-river-islands-district.html" id="riverislandsbantalink" class="riverislandsbanta storylink">
-              <div id="riverislandsbantatextcontainer" class="riverislandsbanta storytextcontainer littletext">
-                <p id="riverislandsbantaheadline" class="mainstory headline storyheadline">Banta Elementary School District May Become K-12 if Approved by Voters</p>
-                <p id="riverislandsbantadate" class="riverislandsbanta articledate">August 3, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="mantecasalestaxcontainer" class="mantecasalestax storycontainer littlestory rightballot">
-            <a href="2020/08/01/manteca-sales-tax-hike.html" id="mantecasalestaxlink" class="mantecasalestax storylink">
-              <div id="mantecasalestaxtextcontainer" class="mantecasalestax storytextcontainer littletext">
-                <p id="mantecasalestaxheadline" class="mainstory headline storyheadline">Manteca Proposes 1% Increase Sales Tax for November Ballot</p>
-                <p id="mantecasalestaxdate" class="mantecasalestax articledate">August 1, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="tracycannabiscontainer" class="tracycannabis storycontainer standardcontainer littlestory">
-            <a href="/2020/08/02/tracy-cannabis-tax.html" id="tracycannabislink" class="tracycannabis storylink">
-              <div id="tracycannabistextcontainer" class="tracycannabis storytextcontainer littletext">
-                <p id="tracycannabisheadline" class="mainstory headline storyheadline">Cannabis Tax in Tracy to be Voted on in November</p>
-                <p id="tracycannabisdate" class="tracycannabis articledate">August 2, 2020</p>
-              </div>
-            </a>
-          </div>
+        <div id="1113resultscontainer" class="1113results storycontainer bigstory">
+          <a href="/2020/11/14/friday-election-results-update.html" id="1113resultslink" class="1113results storylink">
+            <div id="1113resultsimgcontainer" class="1113results storyimgcontainer smallimg">
+              <img src="/2020/11/05/voting-line.jpg" alt="Line to vote" id="1113resultsimg" class="1113results storyimg">
+            </div>
+            <div id="1113resultstextcontainer" class="1113results storytextcontainer smalltext">
+              <p id="1113resultsheadline" class="mainstory headline storyheadline">Races for State Assembly, Board of Supervisors Narrow</p>
+              <p id="1113resultsdate" class="1113results articledate">November 14, 2020</p>
+            </div>
+          </a>
         </div>
-        <div id="schoolboardscontainer">
-          <p id="schooltitle" class="headline sectiontitle">SCHOOL BOARD RACES</p>
-          <div id="restcandscontainer" class="restcands storycontainer schoolstory">
-            <a href="/2020/08/21/san-joaquin-school-candidates.html" id="restcandslink" class="restcands storylink">
-              <div id="restcandstextcontainer" class="restcands storytextcontainer">
-                <p id="restcandsheadline" class="mainstory headline storyheadline">Introducing the Candidates for Ripon, Yosemite College, Lammersville, Galt School Boards</p>
-                <p id="restcandsdate" class="restcands articledate">August 21, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="sjcoecandscontainer" class="sjcoecands storycontainer schoolstory">
-            <a href="/2020/08/20/sjcoe-area3-candidates.html" id="sjcoecandslink" class="sjcoecands storylink">
-              <div id="sjcoecandstextcontainer" class="sjcoecands storytextcontainer">
-                <p id="sjcoecandsheadline" class="mainstory headline storyheadline">Open San Joaquin Board of Education Seat is a Two-Way Race</p>
-                <p id="sjcoecandsdate" class="sjcoecands articledate">August 20, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="lusdcandscontainer" class="lusdcands storycontainer schoolstory">
-            <a href="/2020/08/17/lincoln-unified-board-candidates.html" id="lusdcandslink" class="lusdcands storylink">
-              <div id="lusdcandstextcontainer" class="lusdcands storytextcontainer">
-                <p id="lusdcandsheadline" class="mainstory headline storyheadline">Two Open Seats on the Lincoln Unified School District Board</p>
-                <p id="lusdcandsdate" class="lusdcands articledate">August 17, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="tusdcandscontainer" class="tusdcands storycontainer schoolstory">
-            <a href="/2020/08/16/tracy-unified-board-candidates.html" id="tusdcandslink" class="tusdcands storylink">
-              <div id="tusdcandstextcontainer" class="tusdcands storytextcontainer">
-                <p id="tusdcandsheadline" class="mainstory headline storyheadline">Contenders Set for Tracy Unified School District Board of Education</p>
-                <p id="tusdcandsdate" class="tusdcands articledate">August 16, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="musdcandidatescontainer" class="musdcandidates storycontainer schoolstory">
-            <a href="/2020/08/15/manteca-unified-board-candidates.html" id="musdcandidateslink" class="musdcandidates storylink">
-              <div id="musdcandidatestextcontainer" class="musdcandidates storytextcontainer">
-                <p id="musdcandidatesheadline" class="mainstory headline storyheadline">Race for Manteca Unified School Board Sees 8 Candidates for 3 Positions</p>
-                <p id="musdcandidatesdate" class="musdcandidates articledate">August 15, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="lodiusdcandscontainer" class="lodiusdcands storycontainer schoolstory">
-            <a href="/2020/08/11/lodi-unified-board-candidates.html" id="lodiusdcandslink" class="lodiusdcands storylink">
-              <div id="lodiusdcandstextcontainer" class="lodiusdcands storytextcontainer">
-                <p id="lodiusdcandsheadline" class="mainstory headline storyheadline">An Introduction to Lodi Unified’s Board of Education Contenders</p>
-                <p id="lodiusdcandsdate" class="lodiusdcands articledate">August 11, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="deltacandidatescontainer" class="deltacandidates storycontainer schoolstory">
-            <a href="/2020/08/10/delta-college-trustee-candidates.html" id="deltacandidateslink" class="deltacandidates storylink">
-              <div id="deltacandidatestextcontainer" class="deltacandidates storytextcontainer">
-                <p id="deltacandidatesheadline" class="mainstory headline storyheadline">Three Seats up for Contest on Delta College Board of Trustees</p>
-                <p id="deltacandidatesdate" class="deltacandidates articledate">August 10, 2020</p>
-              </div>
-            </a>
-          </div>
-          <div id="susdfilingcontainer" class="susdfiling storycontainer schoolstory">
-            <a href="/2020/08/07/stockton-unified-board-filing.html" id="susdfilinglink" class="susdfiling storylink">
-              <div id="susdfilingtextcontainer" class="susdfiling storytextcontainer">
-                <p id="susdfilingheadline" class="mainstory headline storyheadline">Crowded Candidate Field for All Three Open Stockton Unified Board Seats</p>
-                <p id="susdfilingdate" class="susdfiling articledate">August 7, 2020</p>
-              </div>
-            </a>
-          </div>
+        <div id="1112resultscontainer" class="1112results storycontainer standardcontainer bigstory">
+          <a href="/2020/11/13/thursday-election-results-update.html" id="1112resultslink" class="1112results storylink">
+            <div id="1112resultsimgcontainer" class="1112results storyimgcontainer standardimg">
+              <img src="/2020/10/09/mail-in-ballot.jpg" alt="VBM Ballot" id="1112resultsimg" class="1112results storyimg">
+            </div>
+            <div id="1112resultstextcontainer" class="1112results storytextcontainer standardtext">
+              <p id="1112resultsheadline" class="mainstory headline storyheadline">Thursday Election Results Update</p>
+              <p id="1112resultsdate" class="1112results articledate">November 13, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="stkclergycontainer" class="stkclergy storycontainer standardcontainer bigstory">
+          <a href="/2020/11/12/stockton-diocese-abuse.html" id="stkclergylink" class="stkclergy storylink">
+            <div id="stkclergyimgcontainer" class="stkclergy storyimgcontainer standardimg">
+              <img src="/2020/11/12/cotta-message.png" alt="Bishop Cotta message" id="stkclergyimg" class="stkclergy storyimg">
+            </div>
+            <div id="stkclergytextcontainer" class="stkclergy storytextcontainer standardtext">
+              <p id="stkclergyheadline" class="mainstory headline storyheadline">29 New Clergy Named to Stockton Diocese’s List of Child Sexual Abusers</p>
+              <p id="stkclergydate" class="stkclergy articledate">November 12, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="sjcovid1110container" class="sjcovid1110 storycontainer standardcontainer bigstory">
+          <a href="/2020/11/10/san-joaquin-covid-numbers.html" id="sjcovid1110link" class="sjcovid1110 storylink">
+            <div id="sjcovid1110imgcontainer" class="sjcovid1110 storyimgcontainer standardimg">
+              <img src="/2020/10/06/coronavirus.png" alt="COVID-19" id="sjcovid1110img" class="sjcovid1110 storyimg">
+            </div>
+            <div id="sjcovid1110textcontainer" class="sjcovid1110 storytextcontainer standardtext">
+              <p id="sjcovid1110headline" class="mainstory headline storyheadline">San Joaquin Could Be Heading Back to the Purple Tier</p>
+              <p id="sjcovid1110date" class="sjcovid1110 articledate">November 10, 2020</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

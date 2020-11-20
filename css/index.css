@@ -143,7 +143,7 @@
     max-width: 383px;
     margin-bottom: 20px;
   }
-  #midcontent .storycontainer:nth-child(2){
+  #midcontent .storycontainer:nth-child(3n+2){
     margin-left: 10px;
     margin-right: 10px;
     border-left: 3px double #BDBFC9;

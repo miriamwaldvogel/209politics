@@ -123,24 +123,6 @@
     right: 100px;
   }
 }
-@media only screen and (max-width: 511px){
-  .sectioncontainers{
-    display: block;
-    margin: auto;
-    width: fit-content;
-  }
-}
-@media only screen and (min-width: 512px){
-  .sectioncontainers{
-    display: inline-block;
-  }
-  .sectioncontainers{
-    position: relative;
-    left: 10%;
-  }
-}
-@media only screen and (max-width: 600px){
-}
 @media only screen and (min-width: 601px){
   #midcontent .storycontainer{
     display: inline-block;
@@ -177,22 +159,6 @@
   #searchcontainer{
     top: 120px;
     right: 110px;
-  }
-}
-@media only screen and (min-width: 668px) and (max-width: 720px){
-  #covidnavcontainer{
-    position: relative;
-    left: 0%;
-  }
-  #contactnavcontainer{
-    position: relative;
-    left: 0%;
-  }
-}
-@media only screen and (min-width: 721px) and (max-width: 904px){
-  #contactnavcontainer{
-    position: relative;
-    left: 0%;
   }
 }
 @media only screen and (max-width: 869px){
@@ -270,13 +236,15 @@ a{
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: solid;
-  text-align: center;
 }
 .section{
   font-size: 20px;
   font-family: "Libre Baskerville";
   color: #000000;
-  padding: 0px 15px 0px 15px;
+  margin: 0px 15px 0px 15px;
+}
+.sectioncontainers{
+  display: inline-block;
 }
 #leftpanel{
   height: fit-content;
