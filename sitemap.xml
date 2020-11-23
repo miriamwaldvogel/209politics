@@ -9,22 +9,22 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-11-17T02:51:12+00:00</lastmod>
+  <lastmod>2020-11-23T19:30:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2020-11-17T02:51:14+00:00</lastmod>
+  <lastmod>2020-11-20T05:15:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections</loc>
-  <lastmod>2020-11-15T04:35:47+00:00</lastmod>
+  <lastmod>2020-11-19T16:14:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2020-11-07T03:47:38+00:00</lastmod>
+  <lastmod>2020-11-20T05:15:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -34,7 +34,32 @@
 </url>
 <url>
   <loc>https://209politics.com/contact</loc>
-  <lastmod>2020-11-08T17:44:34+00:00</lastmod>
+  <lastmod>2020-11-20T05:15:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/19/stockton-hhap-homeless-funding.html</loc>
+  <lastmod>2020-11-20T15:23:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/19/van-buskirk-contract-grants.html</loc>
+  <lastmod>2020-11-20T15:23:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/19/villapudua-assembly-win.html</loc>
+  <lastmod>2020-11-19T16:14:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/18/lincoln-wins-stockton-mayor.html</loc>
+  <lastmod>2020-11-18T17:11:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/17/tight-races-fewer-ballots.html</loc>
+  <lastmod>2020-11-17T17:33:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -48,139 +73,39 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/11/13/thursday-election-results-update.html</loc>
-  <lastmod>2020-11-13T21:40:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/12/stockton-diocese-abuse.html</loc>
-  <lastmod>2020-11-13T04:14:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/10/san-joaquin-covid-numbers.html</loc>
-  <lastmod>2020-11-11T04:12:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/10/san-joaquin-close-races.html</loc>
-  <lastmod>2020-11-10T18:22:48+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://209politics.com/2020/11/06/lincoln-campaign-tactics.html</loc>
   <lastmod>2020-11-07T21:08:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/10/27/stockton-unified-outside-spending.html</loc>
+  <lastmod>2020-10-28T03:42:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/13/thursday-election-results-update.html</loc>
+  <lastmod>2020-11-13T21:40:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/12/stockton-diocese-abuse.html</loc>
+  <lastmod>2020-11-13T04:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/10/san-joaquin-covid-numbers.html</loc>
+  <lastmod>2020-11-11T04:12:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/10/san-joaquin-close-races.html</loc>
+  <lastmod>2020-11-10T18:22:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/11/04/lincoln-slight-lead.html</loc>
   <lastmod>2020-11-04T21:29:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/09/woodbridge-fire-property-tax.html</loc>
-  <lastmod>2020-10-29T21:02:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/06/manteca-unified-repairs-tax.html</loc>
-  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/05/san-joaquin-cannabis-tax.html</loc>
-  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/02/tracy-valleylink-development.html</loc>
-  <lastmod>2020-10-29T21:02:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/03/banta-river-islands-district.html</loc>
-  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/01/manteca-sales-tax-hike.html</loc>
-  <lastmod>2020-10-29T21:02:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/02/tracy-cannabis-tax.html</loc>
-  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/24/ray-zulueta-interview.html</loc>
-  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/21/valentino-silva-interview.html</loc>
-  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/21/gabriel-casillas-interview.html</loc>
-  <lastmod>2020-10-29T21:15:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/20/lange-luntao-interview.html</loc>
-  <lastmod>2020-10-29T21:15:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/15/deeann-antonini-interview.html</loc>
-  <lastmod>2020-10-29T21:15:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/10/13/sandra-chan-interview.html</loc>
-  <lastmod>2020-10-29T21:15:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/21/san-joaquin-school-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/20/sjcoe-area3-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/17/lincoln-unified-board-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/16/tracy-unified-board-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/15/manteca-unified-board-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/11/lodi-unified-board-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/10/delta-college-trustee-candidates.html</loc>
-  <lastmod>2020-10-29T21:02:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
-  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/10/30/miller-fundraising-week.html</loc>
@@ -193,18 +118,33 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/10/27/stockton-unified-outside-spending.html</loc>
-  <lastmod>2020-10-28T03:42:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://209politics.com/2020/10/25/stockton-close-mayoral-fundraising.html</loc>
   <lastmod>2020-10-26T03:25:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/10/24/ray-zulueta-interview.html</loc>
+  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/10/22/mousalimas-sjcoe-retirement.html</loc>
   <lastmod>2020-10-29T21:15:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/21/valentino-silva-interview.html</loc>
+  <lastmod>2020-10-29T21:15:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/21/gabriel-casillas-interview.html</loc>
+  <lastmod>2020-10-29T21:15:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/20/lange-luntao-interview.html</loc>
+  <lastmod>2020-10-29T21:15:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -233,7 +173,17 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/10/15/deeann-antonini-interview.html</loc>
+  <lastmod>2020-10-29T21:15:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/10/14/stockton-unified-measure-x.html</loc>
+  <lastmod>2020-10-29T21:15:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/10/13/sandra-chan-interview.html</loc>
   <lastmod>2020-10-29T21:15:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -373,11 +323,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/graphics/november-3-voting.html</loc>
-  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://209politics.com/2020/11/05/san-joaquin-uncounted-ballots.html</loc>
   <lastmod>2020-11-06T21:06:42+00:00</lastmod>
   <priority>0.64</priority>
@@ -468,6 +413,31 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/08/21/san-joaquin-school-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/20/sjcoe-area3-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/17/lincoln-unified-board-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/16/tracy-unified-board-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/15/manteca-unified-board-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/08/13/san-joaquin-ballot-measures.html</loc>
   <lastmod>2020-10-29T21:02:10+00:00</lastmod>
   <priority>0.64</priority>
@@ -475,6 +445,56 @@
 <url>
   <loc>https://209politics.com/2020/08/13/tracy-measure-t.html</loc>
   <lastmod>2020-10-29T21:02:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/11/lodi-unified-board-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/10/delta-college-trustee-candidates.html</loc>
+  <lastmod>2020-10-29T21:02:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/09/woodbridge-fire-property-tax.html</loc>
+  <lastmod>2020-10-29T21:02:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/07/stockton-unified-board-filing.html</loc>
+  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/06/manteca-unified-repairs-tax.html</loc>
+  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/05/san-joaquin-cannabis-tax.html</loc>
+  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/03/banta-river-islands-district.html</loc>
+  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/02/tracy-valleylink-development.html</loc>
+  <lastmod>2020-10-29T21:02:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/02/tracy-cannabis-tax.html</loc>
+  <lastmod>2020-10-29T21:02:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/08/01/manteca-sales-tax-hike.html</loc>
+  <lastmod>2020-10-29T21:02:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -533,14 +553,19 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
-  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
+  <loc>https://209politics.com/index.html</loc>
+  <lastmod>2020-11-23T19:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-11-17T02:51:12+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
+  <lastmod>2020-11-05T03:44:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://209politics.com/graphics/november-3-voting.html</loc>
+  <lastmod>2020-10-29T21:15:04+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/house.html</loc>
