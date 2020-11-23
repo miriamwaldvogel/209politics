@@ -45,8 +45,17 @@
   #rightpanel{
     width: 100%;
   }
-  #ballotproposalscontainer{
+  #featuredcontainer .storycontainer{
+    display: block;
     width: 100%;
+  }
+  #featuredcontainer .storycontainer:nth-child(3):before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 10px;
+    border-top: 3px double #BDBFC9;
   }
 }
 @media only screen and (min-width: 668px){
@@ -88,26 +97,13 @@
     float: right;
     border-left: 3px double #BDBFC9;
   }
-  #ballotproposalscontainer{
-    width: 67%;
-    float: left;
+  #featuredcontainer .storycontainer{
+    display: inline-grid;
+    width: 48%;
   }
-  #schoolboardscontainer{
-    width: 32%;
-    float: right;
-    border-left: 3px double #BDBFC9;
-  }
-  #luntaoconflictimgcontainer{
-    width: 30%;
-  }
-  #luntaoconflicttextcontainer{
-    width: 70%;
-  }
-  #sjcourtreopensimgcontainer{
-    width: 30%;
-  }
-  #sjcourtreopenstextcontainer{
-    width: 70%;
+  #featuredcontainer .storycontainer:nth-child(2){
+    margin-right: 10px;
+    border-right: 3px double #BDBFC9;
   }
 }
 @media only screen and (max-width: 419px){
@@ -401,6 +397,27 @@ a{
 }
 #belowcontent{
   display: inline-block;
+  width: 100%;
+}
+#featuredtitle{
+  font-family: "Rubik";
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.featureddesc{
+  font-family: "Libre Baskerville";
+  color: #000000;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#featuredcontainer .storycontainer:before{
+  display: none;
+}
+#featuredcontainer .storytextcontainer{
+  float: none;
   width: 100%;
 }
 #headerrightcontainer{
