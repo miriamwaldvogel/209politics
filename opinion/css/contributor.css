@@ -1,0 +1,27 @@
+#idcontainer{
+  margin-top: 10px;
+}
+#idimg{
+  width: 100%;
+  border-radius: 50%;
+}
+#idimgcontainer{
+  width: 100px;
+  display: inline-block;
+}
+#idname{
+  margin-left: 10px;
+  font-family: "Rubik";
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+}
+#iddesc{
+  margin-top: 0px;
+  font-family: "Libre Baskerville";
+}
+#bytitle{
+  font-family: "Rubik";
+  font-size: 25px;
+}
