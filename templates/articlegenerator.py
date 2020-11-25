@@ -55,7 +55,7 @@ def article():
             size = ["smallimg", "smalltext"]
         else:
             size = ["standardimg", "standardtext"]
-        s = '\n<div id="%scontainer" class="storycontainer bigstory"><a href="/%s/%s/%s/%s.html" class="storylink"><div class="storyimgcontainer %s"><img src="/%s/%s/%s/%s" alt="%s" class="storyimg"></div><div class="storytextcontainer %s"><p class="mainstory headline storyheadline">%s</p><p class="articledate">%s %d, %s</p></div></a></div>'%(pageid.get(), d[0], d[1], d[3], t[1], size[0], d[0], d[1], d[3], imgalgin.get(), newalt.get(), size[1], t[0], d[2], int(d[3]), d[0])
+        s = '\n<div id="%scontainer" class="storycontainer bigstory"><a href="/%s/%s/%s/%s.html" class="storylink"><div class="storyimgcontainer %s"><img src="/%s/%s/%s/%s" alt="%s" class="storyimg"></div><div class="storytextcontainer %s"><p class="mainstory headline storyheadline">%s</p><p class="articledate">%s %d, %s</p></div></a></div>'%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], d[0], d[1], d[3], imgname.get(), newalt.get(), size[1], headline.get(), d[2], int(d[3]), d[0])
     else:
         s = '\n<div id="%scontainer" class="storycontainer bigstory"><a href="/%s/%s/%s/%s.html" class="storylink"><div class="storyimgcontainer %s"><img src="%s" alt="%s" class="storyimg"></div><div class="storytextcontainer %s"><p class="mainstory headline storyheadline">%s</p><p class="articledate">%s %d, %s</p></div></a></div>'%(pageid.get(), d[0], d[1], d[3], t[1], size[0], path.get(), oldalt.get(), size[1], t[0], d[2], int(d[3]), d[0])
     p = [covid.get(), elections.get(), latest.get(), opinion.get(), policy.get()]
