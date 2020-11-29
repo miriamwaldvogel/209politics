@@ -1,3 +1,7 @@
 #mapid{
   height: 500px;
 }
+.leaflet-popup-content{
+  font-family: "Rubik";
+  font-size: 18px;
+}

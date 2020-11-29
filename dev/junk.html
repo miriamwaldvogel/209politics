@@ -79,15 +79,13 @@
         </form>
       </div>
       <div id="filler"></div>
-      <div id="mapid">
-
-      </div>
+      <div id="mapid"></div>
       <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
       <script type="text/javascript" src="/js/shp.js"></script>
       <script type="text/javascript">
-        var map = L.map('mapid').setView([37.985094, -121.164043], 9);
+        var map = L.map('mapid').setView([37.937220, -121.259592], 9);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, Shapefile plugin by <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>',
+      attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, Shapefile plugin by <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>, Data from <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a>',
       maxZoom: 18,
       id: 'mapbox/streets-v11',
       tileSize: 512,
@@ -103,8 +101,32 @@
     "color": "#000000",
     "fillOpacity": 0
   };
-  var precincts = new L.Shapefile('/raw/sj-county-precincts.zip', {style: precinctstyle}).addTo(map);
-  var county = new L.Shapefile('/raw/sj-county-outline.zip', {style: countystyle}).addTo(map);
+  var precinctlayer;
+  function highlight(e) {
+    var layer = e.target;
+    layer.setStyle({
+        weight: 5,
+        color: '#666666',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+    layer.bindPopup(layer.feature.properties.SRPREC).openPopup();
+}
+function reset(e) {
+    precinctlayer.resetStyle(e.target);
+    e.target.closePopup();
+}
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlight,
+        mouseout: reset,
+    });
+}
+precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr.zip', {style: precinctstyle, onEachFeature: onEachFeature}).addTo(map);
+new L.Shapefile('/raw/sj-county-outline.zip', {style: countystyle}).addTo(map);
       </script>
     </div>
   </body>
