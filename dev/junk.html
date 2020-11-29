@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="/css/global.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <link rel="stylesheet" href="css/junk.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
   crossorigin=""/>
+  <link rel="stylesheet" href="css/junk.css">
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
+   <script src="/raw/stockton-mayor-2016/results.js"></script>
     <title></title>
     <script src="/js/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
@@ -113,16 +114,27 @@
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
     }
-    layer.bindPopup(layer.feature.properties.SRPREC).openPopup();
+    a = results[layer.feature.properties.SRPREC.toString()]
+    s = "<p class='popup'>"+layer.feature.properties.SRPREC.toString()+"</p><p class='popup'>Anthony Silva: "+a[0]+" votes</p><p class='popup'>Michael Tubbs: "+a[1]+" votes</p>"
+    if (a[0] > a[1]){
+      s += "<p class='popup'>Silva +"+(a[0]-a[1])+" ("+((a[0]-a[1])/(a[0]+a[1]))+")</p>"
+    } else{
+      s += "<p class='popup'>Tubbs +"+(a[1]-a[0])+" ("+(100*((a[1]-a[0])/(a[0]+a[1]))).toFixed(2)+")</p>"
+    }
+    layer.bindPopup(s).openPopup()
 }
 function reset(e) {
     precinctlayer.resetStyle(e.target);
-    e.target.closePopup();
+    //e.target.closePopup();
+}
+function zoom(e) {
+    map.fitBounds(e.target.getBounds());
 }
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlight,
         mouseout: reset,
+        click: zoom
     });
 }
 precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr.zip', {style: precinctstyle, onEachFeature: onEachFeature}).addTo(map);
