@@ -3,29 +3,18 @@
     margin-left: 0px;
   }
   #socialmediacontainer{
-    width: 90px;
-    position: relative;
-    top: -80px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
   }
-  #twittercontainer{
-    margin: auto;
-    display: block;
-  }
-  #instagramcontainer{
-    float: left;
-    margin: 0;
-  }
-  #facebookcontainer{
-    float: right;
-    margin: 0;
+  .socialimgcontainer{
+    width: 25px;
+    display: inline-block;
   }
   #searchcontainer{
-    right: 120px;
     position: absolute;
-    top: 100px;
-  }
-  .sectioncontainers{
-    display:inline-flex;
+    right: 10px;
+    bottom: 40px;
   }
   .standardimg{
     width: 80%;
@@ -63,15 +52,22 @@
     margin-left: 10px;
   }
   #socialmediacontainer{
-    width: fit-content;
+    width: 150px;
+    height: 45px;
     margin-right: 10px;
-    position: relative;
-    top: -40px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+  }
+  .socialimgcontainer{
+    width: 40px;
+    margin-right: 7px;
+    display: inline-block;
   }
   #searchcontainer{
     position: absolute;
-    top: 105px;
-    right: 180px;
+    bottom: 10px;
+    right: 170px;
   }
   .standardimg{
     width: 40%;
@@ -106,30 +102,10 @@
     border-right: 3px double #BDBFC9;
   }
 }
-@media only screen and (max-width: 419px){
+@media only screen and (min-width: 380px) and (max-width: 667px){
   #searchcontainer{
-    top: 140px;
-  }
-}
-@media only screen and (max-width: 360px){
-  #searchcontainer{
-    right: 100px;
-  }
-}
-@media only screen and (max-width: 511px){
-  .sectioncontainers{
-    display: block;
-    margin: auto;
-    width: fit-content;
-  }
-}
-@media only screen and (min-width: 512px){
-  .sectioncontainers{
-    display: inline-block;
-  }
-  .sectioncontainers{
-    position: relative;
-    left: 10%;
+    bottom: 10px;
+    right: 90px;
   }
 }
 @media only screen and (min-width: 601px){
@@ -164,41 +140,12 @@
       border-bottom: 3px double #BDBFC9;
   }
 }
-@media only screen and (min-width: 420px) and (max-width: 624px){
-  #searchcontainer{
-    top: 120px;
-    right: 110px;
-  }
-}
-@media only screen and (min-width: 668px) and (max-width: 720px){
-  #covidnavcontainer{
-    position: relative;
-    left: 0%;
-  }
-  #contactnavcontainer{
-    position: relative;
-    left: 0%;
-  }
-}
-@media only screen and (min-width: 721px) and (max-width: 904px){
-  #contactnavcontainer{
-    position: relative;
-    left: 0%;
-  }
-}
 @media only screen and (max-width: 869px){
   #formcontainer1{
     display: none;
   }
   #formcontainer2{
     display: block;
-  }
-}
-@media only screen and (min-width: 1216px){
-  #searchcontainer{
-    position: absolute;
-    top: 100px;
-    right: calc(50vw - 425px);
   }
 }
 #content{
@@ -226,6 +173,7 @@ a{
   height: fit-content;
   padding-bottom: 10px;
   border-bottom: 10px groove #8091A6;
+  position: relative;
 }
 #datecontainer{
   width: fit-content;
@@ -245,29 +193,35 @@ a{
 #logo{
   width: 100px;
 }
-#socialmediacontainer{
-  float: right;
-}
-.socialimgcontainer{
-  width: 40px;
-  display: inline-block;
-  margin-right: 7px;
-}
 .socialmedia{
   width: 100%;
 }
 #sections{
+  border-bottom: solid;
+}
+#navcontainer{
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: solid;
+  margin: auto;
   text-align: center;
 }
+#sectionlinkcontainer{
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .section{
-  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-family: "Libre Baskerville";
+  text-decoration: none;
   color: #000000;
-  padding: 0px 15px 0px 15px;
+  display: inline-block;
+  font-size: 20px;
 }
 #leftpanel{
   height: fit-content;

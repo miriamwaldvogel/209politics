@@ -3,32 +3,18 @@
     margin-left: 0px;
   }
   #socialmediacontainer{
-    width: 90px;
-    position: relative;
-    top: -80px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
   }
-  #twittercontainer{
-    margin: auto;
-    display: block;
-  }
-  #instagramcontainer{
-    float: left;
-    margin: 0;
-  }
-  #facebookcontainer{
-    float: right;
-    margin: 0;
-  }
-  #searchcontainer{
-    right: 120px;
-  }
-  .sectioncontainers{
-    display:inline-flex;
+  .socialimgcontainer{
+    width: 25px;
+    display: inline-block;
   }
   #searchcontainer{
     position: absolute;
-    top: 100px;
-    right: 120px;
+    right: 10px;
+    bottom: 40px;
   }
   .standardimg{
     width: 80%;
@@ -48,8 +34,17 @@
   #rightpanel{
     width: 100%;
   }
-  #ballotproposalscontainer{
+  #featuredcontainer .storycontainer{
+    display: block;
     width: 100%;
+  }
+  #featuredcontainer .storycontainer:nth-child(3):before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 10px;
+    border-top: 3px double #BDBFC9;
   }
 }
 @media only screen and (min-width: 668px){
@@ -57,15 +52,22 @@
     margin-left: 10px;
   }
   #socialmediacontainer{
-    width: fit-content;
+    width: 150px;
+    height: 45px;
     margin-right: 10px;
-    position: relative;
-    top: -40px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+  }
+  .socialimgcontainer{
+    width: 40px;
+    margin-right: 7px;
+    display: inline-block;
   }
   #searchcontainer{
     position: absolute;
-    top: 100px;
-    right: 180px;
+    bottom: 10px;
+    right: 170px;
   }
   .standardimg{
     width: 40%;
@@ -91,36 +93,19 @@
     float: right;
     border-left: 3px double #BDBFC9;
   }
-  #ballotproposalscontainer{
-    width: 67%;
-    float: left;
+  #featuredcontainer .storycontainer{
+    display: inline-grid;
+    width: 48%;
   }
-  #schoolboardscontainer{
-    width: 32%;
-    float: right;
-    border-left: 3px double #BDBFC9;
-  }
-  #luntaoconflictimgcontainer{
-    width: 30%;
-  }
-  #luntaoconflicttextcontainer{
-    width: 70%;
-  }
-  #sjcourtreopensimgcontainer{
-    width: 30%;
-  }
-  #sjcourtreopenstextcontainer{
-    width: 70%;
+  #featuredcontainer .storycontainer:nth-child(2){
+    margin-right: 10px;
+    border-right: 3px double #BDBFC9;
   }
 }
-@media only screen and (max-width: 419px){
+@media only screen and (min-width: 380px) and (max-width: 667px){
   #searchcontainer{
-    top: 140px;
-  }
-}
-@media only screen and (max-width: 360px){
-  #searchcontainer{
-    right: 100px;
+    bottom: 10px;
+    right: 90px;
   }
 }
 @media only screen and (min-width: 601px){
@@ -130,7 +115,7 @@
     max-width: 383px;
     margin-bottom: 20px;
   }
-  #midcontent .storycontainer:nth-child(2){
+  #midcontent .storycontainer:nth-child(3n+2){
     margin-left: 10px;
     margin-right: 10px;
     border-left: 3px double #BDBFC9;
@@ -155,25 +140,12 @@
       border-bottom: 3px double #BDBFC9;
   }
 }
-@media only screen and (min-width: 420px) and (max-width: 624px){
-  #searchcontainer{
-    top: 120px;
-    right: 110px;
-  }
-}
 @media only screen and (max-width: 869px){
   #formcontainer1{
     display: none;
   }
   #formcontainer2{
     display: block;
-  }
-}
-@media only screen and (min-width: 1216px){
-  #searchcontainer{
-    position: absolute;
-    top: 100px;
-    right: calc(50vw - 425px);
   }
 }
 #content{
@@ -201,6 +173,7 @@ a{
   height: fit-content;
   padding-bottom: 10px;
   border-bottom: 10px groove #8091A6;
+  position: relative;
 }
 #datecontainer{
   width: fit-content;
@@ -220,31 +193,35 @@ a{
 #logo{
   width: 100px;
 }
-#socialmediacontainer{
-  float: right;
-}
-.socialimgcontainer{
-  width: 40px;
-  display: inline-block;
-  margin-right: 7px;
-}
 .socialmedia{
   width: 100%;
 }
 #sections{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
   border-bottom: solid;
 }
-.section{
-  font-size: 20px;
-  font-family: "Libre Baskerville";
-  color: #000000;
-  margin: 0px 15px 0px 15px;
+#navcontainer{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: auto;
+  text-align: center;
 }
-.sectioncontainers{
+#sectionlinkcontainer{
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: "Libre Baskerville";
+  text-decoration: none;
+  color: #000000;
   display: inline-block;
+  font-size: 20px;
 }
 #leftpanel{
   height: fit-content;
@@ -269,7 +246,7 @@ a{
 }
 #mainstoryimgcontainer{
   margin: auto;
-  width: 30%;
+  width: 50%;
 }
 #mainstoryimg{
   width: 100%;
@@ -376,6 +353,27 @@ a{
   display: inline-block;
   width: 100%;
 }
+#featuredtitle{
+  font-family: "Rubik";
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.featureddesc{
+  font-family: "Libre Baskerville";
+  color: #000000;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#featuredcontainer .storycontainer:before{
+  display: none;
+}
+#featuredcontainer .storytextcontainer{
+  float: none;
+  width: 100%;
+}
 #headerrightcontainer{
   display: inline-block;
   float: right;
@@ -389,8 +387,6 @@ a{
   height: 20px;
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  top: 5px;
 }
 #searchimg{
   width: 100%;

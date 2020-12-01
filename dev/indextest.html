@@ -10,11 +10,12 @@
     <meta name="twitter:title" content="209 Politics">
     <meta name="twitter:description" content="A student-run politics source for the greater San Joaquin County area: elections, local policy, and more.">
     <meta name="twitter:image" content="https://209politics.com/images/favicon.png">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="css/indextest.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <script type="text/javascript" src="/dev/js/indextest.js"></script>
+    <script type="text/javascript" src="js/indextest.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -48,41 +49,31 @@
           </div>
         </div>
         <div id="socialmediacontainer">
-          <a href="https://twitter.com/209Politics" class="sociallink">
             <div class="socialimgcontainer" id="twittercontainer">
+              <a href="https://twitter.com/209Politics" class="sociallink">
               <img src="/images/twitter.png" alt="209 Politics Twitter" id="twitter" class="socialmedia">
+              </a>
             </div>
-          </a>
-          <a href="https://www.instagram.com/209.politics/" class="sociallink">
             <div class="socialimgcontainer" id="instagramcontainer">
+              <a href="https://www.instagram.com/209.politics/" class="sociallink">
               <img src="/images/instagram.jpeg" alt="209 Politics Instagram" id="instagram" class="socialmedia">
+              </a>
             </div>
-          </a>
-          <a href="https://www.facebook.com/209Politics" class="sociallink">
             <div class="socialimgcontainer" id="facebookcontainer">
+              <a href="https://www.facebook.com/209Politics" class="sociallink">
               <img src="/images/facebook.png" alt="209 Politics Facebook" id="facebook" class="socialmedia">
+              </a>
             </div>
-          </a>
         </div>
       </div>
       <div id="sections">
-        <div id="navcontainer">
-          <div id="latestnavcontainer" class="sectioncontainers">
-            <a href="latest.html" id="latest" class="section">LATEST</a>
+          <div id="sectionlinkcontainer">
+            <a href="results/house.html" class="section">LATEST</a>
+            <a href="results/state.html" class="section">ELECTIONS</a>
+            <a href="results/county.html" class="section">COVID-19</a>
+            <a href="results/mayors.html" class="section">POLICY</a>
+            <a href="results/citycouncils.html" class="section">CONTACT</a>
           </div>
-          <div id="electionsnavcontainer" class="sectioncontainers">
-            <a href="elections.html" id="elections" class="section">ELECTIONS</a>
-          </div>
-          <div id="policynavcontainer" class="sectioncontainers">
-            <a href="policy.html" class="section">POLICY</a>
-          </div>
-          <div id="covidnavcontainer" class="sectioncontainers">
-            <a href="covid-19.html" class="section">COVID-19</a>
-          </div>
-          <div id="opinionnavcontainer" class="sectioncontainers">
-            <a href="opinion.html" class="section">OPINION</a>
-          </div>
-        </div>
         <div id="formcontainer2">
           <form id="searchform" action="https://www.google.com/search" method="get">
             <input type="hidden" name="q" value="site:209politics.com">
@@ -93,15 +84,35 @@
       </div>
       <div id="leftpanel">
         <div id="mainstorycontainer" class="mainstory">
-          <a href="2020/11/19/stockton-hhap-homeless-funding.html" id="mainstorylink" class="mainstory">
+          <a href="2020/11/25/san-joaquin-remains-purple.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
-              <img src="2020/11/19/stockton-shelter-homeless.jpg" alt="Stockton Shelter for the Homeless" id="mainstoryimg">
+              <img src="/2020/11/25/tier-assignments-11-24.jpg" alt="CA COVID tier assignments" id="mainstoryimg">
             </div>
-            <h1 id="mainstoryheadline" class="mainstory headline">Stockton Distributes $6.4 Million for Homelessness Crisis</h1>
-            <p id="mainstorydate" class="mainstory articledate">November 19, 2020</p>
+            <h1 id="mainstoryheadline" class="mainstory headline">San Joaquin Remains In Purple Tier</h1>
+            <p id="mainstorydate" class="mainstory articledate">November 25, 2020</p>
           </a>
         </div>
         <br>
+        <div id="results1123container" class="storycontainer bigstory">
+          <a href="/2020/11/24/ripon-fire-more-stable-races.html" class="storylink">
+            <div class="storyimgcontainer smallimg"><img src="/2020/10/09/mail-in-ballot.jpg" alt="Mail in ballot" class="storyimg"></div>
+            <div class="storytextcontainer smalltext">
+              <p class="mainstory headline storyheadline">Ripon Fire Board Race Down to One Vote As Other Contests Stabilize</p>
+              <p class="articledate">November 24, 2020</p>
+            </div>
+          </a>
+        </div>
+        <div id="stk6.4mcontainer" class="stk6.4m storycontainer standardcontainer bigstory">
+          <a href="/2020/11/19/stockton-hhap-homeless-funding.html" id="stk6.4mlink" class="stk6.4m storylink">
+            <div id="stk6.4mimgcontainer" class="stk6.4m storyimgcontainer standardimg">
+              <img src="/2020/11/19/stockton-shelter-homeless.jpg" alt="Stockton Shelter for the Homeless" id="stk6.4mimg" class="stk6.4m storyimg">
+            </div>
+            <div id="stk6.4mtextcontainer" class="stk6.4m storytextcontainer standardtext">
+              <p id="stk6.4mheadline" class="mainstory headline storyheadline">Stockton Distributes $6.4 Million for Homelessness Crisis</p>
+              <p id="stk6.4mdate" class="stk6.4m articledate">November 19, 2020</p>
+            </div>
+          </a>
+        </div>
         <div id="vanbuskcontainer" class="vanbusk storycontainer standardcontainer bigstory">
           <a href="/2020/11/19/van-buskirk-contract-grants.html" id="vanbusklink" class="vanbusk storylink">
             <div id="vanbuskimgcontainer" class="vanbusk storyimgcontainer standardimg">
@@ -113,6 +124,19 @@
             </div>
           </a>
         </div>
+      </div>
+      <div id="rightpanel">
+        <div id="covidcontainer">
+          <p id="covidtitle" class="headline sectiontitle">LATEST COVID-19 NUMBERS</p>
+          <div id="coviddatacontainer">
+            <iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" id="coviddata" src="https://public.tableau.com/shared/3YNNGK7ZG?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:tabs=no&:loadOrderID=0"></iframe>
+          </div>
+          <p id="datacredit" target="_blank">Data and visuals courtesy of <a
+            href="https://covid19.ca.gov/data-and-tools/"
+            id="datacredita">covid19.ca.gov/data-and-tools/</a></p>
+        </div>
+      </div>
+      <div id="midcontent">
         <div id="villawincontainer" class="villawin storycontainer standardcontainer bigstory">
           <a href="/2020/11/19/villapudua-assembly-win.html" id="villawinlink" class="villawin storylink">
             <div id="villawinimgcontainer" class="villawin storyimgcontainer standardimg">
@@ -135,19 +159,6 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="rightpanel">
-        <div id="covidcontainer">
-          <p id="covidtitle" class="headline sectiontitle">LATEST COVID-19 NUMBERS</p>
-          <div id="coviddatacontainer">
-            <iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" id="coviddata" src="https://public.tableau.com/shared/3YNNGK7ZG?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:tabs=no&:loadOrderID=0"></iframe>
-          </div>
-          <p id="datacredit" target="_blank">Data and visuals courtesy of <a
-            href="https://covid19.ca.gov/data-and-tools/"
-            id="datacredita">covid19.ca.gov/data-and-tools/</a></p>
-        </div>
-      </div>
-      <div id="midcontent">
         <div id="results1116container" class="results1116 storycontainer bigstory">
           <a href="/2020/11/17/tight-races-fewer-ballots.html" id="results1116link" class="results1116 storylink">
             <div id="results1116imgcontainer" class="results1116 storyimgcontainer smallimg">
@@ -159,61 +170,42 @@
             </div>
           </a>
         </div>
-        <div id="covid1116container" class="covid1116 storycontainer standardcontainer bigstory">
-          <a href="/2020/11/16/san-joaquin-purple-tier.html" id="covid1116link" class="covid1116 storylink">
-            <div id="covid1116imgcontainer" class="covid1116 storyimgcontainer standardimg">
-              <img src="/2020/11/16/ca-tier-assignments.jpg" alt="California COVID tier assignments" id="covid1116img" class="covid1116 storyimg">
-            </div>
-            <div id="covid1116textcontainer" class="covid1116 storytextcontainer standardtext">
-              <p id="covid1116headline" class="mainstory headline storyheadline">San Joaquin Among 28 Counties Moving to Purple</p>
-              <p id="covid1116date" class="covid1116 articledate">November 16, 2020</p>
-            </div>
-          </a>
-        </div>
-        <div id="1113resultscontainer" class="1113results storycontainer bigstory">
-          <a href="/2020/11/14/friday-election-results-update.html" id="1113resultslink" class="1113results storylink">
-            <div id="1113resultsimgcontainer" class="1113results storyimgcontainer smallimg">
-              <img src="/2020/11/05/voting-line.jpg" alt="Line to vote" id="1113resultsimg" class="1113results storyimg">
-            </div>
-            <div id="1113resultstextcontainer" class="1113results storytextcontainer smalltext">
-              <p id="1113resultsheadline" class="mainstory headline storyheadline">Races for State Assembly, Board of Supervisors Narrow</p>
-              <p id="1113resultsdate" class="1113results articledate">November 14, 2020</p>
+      </div>
+      <div id="featuredcontainer">
+        <p id="featuredtitle">FEATURED STORIES</p>
+        <div id="lincolncampaigncontainer" class="lincolncampaign storycontainer bigstory">
+          <a href="/2020/11/06/lincoln-campaign-tactics.html" id="lincolncampaignlink" class="lincolncampaign storylink">
+            <div id="lincolncampaigntextcontainer" class="lincolncampaign storytextcontainer smalltext">
+              <p id="lincolncampaignheadline" class="mainstory headline storyheadline">Analysis: How Kevin Lincoln’s Campaign Gained an Upset Lead</p>
+              <p id="lincolncampaigndate" class="lincolncampaign articledate">November 6, 2020</p>
+              <p class="featureddesc">A look into the factors contributing to Lincoln's unexpected win over incumbent Michael Tubbs.</p>
             </div>
           </a>
         </div>
-        <div id="1112resultscontainer" class="1112results storycontainer standardcontainer bigstory">
-          <a href="/2020/11/13/thursday-election-results-update.html" id="1112resultslink" class="1112results storylink">
-            <div id="1112resultsimgcontainer" class="1112results storyimgcontainer standardimg">
-              <img src="/2020/10/09/mail-in-ballot.jpg" alt="VBM Ballot" id="1112resultsimg" class="1112results storyimg">
-            </div>
-            <div id="1112resultstextcontainer" class="1112results storytextcontainer standardtext">
-              <p id="1112resultsheadline" class="mainstory headline storyheadline">Thursday Election Results Update</p>
-              <p id="1112resultsdate" class="1112results articledate">November 13, 2020</p>
+        <div id="susd$1027container" class="susd$1027 storycontainer standardcontainer bigstory">
+          <a href="/2020/10/27/stockton-unified-outside-spending.html" id="susd$1027link" class="susd$1027 storylink">
+            <div id="susd$1027textcontainer" class="susd$1027 storytextcontainer standardtext">
+              <p id="susd$1027headline" class="mainstory headline storyheadline">Outside Groups Outspend Stockton Unified Candidates 25 to 1</p>
+              <p id="susd$1027date" class="susd$1027 articledate">October 27, 2020</p>
+              <p class="featureddesc">Independent expenditure committees for three Stockton Unified candidates spent tens of thousands of dollars from outside sources.</p>
             </div>
           </a>
         </div>
-        <div id="stkclergycontainer" class="stkclergy storycontainer standardcontainer bigstory">
-          <a href="/2020/11/12/stockton-diocese-abuse.html" id="stkclergylink" class="stkclergy storylink">
-            <div id="stkclergyimgcontainer" class="stkclergy storyimgcontainer standardimg">
-              <img src="/2020/11/12/cotta-message.png" alt="Bishop Cotta message" id="stkclergyimg" class="stkclergy storyimg">
-            </div>
-            <div id="stkclergytextcontainer" class="stkclergy storytextcontainer standardtext">
-              <p id="stkclergyheadline" class="mainstory headline storyheadline">29 New Clergy Named to Stockton Diocese’s List of Child Sexual Abusers</p>
-              <p id="stkclergydate" class="stkclergy articledate">November 12, 2020</p>
-            </div>
-          </a>
-        </div>
-        <div id="sjcovid1110container" class="sjcovid1110 storycontainer standardcontainer bigstory">
-          <a href="/2020/11/10/san-joaquin-covid-numbers.html" id="sjcovid1110link" class="sjcovid1110 storylink">
-            <div id="sjcovid1110imgcontainer" class="sjcovid1110 storyimgcontainer standardimg">
-              <img src="/2020/10/06/coronavirus.png" alt="COVID-19" id="sjcovid1110img" class="sjcovid1110 storyimg">
-            </div>
-            <div id="sjcovid1110textcontainer" class="sjcovid1110 storytextcontainer standardtext">
-              <p id="sjcovid1110headline" class="mainstory headline storyheadline">San Joaquin Could Be Heading Back to the Purple Tier</p>
-              <p id="sjcovid1110date" class="sjcovid1110 articledate">November 10, 2020</p>
-            </div>
-          </a>
-        </div>
+      </div>
+      <div id="footer">
+        <p id="socialmediafooter">
+          <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
+          <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
+          <a href="https://www.facebook.com/209politics" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
+        </p>
+        <p id="navfooter">
+          <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
+          <a href="/latest" id="latestnavfooter" class="navfooter">Latest</a> •
+          <a href="/elections" id="electionsnavfooter" class="navfooter">Elections</a> •
+          <a href="/policy" id="policynavfooter" class="navfooter">Policy</a> •
+          <a href="/covid-19" id="covidnavfooter" class="navfooter">COVID-19</a> •
+          <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
+        </p>
       </div>
     </div>
   </body>
