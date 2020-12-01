@@ -82,7 +82,7 @@ def article():
     f = open("/home/miriamwaldvogel/209politics/index.html", "r")
     g = f.read().split('<div id="leftpanel">')
     f.close()
-    f = open("/home/miriamwaldvogel/junk/junkhtml/junk.html", "w")
+    f = open("/home/miriamwaldvogel/209politics/index.html", "w")
     f.write(g[0]+'<div id="leftpanel">')
     f.write(m)
     h = open("/home/miriamwaldvogel/209politics/articles.html", "r")
