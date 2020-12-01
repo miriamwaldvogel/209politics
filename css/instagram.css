@@ -1,0 +1,20 @@
+#infocontainer{
+  font-family: "Libre Baskerville";
+  text-align: center;
+}
+#photoscontainer{
+  max-width: 500px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+.photocontainer{
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  display: inline-block;
+}
+.photo{
+  height: 100%;
+  margin: auto;
+}
