@@ -17,4 +17,8 @@
 .photo{
   height: 100%;
   margin: auto;
+  transition: .4s ease;
+}
+.photo:hover{
+  opacity: 0.7;
 }
