@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="/css/global.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-    <link rel="stylesheet" href="../css/leaflet.css">
+    <link rel="stylesheet" href="/css/leaflet.css">
   <link rel="stylesheet" href="../css/stockton-mayor.css">
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
    <script src="/raw/stockton-mayor-2016/results.js"></script>
-    <title></title>
     <script src="/js/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
@@ -26,7 +25,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-174685284-1');
       </script>
-    <title>- 209 Politics</title>
+    <title>Stockton Mayor Precinct Comparison - 209 Politics</title>
   </head>
   <body>
     <div id="content">
@@ -79,9 +78,6 @@
       </div>
       <div id="filler"></div>
       <div id="mapid"></div>
-      <div id="extra">
-
-      </div>
       <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
       <script type="text/javascript" src="/js/shp.js"></script>
       <script type="text/javascript">
@@ -170,7 +166,7 @@ function onEachFeature(feature, layer) {
         click: zoom
     });
 }
-precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
+precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr-2016-consolidated.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
 new L.Shapefile('/raw/sj-county-outline.zip', {style: countystyle}).addTo(map);
       </script>
     </div>
