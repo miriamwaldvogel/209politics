@@ -1,0 +1,171 @@
+@media only screen and (min-width: 650px){
+  #leftpanel{
+    display: inline-grid;
+    float: left;
+  }
+  #rightpanel{
+    display: inline-grid;
+    float: right;
+  }
+  #rightpanel .intimgcontainer{
+    width: 40%;
+    float: left;
+  }
+  #rightpanel .inttextcontainer{
+    margin-left: 10px;
+    width: 57%;
+    float: right;
+  }
+  #rightpanel .intdesc{
+    font-size: 14px;
+  }
+  #midcontainer .intcontainer{
+    display: inline-block;
+  }
+  #midcontainer .intcontainer:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 3px double #BDBFC9;
+    border-right: 3px double #BDBFC9;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #midcontainer{
+    width: fit-content;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 651px) {
+  #leftpanel{
+    width: 100%;
+  }
+  #rightpanel{
+    width: 100%;
+  }
+  #rightpanel .intdesc{
+    font-size: 15px;
+  }
+  #rightpanel .inttextcontainer{
+    margin-top: 10px;
+  }
+  #midcontainer .intimgcontainer{
+    display: none;
+  }
+  #midcontainer .intcontainer{
+    width: 100%;
+  }
+  #midcontainer .intcontainer:before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 10px;
+    border-top: 3px double #BDBFC9;
+  }
+  #midcontainer .inttitle{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 773px){
+  #leftpanel{
+    width: 55%;
+    border-right: 3px double #BDBFC9;
+  }
+  #rightpanel{
+    width: 44%;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 772px){
+  #leftpanel{
+    width: 44%
+  }
+  #rightpanel{
+    width: 54%;
+    padding-left: 10px;
+    border-left: 3px double #BDBFC9;
+  }
+}
+@media only screen and (min-width:1201px){
+  #midcontainer .intcontainer{
+    width: 376px;
+  }
+  #rightpanel .inttitle{
+    font-size: 25px;
+  }
+  #rightpanel .intdesc{
+    font-size: 15px;
+  }
+  #midcontainer .inttitle{
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 1200px){
+  #midcontainer .intcontainer{
+    width: calc(32vw - 16px);
+  }
+}
+#title{
+  font-family: "Rubik";
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#titledesc{
+  font-family: "Libre Baskerville";
+}
+#mainintcontainer{
+  margin-right: 10px;
+  display: inline-block;
+}
+#mainintimgcontainer{
+  width: 100%;
+}
+#mainintimg{
+  width: 100%;
+}
+#mainintheadline{
+  color: #000000;
+  font-size: 27px;
+  margin-top: 10px;
+}
+#mainintdesc{
+  font-size: 14px;
+  margin-top: 0px;
+}
+a{
+  text-decoration: none;
+}
+.inttitle{
+  font-family: "Rubik";
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000;
+}
+#rightpanel .intcontainer:before{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  padding-top: 10px;
+  border-top: 3px double #BDBFC9;
+}
+.intdesc{
+  color: #000000;
+  font-family: "Libre Baskerville";
+  margin-top: 0px;
+}
+.intimg{
+  width: 100%;
+}
+#rightpanel .inttitle{
+  font-size: 2.1vw;
+  font-size: 20px;
+  margin-top: 0px;
+}
+#midcontainer{
+  margin-top: 10px;
+}
+#midcontainer .inttitle{
+  font-size: 21.5px;
+}
