@@ -1,0 +1,38 @@
+#mapid{
+  height: 500px;
+  z-index: 1;
+}
+.leaflet-popup-content{
+  font-family: "Rubik";
+  font-size: 16px;
+}
+.popup{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#precinct{
+  font-size: 19px;
+}
+.margin{
+  font-size: 14px;
+}
+#title{
+  font-family: "Rubik";
+  font-size: 40px;
+}
+#downloadcontainer{
+  margin-top: 10px;
+}
+#downloadtitle{
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}
+.downloadlink{
+  color: #000000;
+  text-decoration: none;
+}
+.download{
+  width: fit-content;
+  display: inline-block;
+  font-family: "Libre Baskerville";
+}
