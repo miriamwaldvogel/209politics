@@ -30,9 +30,6 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  #topcontainer{
-    border-bottom: 3px double #BDBFC9;
-  }
   #midcontainer{
     width: fit-content;
     margin: auto;
