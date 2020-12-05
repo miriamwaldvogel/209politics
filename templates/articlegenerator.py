@@ -62,7 +62,7 @@ def article():
         else:
             size = ["standardimg", "standardtext"]
         s = '\n<div id="%scontainer" class="storycontainer bigstory"><a href="/%s/%s/%s/%s.html" class="storylink"><div class="storyimgcontainer %s"><img src="%s" alt="%s" class="storyimg"></div><div class="storytextcontainer %s"><p class="mainstory headline storyheadline">%s</p><p class="articledate">%s %d, %s</p></div></a></div>'%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], path.get(), oldalt.get(), size[1], headline.get(), d[2], int(d[3]), d[0])
-        m = '<div id="mainstorycontainer" class="mainstory"> <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory"> <div id="mainstoryimgcontainer"> <img src="%s" alt="%s" id="mainstoryimg"> </div> <h1 id="mainstoryheadline" class="mainstory headline">%s</h1> <p id="mainstorydate" class="mainstory articledate">%s %d, %s</p> </a> </div>' % (d[0], d[1], d[3], htmlname.get(), path.get() , oldalt.get(), headline.get(), d[2], int(d[3]), d[0])
+        m = '<div id="mainstorycontainer" class="mainstory"> <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory"> <div id="mainstoryimgcontainer"> <img src="%s" alt="%s" id="mainstoryimg"> </div> <h1 id="mainstoryheadline" class="mainstory headline">%s</h1> <p id="mainstorydate" class="mainstory articledate">%s %d, %s</p> </a> </div> <br>' % (d[0], d[1], d[3], htmlname.get(), path.get() , oldalt.get(), headline.get(), d[2], int(d[3]), d[0])
     p = [covid.get(), elections.get(), latest.get(), opinion.get(), policy.get()]
     q = ["covid-191", "elections1", "latest1", "opinion1", "policy1"]
     for i, j in enumerate(p):
@@ -76,12 +76,12 @@ def article():
             f.write(g[1])
             f.close()
     f = open("/home/miriamwaldvogel/209politics/articles.html", "r")
-    g = f.read().split('<div id="articlescontainer">')
+    q = f.read().split('<div id="articlescontainer">')
     f.close()
     f = open("/home/miriamwaldvogel/209politics/articles.html", "w")
-    f.write(g[0]+'<div id="articlescontainer">')
+    f.write(q[0]+'<div id="articlescontainer">')
     f.write(s)
-    f.write(g[1])
+    f.write(q[1])
     f.close()
     f = open("/home/miriamwaldvogel/209politics/index.html", "r")
     g = f.read().split('<div id="leftpanel">')
@@ -92,7 +92,7 @@ def article():
     h = open("/home/miriamwaldvogel/209politics/articles.html", "r")
     i = h.read()
     h.close()
-    f.write(i.split('<div id="articlescontainer">', 1)[1].split('</a>', 1)[0]+"</a></div>")
+    f.write(q[1].split('</a>', 1)[0]+"</a></div>")
     f.write(g[1].split('<br>', 1)[1])
     f.close()
     global w
