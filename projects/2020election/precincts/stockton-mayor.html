@@ -16,6 +16,7 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
    <script src="/raw/stockton-mayor-2016/results.js"></script>
+   <script src="/raw/general-election-2020/stockton-mayor/precincts.js"></script>
     <script src="/js/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
@@ -77,11 +78,106 @@
         </form>
       </div>
       <div id="filler"></div>
-      <div id="mapid"></div>
+      <div id="map1" class="map"></div>
+      <div id="map2" class="map"></div>
+      <div id="test"></div>
       <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
       <script type="text/javascript" src="/js/shp.js"></script>
       <script type="text/javascript">
-        var map = L.map('mapid').setView([38.007220, -121.259592], 11);
+      var map = L.map('map1').setView([38.007220, -121.259592], 11);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin, <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a>/<a href="https://www.sjgov.org/department/rov/">SJ ROV</a> - Data',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+}).addTo(map);
+var precinctstyle = {
+  "color": "#BCBDF9",
+  "weight": 2,
+  "opacity": 0.5
+};
+var countystyle = {
+  "color": "#000000",
+  "fillOpacity": 0
+};
+var precinctlayer;
+function color(v){
+  if (v>0){
+    if(v>0.25){return "#2323BA"}
+    else if(v>0.15){return "#5454FF"}
+    else if(v>0.05){return "#82B4FF"}
+    else{return "#D1EAFF"}
+  } else{
+    if(v>-0.05){return "#FFD1D1"}
+    else if(v>-0.15){return "#ED6666"}
+    else if(v>-0.25){return "#FF262D"}
+    else{return "#B3292D"}
+  }
+
+}
+function style(feature){
+  var a = results2020[feature.properties.SRPREC.toString()];
+  if (feature.properties.SRPREC.toString() in results2020 && a[0]+a[1] > 0){
+    return{
+        "opacity": 1,
+        "color": "#E0E0E0",
+        "fillColor": color((a[0]-a[1])/(a[0]+a[1])),
+        "fillOpacity": 0.8,
+        "weight": 2,
+    }
+  } else{
+    return{
+      "fillOpacity": 0,
+      "weight": 0
+    }
+  }
+}
+function highlight(e) {
+  var layer = e.target;
+  layer.setStyle({
+      weight: 5,
+      color: '#666666',
+      dashArray: '',
+  });
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      layer.bringToFront();
+  }
+  if (layer.feature.properties.SRPREC.toString() in results2020){
+    a = results2020[layer.feature.properties.SRPREC.toString()];
+    if (a[0]+a[1] > 0){
+      s = "<p class='popup' id='precinct'>Precinct "+layer.feature.properties.SRPREC.toString()+"</p><p class='popup'>Michael Tubbs: "+a[0]+" votes ("+((a[0]/(a[0]+a[1]))*100).toFixed(2)+"%)</p><p class='popup'>Kevin Lincoln: "+a[1]+" votes ("+((a[1]/(a[0]+a[1]))*100).toFixed(2)+"%)</p>";
+      if (a[0] > a[1]){
+        s += "<p class='popup margin'>Margin: Tubbs +"+(a[0]-a[1])+" votes ("+(100*((a[0]-a[1])/(a[0]+a[1]))).toFixed(2)+"%)</p>";
+      } else{
+        s += "<p class='popup margin'>Margin: Lincoln +"+(a[1]-a[0])+" votes ("+(100*((a[1]-a[0])/(a[0]+a[1]))).toFixed(2)+" points)</p>";
+      }
+     layer.bindPopup(s).openPopup();
+    }
+ } else{
+   layer.bindPopup(layer.feature.properties.SRPREC.toString()).openPopup();
+ }
+}
+function reset(e) {
+  precinctlayer.resetStyle(e.target);
+  e.target.closePopup();
+}
+function zoom(e) {
+  map.fitBounds(e.target.getBounds());
+}
+function onEachFeature(feature, layer) {
+  layer.on({
+      mouseover: highlight,
+      mouseout: reset,
+      click: zoom
+  });
+}
+precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr-2020-primary.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
+new L.Shapefile('/raw/sj-county-outline.zip', {style: countystyle}).addTo(map);
+      </script>
+      <script type="text/javascript">
+        var map = L.map('map2').setView([38.007220, -121.259592], 11);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin, <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a>/<a href="https://www.sjgov.org/department/rov/">SJ ROV</a> - Data',
       maxZoom: 18,
@@ -166,7 +262,7 @@ function onEachFeature(feature, layer) {
         click: zoom
     });
 }
-precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr-2016-consolidated.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
+precinctlayer = new L.Shapefile('/raw/sj-county-precincts-sr-2016-general.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
 new L.Shapefile('/raw/sj-county-outline.zip', {style: countystyle}).addTo(map);
       </script>
     </div>
