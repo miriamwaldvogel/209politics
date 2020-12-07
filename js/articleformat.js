@@ -14,4 +14,11 @@ function resize(){
 }
 window.onload = function(){
   resize();
+  var a = document.getElementById("paragraphcontainer").getElementsByTagName("P");
+  for (var i = 0; i < a.length; i++){
+    var b = a[i].getElementsByTagName("A");
+    for (var j = 0; j < b.length; j++){
+      b[j].target = "_blank";
+    }
+  }
 };
