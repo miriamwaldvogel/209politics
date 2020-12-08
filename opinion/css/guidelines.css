@@ -2,3 +2,24 @@
   font-family: "Rubik";
   font-size: 40px;
 }
+#faq{
+  font-family: "Libre Baskerville";
+}
+#guidelinescontainer{
+  font-family: "Libre Baskerville";
+  line-height: 1.4;
+}
+#guidelinescontainer p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bullets{
+  margin-left: 20px;
+}
+.q{
+  font-size: 17px;
+}
+.a{
+  font-size: 14px;
+  line-height: 1.5;
+}
