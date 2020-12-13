@@ -9,12 +9,12 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <lastmod>2020-12-12T06:02:47+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2020-12-03T04:49:27+00:00</lastmod>
+  <lastmod>2020-12-12T06:02:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -24,17 +24,42 @@
 </url>
 <url>
   <loc>https://209politics.com/covid-19</loc>
-  <lastmod>2020-12-03T04:49:25+00:00</lastmod>
+  <lastmod>2020-12-05T04:41:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2020-12-03T04:49:29+00:00</lastmod>
+  <lastmod>2020-12-12T06:02:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/interactives</loc>
   <lastmod>2020-12-03T04:49:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/11/lincoln-mayoral-office-positions.html</loc>
+  <lastmod>2020-12-12T06:08:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/09/sj-bos-ethics-allegations.html</loc>
+  <lastmod>2020-12-10T03:57:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/08/san-joaquin-hhap-funding.html</loc>
+  <lastmod>2020-12-12T06:02:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/04/icu-stay-at-home.html</loc>
+  <lastmod>2020-12-08T16:48:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/03/harder-agent-orange-bill.html</loc>
+  <lastmod>2020-12-04T03:50:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -48,33 +73,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/11/24/ripon-fire-more-stable-races.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/19/stockton-hhap-homeless-funding.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/19/van-buskirk-contract-grants.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/19/villapudua-assembly-win.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/18/lincoln-wins-stockton-mayor.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://209politics.com/2020/11/06/lincoln-campaign-tactics.html</loc>
-  <lastmod>2020-12-03T04:49:21+00:00</lastmod>
+  <lastmod>2020-12-07T17:52:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -84,8 +84,23 @@
 </url>
 <url>
   <loc>https://209politics.com/contact</loc>
-  <lastmod>2020-12-03T04:49:24+00:00</lastmod>
+  <lastmod>2020-12-12T17:34:17+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/24/ripon-fire-more-stable-races.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/19/villapudua-assembly-win.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/18/lincoln-wins-stockton-mayor.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/11/17/tight-races-fewer-ballots.html</loc>
@@ -104,17 +119,17 @@
 </url>
 <url>
   <loc>https://209politics.com/2020/11/13/thursday-election-results-update.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <lastmod>2020-12-07T17:52:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/11/12/stockton-diocese-abuse.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <lastmod>2020-12-07T17:52:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/11/10/san-joaquin-covid-numbers.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <lastmod>2020-12-07T17:52:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -124,7 +139,7 @@
 </url>
 <url>
   <loc>https://209politics.com/2020/11/04/lincoln-slight-lead.html</loc>
-  <lastmod>2020-12-03T04:49:21+00:00</lastmod>
+  <lastmod>2020-12-08T16:48:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -344,7 +359,7 @@
 </url>
 <url>
   <loc>https://209politics.com/2020/11/05/san-joaquin-uncounted-ballots.html</loc>
-  <lastmod>2020-12-03T04:49:21+00:00</lastmod>
+  <lastmod>2020-12-07T17:52:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -543,6 +558,16 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/2020/11/19/van-buskirk-contract-grants.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/19/stockton-hhap-homeless-funding.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/2020/09/14/sangalang-park-grant.html</loc>
   <lastmod>2020-12-03T04:49:21+00:00</lastmod>
   <priority>0.64</priority>
@@ -583,14 +608,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
+  <lastmod>2020-12-08T16:48:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
-  <lastmod>2020-12-03T04:49:21+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://209politics.com/index.html</loc>
+  <lastmod>2020-12-12T06:02:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/house.html</loc>
