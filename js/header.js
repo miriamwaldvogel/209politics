@@ -1,3 +1,8 @@
+document.onclick = function(e){
+  if (e.target.id !== "sidebar"){
+    document.getElementById("sectionscontainer").style.display = "none";
+  }
+};
 function sidebar(){
   b = document.getElementById("sectionscontainer");
   if (b.style.display === "block"){
