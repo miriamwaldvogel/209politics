@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, IntVar, Checkbutton, Button
 from os import system
 w = Tk()
 contact = IntVar()
