@@ -1,0 +1,107 @@
+@media only screen and (max-width: 500px){
+  #title{
+    font-size: 9vw;
+  }
+  #imgcontainer{
+    width: 75px;
+  }
+}
+@media only screen and (min-width: 500px){
+  #title{
+    font-size: 50px;
+  }
+  #imgcontainer{
+    width: 90px;
+  }
+}
+#info{
+  margin-top: 10px;
+  border-bottom: 4px groove #8091A6;
+}
+#introinfo{
+  position: relative;
+}
+#titlecontainer{
+  width: fit-content;
+  display: inline-block;
+  margin-left: 10px;
+  position: absolute;
+  top: 60%;
+  -ms-transform: translateY(-60%);
+  transform: translateY(-60%);
+}
+#title{
+  font-family: "Rubik";
+  display: inline-block;
+  margin: 0;
+}
+#imgcontainer{
+  display: inline-block;
+}
+#candimage{
+  border-radius: 50%;
+  width: 100%;
+}
+#geninfo{
+  font-family: "Libre Baskerville";
+}
+.replink{
+  text-decoration: none;
+  color: blue;
+}
+#legtitle{
+  font-family: "Rubik";
+  font-size: 20px;
+}
+.leg{
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  border-bottom: 3px double #BDBFC9;
+}
+.name{
+  font-size: 16px;
+  width: fit-content;
+  border: 2px solid #20124d;
+  padding: 4px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.desc{
+  margin-top: 0px;
+  font-size: 15px;
+}
+.leglink{
+  color: #000000;
+  text-decoration: none;
+}
+.cosponsorlink{
+  color: blue;
+}
+.com{
+  margin-bottom: 0px;
+}
+.statusbox{
+  width: fit-content;
+  display: inline-block;
+}
+.statustitle{
+  width: fit-content;
+  display: inline-block;
+}
+.status{
+  width: fit-content;
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  border-right: 2px solid #000000;
+  font-size: 15px;
+}
+.status:nth-child(2){
+  border-left: 2px solid #000000;
+}
+.current{
+  background-color: #20124d;
+  padding-right: 4px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 4px;
+}

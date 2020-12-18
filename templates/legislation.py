@@ -7,7 +7,7 @@ for i in r:
     a = ['', '', '', '', '']
     a[i[7:].index('TRUE')] = " current"
     s += """
-    <div class="leg">
+    <div class="leg show">
         <p class="name"><a href="/projects/legislationtracker/%s/%s.html" class="leglink">%s - %s</a></p>
         <p class="desc">%s</p>
         <p class="date">Introduced: %s</p>
