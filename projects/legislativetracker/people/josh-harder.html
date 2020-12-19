@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/leaflet.css">
   <link rel="stylesheet" href="../css/member.css">
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="/js/leaflet.ajax.min.js"></script>
   <script type="text/javascript" src="/js/header.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
   <script>
@@ -78,30 +81,78 @@
     </div>
     <div id="filler"></div>
     <div id="info">
-      <div id="introinfo">
-        <div id="imgcontainer">
-          <img src="/projects/campaignfinance/images/federal/josh-harder.jpg" alt="Josh Harder" id="candimage">
+      <div id="textinfo">
+        <div id="introinfo">
+          <div id="imgcontainer">
+            <img src="/projects/campaignfinance/images/federal/josh-harder.jpg" alt="Josh Harder" id="candimage">
+          </div>
+          <div id="titlecontainer">
+            <h1 id="title">JOSH HARDER</h1>
+          </div>
         </div>
-        <div id="titlecontainer">
-          <h1 id="title">JOSH HARDER</h1>
+        <div id="geninfo">
+          <p><b>District: </b>Congressional District 10 (Modesto, Tracy, Manteca, Turlock, Oakdale)</p>
+          <p><b>First year in office: </b>2019</p>
+          <p><b>Party: </b>Democratic</p>
+          <p><b>Website: </b><a href="https://harder.house.gov/" class="replink" target="_blank">https://harder.house.gov/</a></p>
         </div>
       </div>
-      <div id="geninfo">
-        <p><b>District: </b>Congressional District 10 (Modesto, Tracy, Manteca, Turlock, Oakdale)</p>
-        <p><b>First year in office: </b>2019</p>
-        <p><b>Party: </b>Democratic</p>
-        <p><b>Website: </b><a href="https://harder.house.gov/" class="replink" target="_blank">https://harder.house.gov/</a></p>
+      <div id="map"></div>
+    </div>
+    <div id="filtercontainer">
+      <div class="filters">
+        <p class="filtertitle">Role</p>
+        <div class="filterbox">
+          <input type="checkbox" id="sponsor" class="checkbox" onchange="filter('sponsor', 'role');" checked="true">
+          <label for="sponsor" class="filter">Sponsor</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="cosponsor" class="checkbox" onchange="filter('cosponsor', 'role');" checked="true">
+          <label for="cosponsor" class="filter">Cosponsor</label>
+        </div>
+      </div>
+      <div class="filters">
+        <p class="filtertitle">Status - legislation</p>
+        <div class="filterbox">
+          <input type="checkbox" id="intro" class="checkbox" onchange="filter('intro', 'status');" checked="true">
+          <label for="intro" class="filter">Introduced</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="house" class="checkbox" onchange="filter('house', 'status');" checked="true">
+          <label for="house" class="filter">Passed House</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="senate" class="checkbox" onchange="filter('senate', 'status');" checked="true">
+          <label for="senate" class="filter">Passed Senate</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="resdif" class="checkbox" onchange="filter('resdif', 'status');" checked="true">
+          <label for="resdif" class="filter">Resolving Differences</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="topres" class="checkbox" onchange="filter('topres', 'status');" checked="true">
+          <label for="topres" class="filter">To President</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="veto" class="checkbox" onchange="filter('veto', 'status');" checked="true">
+          <label for="veto" class="filter">Veto</label>
+        </div>
+        <div class="filterbox">
+          <input type="checkbox" id="law" class="checkbox" onchange="filter('law', 'status');" checked="true">
+          <label for="law" class="filter">Became Law</label>
+        </div>
       </div>
     </div>
     <div id="legcontainer">
       <p id="legtitle">Sponsored and cosponsored legislation</p>
       <div id="legislation">
         <div class="leg show">
-          <p class="name"><a href="/projects/legislationtracker/bill/hr-8986.html" class="leglink">Bill - H.R. 8986</a></p>
+          <p class="name"><a href="/projects/legislativetracker/bill/hr-8986.html" class="leglink">Bill - H.R. 8986</a></p>
           <p class="desc">To designate the facility of the United States Postal Service located at 120 4th Street in Petaluma, California, as the "Lynn C. Woolsey Post Office Building".</p>
           <p class="date">Introduced: 12/16/2020</p>
           <p class="sponsor">Sponsor: Jared Huffman (D, CA-2) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8986/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=1&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
           <p class="com">Committees: House - Oversight and Reform</p>
+          <p class="action">Latest action: Referred to the House Committee on Oversight and Reform - 12/16/2020</p>
           <div class="statuscontainer">
             <p class="statustitle">Status: </p>
             <p class="status current">Introduced</p>
@@ -112,11 +163,12 @@
           </div>
         </div>
         <div class="leg show">
-          <p class="name"><a href="/projects/legislationtracker/bill/hr-8867.html" class="leglink">Bill - H.R. 8867</a></p>
+          <p class="name"><a href="/projects/legislativetracker/bill/hr-8867.html" class="leglink">Bill - H.R. 8867</a></p>
           <p class="desc">To amend title 38, United States Code, to prohibit the Secretary of Veterans Affairs from conducting medical research causing significant pain or distress to cats.</p>
           <p class="date">Introduced: 12/3/2020</p>
           <p class="sponsor">Sponsor: Dina Titus (D, NV-1) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8867/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=2&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
           <p class="com">Committees: House - Veterans' Affairs</p>
+          <p class="action">Latest action: Referred to the House Committee on Veterans' Affairs - 12/3/2020</p>
           <div class="statuscontainer">
             <p class="statustitle">Status: </p>
             <p class="status current">Introduced</p>
@@ -126,13 +178,13 @@
             <p class="status">Became Law</p>
           </div>
         </div>
-
         <div class="leg show">
-          <p class="name"><a href="/projects/legislationtracker/bill/hr-8820.html" class="leglink">Bill - H.R. 8820</a></p>
+          <p class="name"><a href="/projects/legislativetracker/bill/hr-8820.html" class="leglink">Bill - H.R. 8820</a></p>
           <p class="desc">PASS Act</p>
           <p class="date">Introduced: 11/24/2020</p>
           <p class="sponsor">Sponsor: Lauren Underwood (D, IL-14) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8820/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=3&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
           <p class="com">Committees: House - Education and Labor</p>
+          <p class="action">Latest action: Referred to the House Committee on Education and Labor - 11/24/2020</p>
           <div class="statuscontainer">
             <p class="statustitle">Status: </p>
             <p class="status current">Introduced</p>
@@ -142,13 +194,13 @@
             <p class="status">Became Law</p>
           </div>
         </div>
-
         <div class="leg show">
-          <p class="name"><a href="/projects/legislationtracker/bill/hr-8790.html" class="leglink">Bill - H.R. 8790</a></p>
-          <p class="desc">2020 WHIP+ Reauthorization Act</p>
-          <p class="date">Introduced: 11/19/2020</p>
-          <p class="sponsor">Sponsor: Mike Thompson (D, CA-5) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8790/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=4&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-          <p class="com">Committees: House - Agriculture</p>
+          <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
+          <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
+          <p class="date">Introduced: 8/14/2020</p>
+          <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+          <p class="com">Committees: House - Natural Resources</p>
+          <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
           <div class="statuscontainer">
             <p class="statustitle">Status: </p>
             <p class="status current">Introduced</p>
@@ -158,7 +210,22 @@
             <p class="status">Became Law</p>
           </div>
         </div>
-
+        <div class="leg show">
+          <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
+          <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
+          <p class="date">Introduced: 8/14/2020</p>
+          <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+          <p class="com">Committees: House - Natural Resources</p>
+          <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
+          <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p>
+            <p class="status current">Passed House</p>
+            <p class="status">Passed Senate</p>
+            <p class="status">To President</p>
+            <p class="status">Became Law</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="footer">
@@ -177,7 +244,34 @@
         <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
       </p>
     </div>
-  </div>
-</body>
-
-</html>
+    <script type="text/javascript">
+      var para = {
+        'role': {
+          'sponsor': [3, 4],
+          'cosponsor': [0, 1, 2]
+        },
+        'status': {
+          'intro': [0, 1, 2, 3],
+          'house': [4],
+          'senate': [],
+          'topres': [],
+          'law': []
+        }
+      }
+      var l = document.getElementsByClassName("leg");
+      function filter(check, category){
+        var a = document.getElementById(check);
+        var b = para[category][check];
+        if (a.checked){
+          for (var i = 0; i < b.length; i++){
+            l[b[i]].classList.remove("hide");
+          }
+        } else{
+          for (var i = 0; i < b.length; i++){
+            l[b[i]].classList.add("hide");
+          }
+        }
+      }
+    </script>
+    <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
+    <script type="text/javascript" src="/js/shp.js"></script>
