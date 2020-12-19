@@ -1,3 +1,4 @@
+var para = {'role': {'sponsor': [3, 4], 'cosponsor': [0, 1, 2]}, 'status': {'intro': [0, 1, 2, 3], 'house': [4], 'senate': [], 'topres': [], 'law': [], 'resdif': [], 'veto': []}};
 window.onscroll = function(){
   if (window.innerWidth < 900){
     if (window.pageYOffset > 10){
@@ -21,19 +22,6 @@ function filtershow(){
     f.style.height = h;
   }
 }
-  var para = {
-    'role': {
-      'sponsor': [3, 4],
-      'cosponsor': [0, 1, 2]
-    },
-    'status': {
-      'intro': [0, 1, 2, 3],
-      'house': [4],
-      'senate': [],
-      'topres': [],
-      'law': []
-    }
-  };
   var l = document.getElementsByClassName("leg");
   function filter(check, category){
     var a = document.getElementById(check);
