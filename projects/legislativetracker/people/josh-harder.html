@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/member.css">
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+  <script type="text/javascript" src="../js/member.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   <script src="/js/leaflet.ajax.min.js"></script>
   <script type="text/javascript" src="/js/header.js"></script>
@@ -30,7 +31,7 @@
   <title>Josh Harder - 209 Politics Legislative Tracker</title>
 </head>
 
-<body>
+<body onresize="filterresize();">
   <div id="content">
     <div id="headercontainer">
       <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
@@ -99,49 +100,58 @@
       </div>
       <div id="map"></div>
     </div>
-    <div id="filtercontainer">
-      <div class="filters">
-        <p class="filtertitle">Role</p>
-        <div class="filterbox">
-          <input type="checkbox" id="sponsor" class="checkbox" onchange="filter('sponsor', 'role');" checked="true">
-          <label for="sponsor" class="filter">Sponsor</label>
+    <div id="filteroverlay">
+      <div id="filtercontainer">
+        <div id="filtertitlecontainer">
+          <p id="filtertitle">Filters</p>
+          <p id="exitfilter" onclick="filterclose();">&times;</p>
         </div>
-        <div class="filterbox">
-          <input type="checkbox" id="cosponsor" class="checkbox" onchange="filter('cosponsor', 'role');" checked="true">
-          <label for="cosponsor" class="filter">Cosponsor</label>
+        <div class="filters">
+          <p class="filtertitle">Role</p>
+          <div class="filterbox">
+            <input type="checkbox" id="sponsor" class="checkbox" onchange="filter('sponsor', 'role');" checked="true">
+            <label for="sponsor" class="filter">Sponsor</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="cosponsor" class="checkbox" onchange="filter('cosponsor', 'role');" checked="true">
+            <label for="cosponsor" class="filter">Cosponsor</label>
+          </div>
+        </div>
+        <div class="filters">
+          <p class="filtertitle">Status - legislation</p>
+          <div class="filterbox">
+            <input type="checkbox" id="intro" class="checkbox" onchange="filter('intro', 'status');" checked="true">
+            <label for="intro" class="filter">Introduced</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="house" class="checkbox" onchange="filter('house', 'status');" checked="true">
+            <label for="house" class="filter">Passed House</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="senate" class="checkbox" onchange="filter('senate', 'status');" checked="true">
+            <label for="senate" class="filter">Passed Senate</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="resdif" class="checkbox" onchange="filter('resdif', 'status');" checked="true">
+            <label for="resdif" class="filter">Resolving Differences</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="topres" class="checkbox" onchange="filter('topres', 'status');" checked="true">
+            <label for="topres" class="filter">To President</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="veto" class="checkbox" onchange="filter('veto', 'status');" checked="true">
+            <label for="veto" class="filter">Veto</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="law" class="checkbox" onchange="filter('law', 'status');" checked="true">
+            <label for="law" class="filter">Became Law</label>
+          </div>
         </div>
       </div>
-      <div class="filters">
-        <p class="filtertitle">Status - legislation</p>
-        <div class="filterbox">
-          <input type="checkbox" id="intro" class="checkbox" onchange="filter('intro', 'status');" checked="true">
-          <label for="intro" class="filter">Introduced</label>
-        </div>
-        <div class="filterbox">
-          <input type="checkbox" id="house" class="checkbox" onchange="filter('house', 'status');" checked="true">
-          <label for="house" class="filter">Passed House</label>
-        </div>
-        <div class="filterbox">
-          <input type="checkbox" id="senate" class="checkbox" onchange="filter('senate', 'status');" checked="true">
-          <label for="senate" class="filter">Passed Senate</label>
-        </div>
-        <div class="filterbox">
-          <input type="checkbox" id="resdif" class="checkbox" onchange="filter('resdif', 'status');" checked="true">
-          <label for="resdif" class="filter">Resolving Differences</label>
-        </div>
-        <div class="filterbox">
-          <input type="checkbox" id="topres" class="checkbox" onchange="filter('topres', 'status');" checked="true">
-          <label for="topres" class="filter">To President</label>
-        </div>
-        <div class="filterbox">
-          <input type="checkbox" id="veto" class="checkbox" onchange="filter('veto', 'status');" checked="true">
-          <label for="veto" class="filter">Veto</label>
-        </div>
-        <div class="filterbox">
-          <input type="checkbox" id="law" class="checkbox" onchange="filter('law', 'status');" checked="true">
-          <label for="law" class="filter">Became Law</label>
-        </div>
-      </div>
+    </div>
+    <div id="filterimgcontainer" onclick="filtershow();">
+      <img src="/images/filter.svg" alt="filter" id="filterimg">
     </div>
     <div id="legcontainer">
       <p id="legtitle">Sponsored and cosponsored legislation</p>
@@ -245,33 +255,26 @@
       </p>
     </div>
     <script type="text/javascript">
-      var para = {
-        'role': {
-          'sponsor': [3, 4],
-          'cosponsor': [0, 1, 2]
-        },
-        'status': {
-          'intro': [0, 1, 2, 3],
-          'house': [4],
-          'senate': [],
-          'topres': [],
-          'law': []
-        }
-      }
-      var l = document.getElementsByClassName("leg");
-      function filter(check, category){
-        var a = document.getElementById(check);
-        var b = para[category][check];
-        if (a.checked){
-          for (var i = 0; i < b.length; i++){
-            l[b[i]].classList.remove("hide");
-          }
-        } else{
-          for (var i = 0; i < b.length; i++){
-            l[b[i]].classList.add("hide");
-          }
-        }
-      }
     </script>
     <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
     <script type="text/javascript" src="/js/shp.js"></script>
+    <script type="text/javascript">
+    var map = L.map('map').setView([37.547380, -121.147496], 8);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
+  maxZoom: 18,
+  id: 'mapbox/streets-v11',
+  tileSize: 512,
+  zoomOffset: -1,
+  accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+}).addTo(map);
+var style = {
+  "color": "#000000",
+  "fillOpacity": 0.2
+}
+new L.Shapefile('/raw/cd-10.zip', {style: style}).addTo(map);
+    </script>
+  </div>
+</body>
+
+</html>
