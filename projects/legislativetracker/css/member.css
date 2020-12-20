@@ -37,16 +37,15 @@
   }
   #filteroverlay{
     height: 0px;
-    overflow: hidden;
+    overflow: scroll;
     transition: 0.4s;
     background-color: #8091A6;
     color: #FFFFFF;
     font-weight: bold;
     position: fixed;
-    top: 100px;
-    left: calc(50vw - 110px);
+    top: 50px;
     border-radius: 5px;
-    z-index: 1;
+    z-index: 2;
   }
   #filtertitlecontainer{
     height: 25px;
@@ -55,8 +54,14 @@
   .filtertitle{
     margin-bottom: 0px;
   }
+  #datereset{
+    border: 2px solid #FFFFFF;
+    background-color: #8091A6;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
 }
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 701px){
   #legcontainer{
     max-width: 890px;
     width: calc(100vw - 320px);
@@ -78,6 +83,10 @@
   .filtertitle{
     border-bottom: 3px double #BDBFC9;
     margin-bottom: 10px;
+  }
+  #datereset{
+    border: 2px solid #20124d;
+    background-color: #FFFFFF;
   }
 }
 @media only screen and (max-width: 900px){
@@ -149,7 +158,7 @@
   margin-top: 0px;
   font-family: "Rubik";
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
 }
 #exitfilter{
   margin-top: 0px;
@@ -177,6 +186,17 @@
 .checkbox{
   cursor: pointer;
 }
+.dateselect{
+  font-family: "Libre Baskerville";
+  border: 0;
+  font-size: 15px;
+}
+#datereset{
+  font-family: "Rubik";
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
 #legcontainer{
   display: inline-grid;
 }
@@ -191,6 +211,7 @@
   font-family: "Libre Baskerville";
   font-size: 14px;
   border-bottom: 3px double #BDBFC9;
+  transition: 0.2s;
 }
 .name{
   font-size: 16px;

@@ -107,6 +107,20 @@
           <p id="exitfilter" onclick="filterclose();">&times;</p>
         </div>
         <div class="filters">
+          <p class="filtertitle">Date Range</p>
+          <form>
+            <div class="filterbox">
+              <label for="startdate" class="filter">Start: </label>
+              <input type="date" id="startdate" class="dateselect" onchange="datefilter('start');" checked="true">
+            </div>
+            <div class="filterbox">
+              <label for="enddate" class="filter">End: </label>
+              <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
+            </div>
+            <input type="reset" id="datereset" value="Reset" onclick="showall();">
+          </form>
+        </div>
+        <div class="filters">
           <p class="filtertitle">Role</p>
           <div class="filterbox">
             <input type="checkbox" id="sponsor" class="checkbox" onchange="filter('sponsor', 'role');" checked="true">
@@ -148,6 +162,34 @@
             <label for="law" class="filter">Became Law</label>
           </div>
         </div>
+        <div class="filters">
+          <p class="filtertitle">Policy Area</p>
+<div class="filterbox">
+<input type="checkbox" id="Not assigned" class="checkbox" onchange="filter('Not assigned', 'area');" checked="true">
+<label for="Not assigned" class="filter">Not assigned</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Education" class="checkbox" onchange="filter('Education', 'area');" checked="true">
+<label for="Education" class="filter">Education</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Water Resources Development" class="checkbox" onchange="filter('Water Resources Development', 'area');" checked="true">
+<label for="Water Resources Development" class="filter">Water Resources Development</label>
+</div>
+
+          <div class="filterbox">
+            <input type="checkbox" id="Not assigned" class="checkbox" onchange="filter('Not assigned', 'area');" checked="true">
+            <label for="Not assigned" class="filter">Not assigned</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="Education" class="checkbox" onchange="filter('Education', 'area');" checked="true">
+            <label for="Education" class="filter">Education</label>
+          </div>
+          <div class="filterbox">
+            <input type="checkbox" id="Water Resources Development" class="checkbox" onchange="filter('Water Resources Development', 'area');" checked="true">
+            <label for="Water Resources Development" class="filter">Water Resources Development</label>
+          </div>
+        </div>
       </div>
     </div>
     <div id="filterimgcontainer" onclick="filtershow();">
@@ -159,6 +201,7 @@
     <div class="leg show">
         <p class="name"><a href="/projects/legislativetracker/bill/hr-8986.html" class="leglink">Bill - H.R. 8986</a></p>
         <p class="desc">To designate the facility of the United States Postal Service located at 120 4th Street in Petaluma, California, as the "Lynn C. Woolsey Post Office Building".</p>
+        <p class="are">Policy Area: Not assigned</p>
         <p class="date">Introduced: 12/16/2020</p>
         <p class="sponsor">Sponsor: Jared Huffman (D, CA-2) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8986/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=1&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
         <p class="com">Committees: House - Oversight and Reform</p>
@@ -166,63 +209,50 @@
         <div class="statuscontainer">
             <p class="statustitle">Status: </p>
             <p class="status current">Introduced</p>
-            <p class="status">Passed House</p>
-            <p class="status">Passed Senate</p>
-            <p class="status">To President</p>
-            <p class="status">Became Law</p>
+<p class="status">Passed House</p>
+<p class="status">Passed Senate</p>
+<p class="status">To President</p>
+<p class="status">Became Law</p>
+
         </div>
     </div>
     <div class="leg show">
         <p class="name"><a href="/projects/legislativetracker/bill/hr-8867.html" class="leglink">Bill - H.R. 8867</a></p>
         <p class="desc">To amend title 38, United States Code, to prohibit the Secretary of Veterans Affairs from conducting medical research causing significant pain or distress to cats.</p>
+        <p class="are">Policy Area: Not assigned</p>
         <p class="date">Introduced: 12/3/2020</p>
         <p class="sponsor">Sponsor: Dina Titus (D, NV-1) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8867/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=2&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
         <p class="com">Committees: House - Veterans' Affairs</p>
         <p class="action">Latest action: Referred to the House Committee on Veterans' Affairs - 12/3/2020</p>
         <div class="statuscontainer">
             <p class="statustitle">Status: </p>
-            <p class="status current">Introduced</p>
-            <p class="status">Passed House</p>
-            <p class="status">Passed Senate</p>
-            <p class="status">To President</p>
-            <p class="status">Became Law</p>
+            <p class="status">Introduced</p>
+<p class="status current">Passed House</p>
+<p class="status">Passed Senate</p>
+<p class="status">To President</p>
+<p class="status">Became Law</p>
+
         </div>
     </div>
     <div class="leg show">
         <p class="name"><a href="/projects/legislativetracker/bill/hr-8820.html" class="leglink">Bill - H.R. 8820</a></p>
         <p class="desc">PASS Act</p>
+        <p class="are">Policy Area: Education</p>
         <p class="date">Introduced: 11/24/2020</p>
         <p class="sponsor">Sponsor: Lauren Underwood (D, IL-14) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8820/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=3&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
         <p class="com">Committees: House - Education and Labor</p>
         <p class="action">Latest action: Referred to the House Committee on Education and Labor - 11/24/2020</p>
         <div class="statuscontainer">
             <p class="statustitle">Status: </p>
-            <p class="status current">Introduced</p>
-            <p class="status">Passed House</p>
-            <p class="status">Passed Senate</p>
-            <p class="status">To President</p>
-            <p class="status">Became Law</p>
+            <p class="status">Introduced</p>
+<p class="status">Passed House</p>
+<p class="status current">Failed Senate</p>
         </div>
     </div>
     <div class="leg show">
         <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
         <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
-        <p class="date">Introduced: 8/14/2020</p>
-        <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-        <p class="com">Committees: House - Natural Resources</p>
-        <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
-        <div class="statuscontainer">
-            <p class="statustitle">Status: </p>
-            <p class="status current">Introduced</p>
-            <p class="status">Passed House</p>
-            <p class="status">Passed Senate</p>
-            <p class="status">To President</p>
-            <p class="status">Became Law</p>
-        </div>
-    </div>
-    <div class="leg show">
-        <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
-        <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
+        <p class="are">Policy Area: Water Resources Development</p>
         <p class="date">Introduced: 8/14/2020</p>
         <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
         <p class="com">Committees: House - Natural Resources</p>
@@ -230,10 +260,28 @@
         <div class="statuscontainer">
             <p class="statustitle">Status: </p>
             <p class="status">Introduced</p>
-            <p class="status current">Passed House</p>
-            <p class="status">Passed Senate</p>
-            <p class="status">To President</p>
-            <p class="status">Became Law</p>
+<p class="status">Passed House</p>
+<p class="status">Passed Senate</p>
+<p class="status">To President</p>
+<p class="status current">Vetoed</p>
+        </div>
+    </div>
+    <div class="leg show">
+        <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
+        <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
+        <p class="are">Policy Area: Water Resources Development</p>
+        <p class="date">Introduced: 8/14/2020</p>
+        <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+        <p class="com">Committees: House - Natural Resources</p>
+        <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p>
+<p class="status">Passed House</p>
+<p class="status">Passed Senate</p>
+<p class="status current">Resolving Differences</p>
+<p class="status">To President</p>
+<p class="status">Became Law</p>
         </div>
     </div></div>
 </div><div id="footer">
@@ -257,20 +305,22 @@
     <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
     <script type="text/javascript" src="/js/shp.js"></script>
     <script type="text/javascript">
-    var map = L.map('map').setView([37.547380, -121.147496], 8);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-  attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
-  maxZoom: 18,
-  id: 'mapbox/streets-v11',
-  tileSize: 512,
-  zoomOffset: -1,
-  accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
-}).addTo(map);
-var style = {
-  "color": "#000000",
-  "fillOpacity": 0.2
-}
-new L.Shapefile('/raw/cd-10.zip', {style: style}).addTo(map);
+      var map = L.map('map').setView([37.547380, -121.147496], 8);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+      }).addTo(map);
+      var style = {
+        "color": "#000000",
+        "fillOpacity": 0.2
+      }
+      new L.Shapefile('/raw/cd-10.zip', {
+        style: style
+      }).addTo(map);
     </script>
   </div>
 </body>

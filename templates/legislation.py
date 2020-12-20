@@ -16,42 +16,46 @@ filter = {'role':{
 'senate': [],
 'house': [],
 'intro': [],
-}}
+}, 'area':{}, 'date':[]}
 k = list(filter['status'].keys())
 sl = 9
 tl = len(header)
 for j, i in enumerate(r):
+    filter['date'].append(i[4])
+    if i[3] not in filter['area']:
+        filter['area'][i[3]] = [j]
+    else:
+        filter['area'][i[3]].append(j)
     s = ''
     legstatus = i[tl-1:tl-sl-1:-1].index('TRUE')
     filter['status'][k[legstatus]].append(j)
     if tl-sl-6 < legstatus < tl-sl:
         for l in range(tl-sl-1, tl-sl-6, -1):
             if l == legstatus:
-                s = ('<p class="status current">%s</p>\n' % header[tl-1-l])
+                s += ('<p class="status current">%s</p>\n' % header[tl-1-l])
             else:
-                s = ('<p class="status">%s</p>\n' % header[tl-1-l])
+                s += ('<p class="status">%s</p>\n' % header[tl-1-l])
     else:
         if legstatus == 0:
             s = """<p class="status">Introduced</p>
-                    <p class="status">Passed House</p>
-                    <p class="status current">Failed Senate</p>"""
+<p class="status">Passed House</p>
+<p class="status current">Failed Senate</p>"""
         elif legstatus == 1:
-            s = """<p class="status current">Introduced</p>
-                    <p class="status current">Failed House</p>"""
+            s = """<p class="status">Introduced</p>
+<p class="status current">Failed House</p>"""
         elif legstatus == 2:
-            s = """<p class="status current">Introduced</p>
-                    <p class="status">Passed House</p>
-                    <p class="status">Passed Senate</p>
-                    <p class="status">To President</p>
-                    <p class="status current">Vetoed</p>"""
+            s = """<p class="status">Introduced</p>
+<p class="status">Passed House</p>
+<p class="status">Passed Senate</p>
+<p class="status">To President</p>
+<p class="status current">Vetoed</p>"""
         else:
-            s = """<p class="status current">Introduced</p>
-                    <p class="status">Passed House</p>
-                    <p class="status">Passed Senate</p>
-                    <p class="status">Resolving Differences</p>
-                    <p class="status">To President</p>
-                    <p class="status">Became Law</p>"""
-
+            s = """<p class="status">Introduced</p>
+<p class="status">Passed House</p>
+<p class="status">Passed Senate</p>
+<p class="status current">Resolving Differences</p>
+<p class="status">To President</p>
+<p class="status">Became Law</p>"""
     if "Harder" in i[5]:
         filter['role']['sponsor'].append(j)
     else:
@@ -60,6 +64,7 @@ for j, i in enumerate(r):
     <div class="leg show">
         <p class="name"><a href="/projects/legislativetracker/%s/%s.html" class="leglink">%s - %s</a></p>
         <p class="desc">%s</p>
+        <p class="are">Policy Area: %s</p>
         <p class="date">Introduced: %s</p>
         <p class="sponsor">Sponsor: %s | <a href="%s" class="cosponsorlink" target="_blank">view cosponsors</a></p>
         <p class="com">Committees: %s</p>
@@ -68,14 +73,21 @@ for j, i in enumerate(r):
             <p class="statustitle">Status: </p>
             %s
         </div>
-    </div>""" % (i[1].lower(), i[0].replace('.', '', 2).lower().replace(' ', '-', 1), i[1], i[0], i[2], i[3], i[4], i[5], i[6], i[7], s)
+    </div>""" % (i[1].lower(), i[0].replace('.', '', 2).lower().replace(' ', '-', 1), i[1], i[0], i[2], i[3], i[4], i[5], i[6], i[7], i[8], s)
 f.close()
+areafilters = ''
+for i in filter['area']:
+    areafilters += """<div class="filterbox">
+<input type="checkbox" id="%s" class="checkbox" onchange="filter('%s', 'area');" checked="true">
+<label for="%s" class="filter">%s</label>
+</div>\n""" % (i, i, i, i)
 f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/people/josh-harder.html', 'r')
-g = f.read().split('<div id="legislation">')
+g = f.read().split('<p class="filtertitle">Policy Area</p>', 1)
 f.close()
 f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/people/josh-harder.html', 'w')
-f.write(g[0]+'<div id="legislation">')
-f.write(s)
+f.write(g[0]+'<p class="filtertitle">Policy Area</p>\n'+areafilters)
+g = g[1].split('<div id="legislation">', 1)
+f.write(g[0]+'<div id="legislation">'+p)
 f.write('</div>\n</div>'+'<div id="footer">'+g[1].split('<div id="footer">')[1])
 f.close()
 f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/js/member.js', 'r')
