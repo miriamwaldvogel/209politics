@@ -185,6 +185,7 @@
 }
 .checkbox{
   cursor: pointer;
+  -webkit-appearance: none;
 }
 .dateselect{
   font-family: "Libre Baskerville";
