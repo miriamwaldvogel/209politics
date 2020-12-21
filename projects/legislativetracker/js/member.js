@@ -1,4 +1,4 @@
-var para = {'role': {'sponsor': [3, 4], 'cosponsor': [0, 1, 2]}, 'status': {'fail2': [2], 'fail1': [], 'veto': [3], 'resdif': [4], 'law': [], 'topres': [], 'senate': [], 'house': [1], 'intro': [0]}, 'area': {'Not assigned': [0, 1], 'Education': [2], 'Water Resources Development': [3, 4]}, 'date': ['12/16/2020', '12/3/2020', '11/24/2020', '8/14/2020', '8/14/2020']};
+var para = {'mcnerney': {'role': {'sponsor': [3, 4], 'cosponsor': [0, 1, 2]}, 'status': {'fail2': [2], 'fail1': [], 'veto': [3], 'resdif': [4], 'law': [], 'topres': [], 'senate': [], 'house': [1], 'intro': [0]}, 'area': {'Not assigned': [0, 1], 'Education': [2], 'Water Resources Development': [3, 4]}, 'date': ['12/16/2020', '12/3/2020', '11/24/2020', '8/14/2020', '8/14/2020']}, 'harder': {'role': {'sponsor': [3, 4], 'cosponsor': [0, 1, 2]}, 'status': {'fail2': [2], 'fail1': [], 'veto': [3], 'resdif': [4], 'law': [], 'topres': [], 'senate': [], 'house': [1], 'intro': [0]}, 'area': {'Not assigned': [0, 1], 'Education': [2], 'Water Resources Development': [3, 4]}, 'date': ['12/16/2020', '12/3/2020', '11/24/2020', '8/14/2020', '8/14/2020']}};
 window.onscroll = function(){
   if (window.innerWidth <= 700){
     if (window.pageYOffset > 10){
@@ -34,9 +34,9 @@ function filtershow(){
   filterresize();
 }
 var l = document.getElementsByClassName("leg");
-function filter(check, category){
+function filter(pol, check, category){
   var a = document.getElementById(check);
-  var b = para[category][check];
+  var b = para[pol][category][check];
   if (a.checked){
     for (var i = 0; i < b.length; i++){
       l[b[i]].classList.remove("hide");

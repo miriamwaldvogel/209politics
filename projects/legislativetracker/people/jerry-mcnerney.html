@@ -92,7 +92,7 @@
           </div>
         </div>
         <div id="geninfo">
-          <p><b>District: </b>Congressional District 9 (Stockton, Lodi, Lathrop, Antioch, Brentwood)</p>
+          <p><b>District: </b>Congressional District 9 (Stockton, Lodi, Lathrop, Antioch, Oakdale)</p>
           <p><b>First year in office: </b>2007</p>
           <p><b>Party: </b>Democratic</p>
           <p><b>Website: </b><a href="https://mcnerney.house.gov/" class="replink" target="_blank">https://mcnerney.house.gov/</a></p>
@@ -106,184 +106,171 @@
           <p id="filtertitle">Filters</p>
           <p id="exitfilter" onclick="filterclose();">&times;</p>
         </div>
-        <div class="filters">
-          <p class="filtertitle">Date Range</p>
-          <form>
+        <form>
+          <div class="filters">
+            <p class="filtertitle">Date Range</p>
+              <div class="filterbox">
+                <label for="startdate" class="filter">Start: </label>
+                <input type="date" id="startdate" class="dateselect" onchange="datefilter('start');" checked="true">
+              </div>
+              <div class="filterbox">
+                <label for="enddate" class="filter">End: </label>
+                <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
+              </div>
+          </div>
+          <div class="filters">
+            <p class="filtertitle">Role</p>
             <div class="filterbox">
-              <label for="startdate" class="filter">Start: </label>
-              <input type="date" id="startdate" class="dateselect" onchange="datefilter('start');" checked="true">
+              <input type="checkbox" id="sponsor" class="checkbox" onchange="filter('mcnerney', 'sponsor', 'role');" checked="true">
+              <label for="sponsor" class="filter">Sponsor</label>
             </div>
             <div class="filterbox">
-              <label for="enddate" class="filter">End: </label>
-              <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
+              <input type="checkbox" id="cosponsor" class="checkbox" onchange="filter('mcnerney', 'cosponsor', 'role');" checked="true">
+              <label for="cosponsor" class="filter">Cosponsor</label>
             </div>
-            <input type="reset" id="datereset" value="Reset" onclick="showall();">
-          </form>
-        </div>
-        <div class="filters">
-          <p class="filtertitle">Role</p>
-          <div class="filterbox">
-            <input type="checkbox" id="sponsor" class="checkbox" onchange="filter('sponsor', 'role');" checked="true">
-            <label for="sponsor" class="filter">Sponsor</label>
           </div>
-          <div class="filterbox">
-            <input type="checkbox" id="cosponsor" class="checkbox" onchange="filter('cosponsor', 'role');" checked="true">
-            <label for="cosponsor" class="filter">Cosponsor</label>
+          <div class="filters">
+            <p class="filtertitle">Status - legislation</p>
+            <div class="filterbox">
+              <input type="checkbox" id="intro" class="checkbox" onchange="filter('mcnerney', 'intro', 'status');" checked="true">
+              <label for="intro" class="filter">Introduced</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="house" class="checkbox" onchange="filter('mcnerney', 'house', 'status');" checked="true">
+              <label for="house" class="filter">Passed House</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="senate" class="checkbox" onchange="filter('mcnerney', 'senate', 'status');" checked="true">
+              <label for="senate" class="filter">Passed Senate</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="resdif" class="checkbox" onchange="filter('mcnerney', 'resdif', 'status');" checked="true">
+              <label for="resdif" class="filter">Resolving Differences</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="topres" class="checkbox" onchange="filter('mcnerney', 'topres', 'status');" checked="true">
+              <label for="topres" class="filter">To President</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="veto" class="checkbox" onchange="filter('mcnerney', 'veto', 'status');" checked="true">
+              <label for="veto" class="filter">Veto</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="law" class="checkbox" onchange="filter('mcnerney', 'law', 'status');" checked="true">
+              <label for="law" class="filter">Became Law</label>
+            </div>
           </div>
-        </div>
-        <div class="filters">
-          <p class="filtertitle">Status - legislation</p>
-          <div class="filterbox">
-            <input type="checkbox" id="intro" class="checkbox" onchange="filter('intro', 'status');" checked="true">
-            <label for="intro" class="filter">Introduced</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="house" class="checkbox" onchange="filter('house', 'status');" checked="true">
-            <label for="house" class="filter">Passed House</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="senate" class="checkbox" onchange="filter('senate', 'status');" checked="true">
-            <label for="senate" class="filter">Passed Senate</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="resdif" class="checkbox" onchange="filter('resdif', 'status');" checked="true">
-            <label for="resdif" class="filter">Resolving Differences</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="topres" class="checkbox" onchange="filter('topres', 'status');" checked="true">
-            <label for="topres" class="filter">To President</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="veto" class="checkbox" onchange="filter('veto', 'status');" checked="true">
-            <label for="veto" class="filter">Veto</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="law" class="checkbox" onchange="filter('law', 'status');" checked="true">
-            <label for="law" class="filter">Became Law</label>
-          </div>
-        </div>
-        <div class="filters">
-          <p class="filtertitle">Policy Area</p>
+          <div class="filters">
+            <p class="filtertitle">Policy Area</p>
 <div class="filterbox">
-<input type="checkbox" id="Not assigned" class="checkbox" onchange="filter('Not assigned', 'area');" checked="true">
-<label for="Not assigned" class="filter">Not assigned</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Education" class="checkbox" onchange="filter('Education', 'area');" checked="true">
-<label for="Education" class="filter">Education</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Water Resources Development" class="checkbox" onchange="filter('Water Resources Development', 'area');" checked="true">
-<label for="Water Resources Development" class="filter">Water Resources Development</label>
-</div>
-
-          <div class="filterbox">
-            <input type="checkbox" id="Not assigned" class="checkbox" onchange="filter('Not assigned', 'area');" checked="true">
-            <label for="Not assigned" class="filter">Not assigned</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="Education" class="checkbox" onchange="filter('Education', 'area');" checked="true">
-            <label for="Education" class="filter">Education</label>
-          </div>
-          <div class="filterbox">
-            <input type="checkbox" id="Water Resources Development" class="checkbox" onchange="filter('Water Resources Development', 'area');" checked="true">
-            <label for="Water Resources Development" class="filter">Water Resources Development</label>
-          </div>
-        </div>
-      </div>
+    <input type="checkbox" id="Not assigned" class="checkbox" onchange="filter('mcnerney', 'Not assigned', 'area');" checked="true">
+    <label for="Not assigned" class="filter">Not assigned</label>
     </div>
-    <div id="filterimgcontainer" onclick="filtershow();">
-      <img src="/images/filter.svg" alt="filter" id="filterimg">
+<div class="filterbox">
+    <input type="checkbox" id="Education" class="checkbox" onchange="filter('mcnerney', 'Education', 'area');" checked="true">
+    <label for="Education" class="filter">Education</label>
     </div>
-    <div id="legcontainer">
-      <p id="legtitle">Sponsored and cosponsored legislation</p>
-      <div id="legislation">
-    <div class="leg show">
-        <p class="name"><a href="/projects/legislativetracker/bill/hr-8986.html" class="leglink">Bill - H.R. 8986</a></p>
-        <p class="desc">To designate the facility of the United States Postal Service located at 120 4th Street in Petaluma, California, as the "Lynn C. Woolsey Post Office Building".</p>
-        <p class="are">Policy Area: Not assigned</p>
-        <p class="date">Introduced: 12/16/2020</p>
-        <p class="sponsor">Sponsor: Jared Huffman (D, CA-2) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8986/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=1&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-        <p class="com">Committees: House - Oversight and Reform</p>
-        <p class="action">Latest action: Referred to the House Committee on Oversight and Reform - 12/16/2020</p>
-        <div class="statuscontainer">
-            <p class="statustitle">Status: </p>
-            <p class="status current">Introduced</p>
+<div class="filterbox">
+    <input type="checkbox" id="Water Resources Development" class="checkbox" onchange="filter('mcnerney', 'Water Resources Development', 'area');" checked="true">
+    <label for="Water Resources Development" class="filter">Water Resources Development</label>
+    </div>
+</div>
+<input type="reset" id="datereset" value="Reset all" onclick="showall();">
+</form>
+</div>
+</div>
+<div id="filterimgcontainer" onclick="filtershow();">
+<img src="/images/filter.svg" alt="filter" id="filterimg">
+</div>
+<div id="legcontainer">
+<p id="legtitle">Sponsored and cosponsored legislation</p>
+<div id="legislation">
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/bill/hr-8986.html" class="leglink">Bill - H.R. 8986</a></p>
+            <p class="desc">To designate the facility of the United States Postal Service located at 120 4th Street in Petaluma, California, as the "Lynn C. Woolsey Post Office Building".</p>
+            <p class="are">Policy Area: Not assigned</p>
+            <p class="date">Introduced: 12/16/2020</p>
+            <p class="sponsor">Sponsor: Jared Huffman (D, CA-2) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8986/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=1&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+            <p class="com">Committees: House - Oversight and Reform</p>
+            <p class="action">Latest action: Referred to the House Committee on Oversight and Reform - 12/16/2020</p>
+            <div class="statuscontainer">
+                <p class="statustitle">Status: </p>
+                <p class="status current">Introduced</p>
 <p class="status">Passed House</p>
 <p class="status">Passed Senate</p>
 <p class="status">To President</p>
 <p class="status">Became Law</p>
 
+            </div>
         </div>
-    </div>
-    <div class="leg show">
-        <p class="name"><a href="/projects/legislativetracker/bill/hr-8867.html" class="leglink">Bill - H.R. 8867</a></p>
-        <p class="desc">To amend title 38, United States Code, to prohibit the Secretary of Veterans Affairs from conducting medical research causing significant pain or distress to cats.</p>
-        <p class="are">Policy Area: Not assigned</p>
-        <p class="date">Introduced: 12/3/2020</p>
-        <p class="sponsor">Sponsor: Dina Titus (D, NV-1) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8867/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=2&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-        <p class="com">Committees: House - Veterans' Affairs</p>
-        <p class="action">Latest action: Referred to the House Committee on Veterans' Affairs - 12/3/2020</p>
-        <div class="statuscontainer">
-            <p class="statustitle">Status: </p>
-            <p class="status">Introduced</p>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/bill/hr-8867.html" class="leglink">Bill - H.R. 8867</a></p>
+            <p class="desc">To amend title 38, United States Code, to prohibit the Secretary of Veterans Affairs from conducting medical research causing significant pain or distress to cats.</p>
+            <p class="are">Policy Area: Not assigned</p>
+            <p class="date">Introduced: 12/3/2020</p>
+            <p class="sponsor">Sponsor: Dina Titus (D, NV-1) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8867/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=2&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+            <p class="com">Committees: House - Veterans' Affairs</p>
+            <p class="action">Latest action: Referred to the House Committee on Veterans' Affairs - 12/3/2020</p>
+            <div class="statuscontainer">
+                <p class="statustitle">Status: </p>
+                <p class="status">Introduced</p>
 <p class="status current">Passed House</p>
 <p class="status">Passed Senate</p>
 <p class="status">To President</p>
 <p class="status">Became Law</p>
 
+            </div>
         </div>
-    </div>
-    <div class="leg show">
-        <p class="name"><a href="/projects/legislativetracker/bill/hr-8820.html" class="leglink">Bill - H.R. 8820</a></p>
-        <p class="desc">PASS Act</p>
-        <p class="are">Policy Area: Education</p>
-        <p class="date">Introduced: 11/24/2020</p>
-        <p class="sponsor">Sponsor: Lauren Underwood (D, IL-14) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8820/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=3&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-        <p class="com">Committees: House - Education and Labor</p>
-        <p class="action">Latest action: Referred to the House Committee on Education and Labor - 11/24/2020</p>
-        <div class="statuscontainer">
-            <p class="statustitle">Status: </p>
-            <p class="status">Introduced</p>
-<p class="status">Passed House</p>
-<p class="status current">Failed Senate</p>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/bill/hr-8820.html" class="leglink">Bill - H.R. 8820</a></p>
+            <p class="desc">PASS Act</p>
+            <p class="are">Policy Area: Education</p>
+            <p class="date">Introduced: 11/24/2020</p>
+            <p class="sponsor">Sponsor: Lauren Underwood (D, IL-14) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8820/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=3&r=3&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+            <p class="com">Committees: House - Education and Labor</p>
+            <p class="action">Latest action: Referred to the House Committee on Education and Labor - 11/24/2020</p>
+            <div class="statuscontainer">
+                <p class="statustitle">Status: </p>
+                <p class="status">Introduced</p>
+    <p class="status">Passed House</p>
+    <p class="status current">Failed Senate</p>
+            </div>
         </div>
-    </div>
-    <div class="leg show">
-        <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
-        <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
-        <p class="are">Policy Area: Water Resources Development</p>
-        <p class="date">Introduced: 8/14/2020</p>
-        <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-        <p class="com">Committees: House - Natural Resources</p>
-        <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
-        <div class="statuscontainer">
-            <p class="statustitle">Status: </p>
-            <p class="status">Introduced</p>
-<p class="status">Passed House</p>
-<p class="status">Passed Senate</p>
-<p class="status">To President</p>
-<p class="status current">Vetoed</p>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
+            <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
+            <p class="are">Policy Area: Water Resources Development</p>
+            <p class="date">Introduced: 8/14/2020</p>
+            <p class="sponsor">Sponsor: Jerry McNerney (D, CA-9) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+            <p class="com">Committees: House - Natural Resources</p>
+            <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
+            <div class="statuscontainer">
+                <p class="statustitle">Status: </p>
+                <p class="status">Introduced</p>
+    <p class="status">Passed House</p>
+    <p class="status">Passed Senate</p>
+    <p class="status">To President</p>
+    <p class="status current">Vetoed</p>
+            </div>
         </div>
-    </div>
-    <div class="leg show">
-        <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
-        <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
-        <p class="are">Policy Area: Water Resources Development</p>
-        <p class="date">Introduced: 8/14/2020</p>
-        <p class="sponsor">Sponsor: Josh Harder (D, CA-10) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
-        <p class="com">Committees: House - Natural Resources</p>
-        <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
-        <div class="statuscontainer">
-            <p class="statustitle">Status: </p>
-            <p class="status">Introduced</p>
-<p class="status">Passed House</p>
-<p class="status">Passed Senate</p>
-<p class="status current">Resolving Differences</p>
-<p class="status">To President</p>
-<p class="status">Became Law</p>
-        </div>
-    </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/bill/hr-8041.html" class="leglink">Bill - H.R. 8041</a></p>
+            <p class="desc">Snow Water Supply Forecasting Program Authorization Act</p>
+            <p class="are">Policy Area: Water Resources Development</p>
+            <p class="date">Introduced: 8/14/2020</p>
+            <p class="sponsor">Sponsor: Jerry McNerney (D, CA-9) | <a href="https://www.congress.gov/bill/116th-congress/house-bill/8041/cosponsors?q=%7B%22search%22%3A%5B%22harder%22%5D%7D&s=10&r=22&overview=closed#tabs" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+            <p class="com">Committees: House - Natural Resources</p>
+            <p class="action">Latest action: Referred to the Subcommittee on Water, Oceans, and Wildlife - 9/4/2020</p>
+            <div class="statuscontainer">
+                <p class="statustitle">Status: </p>
+                <p class="status">Introduced</p>
+    <p class="status">Passed House</p>
+    <p class="status">Passed Senate</p>
+    <p class="status current">Resolving Differences</p>
+    <p class="status">To President</p>
+    <p class="status">Became Law</p>
+            </div>
+        </div></div>
 </div><div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
@@ -305,7 +292,7 @@
     <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
     <script type="text/javascript" src="/js/shp.js"></script>
     <script type="text/javascript">
-      var map = L.map('map').setView([38.0030575,-121.372381], 8);
+      var map = L.map('map').setView([38.0030575, -121.372381], 8);
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
         maxZoom: 18,
