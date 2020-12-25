@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
   <link rel="stylesheet" href="css/city.css">
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
@@ -104,13 +102,14 @@
       </p>
     </div>
     <script type="text/javascript">
-      function show(e){
+      function show(e) {
         var a = e.target.nextElementSibling;
         a.style.display = "block";
         a.nextElementSibling.style.display = "block";
         e.target.style.display = "none";
       };
-      function hide(e){
+
+      function hide(e) {
         var a = e.target.previousElementSibling;
         a.style.display = "none";
         a.previousElementSibling.style.display = "block";
@@ -118,19 +117,28 @@
       }
     </script>
     <script type="text/javascript">
-      var map = L.map('map').setView([38.007220, -121.259592], 11);
-      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      var markers = L.layerGroup();
+      L.marker([37.9967612,-121.3134788]).bindPopup("<p class='popuptitle'>Carjacking</p><p class='info'>12/22/20 at 11:05 AM - 100 Block of East March Lane</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>The victim, 36, was walking through a parking lot when the suspect confronted her with a firearm, struck her once, and took the key to her vehicle. The suspect then fled in the victim's vehicle. The suspect is a Black adult man, last seen wearing black clothing and a black face mask</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>").addTo(markers);
+      L.marker([37.9304484,-121.2664905]).bindPopup("<p class='popuptitle'>Robbery</p><p class='info'>12/22/20 at 12:06 PM - 2300 Block of South Airport Way</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>The victim, 23, was working at a store when she asked the two suspects to put on face coverings before entering the business. They refused, and an argument ensued. The suspects kicked and punched the victim, and one took a necklace from the victim's neck before both suspects fled. The suspects are two Black adult women, last seen wearing dark clothing.</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>").addTo(markers);
+      L.marker([37.9952247,-121.3084988]).bindPopup("<p class='popuptitle'>Traffic pursuit</p><p class='info'>12/22/20 at 1:13 PM - Surrey Lane and Dorset Street</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>Officers attempted to stop a wanted vehicle out of Los Angeles. The driver led officers on a short pursuit before fleeing on foot, and has not been located.</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>").addTo(markers);
+      var map = L.map('map', {
+  		center: [38.007220, -121.259592],
+  		zoom: 11,
+  		layers: [
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
         maxZoom: 18,
         id: 'mapbox/streets-v11',
+        layers: markers,
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
-      }).addTo(map);
-      var marker = L.marker([37.9967612,-121.3134788]).addTo(map);
-      marker.bindPopup("<p class='popuptitle'>Carjacking</p><p class='info'>12/22/20 at 11:05 am - 100 block of East March Lane</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>The victim, 36, was walking through a parking lot when the suspect confronted her with a firearm, struck her once, and took the key to her vehicle. The suspect then fled in the victim's vehicle. The suspect is a Black adult man, last seen wearing black clothing and a black face mask.</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
-    </script>
-  </div>
+        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'}), markers]
+  	   });
+var markerlayer = {
+"Markers": markers
+};
+L.control.layers(null, markerlayer).addTo(map);
+</script>
+</div>
 </body>
-
 </html>
