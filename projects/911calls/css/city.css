@@ -1,7 +1,23 @@
 #title{
-  font-size: 35px;
+  font-size: 40px;
   font-family: "Rubik";
 }
 #map{
   height: 500px;
+}
+.leaflet-popup-content{
+  width: 400px !important;
+}
+.leaflet-popup-content p{
+  font-family: "Rubik";
+  margin: 5px;
+  font-size: 14px;
+}
+.leaflet-popup-content .popuptitle{
+  font-weight: bold;
+  font-size: 16px;
+}
+.details, .hide{
+  color: blue;
+  cursor: pointer;
 }
