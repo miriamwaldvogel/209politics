@@ -103,8 +103,20 @@
         <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
       </p>
     </div>
-    <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
-    <script type="text/javascript" src="/js/shp.js"></script>
+    <script type="text/javascript">
+      function show(e){
+        var a = e.target.nextElementSibling;
+        a.style.display = "block";
+        a.nextElementSibling.style.display = "block";
+        e.target.style.display = "none";
+      };
+      function hide(e){
+        var a = e.target.previousElementSibling;
+        a.style.display = "none";
+        a.previousElementSibling.style.display = "block";
+        e.target.style.display = "none";
+      }
+    </script>
     <script type="text/javascript">
       var map = L.map('map').setView([38.007220, -121.259592], 11);
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -116,7 +128,7 @@
         accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
       }).addTo(map);
       var marker = L.marker([37.9967612,-121.3134788]).addTo(map);
-      marker.bindPopup("Hello");
+      marker.bindPopup("<p class='popuptitle'>Carjacking</p><p class='info'>12/22/20 at 11:05 am - 100 block of East March Lane</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>The victim, 36, was walking through a parking lot when the suspect confronted her with a firearm, struck her once, and took the key to her vehicle. The suspect then fled in the victim's vehicle. The suspect is a Black adult man, last seen wearing black clothing and a black face mask.</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
     </script>
   </div>
 </body>
