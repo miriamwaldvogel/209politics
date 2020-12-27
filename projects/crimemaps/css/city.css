@@ -21,3 +21,13 @@
   color: blue;
   cursor: pointer;
 }
+.filterbox{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.filter{
+  cursor: pointer;
+}
+.filters, .dateselect{
+  font-family: "Libre Baskerville";
+}
