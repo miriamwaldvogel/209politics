@@ -123,32 +123,41 @@
       zoomOffset: -1,
       accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
     }).addTo(map);
+    var mainlayer = L.geoJSON(markers, {onEachFeature: onEachFeature}).addTo(map);
+    function show(e) {
+      var a = e.target.nextElementSibling;
+      a.style.display = "block";
+      a.nextElementSibling.style.display = "block";
+      e.target.style.display = "none";
+    };
+    function hide(e) {
+      var a = e.target.previousElementSibling;
+      a.style.display = "none";
+    }
     function onEachFeature(feature, layer){
       layer.bindPopup("<p class='popuptitle'>"+feature.properties.type+"</p><p class='info'>"+feature.properties.date+" at "+feature.properties.time+" - "+feature.properties.location+"</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>"+feature.properties.desc+"</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
     }
-    var mainlayer = L.geoJSON(markers, {onEachFeature: onEachFeature}).addTo(map);
     function datefilter(se){
-      var filterlayer = L.geoJSON().addTo(map);
+      var filterlayer = [];
       if (se === 'start'){
         var d = Date.parse(document.getElementById("startdate").value);
         for (var i = 0; i < markers.length; i++){
           if (Date.parse(markers[i].properties.date) >= d){
-            filterlayer.addData(markers[i]);
+            filterlayer.push(markers[i]);
           }
         }
       } else{
         var d = Date.parse(document.getElementById("enddate").value);
         for (var i = 0; i < markers.length; i++){
           if (Date.parse(markers[i].properties.date) <= d){
-            filterlayer.addData(markers[i]);
+            filterlayer.push(markers[i]);
           }
         }
       }
       map.removeLayer(mainlayer);
-      mainlayer = filterlayer;
-      mainlayer.addTo(map);
+      mainlayer = L.geoJSON(filterlayer, {onEachFeature: onEachFeature}).addTo(map);
     }
-      </script>
+    </script>
 </div>
 </body>
 </html>
