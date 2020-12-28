@@ -143,6 +143,13 @@
 #geninfo{
   font-family: "Libre Baskerville";
 }
+#comtitle{
+  margin-bottom: 5px;
+}
+#committees p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 #map{
   height: 250px;
   z-index: 1;
