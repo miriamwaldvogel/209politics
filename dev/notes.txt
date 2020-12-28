@@ -4,3 +4,8 @@ ad-09:[38.329371, -121.399070]
 ad-12:[37.872316, -120.976191]
 ad-13:[37.905389, -121.403797]
 sd-05:[37.880220, -121.259592]
+congressional?
+eggman:agriculture/budget and fiscal review/business, professions, and economic development/energy, utilities, and communications/health/natural resources and water/military and veterans affairs/chair of budget subcommittee #3 on health and human services
+cooper: budget/budget subcommitee #4 on state administration/governmental organization/insurance/chair of public employment and retirement
+flora: agriculture/vice chair of business and professions/health/vice chair of labor and employment/vice chair of natural resources/rules/legislative ethics
+villapudua: agriculture/human services/rules/water, parkers, and wildlife 
