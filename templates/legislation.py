@@ -49,20 +49,24 @@ def leg(pol):
                         break
                 elif k % 2 == 0 and k != 2 and k != 6:
                     s+=('<p class="status">%s</p>'%l)
+        if pol != "harder" and pol != "mcnerney":
+            a = '<a href="/projects/legislativetracker/%s/%s.html" class="cosponsorlink">' % (people[pol][2], i[0].replace('.', '', 2).lower().replace(' ', '-', 1))
+        else:
+            a = '<a href="%s" class="cosponsorlink" target="_blank">' % i[6]
         p += """
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/%s/%s.html" class="leglink">%s - %s</a></p>
             <p class="desc">%s</p>
             <p class="are">Policy Area: %s</p>
             <p class="date">Introduced: %s</p>
-            <p class="sponsor">Sponsor: %s | <a href="%s" class="cosponsorlink" target="_blank">view cosponsors</a></p>
+            <p class="sponsor">Sponsor: %s | %s view cosponsors</a></p>
             <p class="com">Committees: %s</p>
             <p class="action">Latest action: %s</p>
             <div class="statuscontainer">
                 <p class="statustitle">Status: </p>
                 %s
             </div>
-        </div>""" % (people[pol][2], i[0].replace('.', '', 2).lower().replace(' ', '-', 1), i[1], i[0], i[2], i[3], i[4], i[5], i[6], i[7], i[8], s)
+        </div>""" % (people[pol][2], i[0].replace('.', '', 2).lower().replace(' ', '-', 1), i[1], i[0], i[2], i[3], i[4], i[5], a, i[7], i[8], s)
     f.close()
     statusfilters = ''
     for i in filter[pol]['status']:
