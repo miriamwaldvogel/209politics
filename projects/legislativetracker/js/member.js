@@ -1,4 +1,4 @@
-var para = {'mcnerney': {'role': {'sponsor': [3, 4], 'cosponsor': [0, 1, 2]}, 'status': {'fail2': [2], 'fail1': [], 'veto': [3], 'resdif': [4], 'law': [], 'topres': [], 'senate': [], 'house': [1], 'intro': [0]}, 'area': {'Not assigned': [0, 1], 'Education': [2], 'Water Resources Development': [3, 4]}, 'date': ['12/16/2020', '12/3/2020', '11/24/2020', '8/14/2020', '8/14/2020']}, 'harder': {'role': {'sponsor': [3, 4], 'cosponsor': [0, 1, 2]}, 'status': {'fail2': [2], 'fail1': [], 'veto': [3], 'resdif': [4], 'law': [], 'topres': [], 'senate': [], 'house': [1], 'intro': [0]}, 'area': {'Not assigned': [0, 1], 'Education': [2], 'Water Resources Development': [3, 4]}, 'date': ['12/16/2020', '12/3/2020', '11/24/2020', '8/14/2020', '8/14/2020']}};
+var para = {'cooper': {'role': {'sponsor': [], 'cosponsor': []}, 'status': {'Introduced': [0], 'Passed Assembly Committee': [1], 'Failed Senate Committee': [2], 'Resolving Differences': [3]}, 'area': {'Cannabis': [0], 'State bodies': [1], 'Peace officers': [2], 'Bail': [3]}, 'date': ['12/16/2020', '12/7/2020', '12/7/2020', '12/7/2020']}};
 window.onscroll = function(){
   if (window.innerWidth <= 700){
     if (window.pageYOffset > 10){
@@ -35,7 +35,7 @@ function filtershow(){
 }
 var l = document.getElementsByClassName("leg");
 function filter(pol, check, category){
-  var a = document.getElementById(check);
+  var a = document.getElementById(check.replaceAll(" ", "-"));
   var b = para[pol][category][check];
   if (a.checked){
     for (var i = 0; i < b.length; i++){
