@@ -96,8 +96,28 @@
             <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
           </div>
       </div>
-    </div>
-    <div id="footer">
+      <div class="filters">
+        <p class="filtertitle">Type</p><div class="filterbox">
+<input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
+<label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
+</div><div class="filterbox">
+<input type="checkbox" id="Homicide" class="checkbox" onchange="filter('Homicide');" checked="true">
+<label for="Homicide" class="filter">Homicide</label>
+</div><div class="filterbox">
+<input type="checkbox" id="Theft/robbery" class="checkbox" onchange="filter('Theft/robbery');" checked="true">
+<label for="Theft/robbery" class="filter">Theft/robbery</label>
+</div><div class="filterbox">
+<input type="checkbox" id="Assault" class="checkbox" onchange="filter('Assault');" checked="true">
+<label for="Assault" class="filter">Assault</label>
+</div><div class="filterbox">
+<input type="checkbox" id="Weapon" class="checkbox" onchange="filter('Weapon');" checked="true">
+<label for="Weapon" class="filter">Weapon</label>
+</div><div class="filterbox">
+<input type="checkbox" id="Other" class="checkbox" onchange="filter('Other');" checked="true">
+<label for="Other" class="filter">Other</label>
+</div>
+</div>
+</div><div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
         <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
@@ -142,21 +162,50 @@
       if (se === 'start'){
         var d = Date.parse(document.getElementById("startdate").value);
         for (var i = 0; i < markers.length; i++){
-          if (Date.parse(markers[i].properties.date) >= d){
-            filterlayer.push(markers[i]);
+          if (Date.parse(markers[i].properties.date) < d){
+            markers[i].properties.appear = 0;
           }
         }
       } else{
         var d = Date.parse(document.getElementById("enddate").value);
         for (var i = 0; i < markers.length; i++){
-          if (Date.parse(markers[i].properties.date) <= d){
-            filterlayer.push(markers[i]);
+          if (Date.parse(markers[i].properties.date) > d){
+            markers[i].properties.appear = 0;
           }
+        }
+      }
+      for (var i = 0; i < markers.length; i++){
+        if (markers[i].properties.appear === 1){
+          filterlayer.push(markers[i])
         }
       }
       map.removeLayer(mainlayer);
       mainlayer = L.geoJSON(filterlayer, {onEachFeature: onEachFeature}).addTo(map);
     }
+  function filter(t){
+    var filterlayer = [];
+    var a = document.getElementById(t.replaceAll(" ", "-"));
+    if (a.checked){
+      for (var i = 0; i < markers.length; i++){
+        if (types[t].includes(markers[i].properties.type)){
+          markers[i].properties.appear = 1;
+        }
+      }
+    } else{
+      for (var i = 0; i < markers.length; i++){
+        if (types[t].includes(markers[i].properties.type)){
+          markers[i].properties.appear = 0;
+        }
+      }
+    }
+    for (var i = 0; i < markers.length; i++){
+      if (markers[i].properties.appear === 1){
+        filterlayer.push(markers[i])
+      }
+    }
+    map.removeLayer(mainlayer);
+    mainlayer = L.geoJSON(filterlayer, {onEachFeature: onEachFeature}).addTo(map);
+  }
     </script>
 </div>
 </body>
