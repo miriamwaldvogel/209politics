@@ -1,4 +1,4 @@
-var para = {'cooper': {'role': {'sponsor': [], 'cosponsor': []}, 'status': {'Introduced': [0], 'Passed Assembly Committee': [1], 'Failed Senate Committee': [2], 'Resolving Differences': [3]}, 'area': {'Cannabis': [0], 'State bodies': [1], 'Peace officers': [2], 'Bail': [3]}, 'date': ['12/16/2020', '12/7/2020', '12/7/2020', '12/7/2020']}};
+var para = {'cooper': {'role': {'sponsor': [0, 1, 2, 3], 'cosponsor': [4]}, 'status': {'Introduced': [0, 1, 2, 3, 4]}, 'area': {'Cannabis': [0], 'State bodies': [1], 'Peace officers': [2], 'Bail': [3], 'Housing': [4]}, 'date': ['12/16/2020', '12/7/2020', '12/7/2020', '12/7/2020', '12/7/2020']}};
 window.onscroll = function(){
   if (window.innerWidth <= 700){
     if (window.pageYOffset > 10){

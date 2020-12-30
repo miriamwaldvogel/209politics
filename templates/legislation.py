@@ -29,6 +29,10 @@ def leg(pol):
             filter[pol]['area'][i[3]] = [j]
         else:
             filter[pol]['area'][i[3]].append(j)
+        if people[pol][1] in i[5]:
+            filter[pol]['role']['sponsor'].append(j)
+        else:
+            filter[pol]['role']['cosponsor'].append(j)
         s = ''
         legstatus = i.index('TRUE')
         if header[legstatus] in filter[pol]['status']:
