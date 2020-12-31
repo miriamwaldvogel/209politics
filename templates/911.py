@@ -10,7 +10,8 @@ types = {
 "Theft/robbery": ["Robbery", "Carjacking", "Attempted robbery", "Strong-arm robbery"],
 "Assault": ["Person shot", "Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Weapon": ["Weapon arrest"],
-"Other": ["Resisting arrest"]
+"Resisting arrest": ["Resisting arrest"],
+"Arson": ["Arson"]
 }
 alltypes = []
 for i in types:
@@ -43,8 +44,8 @@ if allused:
     for i in types:
         s += """<div class="filterbox">
     <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s');" checked="true">
-    <label for="%s" class="filter">%s</label>
-    </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-"), i)
+    <label for="%s" class="filter">%s <div class="filternum">(%s)</div></label>
+    </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-"), i, 1)
     f.close()
     l = '<script type="text/javascript">'
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/data/stockton.geojson', 'w')

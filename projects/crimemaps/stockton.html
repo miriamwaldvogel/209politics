@@ -96,10 +96,10 @@
             <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
           </div>
       </div>
-      <div class="filters">
+      <div class="filters" id="typefilter">
         <p class="filtertitle">Type</p><div class="filterbox">
 <input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
-<label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
+<label for="Vehicle/traffic" class="filter">Vehicle/traffic <div class="filternum"></div></label>
 </div><div class="filterbox">
 <input type="checkbox" id="Homicide" class="checkbox" onchange="filter('Homicide');" checked="true">
 <label for="Homicide" class="filter">Homicide</label>
@@ -136,7 +136,7 @@
     <script type="text/javascript">
     var map = L.map('map').setView([38.007220, -121.289592], 11);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin, <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a>/<a href="https://www.sjgov.org/department/rov/">SJ ROV</a> - Data',
+      attribution: 'Map data: <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>/<a target="_blank" href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
       id: 'mapbox/streets-v11',
       tileSize: 512,

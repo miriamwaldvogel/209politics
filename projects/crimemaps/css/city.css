@@ -4,6 +4,7 @@
 }
 #map{
   height: 500px;
+  z-index: 1;
 }
 .leaflet-popup-content{
   width: 400px !important;
@@ -30,4 +31,11 @@
 }
 .filters, .dateselect{
   font-family: "Libre Baskerville";
+}
+#typefilter{
+  width: fit-content;
+  position: relative;
+}
+.filternum{
+  display: inline-block;
 }
