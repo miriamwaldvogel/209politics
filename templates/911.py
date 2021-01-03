@@ -5,18 +5,24 @@ next(r)
 s = ''
 filter = []
 types = {
-"Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit"],
+"Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest"],
 "Homicide": ["Homicide"],
-"Theft/robbery": ["Robbery", "Carjacking", "Attempted robbery", "Strong-arm robbery"],
-"Assault": ["Person shot", "Person stabbed", "Assault with a deadly weapon", "Felony assault"],
-"Weapon": ["Weapon arrest"],
-"Resisting arrest": ["Resisting arrest"],
-"Arson": ["Arson"]
+"Theft/robbery": ["Robbery", "Carjacking", "Attempted robbery", "Strong-arm robbery", "Armed robbery"],
+"Residential robbery": ["Residential robbery"],
+"Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
+"Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
+"Arson": ["Arson"],
+"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest"],
+"Officer shooting": ["Officer shooting"],
+"Kidnapping": ["Kidnapping", "Kidnapping arrest"],
+"Other": ["Attempted murder arrest", "Attempted murder"],
 }
-alltypes = []
+reversetypes = {}
 for i in types:
-    alltypes += types[i]
+    for j in types[i]:
+        reversetypes[j] = i
 allused = True
+unmarked = []
 for i in r:
     if " " in str(i[4]):
         a = str(i[4]).split(", ")
@@ -30,22 +36,25 @@ for i in r:
           "time": i[2].lower(),
           "location": i[3],
           "desc": i[5],
-          "appear": 1
+          "appear": 1,
+          "icon": "images/%s.png"%reversetypes[i[0]].lower().replace(" ", "-").replace("/", "-")
       },
       "geometry": {
           "type": "Point",
           "coordinates": [float(a[1]), float(a[0])]
       }
     })
-    if i[0] not in alltypes:
-        print(i[0])
+    if i[0] not in reversetypes and i[0] not in unmarked:
+        unmarked.append(i[0])
         allused = False
+for i in unmarked:
+    print(i)
 if allused:
     for i in types:
         s += """<div class="filterbox">
     <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s');" checked="true">
-    <label for="%s" class="filter">%s <div class="filternum">(%s)</div></label>
-    </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-"), i, 1)
+    <label for="%s" class="filter">%s</label>
+    </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-"), i)
     f.close()
     l = '<script type="text/javascript">'
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/data/stockton.geojson', 'w')

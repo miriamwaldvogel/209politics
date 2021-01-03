@@ -6,6 +6,9 @@
   height: 500px;
   z-index: 1;
 }
+.leaflet-marker-icon{
+  border-radius: 5px;
+}
 .leaflet-popup-content{
   width: 400px !important;
 }
