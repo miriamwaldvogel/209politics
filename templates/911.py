@@ -7,12 +7,12 @@ filter = []
 types = {
 "Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest"],
 "Homicide": ["Homicide"],
-"Theft/robbery": ["Robbery", "Carjacking", "Attempted robbery", "Strong-arm robbery", "Armed robbery"],
+"Theft/robbery": ["Robbery", "Carjacking", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries"],
 "Residential robbery": ["Residential robbery"],
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
 "Arson": ["Arson"],
-"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest"],
+"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle"],
 "Officer shooting": ["Officer shooting"],
 "Kidnapping": ["Kidnapping", "Kidnapping arrest"],
 "Other": ["Attempted murder arrest", "Attempted murder"],
@@ -23,6 +23,7 @@ for i in types:
         reversetypes[j] = i
 allused = True
 unmarked = []
+coords = []
 for i in r:
     if " " in str(i[4]):
         a = str(i[4]).split(", ")
@@ -47,6 +48,10 @@ for i in r:
     if i[0] not in reversetypes and i[0] not in unmarked:
         unmarked.append(i[0])
         allused = False
+    if i[4] not in coords:
+        coords.append(i[4])
+    else:
+        print(i[4])
 for i in unmarked:
     print(i)
 if allused:

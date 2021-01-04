@@ -23,6 +23,9 @@ function relayer(){
 function datefilter(se) {
   var s = Date.parse(document.getElementById("startdate").value);
   var e = Date.parse(document.getElementById("enddate").value);
+  if (isNaN(e)){
+    e = Date.now();
+  }
   if (se === 'start') {
     for (var i = 0; i < markers.length; i++) {
       if (Date.parse(markers[i].properties.date) < s) {
@@ -35,7 +38,7 @@ function datefilter(se) {
     for (var i = 0; i < markers.length; i++) {
       if (Date.parse(markers[i].properties.date) > e) {
         markers[i].properties.appear = 0;
-      } else if ((Date.parse(markers[i].properties.date) >= s)) {
+      } else if (Date.parse(markers[i].properties.date) >= s){
         markers[i].properties.appear = 1;
       }
     }
@@ -44,15 +47,22 @@ function datefilter(se) {
 }
 function filter(t) {
   var a = document.getElementById(t.replaceAll(" ", "-"));
+  var s = Date.parse(document.getElementById("startdate").value);
+  var e = Date.parse(document.getElementById("enddate").value);
+  if (isNaN(e)){
+    e = Date.now();
+  }
   if (a.checked) {
     for (var i = 0; i < markers.length; i++) {
-      if (types[t].includes(markers[i].properties.type)) {
+      markerdate = Date.parse(markers[i].properties.date);
+      if (types[t].includes(markers[i].properties.type) && s <= markerdate && markerdate <= e) {
         markers[i].properties.appear = 1;
       }
     }
   } else {
     for (var i = 0; i < markers.length; i++) {
-      if (types[t].includes(markers[i].properties.type)) {
+      markerdate = Date.parse(markers[i].properties.date);
+      if (types[t].includes(markers[i].properties.type) && s <= markerdate && markerdate <= e) {
         markers[i].properties.appear = 0;
       }
     }
