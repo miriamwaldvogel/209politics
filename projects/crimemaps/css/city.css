@@ -42,3 +42,11 @@
 .filternum{
   display: inline-block;
 }
+#reset{
+  font-family: "Rubik";
+  border: 2px solid #20124d;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  font-size: 15px;
+}
