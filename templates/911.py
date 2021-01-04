@@ -55,6 +55,7 @@ if allused:
     <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s');" checked="true">
     <label for="%s" class="filter">%s</label>
     </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-"), i)
+    s += "</div>"
     f.close()
     l = '<script type="text/javascript">'
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/data/stockton.geojson', 'w')
@@ -66,7 +67,7 @@ if allused:
     g = f.read().split(l)
     f.close()
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/stockton.html', 'w')
-    f.write(g[0]+l+s+"""\n</div>
-    </div>""")
-    f.write('<div id="footer">'+g[1].split('<div id="footer">')[1])
+    f.write(g[0]+l+s)
+    l = '<input type="reset"'
+    f.write(l+g[1].split(l, 1)[1])
     f.close()

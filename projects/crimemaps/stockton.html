@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   <script type="text/javascript" src="/js/header.js"></script>
+  <script type="text/javascript" src="js/city.js"></script>
   <script type="text/javascript" src="data/stockton.geojson"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
   <script>
@@ -85,19 +86,20 @@
     </div>
     <div id="map"></div>
     <div id="filtercontainer">
-      <div class="filters">
-        <p class="filtertitle">Date Range</p>
+      <form>
+        <div class="filters">
+          <p class="filtertitle">Date Range</p>
           <div class="filterbox">
             <label for="startdate" class="filter">Start: </label>
-            <input type="date" id="startdate" class="dateselect" onchange="datefilter('start');" checked="true">
+            <input type="date" id="startdate" class="dateselect" onchange="datefilter('start');">
           </div>
           <div class="filterbox">
             <label for="enddate" class="filter">End: </label>
-            <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
+            <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');">
           </div>
-      </div>
-      <div class="filters" id="typefilter">
-        <p class="filtertitle">Type</p><div class="filterbox">
+        </div>
+        <div class="filters" id="typefilter">
+          <p class="filtertitle">Type</p><div class="filterbox">
     <input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
     <label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
     </div><div class="filterbox">
@@ -130,9 +132,10 @@
     </div><div class="filterbox">
     <input type="checkbox" id="Other" class="checkbox" onchange="filter('Other');" checked="true">
     <label for="Other" class="filter">Other</label>
+  </div></div><input type="reset" value="Reset all" id="reset" onclick="showall();">
+      </form>
     </div>
-</div>
-    </div><div id="footer">
+    <div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
         <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
@@ -149,89 +152,40 @@
       </p>
     </div>
     <script type="text/javascript">
-    var map = L.map('map').setView([38.007220, -121.289592], 11);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data: <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>/<a target="_blank" href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
-    }).addTo(map);
-    var mainlayer = L.geoJSON(markers, {onEachFeature: onEachFeature}).addTo(map);
-    function show(e) {
-      var a = e.target.nextElementSibling;
-      a.style.display = "block";
-      a.nextElementSibling.style.display = "block";
-      e.target.style.display = "none";
-    };
-    function hide(e) {
-      var a = e.target.previousElementSibling;
-      a.style.display = "none";
-    }
-    function onEachFeature(feature, layer){
-      layer.bindPopup("<p class='popuptitle'>"+feature.properties.type+"</p><p class='info'>"+feature.properties.date+" at "+feature.properties.time+" - "+feature.properties.location+"</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>"+feature.properties.desc+"</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
-      layer.setIcon(L.icon({
-        iconUrl: feature.properties.icon,
-        iconSize: [30, 40],
-        iconAnchor: [15, 40],
-        popupAnchor: [0, -35]
-      }));
-    }
-    function datefilter(se){
-      var filterlayer = [];
-      if (se === 'start'){
-        var d = Date.parse(document.getElementById("startdate").value);
-        for (var i = 0; i < markers.length; i++){
-          if (Date.parse(markers[i].properties.date) < d){
-            markers[i].properties.appear = 0;
-          } else{
-            markers[i].properties.appear = 1;
-          }
-        }
-      } else{
-        var d = Date.parse(document.getElementById("enddate").value);
-        for (var i = 0; i < markers.length; i++){
-          if (Date.parse(markers[i].properties.date) > d){
-            markers[i].properties.appear = 0;
-          } else{
-            markers[i].properties.appear = 1;
-          }
-        }
+      var map = L.map('map').setView([38.007220, -121.289592], 11);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data: <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>/<a target="_blank" href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+      }).addTo(map);
+      var mainlayer = L.geoJSON(markers, {
+        onEachFeature: onEachFeature
+      }).addTo(map);
+      function onEachFeature(feature, layer) {
+        layer.bindPopup("<p class='popuptitle'>" + feature.properties.type + "</p><p class='info'>" + feature.properties.date + " at " + feature.properties.time + " - " + feature.properties.location + "</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>" + feature.properties.desc + "</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
+        layer.setIcon(L.icon({
+          iconUrl: feature.properties.icon,
+          iconSize: [30, 40],
+          iconAnchor: [15, 40],
+          popupAnchor: [0, -35]
+        }));
       }
-      for (var i = 0; i < markers.length; i++){
-        if (markers[i].properties.appear === 1){
-          filterlayer.push(markers[i])
-        }
+      var d = new Date(Date.now() - 12096e5);
+      var m = d.getMonth() + 1;
+      if (m < 10) {
+        m = '0' + m.toString();
       }
-      map.removeLayer(mainlayer);
-      mainlayer = L.geoJSON(filterlayer, {onEachFeature: onEachFeature}).addTo(map);
-    }
-  function filter(t){
-    var filterlayer = [];
-    var a = document.getElementById(t.replaceAll(" ", "-"));
-    if (a.checked){
-      for (var i = 0; i < markers.length; i++){
-        if (types[t].includes(markers[i].properties.type)){
-          markers[i].properties.appear = 1;
-        }
+      var day = d.getDate();
+      if (day < 10) {
+        day = '0' + day.toString();
       }
-    } else{
-      for (var i = 0; i < markers.length; i++){
-        if (types[t].includes(markers[i].properties.type)){
-          markers[i].properties.appear = 0;
-        }
-      }
-    }
-    for (var i = 0; i < markers.length; i++){
-      if (markers[i].properties.appear === 1){
-        filterlayer.push(markers[i])
-      }
-    }
-    map.removeLayer(mainlayer);
-    mainlayer = L.geoJSON(filterlayer, {onEachFeature: onEachFeature}).addTo(map);
-  }
+      document.getElementById("startdate").value = d.getFullYear().toString() + '-' + m + '-' + day;
+      datefilter('start')
     </script>
-</div>
+  </div>
 </body>
+
 </html>
