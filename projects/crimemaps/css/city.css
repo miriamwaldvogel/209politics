@@ -1,12 +1,12 @@
-#content{
-  position: relative;
-}
 #title{
   font-size: 40px;
   font-family: "Rubik";
 }
+#mastermap{
+  position: relative;
+}
 #map{
-  height: 500px;
+  height: 530px;
   z-index: 1;
 }
 #filterimg{
@@ -17,7 +17,8 @@
 #filterimgcontainer{
   position: absolute;
   z-index: 999;
-  top: 160px;
+  top: 10px;
+  transition: 0.35s;
 }
 .filterimgcontainer{
   width: 45px;
@@ -42,7 +43,7 @@
 #filtercontainer{
   position: absolute;
   right: 0px;
-  top: 150px;
+  top: 0px;
   z-index: 99;
   font-family: "Libre Baskerville";
   width: fit-content;
@@ -50,10 +51,20 @@
   color: #FFFFFF;
   font-weight: bold;
   overflow: scroll;
-  height: 490px;
+  height: 520px;
   transition: width 0.5s;
   border-radius: 4px;
   padding-bottom: 10px;
+}
+.filtericoncontainer{
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: inline-block;
+}
+.filtericon{
+  width: 100%;
 }
 .leaflet-marker-icon{
   border-radius: 5px;
@@ -91,6 +102,15 @@
 .filters{
   margin-left: 10px;
 }
+#select{
+  font-family: "Libre Baskerville";
+  background-color: #8091A6;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid #FFFFFF;
+  margin-bottom: 5px;
+}
 #typefilter{
   width: fit-content;
   position: relative;
@@ -108,4 +128,12 @@
   font-weight: bold;
   font-size: 15px;
   margin-left: 10px;
+}
+#desc{
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+}
+#desclink{
+  color: blue;
+  text-decoration: none;
 }

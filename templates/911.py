@@ -5,9 +5,9 @@ next(r)
 s = ''
 filter = []
 types = {
-"Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest"],
+"Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest", "Carjacking"],
 "Homicide": ["Homicide"],
-"Theft/robbery": ["Robbery", "Carjacking", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries"],
+"Theft/robbery": ["Robbery", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries"],
 "Residential robbery": ["Residential robbery"],
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
@@ -60,8 +60,11 @@ if allused:
     for i in sorted(types):
         s += """<div class="filterbox">
     <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/%s.png" alt="%s" class="filtericon">
+</div>
     <label for="%s" class="filter">%s</label>
-    </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-"), i)
+    </div>"""%(i.replace(" ", "-"), i, i.replace(" ", "-").lower().replace("/", "-"), i, i.replace(" ", "-"), i)
     s += "</div>"
     f.close()
     l = '<script type="text/javascript">'

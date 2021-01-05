@@ -45,6 +45,36 @@ function datefilter(se) {
   }
   relayer();
 }
+function fulldatefilter(se){
+  datefilter(se);
+  document.getElementById("select").value = "0";
+}
+function getdate(offset){
+  var date = new Date(Date.now() - (864e5*offset));
+  var m = date.getMonth() + 1;
+  if (m < 10) {
+    m = '0' + m.toString();
+  }
+  var day = date.getDate();
+  if (day < 10) {
+    day = '0' + day.toString();
+  }
+  return(date.getFullYear().toString() + '-' + m + '-' + day);
+}
+function editdate(){
+  var date = new Date(Date.now() - (864e5*document.getElementById("select").value));
+  var m = date.getMonth() + 1;
+  if (m < 10) {
+    m = '0' + m.toString();
+  }
+  var day = date.getDate();
+  if (day < 10) {
+    day = '0' + day.toString();
+  }
+  document.getElementById("startdate").value = date.getFullYear().toString() + '-' + m + '-' + day;
+  document.getElementById("enddate").value = NaN;
+  datefilter('start');
+}
 function filter(t) {
   var a = document.getElementById(t.replaceAll(" ", "-"));
   var s = Date.parse(document.getElementById("startdate").value);
