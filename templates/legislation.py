@@ -12,10 +12,20 @@ people = {'mcnerney': ['jerry-mcnerney', 'McNerney', 'congress'],
 'villapudua': ['carlos-villapudua', 'Villapudua', 'legislature'],
 'flora': ['heath-flora', 'Flora', 'legislature']
 }
+def makefilters(p, a, n):
+    s = """<div class="filters">
+<p class="filtertitle">%s</p>"""%n
+    for i in filter[p][a]:
+        s += """\n<div class="filterbox">
+<input type="checkbox" id="%s" class="checkbox" onchange="filter('%s', '%s', '%s');" checked="true">
+<label for="%s" class="filter">%s</label>
+</div>"""%(i.replace(" ", "-"), p, i, a, i.replace(" ", "-"), i)
+    s += '\n</div>\n'
+    return(s)
 def leg(pol):
     global filter
     f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s-leg.csv'%pol, 'r')
-    filter[pol] = {'role':{
+    filter[pol] = {'type': {}, 'role':{
     'sponsor': [],
     'cosponsor': [],
     }, 'status':{}, 'area':{}, 'date':[]}
@@ -33,6 +43,10 @@ def leg(pol):
             filter[pol]['role']['sponsor'].append(j)
         else:
             filter[pol]['role']['cosponsor'].append(j)
+        if i[1] not in filter[pol]['type']:
+            filter[pol]['type'][i[1]] = [j]
+        else:
+            filter[pol]['type'][i[1]].append(j)
         s = ''
         legstatus = i.index('TRUE')
         if header[legstatus] in filter[pol]['status']:
@@ -41,12 +55,16 @@ def leg(pol):
             filter[pol]['status'][header[legstatus]] = [j]
         if legstatus % 2 == 1:
             for k, l in enumerate(header[o:]):
+                if i[k+o] == "":
+                    break
                 if k+o == legstatus:
                     s+=('<p class="status current">%s</p>'%l)
                 elif k % 2 == 0 and k != 2 and k != 6:
                     s+=('<p class="status">%s</p>'%l)
         else:
             for k, l in enumerate(header[o:]):
+                if i[k+o] == "":
+                    break
                 if k+o == legstatus:
                     s+=('<p class="status current">%s</p>'%l)
                     if k != 9:
@@ -85,15 +103,11 @@ def leg(pol):
     <label for="%s" class="filter">%s</label>
     </div>\n""" % (i.replace(" ", "-"), pol, i, i.replace(" ", "-"), i)
     f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/people/%s.html' % people[pol][0], 'r')
-    g = f.read().split('<p class="filtertitle">Status - legislation</p>', 1)
+    g = f.read().split('<!--Python marker-->', 1)
     f.close()
     f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/people/%s.html' % people[pol][0], 'w')
-    f.write(g[0]+'<p class="filtertitle">Status - legislation</p>\n'+statusfilters)
-    f.write("""</div>
-    <div class="filters">
-    <p class="filtertitle">Policy Area</p>"""+areafilters)
-    f.write("""</div>
-        <input type="reset" id="datereset" value="Reset all" onclick="showall();">
+    f.write(g[0]+'\n<!--Python marker-->\n'+makefilters(pol, 'status', 'Status')+makefilters(pol, 'area', 'Policy area')+makefilters(pol, 'type', 'Legislation type'))
+    f.write("""<input type="reset" id="datereset" value="Reset all" onclick="showall();">
         </form>
         </div>
         </div>
