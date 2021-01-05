@@ -12,9 +12,10 @@ types = {
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
 "Arson": ["Arson"],
-"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle"],
+"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle", "Shooting into a building"],
 "Officer shooting": ["Officer shooting"],
 "Kidnapping": ["Kidnapping", "Kidnapping arrest"],
+"Mental health call": ["Mental health call"],
 "Other": ["Attempted murder arrest", "Attempted murder"],
 }
 reversetypes = {}
@@ -29,23 +30,24 @@ for i in r:
         a = str(i[4]).split(", ")
     else:
         a = str(i[4]).split(",")
-    filter.append({
-      "type": "Feature",
-      "properties": {
-          "type": i[0],
-          "date": i[1],
-          "time": i[2].lower(),
-          "location": i[3],
-          "desc": i[5],
-          "appear": 1,
-          "icon": "images/%s.png"%reversetypes[i[0]].lower().replace(" ", "-").replace("/", "-")
-      },
-      "geometry": {
-          "type": "Point",
-          "coordinates": [float(a[1]), float(a[0])]
-      }
-    })
-    if i[0] not in reversetypes and i[0] not in unmarked:
+    if i[0] in reversetypes:
+        filter.append({
+          "type": "Feature",
+          "properties": {
+              "type": i[0],
+              "date": i[1],
+              "time": i[2].lower(),
+              "location": i[3],
+              "desc": i[5],
+              "appear": 1,
+              "icon": "images/%s.png"%reversetypes[i[0]].lower().replace(" ", "-").replace("/", "-")
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [float(a[1]), float(a[0])]
+          }
+        })
+    elif i[0] not in unmarked:
         unmarked.append(i[0])
         allused = False
     if i[4] not in coords:
@@ -55,7 +57,7 @@ for i in r:
 for i in unmarked:
     print(i)
 if allused:
-    for i in types:
+    for i in sorted(types):
         s += """<div class="filterbox">
     <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s');" checked="true">
     <label for="%s" class="filter">%s</label>

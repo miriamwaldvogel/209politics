@@ -84,7 +84,11 @@
     <div id="titlecontainer">
       <h1 id="title">STOCKTON CRIME MAP</h1>
     </div>
-    <div id="map"></div>
+    <div id="filterimgcontainer" onclick="filtertoggle();" class="filterimgcontainer">
+      <img src="images/leaflet-control.png" alt="Filters" id="filterimg">
+    </div>
+    <div id="map">
+    </div>
     <div id="filtercontainer">
       <form>
         <div class="filters">
@@ -100,38 +104,41 @@
         </div>
         <div class="filters" id="typefilter">
           <p class="filtertitle">Type</p><div class="filterbox">
-    <input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
-    <label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
-    </div><div class="filterbox">
-    <input type="checkbox" id="Homicide" class="checkbox" onchange="filter('Homicide');" checked="true">
-    <label for="Homicide" class="filter">Homicide</label>
-    </div><div class="filterbox">
-    <input type="checkbox" id="Theft/robbery" class="checkbox" onchange="filter('Theft/robbery');" checked="true">
-    <label for="Theft/robbery" class="filter">Theft/robbery</label>
-    </div><div class="filterbox">
-    <input type="checkbox" id="Residential-robbery" class="checkbox" onchange="filter('Residential robbery');" checked="true">
-    <label for="Residential-robbery" class="filter">Residential robbery</label>
-    </div><div class="filterbox">
-    <input type="checkbox" id="Assault" class="checkbox" onchange="filter('Assault');" checked="true">
-    <label for="Assault" class="filter">Assault</label>
-    </div><div class="filterbox">
     <input type="checkbox" id="Arrest" class="checkbox" onchange="filter('Arrest');" checked="true">
     <label for="Arrest" class="filter">Arrest</label>
     </div><div class="filterbox">
     <input type="checkbox" id="Arson" class="checkbox" onchange="filter('Arson');" checked="true">
     <label for="Arson" class="filter">Arson</label>
     </div><div class="filterbox">
-    <input type="checkbox" id="Shooting/weapons" class="checkbox" onchange="filter('Shooting/weapons');" checked="true">
-    <label for="Shooting/weapons" class="filter">Shooting/weapons</label>
+    <input type="checkbox" id="Assault" class="checkbox" onchange="filter('Assault');" checked="true">
+    <label for="Assault" class="filter">Assault</label>
     </div><div class="filterbox">
-    <input type="checkbox" id="Officer-shooting" class="checkbox" onchange="filter('Officer shooting');" checked="true">
-    <label for="Officer-shooting" class="filter">Officer shooting</label>
+    <input type="checkbox" id="Homicide" class="checkbox" onchange="filter('Homicide');" checked="true">
+    <label for="Homicide" class="filter">Homicide</label>
     </div><div class="filterbox">
     <input type="checkbox" id="Kidnapping" class="checkbox" onchange="filter('Kidnapping');" checked="true">
     <label for="Kidnapping" class="filter">Kidnapping</label>
     </div><div class="filterbox">
+    <input type="checkbox" id="Mental-health-call" class="checkbox" onchange="filter('Mental health call');" checked="true">
+    <label for="Mental-health-call" class="filter">Mental health call</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Officer-shooting" class="checkbox" onchange="filter('Officer shooting');" checked="true">
+    <label for="Officer-shooting" class="filter">Officer shooting</label>
+    </div><div class="filterbox">
     <input type="checkbox" id="Other" class="checkbox" onchange="filter('Other');" checked="true">
     <label for="Other" class="filter">Other</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Residential-robbery" class="checkbox" onchange="filter('Residential robbery');" checked="true">
+    <label for="Residential-robbery" class="filter">Residential robbery</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Shooting/weapons" class="checkbox" onchange="filter('Shooting/weapons');" checked="true">
+    <label for="Shooting/weapons" class="filter">Shooting/weapons</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Theft/robbery" class="checkbox" onchange="filter('Theft/robbery');" checked="true">
+    <label for="Theft/robbery" class="filter">Theft/robbery</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
+    <label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
     </div></div><input type="reset" value="Reset all" id="reset" onclick="showall();">
       </form>
     </div>
@@ -164,6 +171,7 @@
       var mainlayer = L.geoJSON(markers, {
         onEachFeature: onEachFeature
       }).addTo(map);
+
       function onEachFeature(feature, layer) {
         layer.bindPopup("<p class='popuptitle'>" + feature.properties.type + "</p><p class='info'>" + feature.properties.date + " at " + feature.properties.time + " - " + feature.properties.location + "</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>" + feature.properties.desc + "</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
         layer.setIcon(L.icon({
@@ -184,6 +192,7 @@
       }
       document.getElementById("startdate").value = d.getFullYear().toString() + '-' + m + '-' + day;
       datefilter('start')
+      L.DomEvent.disableClickPropagation();
     </script>
   </div>
 </body>

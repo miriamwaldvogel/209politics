@@ -75,3 +75,18 @@ function showall(){
   }
   relayer();
 }
+function filtertoggle(){
+  var f = document.getElementById("filtercontainer");
+  var fi = document.getElementById("filterimgcontainer");
+  if (f.style.width === "250px"){
+    f.style.width = "0px";
+    fi.innerHTML = '<img src="images/leaflet-control.png" alt="Filters" id="filterimg">';
+    fi.classList.remove("filterx");
+    fi.classList.add("filterimgcontainer");
+  } else{
+    f.style.width = "250px";
+    fi.innerHTML = "&times";
+    fi.classList.add("filterx");
+    fi.classList.remove("filterimgcontainer");
+  }
+}
