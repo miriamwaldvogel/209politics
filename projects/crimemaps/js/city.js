@@ -30,7 +30,7 @@ function datefilter(se) {
     for (var i = 0; i < markers.length; i++) {
       if (Date.parse(markers[i].properties.date) < s) {
         markers[i].properties.appear = 0;
-      } else if (Date.parse(markers[i].properties.date) <= e){
+      } else if (Date.parse(markers[i].properties.date) <= e && document.getElementById(reversetypes[markers[i].properties.type].replaceAll(" ", "-")).checked){
         markers[i].properties.appear = 1;
       }
     }
@@ -38,7 +38,7 @@ function datefilter(se) {
     for (var i = 0; i < markers.length; i++) {
       if (Date.parse(markers[i].properties.date) > e) {
         markers[i].properties.appear = 0;
-      } else if (Date.parse(markers[i].properties.date) >= s){
+      } else if (Date.parse(markers[i].properties.date) >= s && document.getElementById(reversetypes[markers[i].properties.type].replaceAll(" ", "-")).checked){
         markers[i].properties.appear = 1;
       }
     }
@@ -62,18 +62,20 @@ function getdate(offset){
   return(date.getFullYear().toString() + '-' + m + '-' + day);
 }
 function editdate(){
-  var date = new Date(Date.now() - (864e5*document.getElementById("select").value));
-  var m = date.getMonth() + 1;
-  if (m < 10) {
-    m = '0' + m.toString();
+  if (document.getElementById("select").value > 0){
+    var date = new Date(Date.now() - (864e5*document.getElementById("select").value));
+    var m = date.getMonth() + 1;
+    if (m < 10) {
+      m = '0' + m.toString();
+    }
+    var day = date.getDate();
+    if (day < 10) {
+      day = '0' + day.toString();
+    }
+    document.getElementById("startdate").value = date.getFullYear().toString() + '-' + m + '-' + day;
+    document.getElementById("enddate").value = NaN;
+    datefilter('start');
   }
-  var day = date.getDate();
-  if (day < 10) {
-    day = '0' + day.toString();
-  }
-  document.getElementById("startdate").value = date.getFullYear().toString() + '-' + m + '-' + day;
-  document.getElementById("enddate").value = NaN;
-  datefilter('start');
 }
 function filter(t) {
   var a = document.getElementById(t.replaceAll(" ", "-"));
@@ -81,6 +83,9 @@ function filter(t) {
   var e = Date.parse(document.getElementById("enddate").value);
   if (isNaN(e)){
     e = Date.now();
+  }
+  if (isNaN(s)){
+    s = Date.parse('12/1/2020');
   }
   if (a.checked) {
     for (var i = 0; i < markers.length; i++) {
@@ -104,6 +109,16 @@ function showall(){
     markers[i].properties.appear = 1;
   }
   relayer();
+}
+function unselectall(){
+  for (var i = 0; i < markers.length; i++){
+    markers[i].properties.appear = 0;
+  }
+  relayer();
+  var f = document.getElementsByClassName("checkbox");
+  for (var i = 0; i < f.length; i++){
+    f[i].checked = false;
+  }
 }
 function filtertoggle(){
   var f = document.getElementById("filtercontainer");

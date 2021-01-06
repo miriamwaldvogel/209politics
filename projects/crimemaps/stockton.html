@@ -6,6 +6,11 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta property="og:image" content="https://209politics.com/projects/crimemaps/images/cover.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@209politics">
+  <meta name="twitter:title" content="Stockton Crime Map">
+  <meta name="twitter:image" content="https://209politics.com/projects/crimemaps/images/cover.png">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/global.css">
@@ -84,9 +89,9 @@
     <div id="titlecontainer">
       <h1 id="title">STOCKTON CRIME MAP</h1>
     </div>
-    <div id="mastermap">
+    <div id="mastermap" data-tap-disabled="true">
       <div id="filterimgcontainer" onclick="filtertoggle();" class="filterx">&times;</div>
-      <div id="map">
+      <div id="map" data-tap-disabled="true">
       </div>
       <div id="filtercontainer" style="width: 250px;">
         <form>
@@ -111,92 +116,79 @@
           </div>
           <div class="filters" id="typefilter">
             <p class="filtertitle">Type</p>
-            <div class="filterbox">
-              <input type="checkbox" id="Arrest" class="checkbox" onchange="filter('Arrest');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/arrest.png" alt="Arrest" class="filtericon">
-              </div>
-              <label for="Arrest" class="filter">Arrest</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Arson" class="checkbox" onchange="filter('Arson');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/arson.png" alt="Arson" class="filtericon">
-              </div>
-              <label for="Arson" class="filter">Arson</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Assault" class="checkbox" onchange="filter('Assault');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/assault.png" alt="Assault" class="filtericon">
-              </div>
-              <label for="Assault" class="filter">Assault</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Homicide" class="checkbox" onchange="filter('Homicide');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/homicide.png" alt="Homicide" class="filtericon">
-              </div>
-              <label for="Homicide" class="filter">Homicide</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Kidnapping" class="checkbox" onchange="filter('Kidnapping');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/kidnapping.png" alt="Kidnapping" class="filtericon">
-              </div>
-              <label for="Kidnapping" class="filter">Kidnapping</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Mental-health-call" class="checkbox" onchange="filter('Mental health call');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/mental-health-call.png" alt="Mental health call" class="filtericon">
-              </div>
-              <label for="Mental-health-call" class="filter">Mental health call</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Officer-shooting" class="checkbox" onchange="filter('Officer shooting');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/officer-shooting.png" alt="Officer shooting" class="filtericon">
-              </div>
-              <label for="Officer-shooting" class="filter">Officer shooting</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Other" class="checkbox" onchange="filter('Other');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/other.png" alt="Other" class="filtericon">
-              </div>
-              <label for="Other" class="filter">Other</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Residential-robbery" class="checkbox" onchange="filter('Residential robbery');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/residential-robbery.png" alt="Residential robbery" class="filtericon">
-              </div>
-              <label for="Residential-robbery" class="filter">Residential robbery</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Shooting/weapons" class="checkbox" onchange="filter('Shooting/weapons');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/shooting-weapons.png" alt="Shooting/weapons" class="filtericon">
-              </div>
-              <label for="Shooting/weapons" class="filter">Shooting/weapons</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Theft/robbery" class="checkbox" onchange="filter('Theft/robbery');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/theft-robbery.png" alt="Theft/robbery" class="filtericon">
-              </div>
-              <label for="Theft/robbery" class="filter">Theft/robbery</label>
-            </div>
-            <div class="filterbox">
-              <input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
-              <div class="filtericoncontainer">
-                <img src="images/vehicle-traffic.png" alt="Vehicle/traffic" class="filtericon">
-              </div>
-              <label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
-            </div>
-          </div>
-          <input type="reset" value="Reset all" id="reset" onclick="showall();">
+            <p id="unselect" onclick="unselectall();">Unselect all</p><div class="filterbox">
+    <input type="checkbox" id="Arrest" class="checkbox" onchange="filter('Arrest');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/arrest.png" alt="Arrest" class="filtericon">
+</div>
+    <label for="Arrest" class="filter">Arrest</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Arson" class="checkbox" onchange="filter('Arson');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/arson.png" alt="Arson" class="filtericon">
+</div>
+    <label for="Arson" class="filter">Arson</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Assault" class="checkbox" onchange="filter('Assault');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/assault.png" alt="Assault" class="filtericon">
+</div>
+    <label for="Assault" class="filter">Assault</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Homicide" class="checkbox" onchange="filter('Homicide');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/homicide.png" alt="Homicide" class="filtericon">
+</div>
+    <label for="Homicide" class="filter">Homicide</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Kidnapping" class="checkbox" onchange="filter('Kidnapping');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/kidnapping.png" alt="Kidnapping" class="filtericon">
+</div>
+    <label for="Kidnapping" class="filter">Kidnapping</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Mental-health-call" class="checkbox" onchange="filter('Mental health call');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/mental-health-call.png" alt="Mental health call" class="filtericon">
+</div>
+    <label for="Mental-health-call" class="filter">Mental health call</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Officer-shooting" class="checkbox" onchange="filter('Officer shooting');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/officer-shooting.png" alt="Officer shooting" class="filtericon">
+</div>
+    <label for="Officer-shooting" class="filter">Officer shooting</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Other" class="checkbox" onchange="filter('Other');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/other.png" alt="Other" class="filtericon">
+</div>
+    <label for="Other" class="filter">Other</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Residential-robbery" class="checkbox" onchange="filter('Residential robbery');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/residential-robbery.png" alt="Residential robbery" class="filtericon">
+</div>
+    <label for="Residential-robbery" class="filter">Residential robbery</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Shooting/weapons" class="checkbox" onchange="filter('Shooting/weapons');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/shooting-weapons.png" alt="Shooting/weapons" class="filtericon">
+</div>
+    <label for="Shooting/weapons" class="filter">Shooting/weapons</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Theft/robbery" class="checkbox" onchange="filter('Theft/robbery');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/theft-robbery.png" alt="Theft/robbery" class="filtericon">
+</div>
+    <label for="Theft/robbery" class="filter">Theft/robbery</label>
+    </div><div class="filterbox">
+    <input type="checkbox" id="Vehicle/traffic" class="checkbox" onchange="filter('Vehicle/traffic');" checked="true">
+    <div class="filtericoncontainer">
+<img src="images/vehicle-traffic.png" alt="Vehicle/traffic" class="filtericon">
+</div>
+    <label for="Vehicle/traffic" class="filter">Vehicle/traffic</label>
+    </div></div><input type="reset" value="Reset all" id="reset" onclick="showall();">
         </form>
       </div>
     </div>
@@ -233,19 +225,19 @@
         zoomOffset: -1,
         accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
       }).addTo(map);
-      var mainlayer = L.geoJSON(markers, {
-        onEachFeature: onEachFeature
-      }).addTo(map);
-
+      L.tap = true;
       function onEachFeature(feature, layer) {
         layer.bindPopup("<p class='popuptitle'>" + feature.properties.type + "</p><p class='info'>" + feature.properties.date + " at " + feature.properties.time + " - " + feature.properties.location + "</p><p class='details' onclick='show(event);'>Details</p><p class='desc' style='display: none;'>" + feature.properties.desc + "</p><p class='hide' style='display: none;' onclick='hide(event);'>Hide</p>");
         layer.setIcon(L.icon({
           iconUrl: feature.properties.icon,
-          iconSize: [24, 32],
-          iconAnchor: [12, 32],
-          popupAnchor: [0, -27]
+          iconSize: [27, 36],
+          iconAnchor: [13.5, 36],
+          popupAnchor: [0, -31]
         }));
       }
+      var mainlayer = L.geoJSON(markers, {
+        onEachFeature: onEachFeature
+      }).addTo(map);
       var d = new Date(Date.now() - 6048e5);
       var m = d.getMonth() + 1;
       if (m < 10) {
@@ -257,7 +249,6 @@
       }
       document.getElementById("startdate").value = d.getFullYear().toString() + '-' + m + '-' + day;
       datefilter('start')
-      L.DomEvent.disableClickPropagation();
     </script>
   </div>
 </body>
