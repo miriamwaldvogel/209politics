@@ -111,6 +111,9 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+#intcontainer{
+  border-bottom: 3px double #BDBFC9;
+}
 #titledesc{
   font-family: "Libre Baskerville";
 }
@@ -136,7 +139,7 @@
 a{
   text-decoration: none;
 }
-.inttitle{
+.inttitle, .headline{
   font-family: "Rubik";
   font-weight: bold;
   margin-bottom: 5px;
