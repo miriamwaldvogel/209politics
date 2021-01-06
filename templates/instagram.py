@@ -22,7 +22,7 @@ def instagram():
 
 Label(w, text="HTML name").pack()
 htmlname.pack()
-Label(w, text="Image path").pack()
+Label(w, text="Absolute image path").pack()
 img.pack()
 Label(w, text="Alt").pack()
 alt.pack()

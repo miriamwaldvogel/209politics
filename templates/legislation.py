@@ -1,7 +1,4 @@
 import csv
-from tkinter import Tk, Checkbutton, IntVar, Button, Label
-w = Tk()
-polvars = [IntVar(), IntVar(), IntVar(), IntVar(), IntVar(), IntVar()]
 filter = {}
 sl = 13
 tl = 22
@@ -119,8 +116,7 @@ def leg(pol):
         <div id="legislation">"""+p)
     f.write('</div>\n</div>'+'<div id="footer">'+g[1].split('<div id="footer">')[1])
     f.close()
-def multiplepols():
-    pols = [polkeys[i] for i, j in enumerate(polvars) if j.get() == 1]
+def multiplepols(pols):
     global w
     w.destroy()
     for i in pols:
@@ -132,9 +128,4 @@ def multiplepols():
     f.write("var para = %s;\n" % filter)
     f.write("window.onscroll"+g.split("window.onscroll", 1)[1])
     f.close()
-Label(w, text="Legislation").pack()
-polkeys = list(people.keys())
-for i, j in enumerate(polvars):
-    Checkbutton(w, text=people[polkeys[i]][1], variable=polvars[i]).pack()
-Button(w, text="Submit", command=multiplepols).pack()
-w.mainloop()
+multiplepols(list(people.keys()))

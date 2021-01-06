@@ -71,9 +71,10 @@ if allused:
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/data/stockton.geojson', 'w')
     f.write("var markers = %s;\n"%filter)
     f.write("var types = %s;" % types)
+    f.write("var reversetypes = %s;" % reversetypes)
     f.close()
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/stockton.html', 'r')
-    l = '<p class="filtertitle">Type</p>'
+    l = '<p id="unselect" onclick="unselectall();">Unselect all</p>'
     g = f.read().split(l)
     f.close()
     f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/stockton.html', 'w')
