@@ -84,7 +84,7 @@
       <div id="textinfo">
         <div id="introinfo">
           <div id="imgcontainer">
-            <img src="/projects/campaignfinance/images/federal/jerry-mcnerney.jpg" alt="Josh Harder" id="candimage">
+            <img src="/projects/campaignfinance/images/federal/jerry-mcnerney.jpg" alt="Jerry McNerney" id="candimage">
           </div>
           <div id="titlecontainer">
             <h1 id="title">JERRY MCNERNEY</h1>
@@ -122,7 +122,7 @@
               <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
             </div>
           </div>
-          
+
 <!--Python marker-->
 <div class="filters">
 <p class="filtertitle">Status</p>
@@ -217,6 +217,9 @@
     <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
     <script type="text/javascript" src="/js/shp.js"></script>
     <script type="text/javascript">
+    if (window.innerWidth > 899){
+      document.getElementById("map").style.height = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50)+'px';
+    }
       var map = L.map('map').setView([38.0030575, -121.372381], 8);
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',

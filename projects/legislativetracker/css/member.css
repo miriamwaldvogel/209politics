@@ -1,6 +1,6 @@
 @media only screen and (max-width: 500px){
   #title{
-    font-size: 9vw;
+    font-size: 7vw;
   }
   #imgcontainer{
     width: 75px;
@@ -8,7 +8,7 @@
 }
 @media only screen and (min-width: 500px){
   #title{
-    font-size: 46px;
+    font-size: 40px;
   }
   #imgcontainer{
     width: 90px;
@@ -120,7 +120,6 @@
   position: relative;
 }
 #titlecontainer{
-  width: fit-content;
   display: inline-block;
   margin-left: 10px;
   position: absolute;
@@ -129,6 +128,7 @@
   transform: translateY(-60%);
 }
 #title{
+  width: 70vw;
   font-family: "Rubik";
   display: inline-block;
   margin: 0;

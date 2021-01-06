@@ -26,7 +26,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-174685284-1');
   </script>
-  <title>Jim Cooper - 209 Politics Legislative Tracker</title>
+  <title>Heath Flora - 209 Politics Legislative Tracker</title>
 </head>
 
 <body onresize="filterresize();">
@@ -83,25 +83,27 @@
       <div id="textinfo">
         <div id="introinfo">
           <div id="imgcontainer">
-            <img src="/projects/campaignfinance/images/state/jim-cooper.jpg" alt="Jim Cooper" id="candimage">
+            <img src="/projects/campaignfinance/images/state/heath-flora.jpeg" alt="Heath Flora" id="candimage">
           </div>
           <div id="titlecontainer">
-            <h1 id="title">JIM COOPER</h1>
+            <h1 id="title">HEATH FLORA</h1>
           </div>
         </div>
         <div id="geninfo">
-          <p><b>District: </b>Assembly District 9 (Lodi, Galt, Elk Grove, Southwestern Sacramento)</p>
-          <p><b>First year in office: </b>2015</p>
-          <p><b>Party: </b>Democratic</p>
+          <p><b>District: </b>Assembly District 12 (Lathrop, Manteca, Modesto, Turlock, Riverbank)</p>
+          <p><b>First year in office: </b>2017</p>
+          <p><b>Party: </b>Republican</p>
           <p id="comtitle"><b>Committees:</b></p>
           <div id="committees">
-            <p>• Budget</p>
-            <p>• Budget Subcommittee No. 4 on State Administration</p>
-            <p>• Governmental Organization</p>
-            <p>• Insurance</p>
-            <p>• Chair - Public Employment and Retirement</p>
+            <p>• Agriculture</p>
+            <p>• Vice Chair - Business and Professions</p>
+            <p>• Health</p>
+            <p>• Vice Chair - Labor and Employment</p>
+            <p>• Vice Chair - Natural Resources</p>
+            <p>• Rules</p>
+            <p>• Legislative ethics</p>
           </div>
-          <p><b>Website: </b><a href="https://a09.asmdc.org/" class="replink" target="_blank">https://a09.asmdc.org/</a></p>
+          <p><b>Website: </b><a href="https://ad12.asmrc.org/" class="replink" target="_blank">https://ad12.asmrc.org/</a></p>
         </div>
       </div>
       <div id="map"></div>
@@ -262,7 +264,7 @@
     if (window.innerWidth > 899){
       document.getElementById("map").style.height = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50)+'px';
     }
-      var map = L.map('map').setView([38.329371, -121.399070], 8);
+      var map = L.map('map').setView([37.872316, -120.976191], 8);
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
         maxZoom: 18,
@@ -275,7 +277,7 @@
         "color": "#000000",
         "fillOpacity": 0.2
       }
-      new L.Shapefile('/raw/ad-09.zip', {
+      new L.Shapefile('/raw/ad-12.zip', {
         style: style
       }).addTo(map);
     </script>
