@@ -440,7 +440,10 @@ a{
   right: 10px;
   bottom: 2px;
 }
-#financecontainer:after{
+#bannercontainer{
+  text-align: center;
+}
+#bannercontainer:after{
   content: "";
   display: block;
   margin: 0 auto;
@@ -449,16 +452,19 @@ a{
   border-bottom: 3px double #BDBFC9;
   margin-bottom: 10px;
 }
-#financelink{
+#bannerlink{
   text-decoration: none;
   color: #000000;
 }
-#financeinfo{
+#bannerinfo{
   font-family: "Rubik";
   font-size: 25px;
   margin: auto;
   text-align: center;
   color: #000000;
+}
+#bannerdesc{
+  font-family: "Libre Baskerville";
 }
 #moreinfo{
   font-family: "Libre Baskerville";
