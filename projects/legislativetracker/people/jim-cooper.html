@@ -271,7 +271,10 @@
     <script type="text/javascript" src="../js/member.js"></script>
     <script type="text/javascript">
     if (window.innerWidth > 899){
-      document.getElementById("map").style.height = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50)+'px';
+      var a = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50)+'px';
+      if (a > 250){
+        document.getElementById("map").style.height = a;
+      }
     }
       var map = L.map('map').setView([38.329371, -121.399070], 8);
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
