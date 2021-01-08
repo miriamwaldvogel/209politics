@@ -103,7 +103,7 @@ def leg(pol):
     g = f.read().split('<!--Python marker-->', 1)
     f.close()
     f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/people/%s.html' % people[pol][0], 'w')
-    f.write(g[0]+'\n<!--Python marker-->\n'+makefilters(pol, 'status', 'Status')+makefilters(pol, 'area', 'Policy area')+makefilters(pol, 'type', 'Legislation type'))
+    f.write(g[0]+'<!--Python marker-->\n'+makefilters(pol, 'status', 'Status')+makefilters(pol, 'area', 'Policy area')+makefilters(pol, 'type', 'Legislation type'))
     f.write("""<input type="reset" id="datereset" value="Reset all" onclick="showall();">
         </form>
         </div>
@@ -117,8 +117,6 @@ def leg(pol):
     f.write('</div>\n</div>'+'<div id="footer">'+g[1].split('<div id="footer">')[1])
     f.close()
 def multiplepols(pols):
-    global w
-    w.destroy()
     for i in pols:
         leg(i)
     f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/js/member.js', 'r')

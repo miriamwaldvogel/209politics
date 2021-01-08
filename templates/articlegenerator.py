@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from tkinter import Tk, IntVar, Entry, Checkbutton, Button, Label
 from datetime import datetime
 import os, os.path
@@ -25,7 +26,6 @@ htmlname = Entry(w)
 pageid = Entry(w)
 n = datetime.now()
 d = [n.strftime("%Y"), n.strftime("%m"), n.strftime("%B"), n.strftime("%d"), "%s:%s %s"%(n.strftime("%-I"), n.strftime("%M"), n.strftime("%p").lower())]
-
 def mkdir(p):
     try:
         os.makedirs(p)
@@ -33,7 +33,6 @@ def mkdir(p):
         if exc.errno == errno.EEXIST and os.path.isdir(p):
             pass
         else: raise
-
 def article():
     mkdir(os.path.dirname('/home/miriamwaldvogel/209politics/%s/%s/%s/'%(d[0], d[1], d[3])))
     if newimg.get():
@@ -99,7 +98,6 @@ def article():
     f.close()
     global w
     w.destroy()
-
 Checkbutton(w, text="New image", variable=newimg).grid(row=0, column=0)
 Checkbutton(w, text="Old image", variable=oldimg).grid(row=0, column=1)
 Checkbutton(w, text="Article image", variable=artimg).grid(row=0, column=2)
