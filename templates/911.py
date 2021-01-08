@@ -1,4 +1,5 @@
 import csv
+from os import system
 f = open('/home/miriamwaldvogel/209politics/projects/crimemaps/data/stockton.csv', 'r')
 r = csv.reader(f)
 next(r)
@@ -8,7 +9,7 @@ types = {
 "Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest", "Carjacking"],
 "Homicide": ["Homicide"],
 "Theft/robbery": ["Robbery", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries"],
-"Residential robbery": ["Residential robbery"],
+"Residential": ["Residential robbery", "Home invasion"],
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
 "Arson": ["Arson"],
@@ -82,3 +83,4 @@ if allused:
     l = '<input type="reset"'
     f.write(l+g[1].split(l, 1)[1])
     f.close()
+    system('aws s3 sync /home/miriamwaldvogel/209politics/ s3://209politics.com --exclude "/home/miriamwaldvogel/209politics/.git/*" --exclude "/home/miriamwaldvogel/209politics/templates/*" --exclude "/home/miriamwaldvogel/209politics/opinion/*" --exclude "/home/miriamwaldvogel/209politics/projects/legislativetracker/*";')
