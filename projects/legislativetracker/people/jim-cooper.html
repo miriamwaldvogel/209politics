@@ -117,11 +117,11 @@
             <p class="filtertitle">Date Range</p>
             <div class="filterbox">
               <label for="startdate" class="filter">Start: </label>
-              <input type="date" id="startdate" class="dateselect" onchange="datefilter('start');" checked="true">
+              <input type="date" id="startdate" class="dateselect" onchange="datefilter('cooper', 'start');" checked="true">
             </div>
             <div class="filterbox">
               <label for="enddate" class="filter">End: </label>
-              <input type="date" id="enddate" class="dateselect" onchange="datefilter('end');" checked="true">
+              <input type="date" id="enddate" class="dateselect" onchange="datefilter('cooper', 'end');" checked="true">
             </div>
           </div>
           <div class="filters">
@@ -135,36 +135,47 @@
               <label for="cosponsor" class="filter">Cosponsor</label>
             </div>
           </div>
-          <div class="filters">
-            <p class="filtertitle">Status - legislation</p>
+
+
+<!--Python marker-->
+<div class="filters">
+<p class="filtertitle">Status</p>
 <div class="filterbox">
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('cooper', 'Introduced', 'status');" checked="true">
 <label for="Introduced" class="filter">Introduced</label>
 </div>
 </div>
-    <div class="filters">
-    <p class="filtertitle">Policy Area</p><div class="filterbox">
-    <input type="checkbox" id="Cannabis" class="checkbox" onchange="filter('cooper', 'Cannabis', 'area');" checked="true">
-    <label for="Cannabis" class="filter">Cannabis</label>
-    </div>
+<div class="filters">
+<p class="filtertitle">Policy area</p>
 <div class="filterbox">
-    <input type="checkbox" id="State-bodies" class="checkbox" onchange="filter('cooper', 'State bodies', 'area');" checked="true">
-    <label for="State-bodies" class="filter">State bodies</label>
-    </div>
-<div class="filterbox">
-    <input type="checkbox" id="Peace-officers" class="checkbox" onchange="filter('cooper', 'Peace officers', 'area');" checked="true">
-    <label for="Peace-officers" class="filter">Peace officers</label>
-    </div>
-<div class="filterbox">
-    <input type="checkbox" id="Bail" class="checkbox" onchange="filter('cooper', 'Bail', 'area');" checked="true">
-    <label for="Bail" class="filter">Bail</label>
-    </div>
-<div class="filterbox">
-    <input type="checkbox" id="Housing" class="checkbox" onchange="filter('cooper', 'Housing', 'area');" checked="true">
-    <label for="Housing" class="filter">Housing</label>
-    </div>
+<input type="checkbox" id="Cannabis" class="checkbox" onchange="filter('cooper', 'Cannabis', 'area');" checked="true">
+<label for="Cannabis" class="filter">Cannabis</label>
 </div>
-        <input type="reset" id="datereset" value="Reset all" onclick="showall();">
+<div class="filterbox">
+<input type="checkbox" id="Housing" class="checkbox" onchange="filter('cooper', 'Housing', 'area');" checked="true">
+<label for="Housing" class="filter">Housing</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Peace-officers" class="checkbox" onchange="filter('cooper', 'Peace officers', 'area');" checked="true">
+<label for="Peace-officers" class="filter">Peace officers</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Bail" class="checkbox" onchange="filter('cooper', 'Bail', 'area');" checked="true">
+<label for="Bail" class="filter">Bail</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="State-bodies" class="checkbox" onchange="filter('cooper', 'State bodies', 'area');" checked="true">
+<label for="State-bodies" class="filter">State bodies</label>
+</div>
+</div>
+<div class="filters">
+<p class="filtertitle">Legislation type</p>
+<div class="filterbox">
+<input type="checkbox" id="Bill" class="checkbox" onchange="filter('cooper', 'Bill', 'type');" checked="true">
+<label for="Bill" class="filter">Bill</label>
+</div>
+</div>
+<input type="reset" id="datereset" value="Reset all" onclick="showall();">
         </form>
         </div>
         </div>
