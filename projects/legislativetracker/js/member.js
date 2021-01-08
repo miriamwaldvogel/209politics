@@ -39,13 +39,23 @@ function filter(pol, check, category){
   var b = para[pol][category][check];
   var s = Date.parse(document.getElementById("startdate").value);
   var e = Date.parse(document.getElementById("enddate").value);
+  if (isNaN(s)){
+    s = Date.parse('12/01/2020');
+  }
+  if (isNaN(e)){
+    e = Date.now();
+  }
   if (a.checked){
     for (var i = 0; i < b.length; i++){
-      l[b[i]].classList.remove("hide");
+      if (s <= Date.parse(para[pol]['date'][i]) && Date.parse(para[pol]['date'][i]) <= e){
+        l[b[i]].classList.remove("hide");
+      }
     }
   } else{
     for (var i = 0; i < b.length; i++){
-      l[b[i]].classList.add("hide");
+      if (s <= Date.parse(para[pol]['date'][i]) && Date.parse(para[pol]['date'][i]) <= e){
+        l[b[i]].classList.add("hide");
+      }
     }
   }
 }
@@ -53,7 +63,6 @@ function datefilter(p, se){
   if (se === 'start'){
     var d = Date.parse(document.getElementById("startdate").value);
     for (var i = 0; i < l.length; i++){
-      document.getElementById("title").innerHTML += " yes";
       if (Date.parse(para[p]['date'][i]) < d){
         l[i].classList.add("hide");
       } else{
