@@ -9,37 +9,52 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2020-12-12T06:02:47+00:00</lastmod>
+  <lastmod>2021-01-06T05:00:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2020-12-12T06:02:50+00:00</lastmod>
+  <lastmod>2020-12-16T05:03:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections</loc>
-  <lastmod>2020-12-03T04:49:26+00:00</lastmod>
+  <lastmod>2020-12-14T21:33:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/covid-19</loc>
-  <lastmod>2020-12-05T04:41:40+00:00</lastmod>
+  <lastmod>2020-12-16T01:57:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2020-12-12T06:02:52+00:00</lastmod>
+  <lastmod>2020-12-16T05:03:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/interactives</loc>
-  <lastmod>2020-12-03T04:49:30+00:00</lastmod>
+  <lastmod>2021-01-05T22:53:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/crimemaps/stockton.html</loc>
+  <lastmod>2021-01-07T02:02:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/15/stockton-crime-climate-grants.html</loc>
+  <lastmod>2020-12-16T15:39:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/15/san-joaquin-first-pfizer-vaccine.html</loc>
+  <lastmod>2020-12-16T05:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/12/11/lincoln-mayoral-office-positions.html</loc>
-  <lastmod>2020-12-12T06:08:20+00:00</lastmod>
+  <lastmod>2020-12-15T15:49:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -63,16 +78,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/12/02/san-joaquin-coronavirus-dip.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/11/25/san-joaquin-remains-purple.html</loc>
-  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://209politics.com/2020/11/06/lincoln-campaign-tactics.html</loc>
   <lastmod>2020-12-07T17:52:28+00:00</lastmod>
   <priority>0.80</priority>
@@ -86,6 +91,16 @@
   <loc>https://209politics.com/contact</loc>
   <lastmod>2020-12-12T17:34:17+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/02/san-joaquin-coronavirus-dip.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/11/25/san-joaquin-remains-purple.html</loc>
+  <lastmod>2020-12-03T04:49:22+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/11/24/ripon-fire-more-stable-races.html</loc>
@@ -614,7 +629,7 @@
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2020-12-12T06:02:47+00:00</lastmod>
+  <lastmod>2021-01-06T05:00:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
