@@ -1,3 +1,15 @@
+@media only screen and (max-width: 900px){
+  .status{
+    font-size: 13px;
+    padding: 0px 2px 0px 2px;
+  }
+}
+@media only screen and (min-width: 900px){
+  .status{
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+  }
+}
 #title{
   font-family: "Rubik";
   font-size: 45px;
@@ -5,4 +17,42 @@
 }
 #legtext{
   font-family: "Libre Baskerville";
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+#firstleginfo{
+  font-family: "Libre Baskerville";
+  border-bottom: 4px groove #8091A6;
+}
+#leginfo a{
+  color: blue;
+}
+.action{
+  margin-bottom: 0px;
+}
+#statuscontainer{
+  margin-top: 0px;
+}
+.statusbox{
+  width: fit-content;
+  display: inline-block;
+}
+.statustitle{
+  width: fit-content;
+  display: inline-block;
+}
+.status{
+  width: fit-content;
+  display: inline-block;
+  border-right: 2px solid #000000;
+}
+.status:nth-child(2){
+  border-left: 2px solid #000000;
+}
+.current{
+  background-color: #20124d;
+  padding-right: 4px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 4px;
 }
