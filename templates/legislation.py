@@ -9,6 +9,28 @@ people = {'mcnerney': ['jerry-mcnerney', 'McNerney', 'congress'],
 'villapudua': ['carlos-villapudua', 'Villapudua', 'legislature'],
 'flora': ['heath-flora', 'Flora', 'legislature']
 }
+stateleg = {"Aguiar-Curry": ["D", "Winters", "Cecilia"],
+"Bloom": ["D", "Santa Monica", "Richard"],
+"Bonta": ["D", "Oakland", "Rob"],
+"Borgeas": ["R", "Fresno", "Andreas"],
+"Caballero": ["D", "Merced", "Anna"],
+"Cooper": ["D", "Elk Grove", "Jim"],
+"Cristina Garcia": ["D", "Bell Gardens", ""],
+"Eduardo Garcia": ["D", "Coachella", ""],
+"Eggman": ["D", "Stockton", "Susan Talamantes"],
+"Flora": ["R", "Manteca", "Heath"],
+"Low": ["D", "Silicon Valley", "Evan"],
+"Petrie-Norris": ["D", "Laguna Beach", "Cottie"],
+"Quirk": ["D", "Hayward", "Bill"],
+"Quirk-Silva": ["D", "Fullerton", "Sharon"],
+"Reyes": ["D", "San Bernardino", "Eloise"],
+"Robert Rivas": ["D", "Hollister", ""],
+"Santiago": ["D", "Los Angeles", "Miguel"],
+"Stone": ["D", "Monterey", "Mark"],
+"Weber": ["D", "San Diego", "Shirley"],
+"Villapudua": ["D", "Stockton", "Carlos"],
+"Wiener": ["D", "San Francisco", "Scott"],
+}
 def makefilters(p, a, n):
     s = """<div class="filters">
 <p class="filtertitle">%s</p>"""%n
