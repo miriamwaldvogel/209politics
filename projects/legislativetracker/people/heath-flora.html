@@ -141,6 +141,13 @@
 
           <!--Python marker-->
 <div class="filters">
+<p class="filtertitle">Legislation type</p>
+<div class="filterbox">
+<input type="checkbox" id="Bill" class="checkbox" onchange="filter('flora', 'Bill', 'type');" checked="true">
+<label for="Bill" class="filter">Bill</label>
+</div>
+</div>
+<div class="filters">
 <p class="filtertitle">Status</p>
 <div class="filterbox">
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('flora', 'Introduced', 'status');" checked="true">
@@ -152,13 +159,6 @@
 <div class="filterbox">
 <input type="checkbox" id="COVID-19" class="checkbox" onchange="filter('flora', 'COVID-19', 'area');" checked="true">
 <label for="COVID-19" class="filter">COVID-19</label>
-</div>
-</div>
-<div class="filters">
-<p class="filtertitle">Legislation type</p>
-<div class="filterbox">
-<input type="checkbox" id="Bill" class="checkbox" onchange="filter('flora', 'Bill', 'type');" checked="true">
-<label for="Bill" class="filter">Bill</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">

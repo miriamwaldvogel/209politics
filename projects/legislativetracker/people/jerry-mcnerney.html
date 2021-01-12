@@ -136,6 +136,17 @@
 
 <!--Python marker-->
 <div class="filters">
+<p class="filtertitle">Legislation type</p>
+<div class="filterbox">
+<input type="checkbox" id="Bill" class="checkbox" onchange="filter('mcnerney', 'Bill', 'type');" checked="true">
+<label for="Bill" class="filter">Bill</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Resolution" class="checkbox" onchange="filter('mcnerney', 'Resolution', 'type');" checked="true">
+<label for="Resolution" class="filter">Resolution</label>
+</div>
+</div>
+<div class="filters">
 <p class="filtertitle">Status</p>
 <div class="filterbox">
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('mcnerney', 'Introduced', 'status');" checked="true">
@@ -155,17 +166,6 @@
 <div class="filterbox">
 <input type="checkbox" id="Congress" class="checkbox" onchange="filter('mcnerney', 'Congress', 'area');" checked="true">
 <label for="Congress" class="filter">Congress</label>
-</div>
-</div>
-<div class="filters">
-<p class="filtertitle">Legislation type</p>
-<div class="filterbox">
-<input type="checkbox" id="Bill" class="checkbox" onchange="filter('mcnerney', 'Bill', 'type');" checked="true">
-<label for="Bill" class="filter">Bill</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Resolution" class="checkbox" onchange="filter('mcnerney', 'Resolution', 'type');" checked="true">
-<label for="Resolution" class="filter">Resolution</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">

@@ -131,6 +131,13 @@
 
 <!--Python marker-->
 <div class="filters">
+<p class="filtertitle">Legislation type</p>
+<div class="filterbox">
+<input type="checkbox" id="Resolution" class="checkbox" onchange="filter('harder', 'Resolution', 'type');" checked="true">
+<label for="Resolution" class="filter">Resolution</label>
+</div>
+</div>
+<div class="filters">
 <p class="filtertitle">Status</p>
 <div class="filterbox">
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('harder', 'Introduced', 'status');" checked="true">
@@ -140,15 +147,8 @@
 <div class="filters">
 <p class="filtertitle">Policy area</p>
 <div class="filterbox">
-<input type="checkbox" id="Congress" class="checkbox" onchange="filter('harder', 'Congress', 'area');" checked="true">
-<label for="Congress" class="filter">Congress</label>
-</div>
-</div>
-<div class="filters">
-<p class="filtertitle">Legislation type</p>
-<div class="filterbox">
-<input type="checkbox" id="Resolution" class="checkbox" onchange="filter('harder', 'Resolution', 'type');" checked="true">
-<label for="Resolution" class="filter">Resolution</label>
+<input type="checkbox" id="Government-operations-and-politics" class="checkbox" onchange="filter('harder', 'Government operations and politics', 'area');" checked="true">
+<label for="Government-operations-and-politics" class="filter">Government operations and politics</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
@@ -164,8 +164,8 @@
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hres-24.html?acq=josh-harder" class="leglink">Resolution - H.Res. 24</a></p>
             <p class="desc">Impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors</p>
-            <p class="are">Policy Area: Congress</p>
-            <p class="date">Introduced: 1/11/2021</p>
+            <p class="are">Policy Area: Government operations and politics</p>
+            <p class="date">Introduced: 1/11/21</p>
             <p class="sponsor">Sponsor: Rep. David Cicilline (D, RI-1) | <a href="https://www.congress.gov/bill/117th-congress/house-resolution/24/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
             <p class="com">Committees: Judiciary</p>
             <p class="action">Latest action: 1/11/21 - Referred to the House Judiciary Committee</p>
