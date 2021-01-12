@@ -18,6 +18,7 @@ types = {
 "Kidnapping": ["Kidnapping", "Kidnapping arrest"],
 "Mental health call": ["Mental health call"],
 "Other": ["Attempted murder arrest", "Attempted murder"],
+"Vandalism": ["Vandalism arrest", "Vandalism"]
 }
 reversetypes = {}
 for i in types:
