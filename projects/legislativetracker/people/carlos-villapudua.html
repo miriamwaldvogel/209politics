@@ -137,12 +137,24 @@
           <!--Python marker-->
 <div class="filters">
 <p class="filtertitle">Status</p>
+<div class="filterbox">
+<input type="checkbox" id="Introduced" class="checkbox" onchange="filter('villapudua', 'Introduced', 'status');" checked="true">
+<label for="Introduced" class="filter">Introduced</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Policy area</p>
+<div class="filterbox">
+<input type="checkbox" id="Taxation" class="checkbox" onchange="filter('villapudua', 'Taxation', 'area');" checked="true">
+<label for="Taxation" class="filter">Taxation</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Legislation type</p>
+<div class="filterbox">
+<input type="checkbox" id="Bill" class="checkbox" onchange="filter('villapudua', 'Bill', 'type');" checked="true">
+<label for="Bill" class="filter">Bill</label>
+</div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
         </form>
@@ -153,7 +165,20 @@
         </div>
         <div id="legcontainer">
         <p id="legtitle">Sponsored and cosponsored legislation</p>
-        <div id="legislation"></div>
+        <div id="legislation">
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ab-219.html?acq=carlos-villapudua" class="leglink">Bill - A.B. 219</a></p>
+            <p class="desc">To impose a sales tax holiday for back-to-school items</p>
+            <p class="are">Policy Area: Taxation</p>
+            <p class="date">Introduced: 1/11/2021</p>
+            <p class="sponsor">Sponsor: Asm. Carlos Villapudua (D-Stockton) | <a href="/projects/legislativetracker/legislature/ab-219.html" class="cosponsorlink"> view cosponsors</a></p>
+            <p class="com">Committees: Not assigned</p>
+            <p class="action">Latest action: 1/11/21 - Read for the first time and sent to print</p>
+            <div class="statuscontainer">
+                <p class="statustitle">Status: </p>
+                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
+            </div>
+        </div></div>
 </div><div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
