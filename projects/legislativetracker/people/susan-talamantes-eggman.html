@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../css/member.css">
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
-  <script type="text/javascript" src="../js/member.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   <script type="text/javascript" src="/js/header.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
@@ -140,86 +139,100 @@
             </div>
           </div>
 
-<!--Python marker-->
-<div class="filters">
-<p class="filtertitle">Status</p>
-<div class="filterbox">
-<input type="checkbox" id="Introduced" class="checkbox" onchange="filter('eggman', 'Introduced', 'status');" checked="true">
-<label for="Introduced" class="filter">Introduced</label>
-</div>
-</div>
-<div class="filters">
-<p class="filtertitle">Policy area</p>
-<div class="filterbox">
-<input type="checkbox" id="Communications" class="checkbox" onchange="filter('eggman', 'Communications', 'area');" checked="true">
-<label for="Communications" class="filter">Communications</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Housing" class="checkbox" onchange="filter('eggman', 'Housing', 'area');" checked="true">
-<label for="Housing" class="filter">Housing</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Drugs/alcohol" class="checkbox" onchange="filter('eggman', 'Drugs/alcohol', 'area');" checked="true">
-<label for="Drugs/alcohol" class="filter">Drugs/alcohol</label>
-</div>
-</div>
-<div class="filters">
-<p class="filtertitle">Legislation type</p>
-<div class="filterbox">
-<input type="checkbox" id="Bill" class="checkbox" onchange="filter('eggman', 'Bill', 'type');" checked="true">
-<label for="Bill" class="filter">Bill</label>
-</div>
-</div>
-<input type="reset" id="datereset" value="Reset all" onclick="showall();">
+          <!--Python marker-->
+          <div class="filters">
+            <p class="filtertitle">Status</p>
+            <div class="filterbox">
+              <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('eggman', 'Introduced', 'status');" checked="true">
+              <label for="Introduced" class="filter">Introduced</label>
+            </div>
+          </div>
+          <div class="filters">
+            <p class="filtertitle">Policy area</p>
+            <div class="filterbox">
+              <input type="checkbox" id="Communications" class="checkbox" onchange="filter('eggman', 'Communications', 'area');" checked="true">
+              <label for="Communications" class="filter">Communications</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="Housing" class="checkbox" onchange="filter('eggman', 'Housing', 'area');" checked="true">
+              <label for="Housing" class="filter">Housing</label>
+            </div>
+            <div class="filterbox">
+              <input type="checkbox" id="Drugs/alcohol" class="checkbox" onchange="filter('eggman', 'Drugs/alcohol', 'area');" checked="true">
+              <label for="Drugs/alcohol" class="filter">Drugs/alcohol</label>
+            </div>
+          </div>
+          <div class="filters">
+            <p class="filtertitle">Legislation type</p>
+            <div class="filterbox">
+              <input type="checkbox" id="Bill" class="checkbox" onchange="filter('eggman', 'Bill', 'type');" checked="true">
+              <label for="Bill" class="filter">Bill</label>
+            </div>
+          </div>
+          <input type="reset" id="datereset" value="Reset all" onclick="showall();">
         </form>
-        </div>
-        </div>
-        <div id="filterimgcontainer" onclick="filtershow();">
-        <img src="/images/filter.svg" alt="filter" id="filterimg">
-        </div>
-        <div id="legcontainer">
-        <p id="legtitle">Sponsored and cosponsored legislation</p>
-        <div id="legislation">
+      </div>
+    </div>
+    <div id="filterimgcontainer" onclick="filtershow();">
+      <img src="/images/filter.svg" alt="filter" id="filterimg">
+    </div>
+    <div id="legcontainer">
+      <p id="legtitle">Sponsored and cosponsored legislation</p>
+      <div id="legislation">
         <div class="leg show">
-            <p class="name"><a href="/projects/legislativetracker/legislature/ab-14.html?acq=susan-talamantes-eggman" class="leglink">Bill - AB 14</a></p>
-            <p class="desc">Internet for All Act of 2021</p>
-            <p class="are">Policy Area: Communications</p>
-            <p class="date">Introduced: 12/16/2020</p>
-            <p class="sponsor">Sponsor: Asm. Cecilia Aguiar-Curry (D - Davis) | <a href="/projects/legislativetracker/legislature/ab-14.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
-        <div class="leg show">
-            <p class="name"><a href="/projects/legislativetracker/legislature/sb-57.html?acq=susan-talamantes-eggman" class="leglink">Bill - SB 57</a></p>
-            <p class="desc">Would allow San Francisco, Oakland, and Los Angeles County to approve overdose prevention programs</p>
-            <p class="are">Policy Area: Drugs/alcohol</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Sen. Scott Wiener (D - San Francisco) | <a href="/projects/legislativetracker/legislature/sb-57.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
+          <p class="name"><a href="/projects/legislativetracker/legislature/ab-14.html?acq=susan-talamantes-eggman" class="leglink">Bill - AB 14</a></p>
+          <p class="desc">Internet for All Act of 2021</p>
+          <p class="are">Policy Area: Communications</p>
+          <p class="date">Introduced: 12/16/2020</p>
+          <p class="sponsor">Sponsor: Asm. Cecilia Aguiar-Curry (D - Davis) | <a href="/projects/legislativetracker/legislature/ab-14.html" class="cosponsorlink"> view cosponsors</a></p>
+          <p class="com">Committees: Not assigned</p>
+          <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
+          <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p>
+            <p class="status">Passed Assembly</p>
+            <p class="status">Passed Senate</p>
+            <p class="status">To Governor</p>
+            <p class="status">Became Law</p>
+          </div>
         </div>
         <div class="leg show">
-            <p class="name"><a href="/projects/legislativetracker/legislature/sb-6.html?acq=susan-talamantes-eggman" class="leglink">Bill - SB 6</a></p>
-            <p class="desc">Neighborhood Homes Act</p>
-            <p class="are">Policy Area: Housing</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Sen. Anna Caballero (D - Merced) | <a href="/projects/legislativetracker/legislature/sb-6.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div></div>
-</div><div id="footer">
+          <p class="name"><a href="/projects/legislativetracker/legislature/sb-57.html?acq=susan-talamantes-eggman" class="leglink">Bill - SB 57</a></p>
+          <p class="desc">Would allow San Francisco, Oakland, and Los Angeles County to approve overdose prevention programs</p>
+          <p class="are">Policy Area: Drugs/alcohol</p>
+          <p class="date">Introduced: 12/7/2020</p>
+          <p class="sponsor">Sponsor: Sen. Scott Wiener (D - San Francisco) | <a href="/projects/legislativetracker/legislature/sb-57.html" class="cosponsorlink"> view cosponsors</a></p>
+          <p class="com">Committees: Not assigned</p>
+          <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
+          <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p>
+            <p class="status">Passed Assembly</p>
+            <p class="status">Passed Senate</p>
+            <p class="status">To Governor</p>
+            <p class="status">Became Law</p>
+          </div>
+        </div>
+        <div class="leg show">
+          <p class="name"><a href="/projects/legislativetracker/legislature/sb-6.html?acq=susan-talamantes-eggman" class="leglink">Bill - SB 6</a></p>
+          <p class="desc">Neighborhood Homes Act</p>
+          <p class="are">Policy Area: Housing</p>
+          <p class="date">Introduced: 12/7/2020</p>
+          <p class="sponsor">Sponsor: Sen. Anna Caballero (D - Merced) | <a href="/projects/legislativetracker/legislature/sb-6.html" class="cosponsorlink"> view cosponsors</a></p>
+          <p class="com">Committees: Not assigned</p>
+          <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
+          <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p>
+            <p class="status">Passed Assembly</p>
+            <p class="status">Passed Senate</p>
+            <p class="status">To Governor</p>
+            <p class="status">Became Law</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
         <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
@@ -237,13 +250,8 @@
     </div>
     <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
     <script type="text/javascript" src="/js/shp.js"></script>
+    <script type="text/javascript" src="../js/member.js"></script>
     <script type="text/javascript">
-    if (window.innerWidth > 899){
-      var a = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50)+'px';
-      if (a > 250){
-        document.getElementById("map").style.height = a;
-      }
-    }
       var map = L.map('map').setView([37.880220, -121.259592], 8);
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
