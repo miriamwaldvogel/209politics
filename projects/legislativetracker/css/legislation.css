@@ -13,7 +13,22 @@
 #title{
   font-family: "Rubik";
   font-size: 45px;
+  margin-top: 10px;
   margin-bottom: 0px;
+}
+#backbutton{
+  border: 2px double #20124d;
+  border-radius: 5px;
+  font-family: "Libre Baskerville";
+  color: #000000;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#backbutton a{
+  color: #000000;
+  text-decoration: none;
 }
 #legtext{
   font-family: "Libre Baskerville";
@@ -27,8 +42,22 @@
 #firstleginfo a{
   color: blue;
 }
-.action{
+#togglesponsors{
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.actiontop{
   margin-bottom: 0px;
+}
+#sponsors{
+  overflow: hidden;
+  line-height: 1.4;
+}
+#sponsors p{
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 #statuscontainer{
   margin-top: 0px;
@@ -55,4 +84,18 @@
   color: #FFFFFF;
   font-weight: bold;
   border-radius: 4px;
+}
+#legdesc, #actions{
+  font-family: "Libre Baskerville";
+  line-height: 1.4;
+}
+.legdesc a{
+  color: blue;
+  text-decoration: none;
+}
+#actionstitle{
+  font-family: "Rubik";
+  font-size: 24px;
+  margin-bottom: 0px;
+  border-bottom: 3px double #BDBFC9;
 }

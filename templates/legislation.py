@@ -116,6 +116,7 @@ def leg(pol):
             a = '<a href="/projects/legislativetracker/%s/%s.html" class="cosponsorlink">' % (people[pol][2], i[0].replace('.', '', 2).lower().replace(' ', '-', 1))
         else:
             a = '<a href="%s" class="cosponsorlink" target="_blank">' % i[6]
+        billname = i[0].replace('.', '', 2).lower().replace(' ', '-', 1)
         p += """
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/%s/%s.html?acq=%s" class="leglink">%s - %s</a></p>
@@ -129,58 +130,12 @@ def leg(pol):
                 <p class="statustitle">Status: </p>
                 %s
             </div>
-        </div>""" % (people[pol][2], i[0].replace('.', '', 2).lower().replace(' ', '-', 1), people[pol][0], i[1], i[0], i[2], i[3], i[4], i[5], a, i[7], i[8], s)
-        if i[0] == "A.B. 109":
-            legfile = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/legislature/ab-109.csv", "r")
+        </div>""" % (people[pol][2], billname, people[pol][0], i[1], i[0], i[2], i[3], i[4], i[5], a, i[7], i[8], s)
+        if billname == "hr-40":
+            legfile = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s/%s.csv"%(people[pol][2], billname), "r")
             legr = csv.reader(legfile)
             legr.next()
-            involved = legr.next()
-            role = ["Principal coauthors: ", "Coauthors: "]
-            title = ["Asms. ", "Sens. "]
-            z = re.split(", | and |and ", involved[2])
-            allinvolved = ''
-            q = "<p>Introduced by "
-            if "Assembly" in z[0]:
-                if len(z) > 1:
-                    q += "Asms. "
-                else:
-                    q += "Asm. "
-                z[0] = z[0].split(" ", 2)[2]
-            else:
-                if len(z) > 1:
-                    q += "Sens. "
-                else:
-                    q += "Sen. "
-            for k in z:
-                if k != "":
-                    memberinfo = statelegs[0][k]
-                    q += "%s%s (%s-%s), "%(memberinfo[2], k, memberinfo[0], memberinfo[1])
-            q = q[:len(q)-2]
-            q += "</p>\n"
-            allinvolved += q
-            for m, k in enumerate(role):
-                    q = "<p>%s"%k
-                    for o in range(3, 5):
-                        if involved[2*m+o] != "":
-                            q += title[o-3]
-                            for l in re.split(", | and |and ", involved[2*m+o]):
-                                if l != "":
-                                    memberinfo = statelegs[o-3][l]
-                                    q += "%s%s (%s-%s), "%(memberinfo[2], l, memberinfo[0], memberinfo[1])
-                    q = q[:len(q)-2]
-                    q += "</p>\n"
-                    if len(q) > 27:
-                        allinvolved += q
-            actionlist = []
-            for k in legr:
-                actionlist.append('<p class="action">%s - %s</p>'%(k[0], k[1]))
-                lastdate = k[0]
-                lastaction = k[1]
-            actions = ''
-            for k in actionlist[::-1]:
-                actions += k
-            legfile.close()
-            g = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/legislature/ab-109.html", "w")
+            g = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/%s/%s.html"%(people[pol][2], billname), "w")
             g.write("""<!DOCTYPE html>
             <html lang="en" dir="ltr">
             <head>
@@ -267,6 +222,57 @@ def leg(pol):
                   <p class="are">Policy Area: %s</p>
                   <p class="date">Introduced: %s</p>
                   <div id="sponsors">
+                  """%(i[0], i[0], i[1], i[2], i[3], i[4]))
+            if pol != "mcnerney" and pol != "harder":
+                involved = legr.next()
+                role = ["Principal coauthors: ", "Coauthors: "]
+                title = ["Asms. ", "Sens. "]
+                z = re.split(", | and |and ", involved[2])
+                allinvolved = ''
+                q = "<p>Introduced by "
+                if "Assembly" in z[0]:
+                    if len(z) > 1:
+                        q += "Asms. "
+                    else:
+                        q += "Asm. "
+                    z[0] = z[0].split(" ", 2)[2]
+                else:
+                    if len(z) > 1:
+                        q += "Sens. "
+                    else:
+                        q += "Sen. "
+                for k in z:
+                    if k != "":
+                        memberinfo = statelegs[0][k]
+                        q += "%s%s (%s-%s), "%(memberinfo[2], k, memberinfo[0], memberinfo[1])
+                q = q[:len(q)-2]
+                q += "</p>\n"
+                allinvolved += q
+                for m, k in enumerate(role):
+                        q = "<p>%s"%k
+                        for o in range(3, 5):
+                            if involved[2*m+o] != "":
+                                q += title[o-3]
+                                for l in re.split(", | and |and ", involved[2*m+o]):
+                                    if l != "":
+                                        memberinfo = statelegs[o-3][l]
+                                        q += "%s%s (%s-%s), "%(memberinfo[2], l, memberinfo[0], memberinfo[1])
+                        q = q[:len(q)-2]
+                        q += "</p>\n"
+                        if len(q) > 27:
+                            allinvolved += q
+            else:
+                allinvolved = i[5]
+            actionlist = []
+            for k in legr:
+                actionlist.append('<p class="action">%s - %s</p>'%(k[0], k[1]))
+                lastdate = k[0]
+                lastaction = k[1]
+            actions = ''
+            for k in actionlist[::-1]:
+                actions += k
+            legfile.close()
+            g.write("""
                     %s
                   </div>
                   <p id="togglesponsors" onclick="sponsortoggle();"></p>
@@ -304,7 +310,7 @@ def leg(pol):
               </div>
               <script type="text/javascript" src="../js/leg.js"></script>
             </body>
-            </html>"""%(i[0], i[0], i[1], i[2], i[3], i[4], allinvolved, i[7], lastdate, lastaction, s, actions))
+            </html>"""%(allinvolved, i[7], lastdate, lastaction, s, actions))
             g.close()
     f.close()
     statusfilters = ''
