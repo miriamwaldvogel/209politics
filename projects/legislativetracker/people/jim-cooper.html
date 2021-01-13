@@ -175,6 +175,21 @@
 <label for="State-bodies" class="filter">State bodies</label>
 </div>
 </div>
+<div class="filters">
+<p class="filtertitle">Committees</p>
+<div class="filterbox">
+<input type="checkbox" id="Public-Safety" class="checkbox" onchange="filter('cooper', 'Public Safety', 'committees');" checked="true">
+<label for="Public-Safety" class="filter">Public Safety</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Governmental-Organization" class="checkbox" onchange="filter('cooper', 'Governmental Organization', 'committees');" checked="true">
+<label for="Governmental-Organization" class="filter">Governmental Organization</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Not-assigned" class="checkbox" onchange="filter('cooper', 'Not assigned', 'committees');" checked="true">
+<label for="Not-assigned" class="filter">Not assigned</label>
+</div>
+</div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
         </form>
         </div>
