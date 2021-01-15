@@ -237,10 +237,10 @@
   color: #000000;
   text-decoration: none;
 }
-.cosponsorlink{
+.sponsor a{
   color: blue;
 }
-.action{
+#action{
   margin-bottom: 0px;
 }
 .statusbox{

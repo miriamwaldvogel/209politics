@@ -85,6 +85,9 @@
   font-weight: bold;
   border-radius: 4px;
 }
+#fulllinkcontainer{
+  margin-bottom: 10px;
+}
 #legdesc, #actions{
   font-family: "Libre Baskerville";
   line-height: 1.4;
@@ -98,4 +101,11 @@
   font-size: 24px;
   margin-bottom: 0px;
   border-bottom: 3px double #BDBFC9;
+}
+#actions a{
+  color: blue;
+  text-decoration: none;
+}
+#action{
+  margin-bottom: 0px;
 }
