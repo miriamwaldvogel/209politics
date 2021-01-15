@@ -1,4 +1,4 @@
-var para = {'harder': {'status': {'Passed House': [0]}, 'committees': {'Judiciary': [0]}, 'area': {'Congress': [0]}, 'role': {'sponsor': [], 'cosponsor': [0]}, 'date': ['1/11/21'], 'type': {'Resolution': [0]}}};
+var para = {'flora': {'status': {'Introduced': [0]}, 'committees': {'Not assigned': [0]}, 'area': {'COVID-19': [0]}, 'role': {'sponsor': [], 'cosponsor': [0]}, 'date': ['12/10/20'], 'type': {'Bill': [0]}}};
 window.onscroll = function(){
   if (window.innerWidth <= 700){
     if (window.pageYOffset > 10){
