@@ -314,18 +314,6 @@ def leg(pol):
             </html>"""%(allinvolved, i[7], lastdate, lastaction, s, actions))
             g.close()
     f.close()
-    statusfilters = ''
-    for i in filter[pol]['status']:
-        statusfilters += """<div class="filterbox">
-<input type="checkbox" id="%s" class="checkbox" onchange="filter('%s', '%s', 'status');" checked="true">
-<label for="%s" class="filter">%s</label>
-</div>\n"""%(i.replace(" ", "-"), pol, i, i.replace(" ", "-"), i)
-    areafilters = ''
-    for i in filter[pol]['area']:
-        areafilters += """<div class="filterbox">
-    <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s', '%s', 'area');" checked="true">
-    <label for="%s" class="filter">%s</label>
-    </div>\n""" % (i.replace(" ", "-"), pol, i, i.replace(" ", "-"), i)
     f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/people/%s.html' % people[pol][0], 'r')
     g = f.read().split('<!--Python marker-->', 1)
     f.close()
