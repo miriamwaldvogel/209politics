@@ -199,9 +199,10 @@ def legislation(pol):
         desc = ""
         legr.next()
         for k in legr:
-            actionlist.append('<p class="action">%s - %s</p>'%(k[0], k[1]))
-            lastdate = k[0]
-            lastaction = k[1]
+            if k[0] != "":
+                actionlist.append('<p class="action">%s - %s</p>'%(k[0], k[1]))
+                lastdate = k[0]
+                lastaction = k[1]
             if k[2] != "":
                 desc += '<p class="legdesc">%s</p>'%k[2]
         actions = ''

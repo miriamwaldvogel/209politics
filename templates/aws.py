@@ -19,6 +19,8 @@ def aws():
         if j == 1:
             s+='aws s3 cp /home/miriamwaldvogel/209politics/%s1.html s3://209politics.com/%s;' % (a[i], a[i])
     system(s)
+def enter(e):
+    aws()
 Checkbutton(w, text="Contact", variable=contact).pack()
 Checkbutton(w, text="COVID", variable=covid).pack()
 Checkbutton(w, text="Elections", variable=elections).pack()
@@ -28,4 +30,5 @@ Checkbutton(w, text="Latest", variable=latest).pack()
 Checkbutton(w, text="Opinion", variable=opinion).pack()
 Checkbutton(w, text="Policy", variable=policy).pack()
 Button(w, text="Submit", command=aws).pack()
+w.bind("<Return>", enter)
 w.mainloop()
