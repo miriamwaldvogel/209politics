@@ -111,13 +111,38 @@ function showall(){
   relayer();
 }
 function unselectall(){
-  for (var i = 0; i < markers.length; i++){
-    markers[i].properties.appear = 0;
-  }
-  relayer();
-  var f = document.getElementsByClassName("checkbox");
-  for (var i = 0; i < f.length; i++){
-    f[i].checked = false;
+  var a = document.getElementById("unselect");
+  if (a.innerHTML === "Unselect all"){
+    for (var i = 0; i < markers.length; i++){
+      markers[i].properties.appear = 0;
+    }
+    relayer();
+    var f = document.getElementsByClassName("checkbox");
+    for (var i = 0; i < f.length; i++){
+      f[i].checked = false;
+    }
+    a.innerHTML = "Select all";
+  } else{
+    var s = Date.parse(document.getElementById("startdate").value);
+    var e = Date.parse(document.getElementById("enddate").value);
+    if (isNaN(e)){
+      e = Date.now();
+    }
+    if (isNaN(s)){
+      s = Date.parse('12/1/2020');
+    }
+    for (var i = 0; i < markers.length; i++) {
+      markerdate = Date.parse(markers[i].properties.date);
+      if (s <= markerdate && markerdate <= e) {
+        markers[i].properties.appear = 1;
+      }
+    }
+    relayer();
+    var f = document.getElementsByClassName("checkbox");
+    for (var i = 0; i < f.length; i++){
+      f[i].checked = true;
+    }
+    a.innerHTML = "Unselect all";
   }
 }
 function filtertoggle(){
