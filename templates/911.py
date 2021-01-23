@@ -12,7 +12,7 @@ types = {
 "Residential": ["Residential robbery", "Home invasion"],
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
-"Arson": ["Arson"],
+"Arson": ["Arson", "Arson arrest"],
 "Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle", "Shooting into a building"],
 "Officer shooting": ["Officer shooting"],
 "Kidnapping": ["Kidnapping", "Kidnapping arrest"],
