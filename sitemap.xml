@@ -9,12 +9,12 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2021-01-06T05:00:44+00:00</lastmod>
+  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2020-12-16T05:03:23+00:00</lastmod>
+  <lastmod>2021-01-25T18:30:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -24,22 +24,42 @@
 </url>
 <url>
   <loc>https://209politics.com/covid-19</loc>
-  <lastmod>2020-12-16T01:57:13+00:00</lastmod>
+  <lastmod>2021-01-25T18:30:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2020-12-16T05:03:25+00:00</lastmod>
+  <lastmod>2021-01-08T21:50:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/interactives</loc>
-  <lastmod>2021-01-05T22:53:47+00:00</lastmod>
+  <lastmod>2021-01-09T16:21:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/25/stay-at-home-order-lift.html</loc>
+  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/16/covid-vaccine-general-public.html</loc>
+  <lastmod>2021-01-17T21:03:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/08/harder-trump-removal.html</loc>
+  <lastmod>2021-01-08T22:07:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/07/mcnerney-trump-impeachment.html</loc>
+  <lastmod>2021-01-08T04:51:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/crimemaps/stockton.html</loc>
-  <lastmod>2021-01-07T02:02:14+00:00</lastmod>
+  <lastmod>2021-01-25T16:32:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -50,31 +70,6 @@
 <url>
   <loc>https://209politics.com/2020/12/15/san-joaquin-first-pfizer-vaccine.html</loc>
   <lastmod>2020-12-16T05:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/11/lincoln-mayoral-office-positions.html</loc>
-  <lastmod>2020-12-15T15:49:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/09/sj-bos-ethics-allegations.html</loc>
-  <lastmod>2020-12-10T03:57:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/08/san-joaquin-hhap-funding.html</loc>
-  <lastmod>2020-12-12T06:02:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/04/icu-stay-at-home.html</loc>
-  <lastmod>2020-12-08T16:48:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/03/harder-agent-orange-bill.html</loc>
-  <lastmod>2020-12-04T03:50:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -91,6 +86,31 @@
   <loc>https://209politics.com/contact</loc>
   <lastmod>2020-12-12T17:34:17+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/11/lincoln-mayoral-office-positions.html</loc>
+  <lastmod>2020-12-15T15:49:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/09/sj-bos-ethics-allegations.html</loc>
+  <lastmod>2020-12-10T03:57:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/08/san-joaquin-hhap-funding.html</loc>
+  <lastmod>2020-12-12T06:02:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/04/icu-stay-at-home.html</loc>
+  <lastmod>2020-12-08T16:48:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/03/harder-agent-orange-bill.html</loc>
+  <lastmod>2020-12-04T03:50:04+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/12/02/san-joaquin-coronavirus-dip.html</loc>
@@ -623,14 +643,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
-  <lastmod>2020-12-08T16:48:24+00:00</lastmod>
+  <loc>https://209politics.com/index.html</loc>
+  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://209politics.com/index.html</loc>
-  <lastmod>2021-01-06T05:00:44+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://209politics.com/2020/11/04/harder-mcnerney-win.html</loc>
+  <lastmod>2020-12-08T16:48:24+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://209politics.com/projects/2020election/results/house.html</loc>
