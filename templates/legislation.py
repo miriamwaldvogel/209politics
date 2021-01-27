@@ -123,6 +123,7 @@ statelegs = [{"Aguiar-Curry": ["D", "Winters", "Cecilia "],
 "Wiener": ["D", "San Francisco", "Scott "],
 "Wilk":["R", "Lancaster", "Scott "],
 }]
+statelegs[0]["""O\xe2\x80\x99Donnell"""] = statelegs[0]["O'Donnell"]
 people = {'mcnerney': ['jerry-mcnerney', 'McNerney', 'congress'],
 'harder': ['josh-harder', 'Harder', 'congress'],
 'eggman': ['susan-talamantes-eggman', 'Eggman', 'legislature'],
@@ -141,7 +142,7 @@ def filteradd(p, k, a, j):
 def makefilters(p, a, n):
     s = """<div class="filters">
 <p class="filtertitle">%s</p>"""%n
-    for i in filter[p][a]:
+    for i in sorted(filter[p][a]):
         s += """\n<div class="filterbox">
 <input type="checkbox" id="%s" class="checkbox" onchange="filter('%s', '%s', '%s');" checked="true">
 <label for="%s" class="filter">%s</label>
@@ -160,7 +161,7 @@ def legislation(pol):
     legblocks = ""
     for j, i in enumerate(r):
         legname = i[0].replace('.', '').lower().replace(' ', '-')
-        legf = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s/%s.csv"%(people[pol][2], legname))
+        legf = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s/%s.csv"%(people[pol][2], legname), "r")
         legr = reader(legf)
         header = legr.next()
         leginfo = legr.next()
@@ -230,7 +231,7 @@ def legislation(pol):
                     break
                 if k+statusstart == legstatus:
                     status+=('<p class="status current">%s</p>'%l)
-                elif k % 2 == 0 and k != 2 and k != 6:
+                elif k % 2 == 0 and k != 2 and k != 6 and k != 12:
                     status+=('<p class="status">%s</p>'%l)
         else:
             for k, l in enumerate(header[statusstart:]):
@@ -240,7 +241,7 @@ def legislation(pol):
                     status+=('<p class="status current">%s</p>'%l)
                     if k != 9:
                         break
-                elif k % 2 == 0 and k != 2 and k != 6:
+                elif k % 2 == 0 and k != 2 and k != 6 and k != 12:
                     status+=('<p class="status">%s</p>'%l)
         legdesc = ["""<p class="area">Policy Area: %s</p>
         <p class="date">Introduced: %s</p>
@@ -254,12 +255,12 @@ def legislation(pol):
         legblocks += """
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/%s/%s.html?acq=%s" class="leglink">%s - %s</a></p>
-        """ %(people[pol][2], legname, people[pol][0], i[1], i[0])
+        """ %(people[pol][2], legname, people[pol][0], leginfo[1], leginfo[0])
         if pol == "harder" or pol == "mcnerney":
-            legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="%s">view cosponsors</a></p>'%(leginfo[5], leginfo[6]))+legdesc[1]+"</div>"
+            legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="%s">view cosponsors</a></p></div>'%(leginfo[5], leginfo[6]))+legdesc[1]+"</div>"
             legdesc[0] += '<p id="sponsors">Sponsor: %s | <a target="_blank" href="%s">view cosponsors</a></p>'%(leginfo[5], leginfo[6])
         else:
-            legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="/projects/legislativetracker/%s/%s.html">view cosponsors</a></p>'%(leginfo[5], people[pol][2], legname))+legdesc[1]+"</div>"
+            legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="/projects/legislativetracker/%s/%s.html?acq=%s">view cosponsors</a></p>'%(leginfo[5], people[pol][2], legname, people[pol][0]))+legdesc[1]+"</div></div>"
             legdesc[0] += collabhtml+'</div><p id="togglesponsors" onclick="sponsortoggle();"></p>'
         leghtml = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/%s/%s.html"%(people[pol][2], legname), "w")
         leghtml.write("""<!DOCTYPE html>
@@ -399,7 +400,8 @@ def legislation(pol):
     f.write('</div>\n</div>'+'<div id="footer">'+g[1].split('<div id="footer">')[1])
     f.close()
 
-legislation('flora')
+for i in people:
+    legislation(i)
 f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/js/member.js', 'r')
 g = f.read()
 f.close()

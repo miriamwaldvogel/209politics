@@ -143,6 +143,10 @@
 <div class="filters">
 <p class="filtertitle">Legislation type</p>
 <div class="filterbox">
+<input type="checkbox" id="Assembly-joint-resolution" class="checkbox" onchange="filter('eggman', 'Assembly joint resolution', 'type');" checked="true">
+<label for="Assembly-joint-resolution" class="filter">Assembly joint resolution</label>
+</div>
+<div class="filterbox">
 <input type="checkbox" id="Bill" class="checkbox" onchange="filter('eggman', 'Bill', 'type');" checked="true">
 <label for="Bill" class="filter">Bill</label>
 </div>
@@ -161,27 +165,35 @@
 <label for="Communications" class="filter">Communications</label>
 </div>
 <div class="filterbox">
+<input type="checkbox" id="Drugs/alcohol" class="checkbox" onchange="filter('eggman', 'Drugs/alcohol', 'area');" checked="true">
+<label for="Drugs/alcohol" class="filter">Drugs/alcohol</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Foreign-policy" class="checkbox" onchange="filter('eggman', 'Foreign policy', 'area');" checked="true">
+<label for="Foreign-policy" class="filter">Foreign policy</label>
+</div>
+<div class="filterbox">
 <input type="checkbox" id="Housing" class="checkbox" onchange="filter('eggman', 'Housing', 'area');" checked="true">
 <label for="Housing" class="filter">Housing</label>
 </div>
 <div class="filterbox">
-<input type="checkbox" id="Drugs/alcohol" class="checkbox" onchange="filter('eggman', 'Drugs/alcohol', 'area');" checked="true">
-<label for="Drugs/alcohol" class="filter">Drugs/alcohol</label>
+<input type="checkbox" id="Taxation" class="checkbox" onchange="filter('eggman', 'Taxation', 'area');" checked="true">
+<label for="Taxation" class="filter">Taxation</label>
 </div>
 </div>
 <div class="filters">
 <p class="filtertitle">Committees</p>
 <div class="filterbox">
-<input type="checkbox" id="Communications-and-Conveyance" class="checkbox" onchange="filter('eggman', 'Communications and Conveyance', 'committees');" checked="true">
-<label for="Communications-and-Conveyance" class="filter">Communications and Conveyance</label>
+<input type="checkbox" id="Communications-and-conveyance" class="checkbox" onchange="filter('eggman', 'Communications and conveyance', 'committees');" checked="true">
+<label for="Communications-and-conveyance" class="filter">Communications and conveyance</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Local-government" class="checkbox" onchange="filter('eggman', 'Local government', 'committees');" checked="true">
+<label for="Local-government" class="filter">Local government</label>
 </div>
 <div class="filterbox">
 <input type="checkbox" id="Not-assigned" class="checkbox" onchange="filter('eggman', 'Not assigned', 'committees');" checked="true">
 <label for="Not-assigned" class="filter">Not assigned</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Local-Government" class="checkbox" onchange="filter('eggman', 'Local Government', 'committees');" checked="true">
-<label for="Local-Government" class="filter">Local Government</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
@@ -196,43 +208,54 @@
         <div id="legislation">
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/ab-14.html?acq=susan-talamantes-eggman" class="leglink">Bill - A.B. 14</a></p>
-            <p class="desc">Internet for All Act of 2021</p>
-            <p class="are">Policy Area: Communications</p>
-            <p class="date">Introduced: 12/16/2020</p>
-            <p class="sponsor">Sponsor: Asm. Cecilia Aguiar-Curry (D-Winters) | <a href="/projects/legislativetracker/legislature/ab-14.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Communications and Conveyance/Local Government</p>
-            <p class="action">Latest action: 1/11/21 - Referred to two Assembly committees</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Communications</p>
+        <p class="date">Introduced: 12/16/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Cecilia Aguiar-Curry (D-Winters) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-14.html?acq=susan-talamantes-eggman">view cosponsors</a></p><p class="com">Committees: Communications and conveyance/Local government</p>
+        <p id="action">Latest action: 1/11/21 - Referred to two Assembly committees</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/sb-57.html?acq=susan-talamantes-eggman" class="leglink">Bill - S.B. 57</a></p>
-            <p class="desc">Would allow San Francisco, Oakland, and Los Angeles County to approve overdose prevention programs</p>
-            <p class="are">Policy Area: Drugs/alcohol</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Sen. Scott Wiener (D-San Francisco) | <a href="/projects/legislativetracker/legislature/sb-57.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Drugs/alcohol</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Scott Wiener (D-San Francisco) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-57.html?acq=susan-talamantes-eggman">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 12/8/20 - Received from printer. May be acted upon on or after January 7</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p>
+        </div></div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/sb-6.html?acq=susan-talamantes-eggman" class="leglink">Bill - S.B. 6</a></p>
-            <p class="desc">Neighborhood Homes Act</p>
-            <p class="are">Policy Area: Housing</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Sen. Anna Caballero (D-Merced) | <a href="/projects/legislativetracker/legislature/sb-6.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div></div>
+        <p class="area">Policy Area: Housing</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Anna Caballero (D-Merced) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-6.html?acq=susan-talamantes-eggman">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 12/8/20 - Received from printer. May be acted upon on or after January 7</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ajr-4.html?acq=susan-talamantes-eggman" class="leglink">Assembly joint resolution - AJR-4</a></p>
+        <p class="area">Policy Area: Foreign policy</p>
+        <p class="date">Introduced: 1/12/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Cristina Garcia (D-Bell Gardens) | <a target="_blank" href="/projects/legislativetracker/legislature/ajr-4.html?acq=susan-talamantes-eggman">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/13/21 - Received from printer.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/sb-240.html?acq=susan-talamantes-eggman" class="leglink">Bill - S.B 240</a></p>
+        <p class="area">Policy Area: Taxation</p>
+        <p class="date">Introduced: 1/21/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Susan Eggman (D-Stockton) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-240.html?acq=susan-talamantes-eggman">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/21/21 - Introduced and read for the first time. Sent to the Rules Committee for assignment and sent to print.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p><p class="status">Became Law</p>
+        </div></div></div></div>
 </div><div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •

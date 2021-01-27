@@ -132,9 +132,7 @@
               <label for="cosponsor" class="filter">Cosponsor</label>
             </div>
           </div>
-
-
-<!--Python marker-->
+          <!--Python marker-->
 <div class="filters">
 <p class="filtertitle">Legislation type</p>
 <div class="filterbox">
@@ -152,9 +150,25 @@
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('mcnerney', 'Introduced', 'status');" checked="true">
 <label for="Introduced" class="filter">Introduced</label>
 </div>
+<div class="filterbox">
+<input type="checkbox" id="Passed-House" class="checkbox" onchange="filter('mcnerney', 'Passed House', 'status');" checked="true">
+<label for="Passed-House" class="filter">Passed House</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Policy area</p>
+<div class="filterbox">
+<input type="checkbox" id="Civil-rights-and-liberties" class="checkbox" onchange="filter('mcnerney', 'Civil rights and liberties', 'area');" checked="true">
+<label for="Civil-rights-and-liberties" class="filter">Civil rights and liberties</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Congress" class="checkbox" onchange="filter('mcnerney', 'Congress', 'area');" checked="true">
+<label for="Congress" class="filter">Congress</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Crime-and-Law-Enforcement" class="checkbox" onchange="filter('mcnerney', 'Crime and Law Enforcement', 'area');" checked="true">
+<label for="Crime-and-Law-Enforcement" class="filter">Crime and Law Enforcement</label>
+</div>
 <div class="filterbox">
 <input type="checkbox" id="Government-operations-and-politics" class="checkbox" onchange="filter('mcnerney', 'Government operations and politics', 'area');" checked="true">
 <label for="Government-operations-and-politics" class="filter">Government operations and politics</label>
@@ -163,40 +177,60 @@
 <input type="checkbox" id="Not-assigned" class="checkbox" onchange="filter('mcnerney', 'Not assigned', 'area');" checked="true">
 <label for="Not-assigned" class="filter">Not assigned</label>
 </div>
-<div class="filterbox">
-<input type="checkbox" id="Congress" class="checkbox" onchange="filter('mcnerney', 'Congress', 'area');" checked="true">
-<label for="Congress" class="filter">Congress</label>
-</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Committees</p>
 <div class="filterbox">
-<input type="checkbox" id="Natural-Resources" class="checkbox" onchange="filter('mcnerney', 'Natural Resources', 'committees');" checked="true">
-<label for="Natural-Resources" class="filter">Natural Resources</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Rules" class="checkbox" onchange="filter('mcnerney', 'Rules', 'committees');" checked="true">
-<label for="Rules" class="filter">Rules</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="House-Administration" class="checkbox" onchange="filter('mcnerney', 'House Administration', 'committees');" checked="true">
-<label for="House-Administration" class="filter">House Administration</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Oversight-and-Reform" class="checkbox" onchange="filter('mcnerney', 'Oversight and Reform', 'committees');" checked="true">
-<label for="Oversight-and-Reform" class="filter">Oversight and Reform</label>
-</div>
-<div class="filterbox">
-<input type="checkbox" id="Judiciary" class="checkbox" onchange="filter('mcnerney', 'Judiciary', 'committees');" checked="true">
-<label for="Judiciary" class="filter">Judiciary</label>
+<input type="checkbox" id="Armed-Services" class="checkbox" onchange="filter('mcnerney', 'Armed Services', 'committees');" checked="true">
+<label for="Armed-Services" class="filter">Armed Services</label>
 </div>
 <div class="filterbox">
 <input type="checkbox" id="Energy-and-Commerce" class="checkbox" onchange="filter('mcnerney', 'Energy and Commerce', 'committees');" checked="true">
 <label for="Energy-and-Commerce" class="filter">Energy and Commerce</label>
 </div>
 <div class="filterbox">
-<input type="checkbox" id="Armed-Services" class="checkbox" onchange="filter('mcnerney', 'Armed Services', 'committees');" checked="true">
-<label for="Armed-Services" class="filter">Armed Services</label>
+<input type="checkbox" id="Ethics" class="checkbox" onchange="filter('mcnerney', 'Ethics', 'committees');" checked="true">
+<label for="Ethics" class="filter">Ethics</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Financial-Services" class="checkbox" onchange="filter('mcnerney', 'Financial Services', 'committees');" checked="true">
+<label for="Financial-Services" class="filter">Financial Services</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Foreign-Affairs" class="checkbox" onchange="filter('mcnerney', 'Foreign Affairs', 'committees');" checked="true">
+<label for="Foreign-Affairs" class="filter">Foreign Affairs</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="House-Administration" class="checkbox" onchange="filter('mcnerney', 'House Administration', 'committees');" checked="true">
+<label for="House-Administration" class="filter">House Administration</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Judiciary" class="checkbox" onchange="filter('mcnerney', 'Judiciary', 'committees');" checked="true">
+<label for="Judiciary" class="filter">Judiciary</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Natural-Resources" class="checkbox" onchange="filter('mcnerney', 'Natural Resources', 'committees');" checked="true">
+<label for="Natural-Resources" class="filter">Natural Resources</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Oversight-and-Reform" class="checkbox" onchange="filter('mcnerney', 'Oversight and Reform', 'committees');" checked="true">
+<label for="Oversight-and-Reform" class="filter">Oversight and Reform</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Rules" class="checkbox" onchange="filter('mcnerney', 'Rules', 'committees');" checked="true">
+<label for="Rules" class="filter">Rules</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Science,-Space,-and-Technology" class="checkbox" onchange="filter('mcnerney', 'Science, Space, and Technology', 'committees');" checked="true">
+<label for="Science,-Space,-and-Technology" class="filter">Science, Space, and Technology</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Transportation-and-Infrastructure" class="checkbox" onchange="filter('mcnerney', 'Transportation and Infrastructure', 'committees');" checked="true">
+<label for="Transportation-and-Infrastructure" class="filter">Transportation and Infrastructure</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Ways-and-Means" class="checkbox" onchange="filter('mcnerney', 'Ways and Means', 'committees');" checked="true">
+<label for="Ways-and-Means" class="filter">Ways and Means</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
@@ -211,119 +245,231 @@
         <div id="legislation">
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hr-40.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 40</a></p>
-            <p class="desc">To address the fundamental injustice, cruelty, brutality, and inhumanity of slavery in the United States and the 13 American colonies between 1619 and 1865 and to establish a commission to study and consider a national apology and proposal for reparations for the institution of slavery, its subsequent de jure and de facto racial and economic discrimination against African Americans, and the impact of these forces on living African Americans, to make recommendations to the Congress on appropriate remedies, and for other purposes.</p>
-            <p class="are">Policy Area: Not assigned</p>
-            <p class="date">Introduced: 1/4/21</p>
-            <p class="sponsor">Sponsor: Rep. Sheila Jackson Lee (D, TX-18) | <a href="https://www.congress.gov/bill/117th-congress/house-bill/40/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
-            <p class="com">Committees: Judiciary</p>
-            <p class="action">Latest action: 1/4/21 - Referred to the House Judiciary Committee</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Civil rights and liberties</p>
+        <p class="date">Introduced: 1/4/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Sheila Jackson Lee (D, TX-18) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/40/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Judiciary</p>
+        <p id="action">Latest action: 1/4/21 - Referred to the House Judiciary Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hr-51.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 51</a></p>
-            <p class="desc">To provide for the admission of the State of Washington, D.C. into the Union.</p>
-            <p class="are">Policy Area: Not assigned</p>
-            <p class="date">Introduced: 1/4/21</p>
-            <p class="sponsor">Sponsor: Rep. Eleanor Holmes Norton (  | <a href="https://www.congress.gov/bill/117th-congress/house-bill/51/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
-            <p class="com">Committees: Oversight and Reform/Rules/Armed Services/Judiciary/Energy and Commerce</p>
-            <p class="action">Latest action: 1/4/21 - Referred to six House committees</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Government operations and politics</p>
+        <p class="date">Introduced: 1/4/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Eleanor Holmes Norton (D, DC-at large) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/51/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Oversight and Reform/Rules/Armed Services/Judiciary/Energy and Commerce</p>
+        <p id="action">Latest action: 1/4/21 - Referred to the House Judiciary Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hres-14.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 14</a></p>
-            <p class="desc">Censuring and condemning President Donald J. Trump for attempting to overturn the results of the November 2020 presidential election in the State of Georgia.</p>
-            <p class="are">Policy Area: Government operations and politics</p>
-            <p class="date">Introduced: 1/4/21</p>
-            <p class="sponsor">Sponsor: Rep. Henry C. Johnson (D, GA-4) | <a href="https://www.congress.gov/bill/117th-congress/house-resolution/14/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
-            <p class="com">Committees: Judiciary/House Administration</p>
-            <p class="action">Latest action: 1/4/21 - Referred to two House committees</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed House</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Government operations and politics</p>
+        <p class="date">Introduced: 1/4/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Henry C. Johnson (D, GA-4) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/14/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Judiciary/House Administration</p>
+        <p id="action">Latest action: 1/4/21 - Referred to two House committees</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hres-24.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 24</a></p>
-            <p class="desc">Impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors</p>
-            <p class="are">Policy Area: Government operations and politics</p>
-            <p class="date">Introduced: 1/11/21</p>
-            <p class="sponsor">Sponsor: Rep. David Cicilline (D, RI-1) | <a href="https://www.congress.gov/bill/117th-congress/house-resolution/24/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
-            <p class="com">Committees: Judiciary</p>
-            <p class="action">Latest action: 1/11/21 - Referred to the House Judiciary Committee</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed House</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Congress</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. David Cicilline (D, RI-1) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/24/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Judiciary</p>
+        <p id="action">Latest action: 1/13/21 at 4:36 pm - Passed in the House 232-197.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed House</p>
+        </div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hr-263.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 263</a></p>
-            <p class="desc">To amend the Lacey Act Amendments of 1981 to clarify provisions enacted by the Captive Wildlife Safety Act, to further the conservation of certain wildlife species, and for other purposes.</p>
-            <p class="are">Policy Area: Not assigned</p>
-            <p class="date">Introduced: 1/11/21</p>
-            <p class="sponsor">Sponsor: Rep. Mike Quigley (D, IL-5) | <a href="https://www.congress.gov/bill/117th-congress/house-bill/263/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
-            <p class="com">Committees: Natural Resources</p>
-            <p class="action">Latest action: 1/11/21 - Referred to the House Natural Resources Committees</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Mike Quigley (D, IL-5) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/263/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Natural Resources</p>
+        <p id="action">Latest action: 1/11/21 - Referred to the House Natural Resources Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/congress/hres-25.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 25</a></p>
-            <p class="desc">Directing the Committee on Ethics to investigate, and issue a report on, whether any and all actions taken by Members of the 117th Congress who sought to overturn the 2020 Presidential election violated their oath of office to uphold the Constitution or the Rules of the House of Representatives, and should face sanction, including removal from the House of Representatives.</p>
-            <p class="are">Policy Area: Congress</p>
-            <p class="date">Introduced: 1/11/21</p>
-            <p class="sponsor">Sponsor: Rep. Cori Bush (D, MO-1) | <a href="https://www.congress.gov/bill/117th-congress/house-resolution/25/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded" class="cosponsorlink" target="_blank"> view cosponsors</a></p>
-            <p class="com">Committees: Judiciary/Rules</p>
-            <p class="action">Latest action: 1/11/21 - Referred to two House committees</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed House</p>
-            </div>
+        <p class="area">Policy Area: Congress</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Cori Bush (D, MO-1) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/25/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Judiciary/Rules</p>
+        <p id="action">Latest action: 1/11/21 - Referred to two House committees</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
         </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hres-42.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 42</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/12/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Debbie Dingell (D, MI-12) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/42/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Rules/Ethics</p>
+        <p id="action">Latest action: 1/12/21 - Referred to two House committees</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hr-151.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 151</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/4/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Mike Quigley (D, IL-5) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/151/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Foreign Affairs/Energy and Commerce/Judiciary/Ways and Means/Financial Services/Natural Resources</p>
+        <p id="action">Latest action: 1/4/21 - Referred to six House committees</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hr-321.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 321</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/13/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Mike Thompson (D, CA-5) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/321/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Transportation and Infrastructure</p>
+        <p id="action">Latest action: 1/13/21 - Referred to the House Transportation and Infrastructure Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hres-46.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 46</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/13/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Henry C. Johnson (D, GA-4) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/46/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Ethics</p>
+        <p id="action">Latest action: 1/13/21 - Referred to the House Ethics Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hr-152.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 152</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/4/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Bobby L. Rush (D, IL-1) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/152/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: Financial Services</p>
+        <p id="action">Latest action: 1/4/21 - Referred to the House Financial Services Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hres-39.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 39</a></p>
+        <p class="area">Policy Area: Crime and Law Enforcement</p>
+        <p class="date">Introduced: 1/12/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. J. French Hill (R, AR-2) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/39/cosponsors?pageSort=lastToFirst&loclr=cga-member&searchResultViewType=expanded">view cosponsors</a></p></div><p class="com">Committees: House Administration/Judiciary</p>
+        <p id="action">Latest action: 1/11/21 - Referred to two House committees</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hr-305.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 305</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/13/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Charlie Crist (D, FL-13) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/305/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Financial Services</p>
+        <p id="action">Latest action: 1/13/21 - Referred to the House Financial Services Committee.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hres-19.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 19</a></p>
+        <p class="area">Policy Area: Congress</p>
+        <p class="date">Introduced: 1/5/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Debbie Wasserman Schultz (D, FL-23) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/19/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Ethics</p>
+        <p id="action">Latest action: 1/5/21 - Referred to the House Ethics Committee.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hres-51.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 51</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/19/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Cheri Bustos (D, IL-17) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/51/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Judiciary</p>
+        <p id="action">Latest action: 1/19/21 - Referred to the House Judiciary Committee.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hjres-17.html?acq=jerry-mcnerney" class="leglink">Bill - H.J.Res. 17</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/21/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Jackie Speier (D, CA-14) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/J17/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Judiciary</p>
+        <p id="action">Latest action: 1/21/21 - Referred to the House Judiciary Committee.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hres-31.html?acq=jerry-mcnerney" class="leglink">Resolution - H.Res. 31</a></p>
+        <p class="area">Policy Area: Congress</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Tom Malinowski (D, NJ-17) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-resolution/31/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Ethics</p>
+        <p id="action">Latest action: 1/11/21 - Referred to the House Ethics Committee.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hr-448.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 448</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/25/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Nanette Diaz Barragan (D, CA-44) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/448/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Energy and Commerce/Science, Space, and Technology</p>
+        <p id="action">Latest action: 1/25/21 - Referred to two House committees.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/congress/hr-455.html?acq=jerry-mcnerney" class="leglink">Bill - H.R. 455</a></p>
+        <p class="area">Policy Area: Not assigned</p>
+        <p class="date">Introduced: 1/25/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Rep. Salud O. Carbajal (D, CA-24) | <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/455/cosponsors">view cosponsors</a></p></div><p class="com">Committees: Natural Resources</p>
+        <p id="action">Latest action: 1/25/21 - Referred to the House Natural Resources Committee.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To President</p>
+        </div></div></div>
 </div><div id="footer">
-      <p id="socialmediafooter">
-        <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
-        <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
-        <a href="https://www.facebook.com/209politics" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
-      </p>
-      <p id="navfooter">
-        <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
-        <a href="/latest" id="latestnavfooter" class="navfooter">Latest</a> •
-        <a href="/elections" id="electionsnavfooter" class="navfooter">Elections</a> •
-        <a href="/policy" id="policynavfooter" class="navfooter">Policy</a> •
-        <a href="/covid-19" id="covidnavfooter" class="navfooter">COVID-19</a> •
-        <a href="/interactives" id="covidnavfooter" class="navfooter">Interactives</a> •
-        <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
-      </p>
-    </div>
-    <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
-    <script type="text/javascript" src="/js/shp.js"></script>
-    <script type="text/javascript" src="../js/member.js"></script>
-    <script type="text/javascript">
-      var map = L.map('map').setView([38.0030575, -121.372381], 8);
-      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
-        maxZoom: 18,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
-      }).addTo(map);
-      var style = {
-        "color": "#000000",
-        "fillOpacity": 0.2
-      }
-      new L.Shapefile('/raw/cd-09.zip', {
-        style: style
-      }).addTo(map);
-    </script>
+    <p id="socialmediafooter">
+      <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
+      <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
+      <a href="https://www.facebook.com/209politics" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
+    </p>
+    <p id="navfooter">
+      <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
+      <a href="/latest" id="latestnavfooter" class="navfooter">Latest</a> •
+      <a href="/elections" id="electionsnavfooter" class="navfooter">Elections</a> •
+      <a href="/policy" id="policynavfooter" class="navfooter">Policy</a> •
+      <a href="/covid-19" id="covidnavfooter" class="navfooter">COVID-19</a> •
+      <a href="/interactives" id="covidnavfooter" class="navfooter">Interactives</a> •
+      <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
+    </p>
+  </div>
+  <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
+  <script type="text/javascript" src="/js/shp.js"></script>
+  <script type="text/javascript" src="../js/member.js"></script>
+  <script type="text/javascript">
+    var map = L.map('map').setView([38.0030575, -121.372381], 8);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+    }).addTo(map);
+    var style = {
+      "color": "#000000",
+      "fillOpacity": 0.2
+    }
+    new L.Shapefile('/raw/cd-09.zip', {
+      style: style
+    }).addTo(map);
+  </script>
   </div>
 </body>
 

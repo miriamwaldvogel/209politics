@@ -141,6 +141,14 @@
 <div class="filters">
 <p class="filtertitle">Legislation type</p>
 <div class="filterbox">
+<input type="checkbox" id="Assembly-concurrent-resolution" class="checkbox" onchange="filter('cooper', 'Assembly concurrent resolution', 'type');" checked="true">
+<label for="Assembly-concurrent-resolution" class="filter">Assembly concurrent resolution</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Assembly-resolution" class="checkbox" onchange="filter('cooper', 'Assembly resolution', 'type');" checked="true">
+<label for="Assembly-resolution" class="filter">Assembly resolution</label>
+</div>
+<div class="filterbox">
 <input type="checkbox" id="Bill" class="checkbox" onchange="filter('cooper', 'Bill', 'type');" checked="true">
 <label for="Bill" class="filter">Bill</label>
 </div>
@@ -151,24 +159,44 @@
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('cooper', 'Introduced', 'status');" checked="true">
 <label for="Introduced" class="filter">Introduced</label>
 </div>
+<div class="filterbox">
+<input type="checkbox" id="Passed-Assembly" class="checkbox" onchange="filter('cooper', 'Passed Assembly', 'status');" checked="true">
+<label for="Passed-Assembly" class="filter">Passed Assembly</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Policy area</p>
 <div class="filterbox">
+<input type="checkbox" id="Bail" class="checkbox" onchange="filter('cooper', 'Bail', 'area');" checked="true">
+<label for="Bail" class="filter">Bail</label>
+</div>
+<div class="filterbox">
 <input type="checkbox" id="Cannabis" class="checkbox" onchange="filter('cooper', 'Cannabis', 'area');" checked="true">
 <label for="Cannabis" class="filter">Cannabis</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Crime" class="checkbox" onchange="filter('cooper', 'Crime', 'area');" checked="true">
+<label for="Crime" class="filter">Crime</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Healthcare" class="checkbox" onchange="filter('cooper', 'Healthcare', 'area');" checked="true">
+<label for="Healthcare" class="filter">Healthcare</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Holidays" class="checkbox" onchange="filter('cooper', 'Holidays', 'area');" checked="true">
+<label for="Holidays" class="filter">Holidays</label>
 </div>
 <div class="filterbox">
 <input type="checkbox" id="Housing" class="checkbox" onchange="filter('cooper', 'Housing', 'area');" checked="true">
 <label for="Housing" class="filter">Housing</label>
 </div>
 <div class="filterbox">
-<input type="checkbox" id="Peace-officers" class="checkbox" onchange="filter('cooper', 'Peace officers', 'area');" checked="true">
-<label for="Peace-officers" class="filter">Peace officers</label>
+<input type="checkbox" id="Other" class="checkbox" onchange="filter('cooper', 'Other', 'area');" checked="true">
+<label for="Other" class="filter">Other</label>
 </div>
 <div class="filterbox">
-<input type="checkbox" id="Bail" class="checkbox" onchange="filter('cooper', 'Bail', 'area');" checked="true">
-<label for="Bail" class="filter">Bail</label>
+<input type="checkbox" id="Peace-officers" class="checkbox" onchange="filter('cooper', 'Peace officers', 'area');" checked="true">
+<label for="Peace-officers" class="filter">Peace officers</label>
 </div>
 <div class="filterbox">
 <input type="checkbox" id="State-bodies" class="checkbox" onchange="filter('cooper', 'State bodies', 'area');" checked="true">
@@ -178,16 +206,20 @@
 <div class="filters">
 <p class="filtertitle">Committees</p>
 <div class="filterbox">
-<input type="checkbox" id="Public-Safety" class="checkbox" onchange="filter('cooper', 'Public Safety', 'committees');" checked="true">
-<label for="Public-Safety" class="filter">Public Safety</label>
-</div>
-<div class="filterbox">
 <input type="checkbox" id="Governmental-Organization" class="checkbox" onchange="filter('cooper', 'Governmental Organization', 'committees');" checked="true">
 <label for="Governmental-Organization" class="filter">Governmental Organization</label>
 </div>
 <div class="filterbox">
 <input type="checkbox" id="Not-assigned" class="checkbox" onchange="filter('cooper', 'Not assigned', 'committees');" checked="true">
 <label for="Not-assigned" class="filter">Not assigned</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Public-Safety" class="checkbox" onchange="filter('cooper', 'Public Safety', 'committees');" checked="true">
+<label for="Public-Safety" class="filter">Public Safety</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Rules" class="checkbox" onchange="filter('cooper', 'Rules', 'committees');" checked="true">
+<label for="Rules" class="filter">Rules</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
@@ -202,69 +234,114 @@
         <div id="legislation">
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/ab-109.html?acq=jim-cooper" class="leglink">Bill - A.B. 109</a></p>
-            <p class="desc">To make a minor change to the law establishing the Cannabis Control Appeals Panel</p>
-            <p class="are">Policy Area: Cannabis</p>
-            <p class="date">Introduced: 12/16/2020</p>
-            <p class="sponsor">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a href="/projects/legislativetracker/legislature/ab-109.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/17/20 - Received from printer. May be heard in committee on January 16</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Cannabis</p>
+        <p class="date">Introduced: 12/16/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-109.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/11/21 - Read for the first time.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/ab-29.html?acq=jim-cooper" class="leglink">Bill - A.B. 29</a></p>
-            <p class="desc">To require all materials provided for a public meeting to be publicly posted within 72 hours of the meeting</p>
-            <p class="are">Policy Area: State bodies</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a href="/projects/legislativetracker/legislature/ab-29.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Governmental Organization</p>
-            <p class="action">Latest action: 1/11/21 - Referred to the Governmental Organization Committee</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: State bodies</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-29.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Governmental Organization</p>
+        <p id="action">Latest action: 1/11/21 - Referred to the Assembly Governmental Organization Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/ab-17.html?acq=jim-cooper" class="leglink">Bill - A.B. 17</a></p>
-            <p class="desc">To amend Government Code Section 1029, which disqualifies certain people from holding office or becoming a peace officer</p>
-            <p class="are">Policy Area: Peace officers</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a href="/projects/legislativetracker/legislature/ab-17.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Public Safety</p>
-            <p class="action">Latest action: 1/11/21 - Referred to the Public Safety Committee</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Peace officers</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-17.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Public Safety</p>
+        <p id="action">Latest action: 1/13/21 - Re-referred to the Assembly Public Safety Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/ab-38.html?acq=jim-cooper" class="leglink">Bill - A.B. 38</a></p>
-            <p class="desc">To require an annually revised statewide bail schedule for all bailable felony offenses and for all misdemeanor and infraction offenses except vehicle code infractions</p>
-            <p class="are">Policy Area: Bail</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a href="/projects/legislativetracker/legislature/ab-38.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Public Safety</p>
-            <p class="action">Latest action: 1/11/21 - Referred to the Public Safety Committee</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div>
+        <p class="area">Policy Area: Bail</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-38.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Public Safety</p>
+        <p id="action">Latest action: 1/15/21 - Re-referred to the Assembly Public Safety Committee</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/sb-6.html?acq=jim-cooper" class="leglink">Bill - S.B. 6</a></p>
-            <p class="desc">Neighborhood Homes Act</p>
-            <p class="are">Policy Area: Housing</p>
-            <p class="date">Introduced: 12/7/2020</p>
-            <p class="sponsor">Sponsor: Sen. Anna Caballero (D-Merced) | <a href="/projects/legislativetracker/legislature/sb-6.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 12/8/20 - Received from printer. May be heard in committee on January 7</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div></div>
+        <p class="area">Policy Area: Housing</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Anna Caballero (D-Merced) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-6.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 12/8/20 - Received from printer. May be acted upon on or after January 7</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-8.html?acq=jim-cooper" class="leglink">Assembly concurrent resolution - ACR-8</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 1/8/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Shirley Weber (D-San Diego) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-8.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Rules</p>
+        <p id="action">Latest action: 1/15/21 - Passed Assembly and sent to Senate.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/hr-7.html?acq=jim-cooper" class="leglink">Assembly resolution - H.R. 7</a></p>
+        <p class="area">Policy Area: Other</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Chad Mayes (I-Palm Springs) | <a target="_blank" href="/projects/legislativetracker/legislature/hr-7.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/11/21 - Passed Assembly 51-6.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ab-266.html?acq=jim-cooper" class="leglink">Bill - A.B. 266</a></p>
+        <p class="area">Policy Area: Crime</p>
+        <p class="date">Introduced: 1/15/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Jim Cooper (D-Elk Grove) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-266.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/15/21 - Read for the first time and sent to print.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-2.html?acq=jim-cooper" class="leglink">Assembly concurrent resolution - ACR 2</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Sharon Quirk-Silva (D-Fullerton) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-2.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Rules</p>
+        <p id="action">Latest action: 1/15/21 - Passed Assembly and sent to Senate.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/hr-4.html?acq=jim-cooper" class="leglink">Assembly resolution - H.R. 4</a></p>
+        <p class="area">Policy Area: Other</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Mark Stone (D-Monterey) | <a target="_blank" href="/projects/legislativetracker/legislature/hr-4.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/15/21 - Read and adopted by the Assembly.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/sb-226.html?acq=jim-cooper" class="leglink">Bill - S.B 226</a></p>
+        <p class="area">Policy Area: Healthcare</p>
+        <p class="date">Introduced: 1/15/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Richard Pan (D-Sacramento) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-226.html?acq=jim-cooper">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/15/21 - Introduced and read for the first time. Sent to the Rules Committee for assignment and sent to printer.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p><p class="status">Became Law</p>
+        </div></div></div></div>
 </div><div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •

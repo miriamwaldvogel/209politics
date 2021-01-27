@@ -138,6 +138,14 @@
 <div class="filters">
 <p class="filtertitle">Legislation type</p>
 <div class="filterbox">
+<input type="checkbox" id="Assembly-concurrent-resolution" class="checkbox" onchange="filter('villapudua', 'Assembly concurrent resolution', 'type');" checked="true">
+<label for="Assembly-concurrent-resolution" class="filter">Assembly concurrent resolution</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Assembly-resolution" class="checkbox" onchange="filter('villapudua', 'Assembly resolution', 'type');" checked="true">
+<label for="Assembly-resolution" class="filter">Assembly resolution</label>
+</div>
+<div class="filterbox">
 <input type="checkbox" id="Bill" class="checkbox" onchange="filter('villapudua', 'Bill', 'type');" checked="true">
 <label for="Bill" class="filter">Bill</label>
 </div>
@@ -148,9 +156,33 @@
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('villapudua', 'Introduced', 'status');" checked="true">
 <label for="Introduced" class="filter">Introduced</label>
 </div>
+<div class="filterbox">
+<input type="checkbox" id="Passed-Assembly" class="checkbox" onchange="filter('villapudua', 'Passed Assembly', 'status');" checked="true">
+<label for="Passed-Assembly" class="filter">Passed Assembly</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Policy area</p>
+<div class="filterbox">
+<input type="checkbox" id="Alcohol" class="checkbox" onchange="filter('villapudua', 'Alcohol', 'area');" checked="true">
+<label for="Alcohol" class="filter">Alcohol</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Emergency-food-assistance" class="checkbox" onchange="filter('villapudua', 'Emergency food assistance', 'area');" checked="true">
+<label for="Emergency-food-assistance" class="filter">Emergency food assistance</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Holidays" class="checkbox" onchange="filter('villapudua', 'Holidays', 'area');" checked="true">
+<label for="Holidays" class="filter">Holidays</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Homelessness" class="checkbox" onchange="filter('villapudua', 'Homelessness', 'area');" checked="true">
+<label for="Homelessness" class="filter">Homelessness</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Other" class="checkbox" onchange="filter('villapudua', 'Other', 'area');" checked="true">
+<label for="Other" class="filter">Other</label>
+</div>
 <div class="filterbox">
 <input type="checkbox" id="Taxation" class="checkbox" onchange="filter('villapudua', 'Taxation', 'area');" checked="true">
 <label for="Taxation" class="filter">Taxation</label>
@@ -161,6 +193,10 @@
 <div class="filterbox">
 <input type="checkbox" id="Not-assigned" class="checkbox" onchange="filter('villapudua', 'Not assigned', 'committees');" checked="true">
 <label for="Not-assigned" class="filter">Not assigned</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Rules" class="checkbox" onchange="filter('villapudua', 'Rules', 'committees');" checked="true">
+<label for="Rules" class="filter">Rules</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
@@ -175,17 +211,84 @@
         <div id="legislation">
         <div class="leg show">
             <p class="name"><a href="/projects/legislativetracker/legislature/ab-219.html?acq=carlos-villapudua" class="leglink">Bill - A.B. 219</a></p>
-            <p class="desc">To impose a sales tax holiday for back-to-school items</p>
-            <p class="are">Policy Area: Taxation</p>
-            <p class="date">Introduced: 1/11/2021</p>
-            <p class="sponsor">Sponsor: Asm. Carlos Villapudua (D-Stockton) | <a href="/projects/legislativetracker/legislature/ab-219.html" class="cosponsorlink"> view cosponsors</a></p>
-            <p class="com">Committees: Not assigned</p>
-            <p class="action">Latest action: 1/11/21 - Read for the first time and sent to print</p>
-            <div class="statuscontainer">
-                <p class="statustitle">Status: </p>
-                <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Became Law</p>
-            </div>
-        </div></div>
+        <p class="area">Policy Area: Taxation</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Carlos Villapudua (D-Stockton) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-219.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/12/21 - Received from printer. May be heard in committee on February 11.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ab-221.html?acq=carlos-villapudua" class="leglink">Bill - A.B. 221</a></p>
+        <p class="area">Policy Area: Emergency food assistance</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Miguel Santiago (D-Los Angeles) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-221.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/12/21 - Received from printer. May be heard in committee on February 11.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/hr-7.html?acq=carlos-villapudua" class="leglink">Assembly resolution - H.R. 7</a></p>
+        <p class="area">Policy Area: Other</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Chad Mayes (I-Palm Springs) | <a target="_blank" href="/projects/legislativetracker/legislature/hr-7.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/11/21 - Passed Assembly 51-6.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-8.html?acq=carlos-villapudua" class="leglink">Assembly concurrent resolution - ACR-8</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 1/8/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Shirley Weber (D-San Diego) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-8.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Rules</p>
+        <p id="action">Latest action: 1/15/21 - Passed Assembly and sent to Senate.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ab-239.html?acq=carlos-villapudua" class="leglink">Bill - A.B. 239</a></p>
+        <p class="area">Policy Area: Alcohol</p>
+        <p class="date">Introduced: 1/13/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Carlos Villapudua (D-Stockton) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-239.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/14/21 - Received from printer. May be heard in committee on February 13.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ab-258.html?acq=carlos-villapudua" class="leglink">Bill - A.B. 258</a></p>
+        <p class="area">Policy Area: Homelessness</p>
+        <p class="date">Introduced: 1/15/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Carlos Villapudua (D-Stockton) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-258.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/15/21 - Read for the first time and sent to print.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-2.html?acq=carlos-villapudua" class="leglink">Assembly concurrent resolution - ACR 2</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Sharon Quirk-Silva (D-Fullerton) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-2.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Rules</p>
+        <p id="action">Latest action: 1/15/21 - Passed Assembly and sent to Senate.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/hr-4.html?acq=carlos-villapudua" class="leglink">Assembly resolution - H.R. 4</a></p>
+        <p class="area">Policy Area: Other</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Mark Stone (D-Monterey) | <a target="_blank" href="/projects/legislativetracker/legislature/hr-4.html?acq=carlos-villapudua">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/15/21 - Read and adopted by the Assembly.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p>
+        </div></div></div></div>
 </div><div id="footer">
       <p id="socialmediafooter">
         <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •

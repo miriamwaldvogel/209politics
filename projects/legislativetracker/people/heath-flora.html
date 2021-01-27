@@ -143,6 +143,14 @@
 <div class="filters">
 <p class="filtertitle">Legislation type</p>
 <div class="filterbox">
+<input type="checkbox" id="Assembly-concurrent-resolution" class="checkbox" onchange="filter('flora', 'Assembly concurrent resolution', 'type');" checked="true">
+<label for="Assembly-concurrent-resolution" class="filter">Assembly concurrent resolution</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Assembly-resolution" class="checkbox" onchange="filter('flora', 'Assembly resolution', 'type');" checked="true">
+<label for="Assembly-resolution" class="filter">Assembly resolution</label>
+</div>
+<div class="filterbox">
 <input type="checkbox" id="Bill" class="checkbox" onchange="filter('flora', 'Bill', 'type');" checked="true">
 <label for="Bill" class="filter">Bill</label>
 </div>
@@ -153,6 +161,10 @@
 <input type="checkbox" id="Introduced" class="checkbox" onchange="filter('flora', 'Introduced', 'status');" checked="true">
 <label for="Introduced" class="filter">Introduced</label>
 </div>
+<div class="filterbox">
+<input type="checkbox" id="Passed-Assembly" class="checkbox" onchange="filter('flora', 'Passed Assembly', 'status');" checked="true">
+<label for="Passed-Assembly" class="filter">Passed Assembly</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Policy area</p>
@@ -160,12 +172,36 @@
 <input type="checkbox" id="COVID-19" class="checkbox" onchange="filter('flora', 'COVID-19', 'area');" checked="true">
 <label for="COVID-19" class="filter">COVID-19</label>
 </div>
+<div class="filterbox">
+<input type="checkbox" id="Firefighting" class="checkbox" onchange="filter('flora', 'Firefighting', 'area');" checked="true">
+<label for="Firefighting" class="filter">Firefighting</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Hazardous-waste" class="checkbox" onchange="filter('flora', 'Hazardous waste', 'area');" checked="true">
+<label for="Hazardous-waste" class="filter">Hazardous waste</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Healthcare" class="checkbox" onchange="filter('flora', 'Healthcare', 'area');" checked="true">
+<label for="Healthcare" class="filter">Healthcare</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Holidays" class="checkbox" onchange="filter('flora', 'Holidays', 'area');" checked="true">
+<label for="Holidays" class="filter">Holidays</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Other" class="checkbox" onchange="filter('flora', 'Other', 'area');" checked="true">
+<label for="Other" class="filter">Other</label>
+</div>
 </div>
 <div class="filters">
 <p class="filtertitle">Committees</p>
 <div class="filterbox">
 <input type="checkbox" id="Not-assigned" class="checkbox" onchange="filter('flora', 'Not assigned', 'committees');" checked="true">
 <label for="Not-assigned" class="filter">Not assigned</label>
+</div>
+<div class="filterbox">
+<input type="checkbox" id="Rules" class="checkbox" onchange="filter('flora', 'Rules', 'committees');" checked="true">
+<label for="Rules" class="filter">Rules</label>
 </div>
 </div>
 <input type="reset" id="datereset" value="Reset all" onclick="showall();">
@@ -182,56 +218,126 @@
             <p class="name"><a href="/projects/legislativetracker/legislature/sb-74.html?acq=heath-flora" class="leglink">Bill - S.B. 74</a></p>
         <p class="area">Policy Area: COVID-19</p>
         <p class="date">Introduced: 12/10/20</p>
-        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Andreas Borgeas (R-Fresno) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-74.html">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Andreas Borgeas (R-Fresno) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-74.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
         <p id="action">Latest action: 1/11/21 - Read for the first time.</p>
         <div class="statuscontainer">
             <p class="statustitle">Status: </p>
-            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p><p class="status">To Governor</p><p class="status">Assembly Veto Override</p><p class="status">Became Law</p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p><p class="status">Became Law</p>
         </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/sb-206.html?acq=heath-flora" class="leglink">Bill - S.B 206</a></p>
+        <p class="area">Policy Area: Firefighting</p>
+        <p class="date">Introduced: 1/11/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Mike McGuire (D-Santa Rosa) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-206.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/12/21 - Received from printer. May be acted upon on or after February 11.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p><p class="status">Became Law</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-8.html?acq=heath-flora" class="leglink">Assembly concurrent resolution - ACR-8</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 1/8/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Shirley Weber (D-San Diego) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-8.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Rules</p>
+        <p id="action">Latest action: 1/15/21 - Passed Assembly and sent to Senate.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-2.html?acq=heath-flora" class="leglink">Assembly concurrent resolution - ACR 2</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Sharon Quirk-Silva (D-Fullerton) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-2.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Rules</p>
+        <p id="action">Latest action: 1/15/21 - Passed Assembly and sent to Senate.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/hr-4.html?acq=heath-flora" class="leglink">Assembly resolution - H.R. 4</a></p>
+        <p class="area">Policy Area: Other</p>
+        <p class="date">Introduced: 12/7/20</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Mark Stone (D-Monterey) | <a target="_blank" href="/projects/legislativetracker/legislature/hr-4.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/15/21 - Read and adopted by the Assembly.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status">Introduced</p><p class="status current">Passed Assembly</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/ab-278.html?acq=heath-flora" class="leglink">Bill - A.B. 278</a></p>
+        <p class="area">Policy Area: Healthcare</p>
+        <p class="date">Introduced: 1/19/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Heath Flora (R-Modesto) | <a target="_blank" href="/projects/legislativetracker/legislature/ab-278.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/20/21 - Received from the printer. May be heard in committee on February 19.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Assembly</p><p class="status">Passed Senate</p><p class="status">To Governor</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/acr-11.html?acq=heath-flora" class="leglink">Assembly concurrent resolution - ACR-8</a></p>
+        <p class="area">Policy Area: Holidays</p>
+        <p class="date">Introduced: 1/21/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Asm. Heath Flora (R-Modesto) | <a target="_blank" href="/projects/legislativetracker/legislature/acr-11.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/21/21 - Introduced and sent to print.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed House</p><p class="status">Passed Senate</p>
+        </div></div></div>
+        <div class="leg show">
+            <p class="name"><a href="/projects/legislativetracker/legislature/sb-244.html?acq=heath-flora" class="leglink">Bill - S.B 244</a></p>
+        <p class="area">Policy Area: Hazardous waste</p>
+        <p class="date">Introduced: 1/21/21</p>
+        <div id="sponsors"><p class="sponsors">Sponsor: Sen. Bob Archuleta (D-Pico Rivera) | <a target="_blank" href="/projects/legislativetracker/legislature/sb-244.html?acq=heath-flora">view cosponsors</a></p><p class="com">Committees: Not assigned</p>
+        <p id="action">Latest action: 1/21/21 - Introduced and read for the first time. Sent to the Rules Committee for assignment and sent to print.</p>
+        <div class="statuscontainer">
+            <p class="statustitle">Status: </p>
+            <p class="status current">Introduced</p><p class="status">Passed Senate</p><p class="status">Passed House</p><p class="status">To Governor</p><p class="status">Became Law</p>
+        </div></div></div></div>
 </div><div id="footer">
-      <p id="socialmediafooter">
-        <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
-        <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
-        <a href="https://www.facebook.com/209politics" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
-      </p>
-      <p id="navfooter">
-        <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
-        <a href="/latest" id="latestnavfooter" class="navfooter">Latest</a> •
-        <a href="/elections" id="electionsnavfooter" class="navfooter">Elections</a> •
-        <a href="/policy" id="policynavfooter" class="navfooter">Policy</a> •
-        <a href="/covid-19" id="covidnavfooter" class="navfooter">COVID-19</a> •
-        <a href="/interactives" id="covidnavfooter" class="navfooter">Interactives</a> •
-        <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
-      </p>
-    </div>
-    <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
-    <script type="text/javascript" src="/js/shp.js"></script>
-    <script type="text/javascript" src="../js/member.js"></script>
-    <script type="text/javascript">
-      if (window.innerWidth > 899) {
-        var a = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50) + 'px';
-        if (a > 250) {
-          document.getElementById("map").style.height = a;
-        }
-      }
-      var map = L.map('map').setView([37.872316, -120.976191], 8);
-      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
-        maxZoom: 18,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
-      }).addTo(map);
-      var style = {
-        "color": "#000000",
-        "fillOpacity": 0.2
-      }
-      new L.Shapefile('/raw/ad-12.zip', {
-        style: style
-      }).addTo(map);
-    </script>
-  </div>
+                      <p id="socialmediafooter">
+                        <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> •
+                        <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> •
+                        <a href="https://www.facebook.com/209politics" id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a>
+                      </p>
+                      <p id="navfooter">
+                        <a href="https://209politics.com/" id="homenavfooter" class="navfooter">Home</a> •
+                        <a href="/latest" id="latestnavfooter" class="navfooter">Latest</a> •
+                        <a href="/elections" id="electionsnavfooter" class="navfooter">Elections</a> •
+                        <a href="/policy" id="policynavfooter" class="navfooter">Policy</a> •
+                        <a href="/covid-19" id="covidnavfooter" class="navfooter">COVID-19</a> •
+                        <a href="/interactives" id="covidnavfooter" class="navfooter">Interactives</a> •
+                        <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a>
+                      </p>
+                    </div>
+                    <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
+                    <script type="text/javascript" src="/js/shp.js"></script>
+                    <script type="text/javascript" src="../js/member.js"></script>
+                    <script type="text/javascript">
+                      if (window.innerWidth > 899) {
+                        var a = (document.getElementById("textinfo").offsetHeight - document.getElementById("introinfo").offsetHeight - 50) + 'px';
+                        if (a > 250) {
+                          document.getElementById("map").style.height = a;
+                        }
+                      }
+                      var map = L.map('map').setView([37.872316, -120.976191], 8);
+                      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                        attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a>/<a target="_blank" href="https://statewidedatabase.org/">CASWDB</a>',
+                        maxZoom: 18,
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1,
+                        accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+                      }).addTo(map);
+                      var style = {
+                        "color": "#000000",
+                        "fillOpacity": 0.2
+                      }
+                      new L.Shapefile('/raw/ad-12.zip', {
+                        style: style
+                      }).addTo(map);
+                    </script>
+                  </div>
 </body>
 
 </html>
