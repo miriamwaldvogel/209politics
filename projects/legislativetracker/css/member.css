@@ -237,7 +237,7 @@
   color: #000000;
   text-decoration: none;
 }
-.sponsor a{
+.sponsor a, .sponsors a{
   color: blue;
 }
 #action{
