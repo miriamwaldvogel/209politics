@@ -440,10 +440,10 @@ a{
   right: 10px;
   bottom: 2px;
 }
-#bannercontainer{
+.bannercontainer{
   text-align: center;
 }
-#bannercontainer:after{
+.bannercontainer:after{
   content: "";
   display: block;
   margin: 0 auto;
@@ -452,18 +452,22 @@ a{
   border-bottom: 3px double #BDBFC9;
   margin-bottom: 10px;
 }
-#bannerlink{
+.bannerheadline{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.bannerlink{
   text-decoration: none;
   color: #000000;
 }
-#bannerinfo{
+.bannerdesc{
   font-family: "Rubik";
-  font-size: 25px;
+  font-size: 15px;
   margin: auto;
   text-align: center;
   color: #000000;
 }
-#bannerdesc{
+.bannerdesc{
   font-family: "Libre Baskerville";
 }
 #moreinfo{
