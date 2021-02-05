@@ -9,12 +9,12 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
+  <lastmod>2021-02-03T15:45:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2021-01-25T18:30:56+00:00</lastmod>
+  <lastmod>2021-02-03T04:13:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -29,12 +29,32 @@
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2021-01-08T21:50:59+00:00</lastmod>
+  <lastmod>2021-02-03T04:13:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/interactives</loc>
   <lastmod>2021-01-09T16:21:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/projects/crimemaps/stockton.html</loc>
+  <lastmod>2021-02-04T00:36:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/02/02/john-ramirez-susd-superintendent.html</loc>
+  <lastmod>2021-02-03T04:29:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/27/stockton-city-council-meeting.html</loc>
+  <lastmod>2021-01-27T17:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/26/sj-food-delivery-fees.html</loc>
+  <lastmod>2021-01-27T04:01:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -58,23 +78,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/projects/crimemaps/stockton.html</loc>
-  <lastmod>2021-01-25T16:32:23+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/15/stockton-crime-climate-grants.html</loc>
-  <lastmod>2020-12-16T15:39:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2020/12/15/san-joaquin-first-pfizer-vaccine.html</loc>
-  <lastmod>2020-12-16T05:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://209politics.com/2020/11/06/lincoln-campaign-tactics.html</loc>
-  <lastmod>2020-12-07T17:52:28+00:00</lastmod>
+  <lastmod>2021-01-28T03:48:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -86,6 +91,16 @@
   <loc>https://209politics.com/contact</loc>
   <lastmod>2020-12-12T17:34:17+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/15/stockton-crime-climate-grants.html</loc>
+  <lastmod>2020-12-16T15:39:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2020/12/15/san-joaquin-first-pfizer-vaccine.html</loc>
+  <lastmod>2020-12-16T05:03:21+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/12/11/lincoln-mayoral-office-positions.html</loc>
@@ -644,7 +659,7 @@
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
+  <lastmod>2021-02-03T15:45:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
