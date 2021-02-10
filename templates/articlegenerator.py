@@ -53,7 +53,8 @@ def article():
           </a>
         </div>
 """%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], d[0], d[1], d[3], imgname.get(), newalt.get(), size[1], headline.get(), d[2], int(d[3]), d[0])
-        m = """<div id="mainstorycontainer" class="mainstory">
+        m = """
+        <div id="mainstorycontainer" class="mainstory">
           <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
               <img src="%s/%s/%s/%s" alt="%s" id="mainstoryimg">
@@ -62,8 +63,7 @@ def article():
             <p id="mainstorydate" class="mainstory articledate">%s %d, %s</p>
           </a>
         </div>
-        <br>
-""" % (d[0], d[1], d[3], htmlname.get(), d[0], d[1], d[3], imgname.get(), newalt.get(), headline.get(), d[2], int(d[3]), d[0])
+        <br>""" % (d[0], d[1], d[3], htmlname.get(), d[0], d[1], d[3], imgname.get(), newalt.get(), headline.get(), d[2], int(d[3]), d[0])
     else:
         if smallimg.get():
             size = ["smallimg", "smalltext"]
@@ -183,7 +183,7 @@ def article():
     f.write("""<div id="more">
       <p id="moretitle">MORE LIKE THIS</p>
       <div id="morearticlescontainer">
-      
+
       </div>
     </div>
     </div>
