@@ -8,7 +8,7 @@ filter = []
 types = {
 "Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest", "Carjacking"],
 "Homicide": ["Homicide"],
-"Theft/robbery": ["Robbery", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries"],
+"Theft/robbery": ["Robbery", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries", "Robbery arrest"],
 "Residential": ["Residential robbery", "Home invasion", "Burglary"],
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer"],
