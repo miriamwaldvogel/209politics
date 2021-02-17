@@ -4,3 +4,4 @@ Disallow: /images/search.svg
 Disallow: /images/link.svg
 Disallow: /images/uploadfile.svg
 Disallow: /images/filter.svg
+Disallow: /projects/crimemaps/images/*
