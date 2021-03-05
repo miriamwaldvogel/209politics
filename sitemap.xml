@@ -9,27 +9,27 @@
 
 <url>
   <loc>https://209politics.com/</loc>
-  <lastmod>2021-02-03T15:45:16+00:00</lastmod>
+  <lastmod>2021-03-04T04:55:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://209politics.com/latest</loc>
-  <lastmod>2021-02-03T04:13:06+00:00</lastmod>
+  <lastmod>2021-03-04T04:55:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/elections</loc>
-  <lastmod>2020-12-14T21:33:11+00:00</lastmod>
+  <lastmod>2021-03-03T20:30:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/covid-19</loc>
-  <lastmod>2021-01-25T18:30:55+00:00</lastmod>
+  <lastmod>2021-03-03T00:18:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://209politics.com/policy</loc>
-  <lastmod>2021-02-03T04:13:07+00:00</lastmod>
+  <lastmod>2021-03-04T04:55:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -38,43 +38,38 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/projects/crimemaps/stockton.html</loc>
-  <lastmod>2021-02-04T00:36:00+00:00</lastmod>
+  <loc>https://209politics.com/2021/03/03/stockton-ubi-results.html</loc>
+  <lastmod>2021-03-04T16:11:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2021/02/02/john-ramirez-susd-superintendent.html</loc>
-  <lastmod>2021-02-03T04:29:52+00:00</lastmod>
+  <loc>https://209politics.com/2021/03/03/manteca-district-elections.html</loc>
+  <lastmod>2021-03-03T20:30:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2021/01/27/stockton-city-council-meeting.html</loc>
-  <lastmod>2021-01-27T17:40:23+00:00</lastmod>
+  <loc>https://209politics.com/2021/03/02/sj-purple-tier.html</loc>
+  <lastmod>2021-03-03T00:24:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2021/01/26/sj-food-delivery-fees.html</loc>
-  <lastmod>2021-01-27T04:01:10+00:00</lastmod>
+  <loc>https://209politics.com/2021/02/25/sj-covid-vaccinations.html</loc>
+  <lastmod>2021-02-25T23:40:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2021/01/25/stay-at-home-order-lift.html</loc>
-  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
+  <loc>https://209politics.com/2021/02/23/sj-covid-cases.html</loc>
+  <lastmod>2021-02-24T15:19:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2021/01/16/covid-vaccine-general-public.html</loc>
-  <lastmod>2021-01-17T21:03:37+00:00</lastmod>
+  <loc>https://209politics.com/2021/02/16/sj-red-positivity-rate.html</loc>
+  <lastmod>2021-02-17T05:30:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://209politics.com/2021/01/08/harder-trump-removal.html</loc>
-  <lastmod>2021-01-08T22:07:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://209politics.com/2021/01/07/mcnerney-trump-impeachment.html</loc>
-  <lastmod>2021-01-08T04:51:25+00:00</lastmod>
+  <loc>https://209politics.com/2021/02/10/harder-gop-target.html</loc>
+  <lastmod>2021-02-10T22:18:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -91,6 +86,46 @@
   <loc>https://209politics.com/contact</loc>
   <lastmod>2020-12-12T17:34:17+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/02/09/stockton-unified-meeting.html</loc>
+  <lastmod>2021-02-10T15:23:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/02/02/john-ramirez-susd-superintendent.html</loc>
+  <lastmod>2021-02-17T15:52:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/27/stockton-city-council-meeting.html</loc>
+  <lastmod>2021-01-27T17:40:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/26/sj-food-delivery-fees.html</loc>
+  <lastmod>2021-01-27T04:01:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/25/stay-at-home-order-lift.html</loc>
+  <lastmod>2021-01-25T18:30:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/16/covid-vaccine-general-public.html</loc>
+  <lastmod>2021-01-17T21:03:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/08/harder-trump-removal.html</loc>
+  <lastmod>2021-01-08T22:07:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://209politics.com/2021/01/07/mcnerney-trump-impeachment.html</loc>
+  <lastmod>2021-01-08T04:51:25+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://209politics.com/2020/12/15/stockton-crime-climate-grants.html</loc>
@@ -648,6 +683,11 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://209politics.com/projects/crimemaps/stockton.html</loc>
+  <lastmod>2021-03-04T16:04:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://209politics.com/graphics/san-joaquin-precinct-map.html</loc>
   <lastmod>2020-12-03T04:49:22+00:00</lastmod>
   <priority>0.64</priority>
@@ -659,7 +699,7 @@
 </url>
 <url>
   <loc>https://209politics.com/index.html</loc>
-  <lastmod>2021-02-03T15:45:16+00:00</lastmod>
+  <lastmod>2021-03-04T04:55:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
