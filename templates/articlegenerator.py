@@ -21,7 +21,6 @@ oldalt = Entry(w)
 imgalign = Entry(w)
 caption = Entry(w)
 credit = Entry(w)
-headline = Entry(w)
 htmlname = Entry(w)
 pageid = Entry(w)
 n = datetime.now()
@@ -35,6 +34,9 @@ def mkdir(p):
         else: raise
 def article():
     mkdir(os.path.dirname('/home/miriamwaldvogel/209politics/%s/%s/%s/'%(d[0], d[1], d[3])))
+    g = open("/home/miriamwaldvogel/209politics/templates/article.txt", "r")
+    headline = g.readlines()[0]
+    g.close()
     if newimg.get():
         if smallimg.get():
             size = ["smallimg", "smalltext"]
@@ -52,7 +54,7 @@ def article():
             </div>
           </a>
         </div>
-"""%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], d[0], d[1], d[3], imgname.get(), newalt.get(), size[1], headline.get(), d[2], int(d[3]), d[0])
+"""%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], d[0], d[1], d[3], imgname.get(), newalt.get(), size[1], headline, d[2], int(d[3]), d[0])
         m = """
         <div id="mainstorycontainer" class="mainstory">
           <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory">
@@ -63,7 +65,7 @@ def article():
             <p id="mainstorydate" class="mainstory articledate">%s %d, %s</p>
           </a>
         </div>
-        <br>""" % (d[0], d[1], d[3], htmlname.get(), d[0], d[1], d[3], imgname.get(), newalt.get(), headline.get(), d[2], int(d[3]), d[0])
+        <br>""" % (d[0], d[1], d[3], htmlname.get(), d[0], d[1], d[3], imgname.get(), newalt.get(), headline, d[2], int(d[3]), d[0])
     else:
         if smallimg.get():
             size = ["smallimg", "smalltext"]
@@ -81,7 +83,7 @@ def article():
             </div>
           </a>
         </div>
-"""%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], path.get(), oldalt.get(), size[1], headline.get(), d[2], int(d[3]), d[0])
+"""%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], path.get(), oldalt.get(), size[1], headline, d[2], int(d[3]), d[0])
         m = """<div id="mainstorycontainer" class="mainstory">
           <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
@@ -92,7 +94,7 @@ def article():
           </a>
         </div>
         <br>
-""" % (d[0], d[1], d[3], htmlname.get(), path.get() , oldalt.get(), headline.get(), d[2], int(d[3]), d[0])
+""" % (d[0], d[1], d[3], htmlname.get(), path.get() , oldalt.get(), headline, d[2], int(d[3]), d[0])
     f = open("/home/miriamwaldvogel/209politics/%s/%s/%s/%s.html"%(d[0], d[1], d[3], htmlname.get()), "w")
     f.write("""<!DOCTYPE html>
     <html lang="en" dir="ltr">
@@ -166,7 +168,7 @@ def article():
             <p id="time">%s %d, %s at %s</p>
           </div>
           <div id="paragraphcontainer">
-"""%(card, headline.get(), card, headline.get(), headline.get(), d[2], int(d[3]), d[0], d[4]))
+"""%(card, headline, card, headline, headline, d[2], int(d[3]), d[0], d[4]))
     if artimg.get():
         f.write("""<div id="img1container" class="%simg"><img src="%s" alt="%s" id="img1">
           <p id="img1caption" class="caption">%s</p>
@@ -175,7 +177,7 @@ def article():
 """ % (imgalign.get(), imgname.get(), newalt.get(), caption.get(), credit.get()))
     g = open("/home/miriamwaldvogel/209politics/templates/article.txt", "r")
     h = g.readlines()
-    for i in h:
+    for i in h[1:]:
         f.write('<p class="paragraph">')
         f.write(i)
         f.write('</p>')
@@ -253,12 +255,10 @@ credit.grid(row=6, column=2)
 Label(w, text="Articleinfo").grid(row=6, column=0)
 Checkbutton(w, text="Small", variable=smallimg).grid(row=7, column=0)
 Checkbutton(w, text="Standard", variable=standimg).grid(row=8, column=0)
-Label(w, text="Headline").grid(row=9, column=0)
-headline.grid(row=10, column=0)
-Label(w, text="Html name").grid(row=11, column=0)
-htmlname.grid(row=12, column=0)
-Label(w, text="Page id").grid(row=13, column=0)
-pageid.grid(row=14, column=0)
+Label(w, text="Html name").grid(row=9, column=0)
+htmlname.grid(row=10, column=0)
+Label(w, text="Page id").grid(row=11, column=0)
+pageid.grid(row=12, column=0)
 Label(w, text="Pages").grid(row=6, column=1)
 Checkbutton(w, text="COVID", variable=covid).grid(row=7, column=1)
 Checkbutton(w, text="Elections", variable=elections).grid(row=8, column=1)
