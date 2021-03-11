@@ -54,8 +54,10 @@ def article():
             </div>
           </a>
         </div>
+        <!---->
 """%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], d[0], d[1], d[3], imgname.get(), newalt.get(), size[1], headline, d[2], int(d[3]), d[0])
         m = """
+        <!---->
         <div id="mainstorycontainer" class="mainstory">
           <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
@@ -65,7 +67,8 @@ def article():
             <p id="mainstorydate" class="mainstory articledate">%s %d, %s</p>
           </a>
         </div>
-        <br>""" % (d[0], d[1], d[3], htmlname.get(), d[0], d[1], d[3], imgname.get(), newalt.get(), headline, d[2], int(d[3]), d[0])
+        <br>
+        <!---->""" % (d[0], d[1], d[3], htmlname.get(), d[0], d[1], d[3], imgname.get(), newalt.get(), headline, d[2], int(d[3]), d[0])
     else:
         if smallimg.get():
             size = ["smallimg", "smalltext"]
@@ -83,8 +86,10 @@ def article():
             </div>
           </a>
         </div>
+        <!---->
 """%(pageid.get(), d[0], d[1], d[3], htmlname.get(), size[0], path.get(), oldalt.get(), size[1], headline, d[2], int(d[3]), d[0])
-        m = """<div id="mainstorycontainer" class="mainstory">
+        m = """<!---->
+        <div id="mainstorycontainer" class="mainstory">
           <a href="%s/%s/%s/%s.html" id="mainstorylink" class="mainstory">
             <div id="mainstoryimgcontainer">
               <img src="%s" alt="%s" id="mainstoryimg">
@@ -94,6 +99,7 @@ def article():
           </a>
         </div>
         <br>
+        <!---->
 """ % (d[0], d[1], d[3], htmlname.get(), path.get() , oldalt.get(), headline, d[2], int(d[3]), d[0])
     f = open("/home/miriamwaldvogel/209politics/%s/%s/%s/%s.html"%(d[0], d[1], d[3], htmlname.get()), "w")
     f.write("""<!DOCTYPE html>
@@ -222,16 +228,13 @@ def article():
     f.write(q[1])
     f.close()
     f = open("/home/miriamwaldvogel/209politics/index.html", "r")
-    g = f.read().split('<div id="leftpanel">')
+    g = f.read().split('<!---->')
     f.close()
     f = open("/home/miriamwaldvogel/209politics/index.html", "w")
-    f.write(g[0]+'<div id="leftpanel">')
-    f.write(m)
-    h = open("/home/miriamwaldvogel/209politics/articles.html", "r")
-    i = h.read()
-    h.close()
-    f.write(q[1].split('</a>', 1)[0]+"</a></div>")
-    f.write(g[1].split('<br>', 1)[1])
+    f.write(g[0]+m+q[1].split("<!---->", 1)[0]+"<!---->")
+    for i in [2, 3, 5, 4, 6, 7]:
+        f.write(g[i]+"<!---->")
+    f.write(g[9])
     f.close()
     global w
     w.destroy()
