@@ -19,7 +19,7 @@ def instagram():
     f.close()
     global w
     w.destroy()
-    """system('aws s3 sync /home/miriamwaldvogel/209politics/ s3://209politics.com --exclude "/home/miriamwaldvogel/209politics/.git/*" --exclude "/home/miriamwaldvogel/209politics/templates/*" --exclude "/home/miriamwaldvogel/209politics/opinion/*" --exclude "/home/miriamwaldvogel/209politics/projects/legislativetracker/*"; aws s3 cp /home/miriamwaldvogel/209politics/instagram1.html s3://209politics.com/instagram')"""
+    system('aws s3 sync /home/miriamwaldvogel/209politics/ s3://209politics.com --exclude "/home/miriamwaldvogel/209politics/.git/*" --exclude "/home/miriamwaldvogel/209politics/templates/*" --exclude "/home/miriamwaldvogel/209politics/opinion/*" --exclude "/home/miriamwaldvogel/209politics/projects/legislativetracker/*"; aws s3 cp /home/miriamwaldvogel/209politics/instagram1.html s3://209politics.com/instagram')
 
 Label(w, text="Date").pack()
 date.insert(END, "%s/%s/%s"%(d[0], d[1], d[2]))
