@@ -1,4 +1,3 @@
-document.getElementById("backurl").href = "/projects/legislativetracker/people/"+new URLSearchParams(window.location.search).get('acq')+".html";
 if (document.getElementById("sponsors").offsetHeight > 31){
   document.getElementById("togglesponsors").innerHTML = "Show all";
   document.getElementById("sponsors").style.height = "1.4em";
