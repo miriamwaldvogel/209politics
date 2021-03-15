@@ -153,15 +153,11 @@ def legislation(pol):
     global filter
     f = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s-leg.csv"%pol, "r")
     r = reader(f)
-    r.next()
-    filter[pol] = {'type': {}, 'role':{
-    'sponsor': [],
-    'cosponsor': [],
-    }, 'status':{}, 'area':{}, 'committees':{}, 'date':[]}
+    filter[pol] = {'type': {}, 'status':{}, 'area':{}, 'committees':{}, 'date':[]}
     legblocks = ""
     for j, i in enumerate(r):
         legname = i[0].replace('.', '').lower().replace(' ', '-')
-        legf = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s/%s.csv"%(people[pol][2], legname), "r")
+        legf = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s/%s.csv"%(pol, legname), "r")
         legr = reader(legf)
         header = legr.next()
         leginfo = legr.next()
@@ -211,10 +207,6 @@ def legislation(pol):
             actions += k
         legf.close()
         filter[pol]['date'].append(leginfo[4])
-        if people[pol][1] in leginfo[5]:
-            filter[pol]['role']['sponsor'].append(j)
-        else:
-            filter[pol]['role']['cosponsor'].append(j)
         filteradd(pol, 'area', leginfo[3], j)
         filteradd(pol, 'type', leginfo[1], j)
         for k in leginfo[7].split("/"):
@@ -254,13 +246,13 @@ def legislation(pol):
         </div>"""%(leginfo[7], lastdate, lastaction, status)]
         legblocks += """
         <div class="leg show">
-            <p class="name"><a href="/projects/legislativetracker/%s/%s.html?acq=%s" class="leglink">%s - %s</a></p>
-        """ %(people[pol][2], legname, people[pol][0], leginfo[1], leginfo[0])
+            <p class="name"><a href="/projects/legislativetracker/%s/%s.html" class="leglink">%s - %s</a></p>
+        """ %(people[pol][2], legname, leginfo[1], leginfo[0])
         if pol == "harder" or pol == "mcnerney":
             legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="%s">view cosponsors</a></p></div>'%(leginfo[5], leginfo[6]))+legdesc[1]+"</div>"
-            legdesc[0] += '<p id="sponsors">Sponsor: %s | <a target="_blank" href="%s">view cosponsors</a></p>'%(leginfo[5], leginfo[6])
+            legdesc[0] += '<p id="sponsors">Sponsor: %s | <a target="_blank" href="%s">view cosponsors</a></p></div>'%(leginfo[5], leginfo[6])
         else:
-            legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="/projects/legislativetracker/%s/%s.html?acq=%s">view cosponsors</a></p>'%(leginfo[5], people[pol][2], legname, people[pol][0]))+legdesc[1]+"</div></div>"
+            legblocks += legdesc[0]+('<p class="sponsors">Sponsor: %s | <a target="_blank" href="/projects/legislativetracker/%s/%s.html">view cosponsors</a></p>'%(leginfo[5], people[pol][2], legname))+legdesc[1]+"</div></div>"
             legdesc[0] += collabhtml+'</div><p id="togglesponsors" onclick="sponsortoggle();"></p>'
         leghtml = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/%s/%s.html"%(people[pol][2], legname), "w")
         leghtml.write("""<!DOCTYPE html>
@@ -341,13 +333,13 @@ def legislation(pol):
             </div>
             <div id="filler"></div>
             <div id="titlecontainer">
-              <div id="backbutton"><a href="" id="backurl">BACK</a></div>
+              <div id="backbutton"><a href="/projects/legislativetracker/people/%s.html" id="backurl">BACK</a></div>
               <h1 id="title">%s</h1>
               <p id="legtext"><b>%s</b> - %s</p>
             </div>
             <div id="firstleginfo">
                 %s
-              """%(leginfo[0], leginfo[0], leginfo[1], leginfo[2], legdesc[0]))
+              """%(leginfo[0], people[pol][0], leginfo[0], leginfo[1], leginfo[2], legdesc[0]))
         leghtml.write(legdesc[1])
         leghtml.write("""<div id="fulllinkcontainer">
             <a href="%s" target="_blank" id="fulllink">View legislation text</a>
@@ -395,13 +387,13 @@ def legislation(pol):
         <img src="/images/filter.svg" alt="filter" id="filterimg">
         </div>
         <div id="legcontainer">
-        <p id="legtitle">Sponsored and cosponsored legislation</p>
+        <p id="legtitle">Sponsored legislation</p>
         <div id="legislation">"""+legblocks)
     f.write('</div>\n</div>'+'<div id="footer">'+g[1].split('<div id="footer">')[1])
     f.close()
 
-for i in people:
-    legislation(i)
+legislation("mcnerney")
+legislation("harder")
 f = open('/home/miriamwaldvogel/209politics/projects/legislativetracker/js/member.js', 'r')
 g = f.read()
 f.close()
