@@ -193,6 +193,25 @@
 .checkbox{
   cursor: pointer;
 }
+#sortimg{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+.arrowdown{
+  transform: rotate(90deg);
+}
+.arrowup{
+  transform: rotate(270deg);
+}
+#sortselect{
+  display: inline-block;
+  font-family: "Libre Baskerville";
+  border: 0;
+  font-size: 16px;
+  background-color: #FFFFFF;
+}
 .dateselect{
   font-family: "Libre Baskerville";
   border: 0;

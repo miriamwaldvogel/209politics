@@ -1,4 +1,4 @@
-var para = {'mcnerney': {'status': {'Introduced': [0, 1, 2, 3]}, 'committees': {"Veterans' Affairs": [3], 'Science, Space, and Technology': [2], 'Education and Labor': [2], 'Energy and Commerce': [0, 1]}, 'type': {'Bill': [0, 1], 'Resolution': [2, 3]}, 'date': ['3/9/21', '3/11/21', '2/25/21', '2/26/21'], 'area': {'Science, technology, and communications': [2], 'Armed forces and national security': [3], 'Not assigned': [0, 1]}}, 'harder': {'status': {'Introduced': [0, 1, 2]}, 'committees': {'Education and Labor': [0, 1, 2]}, 'type': {'Bill': [0, 1, 2]}, 'date': ['1/28/21', '2/11/21', '2/18/21'], 'area': {'Education': [2], 'Families': [0, 1]}}};
+var para = {'mcnerney': {'status': {'Introduced': [0, 1, 2, 3]}, 'committees': {"Veterans' Affairs": [3], 'Science, Space, and Technology': [2], 'Education and Labor': [2], 'Energy and Commerce': [0, 1]}, 'area': {'Science, technology, and communications': [2], 'Armed forces and national security': [3], 'Not assigned': [0, 1]}, 'lastaction': [['3/9/21', 0], ['3/11/21', 1], ['2/25/21', 2], ['2/26/21', 3]], 'date': [['3/9/21', 0], ['3/11/21', 1], ['2/25/21', 2], ['2/26/21', 3]], 'type': {'Bill': [0, 1], 'Resolution': [2, 3]}}, 'harder': {'status': {'Introduced': [0, 1, 2]}, 'committees': {'Education and Labor': [0, 1, 2]}, 'area': {'Education': [2], 'Families': [0, 1]}, 'lastaction': [['1/28/21', 0], ['2/11/21', 1], ['2/18/21', 2]], 'date': [['1/28/21', 0], ['2/11/21', 1], ['2/18/21', 2]], 'type': {'Bill': [0, 1, 2]}}};
 window.onscroll = function(){
   if (window.innerWidth <= 700){
     if (window.pageYOffset > 10){
@@ -34,7 +34,13 @@ function filtershow(){
   filterresize();
 }
 var l = document.getElementsByClassName("leg");
-function filter(pol, check, category){
+function sortby(pol, key){
+  var result = para[pol][key];
+  result.sort();
+
+
+}
+/*function filter(pol, check, category){
   var a = document.getElementById(check.replaceAll(" ", "-"));
   var b = para[pol][category][check];
   var s = Date.parse(document.getElementById("startdate").value);
@@ -80,7 +86,8 @@ function datefilter(p, se){
       }
     }
   }
-}
+}*/
+
 function showall(){
   for (var i = 0; i < l.length; i++){
     l[i].classList.remove("hide");

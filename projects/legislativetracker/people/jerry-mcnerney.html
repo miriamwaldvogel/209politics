@@ -111,7 +111,15 @@
         </div>
         <form>
           <div class="filters">
-            <p class="filtertitle">Date Range</p>
+            <p class="filtertitle">Sort</p>
+            <img src="/images/arrow-down.svg" alt="Sort arrow" id="sortimg" class="arrowdown">
+            <select id="sortselect" name="">
+              <option value="date-introduced">Date introduced</option>
+              <option value="last-action">Last action</option>
+            </select>
+          </div>
+          <div class="filters">
+            <p class="filtertitle">Date Introduced</p>
             <div class="filterbox">
               <label for="startdate" class="filter">Start: </label>
               <input type="date" id="startdate" class="dateselect" onchange="datefilter('mcnerney', 'start');" checked="true">

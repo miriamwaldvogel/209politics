@@ -40,7 +40,6 @@ statelegs = [{"Aguiar-Curry": ["D", "Winters", "Cecilia "],
 "Irwin":["D", "Thousand Oaks", "Jacqui "],
 "Jones-Sawyer":["D", "South Los Angeles", "Reginald Byron "],
 "Kalra":["D", "San Jose", "Ash "],
-"Kamlager":["D", "Culver City", "Sydney "],
 "Kiley":["R", "Roseville", "Kevin "],
 "Lackey":["R", "Palmdale", "Tom "],
 "Lee":["D", "Milpitas", "Alex "],
@@ -103,6 +102,7 @@ statelegs = [{"Aguiar-Curry": ["D", "Winters", "Cecilia "],
 "Hueso":["D", "Chula Vista", "Ben "],
 "Hurtado":["D", "Sanger", "Melissa "],
 "Jones":["R", "Santee", "Brian "],
+"Kamlager":["D", "Culver City", "Sydney "],
 "Laird":["D", "San Luis Obispo", "John "],
 "Leyva":["D", "Chino", "Connie "],
 "Limón":["D", "Santa Barbara", "Monique "],
@@ -153,7 +153,7 @@ def legislation(pol):
     global filter
     f = open("/home/miriamwaldvogel/209politics/projects/legislativetracker/data/%s-leg.csv"%pol, "r")
     r = reader(f)
-    filter[pol] = {'type': {}, 'status':{}, 'area':{}, 'committees':{}, 'date':[]}
+    filter[pol] = {'type': {}, 'status':{}, 'area':{}, 'committees':{}, 'date':[], 'lastaction':[]}
     legblocks = ""
     for j, i in enumerate(r):
         legname = i[0].replace('.', '').lower().replace(' ', '-')
@@ -206,7 +206,8 @@ def legislation(pol):
         for k in actionlist[::-1]:
             actions += k
         legf.close()
-        filter[pol]['date'].append(leginfo[4])
+        filter[pol]['lastaction'].append([lastdate, j])
+        filter[pol]['date'].append([leginfo[4], j])
         filteradd(pol, 'area', leginfo[3], j)
         filteradd(pol, 'type', leginfo[1], j)
         for k in leginfo[7].split("/"):
