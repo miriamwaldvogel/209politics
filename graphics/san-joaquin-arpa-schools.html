@@ -99,6 +99,7 @@
     </div>
       <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
       <script type="text/javascript" src="/js/shp.js"></script>
+      <script src="/raw/arpa-funding/school-districts.js"></script>
       <script type="text/javascript">
         var map = L.map('map').setView([37.941151, -121.266734], 9);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -109,7 +110,54 @@
       zoomOffset: -1,
       accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
   }).addTo(map);
-new L.Shapefile('/raw/sj-school-districts.zip').addTo(map);
+function color(d){
+  return d > 3000  ? '#E31A1C' :
+           d > 2000  ? '#FC4E2A' :
+           d > 1000   ? '#FD8D3C' :
+           d > 500   ? '#FEB24C' :
+           d > 0   ? '#FED976' :
+                      '#FFEDA0';
+}
+function style(feature){
+  return{
+        "opacity": 1,
+        "color": "#E0E0E0",
+        "fillColor": color(parseInt(districts[feature.properties.ELEMENTARY.toString()][2])),
+        "fillOpacity": 0.8,
+        "weight": 2,
+  }
+}
+function highlight(e){
+  var layer = e.target;
+  layer.setStyle({
+      weight: 2,
+      color: '#666666',
+      dashArray: '',
+  });
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      layer.bringToFront();
+  }
+  a = districts[layer.feature.properties.ELEMENTARY.toString()];
+  s = layer.feature.properties.ELEMENTARY.toString()+"<p>ARPA funding: $"+a[0]+"</p><p>Students: "+a[1]+"</p><p>Funding per student: $"
+  if (a[2].length != 5){
+    s += a[2].toString().substring(0, 1)+","+a[2].toString().substring(1, a[2].length);
+  } else{
+    s += a[2];
+  }
+  s += "</p>"
+  layer.bindPopup(s).openPopup();
+}
+function reset(e) {
+  districtlayer.resetStyle(e.target);
+  e.target.closePopup();
+}
+function onEachFeature(feature, layer){
+  layer.on({
+    mouseover: highlight,
+    mouseout: reset
+  });
+}
+districtlayer = new L.Shapefile('/raw/sj-school-districts.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
       </script>
     </div>
   </body>
