@@ -25,7 +25,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-174685284-1');
       </script>
-    <title>San Joaquin School Funding From American Rescue Plan - 209 Politics</title>
+    <title>School Stimulus Funding in San Joaquin County - 209 Politics</title>
   </head>
   <body>
     <div id="content">
@@ -111,18 +111,29 @@
       accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
   }).addTo(map);
 function color(d){
-  return d > 3000  ? '#E31A1C' :
-           d > 2000  ? '#FC4E2A' :
-           d > 1000   ? '#FD8D3C' :
-           d > 500   ? '#FEB24C' :
-           d > 0   ? '#FED976' :
-                      '#FFEDA0';
+  return d > 7000  ? '#034e7b':
+           d > 5000 ? '#0570b0':
+           d > 3000 ? '3690c0':
+           d > 2000 ? '#74a9cf':
+           d > 1500 ? '#a6bddb':
+           d > 1000 ? '#d0d1e6':
+           d > 300 ? '#ece7f2':
+                      '#fff7fb';
 }
-function style(feature){
+function elemstyle(feature){
   return{
         "opacity": 1,
         "color": "#E0E0E0",
         "fillColor": color(parseInt(districts[feature.properties.ELEMENTARY.toString()][2])),
+        "fillOpacity": 0.8,
+        "weight": 2,
+  }
+}
+function hsstyle(feature){
+  return{
+        "opacity": 1,
+        "color": "#E0E0E0",
+        "fillColor": color(parseInt(districts[feature.properties.HIGHSCHOOL.toString()][2])),
         "fillOpacity": 0.8,
         "weight": 2,
   }
@@ -137,9 +148,13 @@ function highlight(e){
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
       layer.bringToFront();
   }
+}
+function elemhighlight(e){
+  var layer = e.target;
+  highlight(e);
   a = districts[layer.feature.properties.ELEMENTARY.toString()];
   s = layer.feature.properties.ELEMENTARY.toString()+"<p>ARPA funding: $"+a[0]+"</p><p>Students: "+a[1]+"</p><p>Funding per student: $"
-  if (a[2].length != 5){
+  if (a[2] > 999){
     s += a[2].toString().substring(0, 1)+","+a[2].toString().substring(1, a[2].length);
   } else{
     s += a[2];
@@ -147,17 +162,47 @@ function highlight(e){
   s += "</p>"
   layer.bindPopup(s).openPopup();
 }
-function reset(e) {
-  districtlayer.resetStyle(e.target);
+function hshighlight(e){
+  var layer = e.target;
+  highlight(e);
+  a = districts[layer.feature.properties.HIGHSCHOOL.toString()];
+  s = layer.feature.properties.HIGHSCHOOL.toString()+"<p>ARPA funding: $"+a[0]+"</p><p>Students: "+a[1]+"</p><p>Funding per student: $"
+  if (a[2] > 999){
+    s += a[2].toString().substring(0, 1)+","+a[2].toString().substring(1, a[2].length);
+  } else{
+    s += a[2];
+  }
+  s += "</p>"
+  layer.bindPopup(s).openPopup();
+}
+function elemreset(e) {
+  elemlayer.resetStyle(e.target);
   e.target.closePopup();
 }
-function onEachFeature(feature, layer){
+function hsreset(e) {
+  hslayer.resetStyle(e.target);
+  e.target.closePopup();
+}
+function elemfeature(feature, layer){
   layer.on({
-    mouseover: highlight,
-    mouseout: reset
+    mouseover: elemhighlight,
+    mouseout: elemreset
   });
 }
-districtlayer = new L.Shapefile('/raw/sj-school-districts.zip', {style: style, onEachFeature: onEachFeature}).addTo(map);
+function hsfeature(feature, layer){
+  layer.on({
+    mouseover: hshighlight,
+    mouseout: hsreset
+  });
+}
+var elemlayer = new L.Shapefile('/raw/sj-elem-districts.zip', {style: elemstyle, onEachFeature: elemfeature});
+elemlayer.addTo(map);
+var hslayer = new L.Shapefile('/raw/sj-hs-districts.zip', {style: hsstyle, onEachFeature: hsfeature});
+var schoollayers = {
+  "Elementary School Districts": elemlayer,
+  "High School Districts": hslayer
+};
+L.control.layers(schoollayers).addTo(map);
       </script>
     </div>
   </body>
