@@ -78,7 +78,7 @@
       </div>
       <div id="filler"></div>
       <div id="infocontainer">
-        <h1 id="title">FUNDING FOR SAN JOAQUIN SCHOOLS FROM THE AMERICAN RESCUE PLAN ACT (2021)</h1>
+        <h1 id="title">STIMULUS FUNDING FOR SCHOOL DISTRICTS IN SAN JOAQUIN COUNTY</h1>
       </div>
       <div id="map"></div>
       <div id="footer">
@@ -149,31 +149,28 @@ function highlight(e){
       layer.bringToFront();
   }
 }
-function elemhighlight(e){
+function popup(e, a){
   var layer = e.target;
-  highlight(e);
-  a = districts[layer.feature.properties.ELEMENTARY.toString()];
-  s = layer.feature.properties.ELEMENTARY.toString()+"<p>ARPA funding: $"+a[0]+"</p><p>Students: "+a[1]+"</p><p>Funding per student: $"
+  s = "<p class='district'>"+layer.feature.properties.ELEMENTARY.toString()+"</p><p>American Rescue Plan relief: $"+a[0]+"</p><p>Number of students: "+a[1]+"</p><p>Relief per student: $"
   if (a[2] > 999){
     s += a[2].toString().substring(0, 1)+","+a[2].toString().substring(1, a[2].length);
   } else{
     s += a[2];
   }
   s += "</p>"
-  layer.bindPopup(s).openPopup();
+  return(s)
+}
+function elemhighlight(e){
+  var layer = e.target;
+  highlight(e);
+  a = districts[layer.feature.properties.ELEMENTARY.toString()];
+  layer.bindPopup(popup(e, a)).openPopup();
 }
 function hshighlight(e){
   var layer = e.target;
   highlight(e);
   a = districts[layer.feature.properties.HIGHSCHOOL.toString()];
-  s = layer.feature.properties.HIGHSCHOOL.toString()+"<p>ARPA funding: $"+a[0]+"</p><p>Students: "+a[1]+"</p><p>Funding per student: $"
-  if (a[2] > 999){
-    s += a[2].toString().substring(0, 1)+","+a[2].toString().substring(1, a[2].length);
-  } else{
-    s += a[2];
-  }
-  s += "</p>"
-  layer.bindPopup(s).openPopup();
+  layer.bindPopup(popup(e, a)).openPopup();
 }
 function elemreset(e) {
   elemlayer.resetStyle(e.target);
