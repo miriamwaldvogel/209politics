@@ -103,22 +103,22 @@
       <script type="text/javascript">
         var map = L.map('map').setView([37.941151, -121.266734], 9);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin, <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a> - Data',
+      attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin',
       maxZoom: 18,
-      id: 'mapbox/streets-v11',
+      id: 'mapbox/light-v10',
       tileSize: 512,
       zoomOffset: -1,
       accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
   }).addTo(map);
 function color(d){
-  return d > 7000  ? '#034e7b':
-           d > 5000 ? '#0570b0':
-           d > 3000 ? '3690c0':
-           d > 2000 ? '#74a9cf':
-           d > 1500 ? '#a6bddb':
-           d > 1000 ? '#d0d1e6':
-           d > 300 ? '#ece7f2':
-                      '#fff7fb';
+  return d > 7000 ? '#023858':
+           d > 4000 ? '#034e7b':
+           d > 3000 ? '#0570b0':
+           d > 2000 ? '#3690c0':
+           d > 1500 ? '#74a9cf':
+           d > 1000 ? '#a6bddb':
+           d > 300 ? '#d0d1e6':
+                     '#ece7f2';
 }
 function elemstyle(feature){
   return{

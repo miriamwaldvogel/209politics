@@ -16,3 +16,7 @@
   font-weight: bold;
   font-size: 17px;
 }
+.leaflet-control-layers-base span{
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+}
