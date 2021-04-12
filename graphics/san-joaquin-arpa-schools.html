@@ -149,9 +149,9 @@ function highlight(e){
       layer.bringToFront();
   }
 }
-function popup(e, a){
+function popup(e, a, b){
   var layer = e.target;
-  s = "<p class='district'>"+layer.feature.properties.ELEMENTARY.toString()+"</p><p>American Rescue Plan relief: $"+a[0]+"</p><p>Number of students: "+a[1]+"</p><p>Relief per student: $"
+  s = "<p class='district'>"+b+"</p><p>American Rescue Plan relief: $"+a[0]+"</p><p>Number of students: "+a[1]+"</p><p>Relief per student: $"
   if (a[2] > 999){
     s += a[2].toString().substring(0, 1)+","+a[2].toString().substring(1, a[2].length);
   } else{
@@ -164,13 +164,13 @@ function elemhighlight(e){
   var layer = e.target;
   highlight(e);
   a = districts[layer.feature.properties.ELEMENTARY.toString()];
-  layer.bindPopup(popup(e, a)).openPopup();
+  layer.bindPopup(popup(e, a, layer.feature.properties.ELEMENTARY.toString())).openPopup();
 }
 function hshighlight(e){
   var layer = e.target;
   highlight(e);
   a = districts[layer.feature.properties.HIGHSCHOOL.toString()];
-  layer.bindPopup(popup(e, a)).openPopup();
+  layer.bindPopup(popup(e, a, layer.feature.properties.HIGHSCHOOL.toString())).openPopup();
 }
 function elemreset(e) {
   elemlayer.resetStyle(e.target);
