@@ -17,7 +17,7 @@ types = {
 "Officer shooting": ["Officer shooting"],
 "Kidnapping": ["Kidnapping", "Kidnapping arrest"],
 "Mental health call": ["Mental health call"],
-"Other": ["Attempted murder arrest", "Attempted murder", "Suspicious package", "Laser strike arrest", "Criminal threats arrest", "Explosive materials arrest", "Warrant service", "Attempted homicide arrest", "Terrorist threats", "Attempted homicide", "Homicide arrest"],
+"Other": ["Attempted murder arrest", "Attempted murder", "Suspicious package", "Laser strike arrest", "Criminal threats arrest", "Explosive materials arrest", "Warrant service", "Attempted homicide arrest", "Terrorist threats", "Attempted homicide", "Homicide arrest", "Death investigation"],
 "Vandalism": ["Vandalism arrest", "Vandalism"],
 "Train": ["Train", "Train vs. pedestrian"],
 "Drowning": ["Drowning"]
