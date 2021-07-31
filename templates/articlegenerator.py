@@ -172,7 +172,7 @@ def article():
           <h1 id="title">%s</h1>
           <div id="infocontainer">
             <p id="time">%s %d, %s at %s</p>
-            <p>By Miriam Waldvogel</p>
+            <p>By <a href="mailto:miriam@209politics.com" style="text-decoration: underline;">Miriam Waldvogel</a></p>
           </div>
           <div id="paragraphcontainer">
 """%(card, headline, card, headline, headline, d[2], int(d[3]), d[0], d[4]))
