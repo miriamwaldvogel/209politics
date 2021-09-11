@@ -6,7 +6,7 @@ next(r)
 s = ''
 filter = []
 types = {
-"Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest", "Carjacking", "Hit and run", "Vehicle pursuit", "Traffic injury", "Auto theft arrest", "Carjacking arrest", "Hit and run fatality"],
+"Vehicle/traffic": ["Traffic fatality", "Stolen vehicle arrest", "Vehicle pursuit arrest", "Traffic pursuit", "Pursuit arrest", "Carjacking", "Hit and run", "Vehicle pursuit", "Traffic injury", "Auto theft arrest", "Carjacking arrest", "Hit and run fatality", "DUI arrest"],
 "Homicide": ["Homicide"],
 "Theft/robbery": ["Robbery", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries", "Robbery arrest"],
 "Residential": ["Residential robbery", "Home invasion", "Burglary", "Home invasion robbery"],
