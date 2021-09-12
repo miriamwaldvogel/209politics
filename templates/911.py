@@ -13,7 +13,7 @@ types = {
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
 "Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer", "Disturbance", "Warrant arrest"],
 "Fire": ["Arson", "Arson arrest", "Warehouse fire", "Attempted arson"],
-"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle", "Shooting into a building", "People shot", "Negligent discharge of a firearm", "Residence struck by gunfire", "Vehicle struck by gunfire", "Shooting into dwellings", "Brandishing", "Shooting into an unoccupied building", "Shooting into unoccupied vehicles", "Shooting into an occupied dwelling"],
+"Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle", "Shooting into a building", "People shot", "Negligent discharge of a firearm", "Residence struck by gunfire", "Vehicle struck by gunfire", "Shooting into dwellings", "Brandishing", "Shooting into an unoccupied building", "Shooting into unoccupied vehicles", "Shooting into an occupied dwelling", "Shooting into an unoccupied vehicle"],
 "Officer shooting": ["Officer shooting"],
 "Kidnapping": ["Kidnapping", "Kidnapping arrest"],
 "Mental health call": ["Mental health call"],
