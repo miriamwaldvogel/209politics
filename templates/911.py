@@ -11,7 +11,7 @@ types = {
 "Theft/robbery": ["Robbery", "Attempted robbery", "Strong-arm robbery", "Armed robbery", "Auto burglaries", "Robbery arrest"],
 "Residential": ["Residential robbery", "Home invasion", "Burglary", "Home invasion robbery", "Burglary arrest"],
 "Assault": ["Person stabbed", "Assault with a deadly weapon", "Felony assault"],
-"Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer", "Disturbance", "Warrant arrest"],
+"Arrest": ["Resisting arrest", "Battery on an officer", "Assault on an officer", "Disturbance", "Warrant arrest", "Assault"],
 "Fire": ["Arson", "Arson arrest", "Warehouse fire", "Attempted arson"],
 "Shooting/weapons": ["Shooting into a dwelling", "Person shot", "Weapon arrest", "Shooting into a vehicle", "Shooting into a building", "People shot", "Negligent discharge of a firearm", "Residence struck by gunfire", "Vehicle struck by gunfire", "Shooting into dwellings", "Brandishing", "Shooting into an unoccupied building", "Shooting into unoccupied vehicles", "Shooting into an occupied dwelling", "Shooting into an unoccupied vehicle"],
 "Officer shooting": ["Officer shooting"],
