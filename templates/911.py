@@ -19,7 +19,7 @@ types = {
 "Mental health call": ["Mental health call"],
 "Other": ["Attempted murder arrest", "Attempted murder", "Suspicious package", "Laser strike arrest", "Criminal threats arrest", "Explosive materials arrest", "Warrant service", "Attempted homicide arrest", "Terrorist threats", "Attempted homicide", "Homicide arrest", "Death investigation", "Device found", "Medical assistance"],
 "Vandalism": ["Vandalism arrest", "Vandalism"],
-"Train": ["Train", "Train vs. pedestrian"],
+"Train": ["Train", "Train vs. pedestrian", "Train vs. pedestrian fatality"],
 "Drowning": ["Drowning"]
 }
 reversetypes = {}

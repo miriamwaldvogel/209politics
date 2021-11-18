@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <meta property="og:image" content="https://209politics.com/2021/11/17/san-joaquin-redistricting-1.png">
+      <meta property="og:type" content="article"/>
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@209politics">
+      <meta name="twitter:title" content="The First Redistricting Maps Are In. See What They Mean for San Joaquin County.
+">
+      <meta name="twitter:image" content="https://209politics.com/2021/11/17/san-joaquin-redistricting-1.png">
+      <link rel="icon" type="image/png" href="/images/favicon.png">
+      <link rel="stylesheet" href="/css/article.css">
+      <link rel="stylesheet" href="/css/global.css">
+      <link rel="stylesheet" href="/css/footer.css">
+      <link rel="stylesheet" href="/css/header.css">
+      <link rel="stylesheet" href="/css/more.css">
+      <link rel="stylesheet" href="/css/stories.css">
+      <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+      <link rel="stylesheet" href="/css/leaflet.css">
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+      <script type="text/javascript" src="/js/articleformat.js"></script>
+      <script type="text/javascript" src="/js/header.js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174685284-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date()); gtag('config', 'UA-174685284-1');
+      </script>
+      <style media="screen">
+        .map{
+          height: 500px;
+        }
+        .popupcontainer{
+          font-family: "Libre Baskerville";
+        }
+      </style>
+      <title>The First Redistricting Maps Are In. See What They Mean for San Joaquin County.
+ - 209 Politics</title>
+    </head>
+    <body>
+      <div id="content">
+        <div id="headercontainer">
+          <button type="button" id="sidebar" onclick="sidebar();">&#9776;</button>
+          <div id="logocontainer">
+            <a href="https://209politics.com/"> <img src="/images/favicon-horizontal.png" alt="209 Politics" id="logo"> </a>
+          </div>
+          <div id="searchcontainer">
+            <div id="searchimgcontainer" onclick="searchtoggle();"> <img src="/images/search.svg" alt="Search sybmol" id="searchimg"> </div>
+            <div id="formcontainer1">
+              <form id="searchform" action="https://www.google.com/search" method="get">
+                <input type="hidden" name="q" value="site:209politics.com">
+                <input type="text" name="q" value="" id="searchbox1">
+                <input type="submit" value="GO" class="searchbutton" id="searchbutton1"> </form>
+            </div>
+          </div>
+        </div>
+        <div id="sectionscontainer" class="sections">
+          <div id="homenavcontainer" class="headernavcontainer"> <a href="https://209politics.com/" id="latest" class="section">HOME</a> </div>
+          <div id="latestnavcontainer" class="headernavcontainer"> <a href="/latest" id="latest" class="section">LATEST</a> </div>
+          <div id="electionsnavcontainer" class="headernavcontainer"> <a href="/elections" id="elections" class="section">ELECTIONS</a> </div>
+          <div id="policynavcontainer" class="headernavcontainer"> <a href="/policy" class="section">POLICY</a> </div>
+          <div id="intnavcontainer" class="headernavcontainer"> <a href="/covid-19" class="section">COVID-19</a> </div>
+          <div id="contactnavcontainer" class="headernavcontainer"> <a href="/interactives" class="section">INTERACTIVES</a> </div>
+        </div>
+        <div id="formcontainer2">
+          <form id="searchform" action="https://www.google.com/search" method="get">
+            <input type="hidden" name="q" value="site:209politics.com">
+            <input type="text" name="q" value="" id="searchbox2">
+            <input type="submit" value="GO" class="searchbutton" id="searchbutton1"> </form>
+        </div>
+        <div id="filler"></div>
+        <div id="articlecontainer">
+          <h1 id="title">The First Redistricting Maps Are In. See What They Mean for San Joaquin County.
+</h1>
+          <div id="infocontainer">
+            <p id="time">November 17, 2021 at 4:40 pm</p>
+            <p>By <a href="mailto:miriam@209politics.com" style="text-decoration: underline;">Miriam Waldvogel</a></p>
+          </div>
+          <div id="paragraphcontainer">
+<p class="paragraph">California’s <a href="https://www.wedrawthelinesca.org/">nonpartisan redistricting commission</a> released its first draft of the state’s Congressional districts last week. The proposed version would consolidate most of San Joaquin County into a single district, with the remaining areas split among two other districts.
+</p><p class="paragraph">	Rep. Josh Harder (D-Turlock), who currently represents Tracy, Manteca, and most of Stanislaus County, would see his district split into three. The northern end would be incorporated into the San Joaquin County district, while most of Stanislaus south of Modesto would fall into a larger district running down the Central Valley into Merced. According to analysis from <a href="https://davesredistricting.org/maps#viewmap::8e7f314a-1833-4a3b-8531-0ec893efac17">Dave's Redistricting</a>, a map-drawing service, both districts would be reliably blue, about 55% Democratic.
+</p><p class="paragraph">	The remainder of Modesto and Ripon would fall into a large district reaching into the Sierras, going as far north as Lake Tahoe and as far south as Inyo County, which is home to Death Valley National Park. This district, which includes much of Harder’s hometown Turlock, would be roughly 55% Republican.
+</p>
+<div id="map" class="map"></div>
+<p id="img1caption" class="caption">The proposed Congressional map, above, would split San Joaquin County into three districts. The current map, below, divides the county into two.</p>
+<div id="map2" class="map">
+
+</div>
+<p class="paragraph">	Harder was already set for a tough reelection race prior to the release of the new redistricting maps, being one of four California Democrats the Republican National Committee is targeting next year. Additionally, he is now facing a challenger in Republican Ricky Gill, a Lodi native and former official at the State Department and National Security Council.
+</p><p class="paragraph">	Gill turned heads in his first run for Congress almost a decade ago, barely old enough to even run for the seat. He lost to incumbent Rep. Jerry McNerney (D-Stockton) by more than ten points in 2010.
+</p><p class="paragraph">	The new map keeps McNerney’s district at a similar partisan lean, losing Brentwood and its remaining footprint in the Bay Area and gaining the south half of San Joaquin County. McNerney faces his own Republican challenger in the form of Tom Patti, who represents Manteca and Lathrop on the county board of supervisors. Patti has garnered attention over the course of the pandemic for pushing back against California’s response as the chair of the board.
+</p><p class="paragraph">	He will likely be running in a reliably Democratic district, although the exact makeup will likely be different in the final map. However, Patti already represents an area where almost 55% of voters are Democrats, a possible indicator of his ability to win over voters across party lines.
+</p><p class="paragraph">	However, the proposed maps are only a first draft. Final versions, which could differ considerably, will be approved by the redistricting commission by December 27. California is one of eight states with an independent commission in charge of drawing the boundaries for Congressional, State Assembly, and State Senate races, a process that happens every ten years when new Census numbers are released. The nonpartisan party is supposed to reduce gerrymandering, where district lines are drawn in a way that favors a certain party.
+</p><div id="more">
+      <p id="moretitle">MORE LIKE THIS</p>
+      <div id="morearticlescontainer">
+        <div id="q1hardercontainer" class="storycontainer bigstory">
+                  <a href="/2021/04/16/harder-first-quarter-fundraising.html" class="storylink">
+                    <div class="storyimgcontainer standardimg">
+                      <img src="/2021/04/16/josh-harder.jpg" alt="Josh Harder" class="storyimg">
+                    </div>
+                    <div class="storytextcontainer standardtext">
+                      <p class="mainstory headline storyheadline">Harder Raised $1 Million in 2021’s First Quarter, Bolstering an Already-Large War Chest
+        </p>
+                      <p class="articledate">April 16, 2021</p>
+                    </div>
+                  </a>
+                </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="footer">
+      <p id="socialmediafooter"> <a href="https://twitter.com/209Politics" id="twitterfooter" class="sociallinkfooter">Twitter: @209politics</a> • <a href="https://www.instagram.com/209.politics/" id="instagramfooter" class="sociallinkfooter">Instagram: @209.politics</a> • <a href="https://www.facebook.com/209Politics"
+        id="facebookfooter" class="sociallinkfooter">Facebook: @209Politics</a> </p>
+      <p id="navfooter"> <a href="/index" id="homenavfooter" class="navfooter">Home</a> • <a href="/latest" id="latestnavfooter" class="navfooter">Latest</a> • <a href="/elections" id="electionsnavfooter" class="navfooter">Elections</a> • <a href="/policy" id="policynavfooter"
+        class="navfooter">Policy</a> • <a href="/covid-19" id="covidnavfooter" class="navfooter">COVID-19</a> • <a href="/interactives" class="navfooter">Interactives</a> • <a href="/contact" id="contactnavfooter" class="navfooter">Contact us</a> </p>
+    </div>
+    <script type="text/javascript" src="/js/leaflet.shpfile.js"></script>
+    <script type="text/javascript" src="/js/shp.js"></script>
+    <script type="text/javascript">
+      var map = L.map('map').setView([37.941151, -121.266734], 9);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin, <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a> - Data',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+}).addTo(map);
+var districtstyle = {
+  "color": "#20124d",
+  "weight": 3,
+  "opacity": 0.7,
+  "fillColor": "#BCBDF9"
+};
+function percent(a, b){
+  return((a*100/b).toFixed(2).toString()+"%");
+}
+function onEachFeature(feature, layer){
+  var vap = feature.properties.CVAP_19;
+  layer.bindPopup("<div class='popupcontainer'><p>Total population: "+feature.properties.POPULATION.toString()+"</p><p>Voting age population: "+vap.toString()+"</p><p>White population: "+percent(feature.properties.NH_WHT_CVA, vap)+"</p><p>Black population: "+percent(feature.properties.DOJ_NH_BLK, vap)+"</p><p>Hispanic population: "+percent(feature.properties.HSP_CVAP_1, vap)+"</p><p>Asian population: "+percent(feature.properties.DOJ_NH_ASN, vap)+"</p><p>Indigenous population: "+percent(feature.properties.DOJ_NH_IND, vap)+"</p></div>");
+}
+new L.Shapefile('/raw/ca-first-redistricting-draft.zip', {style: districtstyle, onEachFeature: onEachFeature}).addTo(map);
+    </script>
+    <script type="text/javascript">
+      var map2 = L.map('map2').setView([37.941151, -121.266734], 9);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a target="_blank" href="https://www.mapbox.com/">Mapbox</a>, <a target="_blank" href="https://github.com/calvinmetcalf/leaflet.shapefile">Calvin Metcalf</a> - Shapefile plugin, <a target="_blank" href="https://statewidedatabase.org/">CA SWDB</a> - Data',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibWlyaWFtd2FsZHZvZ2VsIiwiYSI6ImNraTE3OHBxbDE3aWcycW9kbnhibHY2cDUifQ.ANw8-FHVLnsxyvEYyCyhvA'
+}).addTo(map2);
+var districtstyle = {
+  "color": "#20124d",
+  "weight": 3,
+  "opacity": 0.7,
+  "fillColor": "#BCBDF9"
+};
+function onEachFeature(feature, layer){
+  layer.bindPopup("<div class='popupcontainer'><p>Total population: "+feature.properties.POP.toString()+"</p></div>");
+}
+new L.Shapefile('/raw/2010-census-ca-congressional-districts.zip', {style: districtstyle, onEachFeature: onEachFeature}).addTo(map2);
+    </script>
+    </body>
+
+    </html>
