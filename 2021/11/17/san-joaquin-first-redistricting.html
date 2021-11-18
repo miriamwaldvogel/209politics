@@ -143,12 +143,12 @@ var districtstyle = {
   "opacity": 0.7,
   "fillColor": "#BCBDF9"
 };
-function percent(a, b){
-  return((a*100/b).toFixed(2).toString()+"%");
+function percent(a){
+  return((a*100).toFixed(2).toString()+"%");
 }
 function onEachFeature(feature, layer){
   var vap = feature.properties.CVAP_19;
-  layer.bindPopup("<div class='popupcontainer'><p>Total population: "+feature.properties.POPULATION.toString()+"</p><p>Voting age population: "+vap.toString()+"</p><p>White population: "+percent(feature.properties.NH_WHT_CVA, vap)+"</p><p>Black population: "+percent(feature.properties.DOJ_NH_BLK, vap)+"</p><p>Hispanic population: "+percent(feature.properties.HSP_CVAP_1, vap)+"</p><p>Asian population: "+percent(feature.properties.DOJ_NH_ASN, vap)+"</p><p>Indigenous population: "+percent(feature.properties.DOJ_NH_IND, vap)+"</p></div>");
+  layer.bindPopup("<div class='popupcontainer'><p>Total population: "+feature.properties.POPULATION.toString()+"</p><p>Voting age population: "+vap.toString()+"</p><p>White population: "+percent(feature.properties.F_NH_WHT_C)+"</p><p>Black population: "+percent(feature.properties.F_DOJ_NH_B)+"</p><p>Hispanic population: "+percent(feature.properties.F_HSP_CVAP)+"</p><p>Asian population: "+percent(feature.properties.F_DOJ_NH_A)+"</p><p>Indigenous population: "+percent(feature.properties.F_DOJ_NH_I, vap)+"</p></div>");
 }
 new L.Shapefile('/raw/ca-first-redistricting-draft.zip', {style: districtstyle, onEachFeature: onEachFeature}).addTo(map);
     </script>
